@@ -11,13 +11,13 @@ Rem del *.txt
 
 Rem cd "C:\ProgramData\Jenkins\.jenkins\workspace\pipelinegitdemo\mpbTime\unittestframework "
 echo "executing changing to c:\mpbComponent\mpbTime\unittestframework\ " 
-cd " c:\mpbComponent\mpbTime\unittestframework\ceedling test:all " 
-
+cd  "c:\mpbComponent\mpbTime\unittestframework\"  
+call ceedling test:all
 
 
 Rem cd "C:\ProgramData\Jenkins\.jenkins\workspace\pipelinegitdemo\mpbTime\unittestframework\build\artifacts\test"
 
-copy  C:\ProgramData\Jenkins\.jenkins\workspace\pipelinegitdemo\mpbTime\unittestframework\build\artifacts\test\report.xml c:\mpbComponent\configurationManagement\
+Rem copy  C:\ProgramData\Jenkins\.jenkins\workspace\pipelinegitdemo\mpbTime\unittestframework\build\artifacts\test\report.xml c:\mpbComponent\configurationManagement\
 
 echo "The program has completed"
 
