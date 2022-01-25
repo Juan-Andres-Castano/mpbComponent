@@ -1,29 +1,17 @@
-commit 5db7a17d26eda8a2427bd61b70f360c2875ffb2e
+commit ae15d389f8ba35eb4be7070d6d052d7628d87e7f
 Author: juan.castano <juan.castano@mpbc.ca>
-Date:   Fri Jan 21 14:00:54 2022 -0500
+Date:   Tue Jan 25 12:34:20 2022 -0500
 
-    MpbTime V1.0 and MpbMath V1.0. Baseline and functionals.
+    new bash test
 
-commit f970b50e211922bdfcf29d0d640a72fda05d3183
+commit 75dde36bc819739fb5d93d5491ede6bae734f47e
 Author: juan.castano <juan.castano@mpbc.ca>
-Date:   Fri Jan 21 13:55:52 2022 -0500
+Date:   Tue Jan 25 11:30:24 2022 -0500
 
-    The baseline for the mpbtime and mpbMath is functional. 2022-01-20
+    new sh added
 
-commit 96fa5f2c597b54d8bb42ad9270138cbc68a9a9d5
+commit afc582ae9b140fbb8173c50abd695fc7f7782355
 Author: juan.castano <juan.castano@mpbc.ca>
-Date:   Fri Jan 21 13:09:51 2022 -0500
+Date:   Tue Jan 25 09:55:15 2022 -0500
 
-    config file added
-
-commit 496e72cac1e40627c2d62ad826f0d1aa86699477
-Author: juan.castano <juan.castano@mpbc.ca>
-Date:   Fri Jan 21 11:58:56 2022 -0500
-
-    commun directory
-
-commit 220e892d2645dfde7c9bbf03c58ee6d29df16c14
-Author: juan.castano <juan.castano@mpbc.ca>
-Date:   Fri Jan 21 11:36:47 2022 -0500
-
-    baseline mpbMath and mpbTime Libraries
+    baseline
