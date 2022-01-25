@@ -3,10 +3,13 @@
 Rem This is for listing down all the files in the directory Program files 
 cd "C:\ProgramData\Jenkins\.jenkins\workspace\pipelinegitdemo\configurationManagement "
 dir
-del *.xml
-del *.txt
+cd " c:\mpbComponent\configurationManagement\ " 
+Rem C:\ProgramData\Jenkins\.jenkins\workspace\pipelinegitdemo\mpbTime\unittestframework "
+Rem del *.xml
+Rem del *.txt
 
 cd "C:\ProgramData\Jenkins\.jenkins\workspace\pipelinegitdemo\mpbTime\unittestframework "
+
 ceedling test:all
 
 cd "C:\ProgramData\Jenkins\.jenkins\workspace\pipelinegitdemo\mpbTime\unittestframework\build\artifacts\test"
