@@ -11,7 +11,9 @@ Rem del *.txt
 
 Rem cd "C:\ProgramData\Jenkins\.jenkins\workspace\pipelinegitdemo\mpbTime\unittestframework "
 echo "executing unit testing....."
+xcopy  "C:\mpbComponent\mpbTime\UnitTestFramework\build\artifacts\test\*.*" "c:\mpbComponent\configurationManagement\." /i /e
 
+ren  c:\mpbComponent\configurationManagement\report.xml report_mpbTime.xml
  
 
 Rem cd  "c:\mpbComponent\mpbMath\unittestframework\" 
