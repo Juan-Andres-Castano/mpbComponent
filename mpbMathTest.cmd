@@ -13,7 +13,7 @@ Rem cd "C:\ProgramData\Jenkins\.jenkins\workspace\pipelinegitdemo\mpbTime\unitte
 echo "executing unit testing....."
 xcopy  "C:\mpbComponent\mpbTime\UnitTestFramework\build\artifacts\test\*.*" "c:\mpbComponent\configurationManagement\." /i /e
 
-ren  c:\mpbComponent\configurationManagement\report.xml report_mpbTime.xml
+ren  c:\mpbComponent\configurationManagement\report.xml report_mpbTime_%1_-%date:~4,2%-%date:~7,2%-%date:~10,4%_@_%time:~0,2%h%time:~3,2%m%time:~6,2%s%.xml
  
 
 Rem cd  "c:\mpbComponent\mpbMath\unittestframework\" 
