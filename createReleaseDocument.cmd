@@ -8,8 +8,8 @@ Rem cd " c:\mpbComponent\configurationManagement\ "
 Rem C:\ProgramData\Jenkins\.jenkins\workspace\pipelinegitdemo\mpbTime\unittestframework "
 Rem del *.xml
 Rem del *.txt
-echo "parameter 1 *....."
-echo %1
+
+
 
 cd "C:\mpbComponent\configurationManagement"
 Rem break > softwareReleaseDocument_buildNumber_%1_%date:~4,2%-%date:~7,2%-%date:~10,4%_@_%time:~0,2%h%time:~3,2%m%time:~6,2%s%
@@ -18,35 +18,38 @@ break > templogFile.txt
 
 
 
-Set line1 = "-------------------------------------------------"
-ECHO %line1% > templogFile.txt
-Rem echo.>>templogFile.txt
-Set line2 = "      configuration file "
-echo %line2% > templogFile.txt
-Rem echo.>>templogFile.txt
-Set line3 = "-------------------------------------------------"
-echo %line1% > templogFile.txt
-Rem echo.>>templogFile.txt
+Rem Set line1 = "-------------------------------------------------"
+Rem echo"----" %line1% > templogFile.txt
+echo ----------------------------------------- >> templogFile.txt
 
-Set compilationTag = "compilationTagText"
-SET buildTag = %1
-echo %compilationTag% > templogFile.txt
-echo %buildTag% > templogFile.txt
-
-
-Set mpbTimeLibraryVersion = "mpbTimeLibraryVersion"
-Set mpbTimeLibraryValue = %2
-echo %mpbTimeLibraryVersion% > templogFile.txt
-echo %mpbTimeLibraryValue% > templogFile.txt
 Rem echo.>>templogFile.txt
 
 
-Set mpbMathLibraryVersion = "mpbMathLibraryVersion"
-Set mpbMathLibraryValue = %3
-echo %mpbMathLibraryVersion% > templogFile.txt
-echo %mpbMathLibraryValue% > templogFile.txt
+Rem Set line2 = "      configuration file "
+echo       configuration file  >> templogFile.txt
+echo ----------------------------------------- >> templogFile.txt
+
+
+Rem Set compilationTag = "compilationTagText"
+Rem SET buildTag = %1
+echo compilationTag :  >> templogFile.txt
+echo %1 >> templogFile.txt
+echo .... >> templogFile.txt
+
+Rem Set mpbTimeLibraryVersion = "mpbTimeLibraryVersion"
+Rem Set mpbTimeLibraryValue = %2
+echo mpbTimeLibraryVersion >> templogFile.txt
+echo %2 >> templogFile.txt
+echo .... >> templogFile.txt
+
+
+Rem Set mpbMathLibraryVersion = "mpbMathLibraryVersion"
+Rem Set mpbMathLibraryValue = %3
+echo mpbMathLibraryVersion >> templogFile.txt
+echo %3 >> templogFile.txt
+echo .... >> templogFile.txt
 Rem echo.>>templogFile.txt
 
 
-Rem ren  c:\mpbComponent\configurationManagement\templogFile.txt softwareReleaseDocument_buildNumber_%1_%date:~4,2%-%date:~7,2%-%date:~10,4%_@_%time:~0,2%h%time:~3,2%m%time:~6,2%s%.txt
+ren  c:\mpbComponent\configurationManagement\templogFile.txt softwareReleaseDocument_buildNumber_%1_%date:~4,2%-%date:~7,2%-%date:~10,4%_@_%time:~0,2%h%time:~3,2%m%time:~6,2%s%.txt
 
