@@ -19,14 +19,14 @@ break > templogFile.txt
 
 
 Set line1 = "-------------------------------------------------"
-echo %line1% > templogFile.txt
-echo.>>templogFile.txt
+ECHO %line1% > templogFile.txt
+Rem echo.>>templogFile.txt
 Set line2 = "      configuration file "
 echo %line2% > templogFile.txt
-echo.>>templogFile.txt
+Rem echo.>>templogFile.txt
 Set line3 = "-------------------------------------------------"
 echo %line1% > templogFile.txt
-echo.>>templogFile.txt
+Rem echo.>>templogFile.txt
 
 Set compilationTag = "compilationTagText"
 SET buildTag = %1
@@ -38,15 +38,15 @@ Set mpbTimeLibraryVersion = "mpbTimeLibraryVersion"
 Set mpbTimeLibraryValue = %2
 echo %mpbTimeLibraryVersion% > templogFile.txt
 echo %mpbTimeLibraryValue% > templogFile.txt
-echo.>>templogFile.txt
+Rem echo.>>templogFile.txt
 
 
 Set mpbMathLibraryVersion = "mpbMathLibraryVersion"
 Set mpbMathLibraryValue = %3
 echo %mpbMathLibraryVersion% > templogFile.txt
 echo %mpbMathLibraryValue% > templogFile.txt
-echo.>>templogFile.txt
+Rem echo.>>templogFile.txt
 
 
-ren  c:\mpbComponent\configurationManagement\templogFile.txt softwareReleaseDocument_buildNumber_%1_%date:~4,2%-%date:~7,2%-%date:~10,4%_@_%time:~0,2%h%time:~3,2%m%time:~6,2%s%.txt
+Rem ren  c:\mpbComponent\configurationManagement\templogFile.txt softwareReleaseDocument_buildNumber_%1_%date:~4,2%-%date:~7,2%-%date:~10,4%_@_%time:~0,2%h%time:~3,2%m%time:~6,2%s%.txt
 
