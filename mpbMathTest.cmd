@@ -12,14 +12,15 @@ Rem del *.txt
 Rem cd "C:\ProgramData\Jenkins\.jenkins\workspace\pipelinegitdemo\mpbTime\unittestframework "
 echo "executing unit testing....."
 
-cd  "c:\mpbComponent\mpbTime\unittestframework\" 
-ceedling test:all
+ 
 
+cd  "c:\mpbComponent\mpbMath\unittestframework\" 
+ceedling test:all
 
 
 Rem cd "C:\ProgramData\Jenkins\.jenkins\workspace\pipelinegitdemo\mpbTime\unittestframework\build\artifacts\test"
 
 Rem copy  C:\ProgramData\Jenkins\.jenkins\workspace\pipelinegitdemo\mpbTime\unittestframework\build\artifacts\test\report.xml c:\mpbComponent\configurationManagement\
 
-echo "The program has completed"
+Rem echo "The program has completed"
 
