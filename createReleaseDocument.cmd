@@ -14,8 +14,39 @@ echo %1
 cd "C:\mpbComponent\configurationManagement"
 Rem break > softwareReleaseDocument_buildNumber_%1_%date:~4,2%-%date:~7,2%-%date:~10,4%_@_%time:~0,2%h%time:~3,2%m%time:~6,2%s%
 
-set logFile = softwareReleaseDocument_buildNumber_%1_%date:~4,2%-%date:~7,2%-%date:~10,4%_@_%time:~0,2%h%time:~3,2%m%time:~6,2%s%
-break > logFile
+break > templogFile.txt
 
-Rem ECHO.>>%2>>
+
+
+Set line1 = "-------------------------------------------------"
+echo %line1% > templogFile.txt
+echo.>>templogFile.txt
+Set line2 = "      configuration file "
+echo %line2% > templogFile.txt
+echo.>>templogFile.txt
+Set line3 = "-------------------------------------------------"
+echo %line1% > templogFile.txt
+echo.>>templogFile.txt
+
+Set compilationTag = "compilationTagText"
+SET buildTag = %1
+echo %compilationTag% > templogFile.txt
+echo %buildTag% > templogFile.txt
+
+
+Set mpbTimeLibraryVersion = "mpbTimeLibraryVersion"
+Set mpbTimeLibraryValue = %2
+echo %mpbTimeLibraryVersion% > templogFile.txt
+echo %mpbTimeLibraryValue% > templogFile.txt
+echo.>>templogFile.txt
+
+
+Set mpbMathLibraryVersion = "mpbMathLibraryVersion"
+Set mpbMathLibraryValue = %3
+echo %mpbMathLibraryVersion% > templogFile.txt
+echo %mpbMathLibraryValue% > templogFile.txt
+echo.>>templogFile.txt
+
+
+ren  c:\mpbComponent\configurationManagement\templogFile.txt softwareReleaseDocument_buildNumber_%1_%date:~4,2%-%date:~7,2%-%date:~10,4%_@_%time:~0,2%h%time:~3,2%m%time:~6,2%s%
 
