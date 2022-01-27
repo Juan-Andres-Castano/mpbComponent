@@ -1,6 +1,6 @@
 ﻿###############################################################################
 #
-# IAR ELF Linker V9.10.1.308/W64 for ARM                  25/Jan/2022  11:27:08
+# IAR ELF Linker V9.10.1.308/W64 for ARM                  26/Jan/2022  13:39:07
 # Copyright 2007-2021 IAR Systems AB.
 #
 #    Output file  =  build/test/out/test_mpbTimeBase.out
@@ -195,7 +195,7 @@ command line/config:
     ----------------------------------------------------
     Total:
 
-C:\mpbComponent\mpbTime\UnitTestFramework\build\test\out\c: [1]
+c:\mpbComponent\mpbTime\UnitTestFramework\build\test\out\c: [1]
     mpbTimeBase.o                  158
     test_mpbTimeBase.o           1'414                 1
     test_mpbTimeBase_runner.o    1'032      772
@@ -429,7 +429,7 @@ ulMpbTimeBaseGetSecond        0x63d    0x4  Code  Gb  mpbTimeBase.o [1]
 ulMpbTimeBaseGetTick          0x635    0x4  Code  Gb  mpbTimeBase.o [1]
 
 
-[1] = C:\mpbComponent\mpbTime\UnitTestFramework\build\test\out\c
+[1] = c:\mpbComponent\mpbTime\UnitTestFramework\build\test\out\c
 [2] = dl7M_tlf.a
 [3] = m7M_tl.a
 [4] = rt7M_tl.a
