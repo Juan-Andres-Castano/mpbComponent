@@ -1,4 +1,3 @@
-
 @echo off 
 Rem This is for listing down all the files in the directory Program files 
 Rem cd "C:\ProgramData\Jenkins\.jenkins\workspace\pipelinegitdemo\configurationManagement "
@@ -39,7 +38,7 @@ echo .... >> templogFile.txt
 Rem Set mpbTimeLibraryVersion = "mpbTimeLibraryVersion"
 Rem Set mpbTimeLibraryValue = %2
 
-cd "C:\mpbComponent\mpbComponent\mpbTime\Release"
+cd "C:\mpbComponent\mpbTime\Release"
 set /p Build =< version.txt
 echo %Build%
 
@@ -53,7 +52,7 @@ echo .... >> templogFile.txt
 Rem Set mpbMathLibraryVersion = "mpbMathLibraryVersion"
 Rem Set mpbMathLibraryValue = %3
 
-cd "C:\mpbComponent\mpbComponent\mpbMath\Release"
+cd "C:\mpbComponent\mpbMath\Release"
 set /p mpbTimeVersion =< version.txt
 echo %mpbTimeVersion%
 
@@ -65,4 +64,3 @@ Rem echo.>>templogFile.txt
 
 
 ren  c:\mpbComponent\configurationManagement\templogFile.txt softwareReleaseDocument_buildNumber_%1_%date:~4,2%-%date:~7,2%-%date:~10,4%_@_%time:~0,2%h%time:~3,2%m%time:~6,2%s%.txt
-
