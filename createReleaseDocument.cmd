@@ -38,15 +38,28 @@ echo .... >> templogFile.txt
 
 Rem Set mpbTimeLibraryVersion = "mpbTimeLibraryVersion"
 Rem Set mpbTimeLibraryValue = %2
+
+cd "C:\mpbComponent\mpbComponent\mpbTime\Release"
+set /p Build =< version.txt
+echo %Build%
+
+
+
 echo mpbTimeLibraryVersion >> templogFile.txt
-echo %2 >> templogFile.txt
+echo %Build% >> templogFile.txt
 echo .... >> templogFile.txt
 
 
 Rem Set mpbMathLibraryVersion = "mpbMathLibraryVersion"
 Rem Set mpbMathLibraryValue = %3
+
+cd "C:\mpbComponent\mpbComponent\mpbMath\Release"
+set /p mpbTimeVersion =< version.txt
+echo %mpbTimeVersion%
+
+
 echo mpbMathLibraryVersion >> templogFile.txt
-echo %3 >> templogFile.txt
+echo %mpbTimeVersion% >> templogFile.txt
 echo .... >> templogFile.txt
 Rem echo.>>templogFile.txt
 
