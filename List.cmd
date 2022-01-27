@@ -19,7 +19,10 @@ ceedling
 
 Rem cd "C:\ProgramData\Jenkins\.jenkins\workspace\pipelinegitdemo\mpbTime\unittestframework\build\artifacts\test"
 
-copy  C:\mpbComponent\mpbTime\UnitTestFramework\build\artifacts\test\report.xml c:\mpbComponent\configurationManagement\report_mpbTime.xml
+xcopy  "C:\mpbComponent\mpbTime\UnitTestFramework\build\artifacts\test\*.*" "c:\mpbComponent\configurationManagement\." /i /e
+
+ren  c:\mpbComponent\configurationManagement\report.xml report_mpbTime.xml
+
 
 echo "The program has completed"
 
