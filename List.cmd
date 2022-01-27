@@ -13,7 +13,7 @@ Rem cd "C:\ProgramData\Jenkins\.jenkins\workspace\pipelinegitdemo\mpbTime\unitte
 echo "executing unit testing....."
 
 cd  "c:\mpbComponent\mpbTime\unittestframework\" 
-ceedling test:all
+ceedling 
 
 
 
