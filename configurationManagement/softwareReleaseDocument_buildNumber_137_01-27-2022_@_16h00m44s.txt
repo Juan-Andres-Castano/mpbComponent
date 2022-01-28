@@ -1,0 +1,12 @@
+----------------------------------------- 
+      configuration file  
+----------------------------------------- 
+compilationTag :  
+137 
+.... 
+mpbTimeLibraryVersion 
+ 1.00 
+.... 
+mpbMathLibraryVersion 
+ 1.01 
+.... 

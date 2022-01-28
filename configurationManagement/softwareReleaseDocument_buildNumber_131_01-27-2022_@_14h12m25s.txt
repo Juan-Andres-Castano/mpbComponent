@@ -1,0 +1,12 @@
+----------------------------------------- 
+      configuration file  
+----------------------------------------- 
+compilationTag :  
+131 
+.... 
+mpbTimeLibraryVersion 
+ECHO is off.
+.... 
+mpbMathLibraryVersion 
+ECHO is off.
+.... 
