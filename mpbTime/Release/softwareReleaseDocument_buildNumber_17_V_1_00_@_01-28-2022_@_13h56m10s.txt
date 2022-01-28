@@ -1,69 +1,3 @@
------------------------------------------ 
-      configuration file  
------------------------------------------ 
-compilationTag :  
-1 
-.... 
-mpbTimeLibraryVersion 
-1.00 
-.... 
-mpbMathLibraryVersion 
-ECHO is off.
-.... 
------------------------------------------ 
-      configuration file  
------------------------------------------ 
-compilationTag :  
-1 
-.... 
-mpbTimeLibraryVersion 
-1.00 
-.... 
-mpbMathLibraryVersion 
-ECHO is off.
-.... 
------------------------------------------ 
-      configuration file  
------------------------------------------ 
-compilationTag :  
-1 
-.... 
------------------------------------------ 
-      configuration file  
------------------------------------------ 
-compilationTag :  
-1 
-.... 
------------------------------------------ 
-      configuration file  
------------------------------------------ 
-compilationTag :  
-1 
-.... 
------------------------------------------ 
-      configuration file  
------------------------------------------ 
-compilationTag :  
-1 
-.... 
------------------------------------------ 
-      configuration file  
------------------------------------------ 
-compilationTag :  
-1 
-.... 
------------------------------------------ 
-      configuration file  
------------------------------------------ 
-compilationTag :  
-1 
-.... 
------------------------------------------ 
-      configuration file  
------------------------------------------ 
-compilationTag :  
-1 
-.... 
  :////////-        `://////:`     ://///////////////////:.      -/////////////::-`                 
  -ssssssssss-       /ssssssss/    `osssssssssssssssssosssss+`    ssssssssssssssssss+-               
  -sssssssssso.     `osssssssss:    -sssssssoo++////+++osssss+`   ssssssssssssssssssss+`             
@@ -83,3 +17,9 @@ compilationTag :
  `:://:+s:          ``...`     -ssssssss-    .osssssss:          ssssssssssssssssssssssso.          
  `++:/sss-      `....`          :sssssss+     -osssssso          +sssssssssssssssssssso:`           
    `..-.`     ````               `......`       ......            `.................``              
+----------------------------------------- 
+      configuration file  
+----------------------------------------- 
+compilationTag :  
+17 
+.... 
