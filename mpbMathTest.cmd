@@ -17,7 +17,7 @@ echo "executing unit testing....."
 Rem cd  "c:\mpbComponent\mpbTime\unittestframework\" 
 Rem del c:\mpbComponent\configurationManagement\report.xml
 
-
+color 0f
 
 xcopy  "C:\mpbComponent\mpbTime\UnitTestFramework\build\artifacts\test\*.*" "c:\mpbComponent\configurationManagement\." /i /e 
 

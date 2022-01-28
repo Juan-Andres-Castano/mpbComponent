@@ -31,60 +31,13 @@ echo  `++:/sss-      `....`          :sssssss+     -osssssso          +sssssssss
 echo    `..-.`     ````               `......`       ......            `.................``             
 
 
+pause
+cd "C:\mpbComponent\mpbtime"
 
-cd "C:\mpbComponent\configurationManagement"
-Rem break > softwareReleaseDocument_buildNumber_%1_%date:~4,2%-%date:~7,2%-%date:~10,4%_@_%time:~0,2%h%time:~3,2%m%time:~6,2%s%
-
-break > templogFile.txt
-
-echo " creating configuration file .. "
-
-Rem Set line1 = "-------------------------------------------------"
-Rem echo"----" %line1% > templogFile.txt
-echo ----------------------------------------- >> templogFile.txt
-
-Rem echo.>>templogFile.txt
-
-
-Rem Set line2 = "      configuration file "
-echo       configuration file  >> templogFile.txt
-echo ----------------------------------------- >> templogFile.txt
-
-
-
-
-Rem Set compilationTag = "compilationTagText"
-Rem SET buildTag = %1
-echo compilationTag :  >> templogFile.txt
-echo %1 >> templogFile.txt
-echo .... >> templogFile.txt
-
-
-
-Rem Set mpbTimeLibraryVersion = "mpbTimeLibraryVersion"
-Rem Set mpbTimeLibraryValue = %2
-
-Rem cd "C:\mpbComponent\mpbTime\Release\"
-cd "C:\mpbComponent\mpbMath\Release\"
-
-SET var=
-
-for /f "delims=" %%i in (version.txt) do call :setVar %%i
-echo final var = %var%
-goto exit
-
-:exit
-
- 
-
-Rem set /p Build =< version.txt
-Rem echo %Build%
-Rem dir
-
+mpbTime.bat
+pause
 
 cd "C:\mpbComponent\mpbTime\Release\"
-Rem dir
-
 
 SET var1=
 
@@ -94,48 +47,23 @@ goto exit1
 
 :exit1
 
- 
 
-Rem set /p out =< version.txt
-Rem echo %Build1%
+pause
+xcopy  "C:\mpbComponent\mpbTime\Objects\mpbTime.lib" "c:\mpbComponent\mpbTimeRelease\." /i /e 
 
-Rem dir
-Rem pause
+pause
 
+set d=%date:~-4,4%-%date:~-7,2%-%date:~0,2%
+set d=%d: =_%
+set t=%time:~0,2%h%time:~3,2%m%
+set t=%t: =0%
+::time:~6,2%s%
 
+Rem RENAME "W:\TEST.TXT" "TEST_%d%_%t%.TXT"
+Rem ren c:\mpbComponent\configurationManagement\report.xml report_%1_%d%_%t%.xml
 
-cd "C:\mpbComponent\configurationManagement"
-
-
-echo mpbTimeLibraryVersion >> templogFile.txt
-echo %var1% >> templogFile.txt
-echo .... >> templogFile.txt
-
-
-
-Rem Set mpbMathLibraryVersion = "mpbMathLibraryVersion"
-Rem Set mpbMathLibraryValue = %3
-
-
-
-Rem dir
-Rem pause
-
-cd "C:\mpbComponent\configurationManagement"
-echo mpbMathLibraryVersion >> templogFile.txt
-echo %var% >> templogFile.txt
-echo .... >> templogFile.txt
-Rem echo.>>templogFile.txt
-
-
-
-ren  c:\mpbComponent\configurationManagement\templogFile.txt softwareReleaseDocument_buildNumber_%1_%date:~4,2%-%date:~7,2%-%date:~10,4%_@_%time:~0,2%h%time:~3,2%m%time:~6,2%s%.txt
-
-
-
-:SetVar
-Set var=%var% %1%
-goto :eof
+ren c:\mpbComponent\mpbTime\Release\mpbTime.lib mpbTime_%1_%var1%_%date:~4,2%-%date:~7,2%-%date:~10,4%_@_%t%.xml
+pause
 
 :SetVar1
 Set var1=%var1% %1%
