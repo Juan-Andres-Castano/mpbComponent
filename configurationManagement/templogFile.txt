@@ -25,3 +25,6 @@ ECHO is off.
 mpbMathLibraryVersion 
 ECHO is off.
 .... 
+mpbMathLibraryVersion 
+ECHO is off.
+.... 

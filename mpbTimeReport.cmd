@@ -19,7 +19,7 @@ Rem del c:\mpbComponent\configurationManagement\report.xml
 
 color 0f
 
-xcopy  "C:\mpbComponent\mpbTime\UnitTestFramework\build\artifacts\test\*.*" "c:\mpbComponent\mpbTime\reports\." /i /e 
+xcopy  "C:\mpbComponent\mpbTime\UnitTestFramework\build\artifacts\test\*.*" "c:\mpbComponent\mpbTime\Tests\reports\." /i /e 
 
 
 
@@ -31,7 +31,7 @@ set t=%t: =0%
 Rem RENAME "W:\TEST.TXT" "TEST_%d%_%t%.TXT"
 Rem ren c:\mpbComponent\configurationManagement\report.xml report_%1_%d%_%t%.xml
 
-ren c:\mpbComponent\mpbTime\reports\report.xml report_mpbTime_%1_%date:~4,2%-%date:~7,2%-%date:~10,4%_@_%t%.xml
+ren c:\mpbComponent\mpbTime\Tests\reports\report.xml report_mpbTime_%1_%date:~4,2%-%date:~7,2%-%date:~10,4%_@_%t%.xml
 Rem %time:~0,2%h%time:~3,2%m%.xml 
 Rem %time:~0,2%h%time:~3,2%m%time:~6,2%s%.xml
 Rem report_mpbTime_%1_%date:~4,2%-%date:~7,2%-%date:~10,4%_@_%time:~0,2%h%time:~3,2%m%time:~6,2%s%.xml
