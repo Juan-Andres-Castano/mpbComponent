@@ -18,9 +18,10 @@ xcopy  "C:\mpbComponent\mpbTime\UnitTestFramework\build\artifacts\test\*.*" "c:\
 
 ren  c:\mpbComponent\configurationManagement\report.xml report_mpbTime_%1_-%date:~4,2%-%date:~7,2%-%date:~10,4%_@_%time:~0,2%h%time:~3,2%m%time:~6,2%s%.xml
  
-
+del c:\mpbComponent\configurationManagement\report.xml
 Rem cd  "c:\mpbComponent\mpbMath\unittestframework\" 
 Rem ceedling test:all
+
 
 cd  "c:\mpbComponent\mpbTime\unittestframework\" 
 ceedling 
