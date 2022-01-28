@@ -15,7 +15,7 @@ Rem break > softwareReleaseDocument_buildNumber_%1_%date:~4,2%-%date:~7,2%-%date
 
 break > templogFile.txt
 
-
+echo " creating configuration file .. "
 
 Rem Set line1 = "-------------------------------------------------"
 Rem echo"----" %line1% > templogFile.txt
@@ -29,11 +29,15 @@ echo       configuration file  >> templogFile.txt
 echo ----------------------------------------- >> templogFile.txt
 
 
+
+
 Rem Set compilationTag = "compilationTagText"
 Rem SET buildTag = %1
 echo compilationTag :  >> templogFile.txt
 echo %1 >> templogFile.txt
 echo .... >> templogFile.txt
+
+
 
 Rem Set mpbTimeLibraryVersion = "mpbTimeLibraryVersion"
 Rem Set mpbTimeLibraryValue = %2
@@ -49,15 +53,16 @@ goto exit
 
 :exit
 
+ 
 
 Rem set /p Build =< version.txt
 Rem echo %Build%
 Rem dir
-Rem pause
+
 
 cd "C:\mpbComponent\mpbTime\Release\"
 Rem dir
-Rem pause
+
 
 SET var1=
 
@@ -67,6 +72,7 @@ goto exit1
 
 :exit1
 
+ 
 
 Rem set /p out =< version.txt
 Rem echo %Build1%
@@ -84,6 +90,7 @@ echo %var1% >> templogFile.txt
 echo .... >> templogFile.txt
 
 
+
 Rem Set mpbMathLibraryVersion = "mpbMathLibraryVersion"
 Rem Set mpbMathLibraryValue = %3
 
@@ -99,7 +106,9 @@ echo .... >> templogFile.txt
 Rem echo.>>templogFile.txt
 
 
+
 ren  c:\mpbComponent\configurationManagement\templogFile.txt softwareReleaseDocument_buildNumber_%1_%date:~4,2%-%date:~7,2%-%date:~10,4%_@_%time:~0,2%h%time:~3,2%m%time:~6,2%s%.txt
+
 
 
 :SetVar
