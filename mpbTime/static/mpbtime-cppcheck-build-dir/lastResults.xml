@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.6"/>
+    <errors>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;eMpbTimeBaseInit&amp;#039; is never used." verbose="The function &amp;#039;eMpbTimeBaseInit&amp;#039; is never used." cwe="561" sinceDate="1/31/2022">
+            <location file="..\Sources\mpbTimeBase.c" line="46"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;eMpbTimeBaseIsDelayDone&amp;#039; is never used." verbose="The function &amp;#039;eMpbTimeBaseIsDelayDone&amp;#039; is never used." cwe="561" sinceDate="1/31/2022">
+            <location file="..\Sources\mpbTimeBase.c" line="124"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;eMpbTimeBaseTick&amp;#039; is never used." verbose="The function &amp;#039;eMpbTimeBaseTick&amp;#039; is never used." cwe="561" sinceDate="1/31/2022">
+            <location file="..\Sources\mpbTimeBase.c" line="65"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ulMpbTimeBaseGetHour&amp;#039; is never used." verbose="The function &amp;#039;ulMpbTimeBaseGetHour&amp;#039; is never used." cwe="561" sinceDate="1/31/2022">
+            <location file="..\Sources\mpbTimeBase.c" line="118"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ulMpbTimeBaseGetMinute&amp;#039; is never used." verbose="The function &amp;#039;ulMpbTimeBaseGetMinute&amp;#039; is never used." cwe="561" sinceDate="1/31/2022">
+            <location file="..\Sources\mpbTimeBase.c" line="112"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ulMpbTimeBaseGetMs&amp;#039; is never used." verbose="The function &amp;#039;ulMpbTimeBaseGetMs&amp;#039; is never used." cwe="561" sinceDate="1/31/2022">
+            <location file="..\Sources\mpbTimeBase.c" line="100"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ulMpbTimeBaseGetSecond&amp;#039; is never used." verbose="The function &amp;#039;ulMpbTimeBaseGetSecond&amp;#039; is never used." cwe="561" sinceDate="1/31/2022">
+            <location file="..\Sources\mpbTimeBase.c" line="106"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ulMpbTimeBaseGetTick&amp;#039; is never used." verbose="The function &amp;#039;ulMpbTimeBaseGetTick&amp;#039; is never used." cwe="561" sinceDate="1/31/2022">
+            <location file="..\Sources\mpbTimeBase.c" line="94"/>
+        </error>
+    </errors>
+</results>
