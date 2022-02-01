@@ -31,8 +31,7 @@ echo  `++:/sss-      `....`          :sssssss+     -osssssso          +sssssssss
 echo    `..-.`     ````               `......`       ......            `.................``             
 
 
-cd "C:\program files(x86)\sourcemonitor"
 
-sourcemonitor /C "C:\mpbComponent\mpbTime\complexity\mpbtime_%1.xml"
+sourcemonitor /C "C:\mpbComponent\mpbTime\complexity\mpbtime.xml" /L "C:\mpbComponent\mpbTime\complexity\mpbtime.log"
+
  
-
