@@ -1,0 +1,61 @@
+[01Feb2022 12:45:42] ****** SourceMonitor (V3.5.16.49): Begin Session
+[01Feb2022 12:45:42] Command Line Option: Process '/C "c:\mpbcomponent\mpbtime\complexity\mpbtime.xml" /L "C:\mpbcomponent\mpbtime\complexity\mpbtime.log"'
+[01Feb2022 12:45:42] Command File: Process Command File 'c:\mpbcomponent\mpbtime\complexity\mpbtime.xml'
+[01Feb2022 12:45:42] Command File: Process Commands [Line 9]
+[01Feb2022 12:45:42] Command File: Execute Command [Line 41]
+[01Feb2022 12:45:42] Command File: Open Project 'C:\mpbComponent\mpbtime\complexity\mpbTimeComplex.smp'
+[01Feb2022 12:45:42] Create Checkpoint: Search for checkpoint files using base directory 'C:\mpbcomponent\mpbtime\sources\'.
+[01Feb2022 12:45:42] Command File: Create Checkpoint 'Baseline' dated '2022-01-31T12:24:56'
+[01Feb2022 12:45:42] Command File: Export Checkpoint Summary to XML
+[01Feb2022 12:45:42] Export Metrics: Begin XML Summary export to file 'C:\mpbcomponent\mpbtime\complexity\dump.xml'.
+[01Feb2022 12:45:42] Export Metrics: Export Checkpoint 'Baseline'
+[01Feb2022 12:45:42] Export Metrics: End Export Checkpoint Summary to XML
+[01Feb2022 12:45:42] Command File: End Export
+[01Feb2022 12:45:42] Command File: End Command Execution
+[01Feb2022 12:45:42] Command File: Execute Command [Line 258]
+[01Feb2022 12:45:42] Command File: Open Project 'C:\mpbComponent\mpbtime\complexity\mpbTimeComplex.smp'
+[01Feb2022 12:45:42] Create Checkpoint: Search for checkpoint files using base directory 'C:\mpbcomponent\mpbtime\sources\'.
+[01Feb2022 12:45:42] Command File: Create Checkpoint 'Checkpoint15' dated '2022-02-01T12:45:42'
+[01Feb2022 12:45:42] Command File: Export Checkpoint Details to XML
+[01Feb2022 12:45:42] Export Metrics: Begin XML Details export to file 'C:\mpbComponent\mpbtime\complexity\dump.xml'.
+[01Feb2022 12:45:42] Export Metrics: Export Checkpoint 'Checkpoint15'
+[01Feb2022 12:45:42] Export Metrics: End Export Checkpoint Details to XML
+[01Feb2022 12:45:42] Command File: End Export
+[01Feb2022 12:45:42] Command File: Checkpoint 'Checkpoint15' deleted
+[01Feb2022 12:45:42] Command File: End Command Execution
+[01Feb2022 12:45:42] Command File: Execute Command [Line 336]
+[01Feb2022 12:45:42] Command File: Open Project 'C:\mpbComponent\mpbtime\complexity\mpbTimeComplex.smp'
+[01Feb2022 12:45:42] Create Checkpoint: Search for checkpoint files using base directory 'C:\mpbcomponent\mpbtime\sources\'.
+[01Feb2022 12:45:42] Command File: Create Checkpoint 'Alpha One' dated '2022-02-01T12:45:42'
+[01Feb2022 12:45:42] Command File: Export Checkpoint Details to CSV
+[01Feb2022 12:45:42] Export Metrics: Begin CSV export to file 'C:\mpbComponent\mpbtime\complexity\dump.txt'.
+[01Feb2022 12:45:42] Export Metrics: Export Checkpoint 'Alpha One'
+[01Feb2022 12:45:42] Export Metrics: End Export Checkpoint Details to CSV
+[01Feb2022 12:45:42] Command File: End Export
+[01Feb2022 12:45:42] Command File: End Command Execution
+[01Feb2022 12:45:42] Command File: Execute Command [Line 368]
+[01Feb2022 12:45:42] Command File: Open Project 'C:\mpbComponent\mpbtime\complexity\mpbTimeComplex.smp'
+[01Feb2022 12:45:42] Command File: Export Checkpoint Details to XML
+[01Feb2022 12:45:42] Export Metrics: Begin XML Details export to file 'C:\mpbComponent\mpbtime\complexity\dump.txt'.
+[01Feb2022 12:45:42] Export Metrics: Export Checkpoint 'Alpha One'
+[01Feb2022 12:45:42] Export Metrics: Export Checkpoint 'Checkpoint14'
+[01Feb2022 12:45:42] Export Metrics: Export Checkpoint 'Checkpoint13'
+[01Feb2022 12:45:42] Export Metrics: Export Checkpoint 'Checkpoint12'
+[01Feb2022 12:45:42] Export Metrics: Export Checkpoint 'Checkpoint11'
+[01Feb2022 12:45:42] Export Metrics: Export Checkpoint 'Checkpoint10'
+[01Feb2022 12:45:42] Export Metrics: Export Checkpoint 'Checkpoint9'
+[01Feb2022 12:45:42] Export Metrics: Export Checkpoint 'Checkpoint8'
+[01Feb2022 12:45:42] Export Metrics: Export Checkpoint 'Checkpoint7'
+[01Feb2022 12:45:42] Export Metrics: Export Checkpoint 'Checkpoint6'
+[01Feb2022 12:45:42] Export Metrics: Export Checkpoint 'Checkpoint5'
+[01Feb2022 12:45:42] Export Metrics: Export Checkpoint 'Checkpoint4'
+[01Feb2022 12:45:42] Export Metrics: Export Checkpoint 'Checkpoint3'
+[01Feb2022 12:45:42] Export Metrics: Export Checkpoint 'Checkpoint2'
+[01Feb2022 12:45:42] Export Metrics: Export Checkpoint 'Checkpoint1'
+[01Feb2022 12:45:42] Export Metrics: Export Checkpoint 'Baseline'
+[01Feb2022 12:45:42] Export Metrics: End Export Checkpoint Details to XML
+[01Feb2022 12:45:42] Command File: End Export
+[01Feb2022 12:45:42] Command File: End Command Execution
+[01Feb2022 12:45:42] Command File: End Commands
+[01Feb2022 12:45:42] Command File: End Command File Processing
+[01Feb2022 12:45:42] ****** SourceMonitor (V3.5.16.49): ****** End Session
