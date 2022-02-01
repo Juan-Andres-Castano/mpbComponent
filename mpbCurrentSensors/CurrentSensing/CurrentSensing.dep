@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>1916635212</fileChecksum>
+    <configuration>
+        <name>CurrentSensingCortexM0</name>
+        <outputs>
+            <file>$PROJ_DIR$\CurrentSensingCortexM0\Obj\CurrentSensing.pbd</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMath.h</file>
+            <file>$PROJ_DIR$\CurrentSensingCortexM0\Obj\CurrentSensing.__cstat.et</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathAverage.h</file>
+            <file>$PROJ_DIR$\CurrentSensingCortexM0\Exe\nepCurrentSensingCortexM0.a</file>
+            <file>$PROJ_DIR$\Tests\test_CurrentSensing.c</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathRound.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$PROJ_DIR$\Includes\CurrentSensing.h</file>
+            <file>$PROJ_DIR$\Tests\test_CurrentSensing.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\commun\V100\neplibs.h</file>
+            <file>$PROJ_DIR$\Sources\CurrentSensing.c</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathLinearApprox.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathCrc.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathParity.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathAbsolute.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathDebounce.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\iar_intrinsics_common.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathResistor.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathCoerce.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$PROJ_DIR$\CurrentSensingCortexM0\Obj\CurrentSensing.o</file>
+            <file>$PROJ_DIR$\CurrentSensingCortexM0\Obj\CurrentSensing.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathOpAmp.h</file>
+            <file>$PROJ_DIR$\CurrentSensingCortexM0\Exe\CurrentSensing.out</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathFifo.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathDivision.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathCrcUtil.h</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\Sources\CurrentSensing.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 30</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 31</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 2</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 8 10 39 38 32 17 19 21 25 22 29 16 13 15 7 28 24 1 20 3 27 14 23 37 36 12 33 26 6 18</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 21 10 37 35 32 38 25 19 22 3 26 1 39 16 15 7 17 29 24 14 12 18 40 8 13 28 20 27 23 36 33 6</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 34</file>
+                </tool>
+                <tool>
+                    <name>IARCHIVE</name>
+                    <file> 4</file>
+                </tool>
+            </outputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\Tests\test_CurrentSensing.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>CurrentSensingCortexM0+</name>
+        <outputs>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMath.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathAverage.h</file>
+            <file>$PROJ_DIR$\Tests\test_CurrentSensing.c</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathRound.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$PROJ_DIR$\Includes\CurrentSensing.h</file>
+            <file>$PROJ_DIR$\Tests\test_CurrentSensing.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\commun\V100\neplibs.h</file>
+            <file>$PROJ_DIR$\Sources\CurrentSensing.c</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathLinearApprox.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathCrc.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathParity.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathAbsolute.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathDebounce.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\iar_intrinsics_common.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathResistor.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathCoerce.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathOpAmp.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathFifo.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathDivision.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\CurrentSensingCortexM0+\Obj\CurrentSensing.pbi</file>
+            <file>$PROJ_DIR$\CurrentSensingCortexM0+\Obj\CurrentSensing.o</file>
+            <file>$PROJ_DIR$\CurrentSensingCortexM0+\Exe\nepCurrentSensingCortexM0+.a</file>
+            <file>$PROJ_DIR$\CurrentSensingCortexM0+\Obj\CurrentSensing.__cstat.et</file>
+            <file>$PROJ_DIR$\CurrentSensingCortexM0+\Obj\CurrentSensing.pbd</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathCrcUtil.h</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\Sources\CurrentSensing.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 35</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 34</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 37</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 5 7 33 32 27 14 16 18 22 19 26 13 10 12 4 25 21 0 17 1 24 11 39 20 31 30 9 28 23 3 15</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 18 7 31 29 27 32 22 16 19 1 23 0 33 13 12 4 14 26 21 11 9 15 39 5 10 25 17 24 20 30 28 3</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>IARCHIVE</name>
+                    <file> 36</file>
+                </tool>
+            </outputs>
+        </file>
+    </configuration>
+    <configuration>
+        <name>CurrentSensingCortexM3</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+</project>

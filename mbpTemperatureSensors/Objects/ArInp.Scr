@@ -1,0 +1,4 @@
+--create .\Objects\mpbTemperatureSensors.lib
+.\objects\thermistor.o
+.\objects\thermistorcircuit.o
+.\objects\thermistorcircuitutil.o

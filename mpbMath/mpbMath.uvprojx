@@ -388,6 +388,26 @@
               <FileType>5</FileType>
               <FilePath>.\Includes\mpbMathDebounce.h</FilePath>
             </File>
+            <File>
+              <FileName>nepMathCrc.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Includes\nepMathCrc.h</FilePath>
+            </File>
+            <File>
+              <FileName>nepMathCrcUtil.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Includes\nepMathCrcUtil.h</FilePath>
+            </File>
+            <File>
+              <FileName>nepMathFifo.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Includes\nepMathFifo.h</FilePath>
+            </File>
+            <File>
+              <FileName>nepMathRound.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Includes\nepMathRound.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -397,6 +417,21 @@
               <FileName>mpbMathDebounce.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Sources\mpbMathDebounce.c</FilePath>
+            </File>
+            <File>
+              <FileName>nepMathCrc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Sources\nepMathCrc.c</FilePath>
+            </File>
+            <File>
+              <FileName>nepMathCrcUtil.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Sources\nepMathCrcUtil.c</FilePath>
+            </File>
+            <File>
+              <FileName>nepMathFifo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Sources\nepMathFifo.c</FilePath>
             </File>
           </Files>
         </Group>

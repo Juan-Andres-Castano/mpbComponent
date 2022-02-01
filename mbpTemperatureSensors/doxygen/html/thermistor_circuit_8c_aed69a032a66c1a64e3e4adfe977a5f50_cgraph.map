@@ -1,0 +1,5 @@
+<map id="eThermistorCircuitGetThermistance" name="eThermistorCircuitGetThermistance">
+<area shape="rect" id="node1" title="Allows to get the thermistance from the base circuit." alt="" coords="5,13,232,39"/>
+<area shape="rect" id="node2" href="$thermistor_circuit_util_8h.html#adf006a51b592cc8a298bc15605f89c7b" title="Get the temperature from the resistor measured and beta coefficient of thermistor." alt="" coords="280,5,447,47"/>
+<area shape="rect" id="node3" href="$thermistor_8h.html#a8180a10e615b64caaf0387afe7d385fb" title="Get the voltage of the thermistor input in mV." alt="" coords="495,13,675,39"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Components/mbpTemperatureSensors/Thermistor/Includes/thermistorCircuit.h" name="Components/mbpTemperatureSensors/Thermistor/Includes/thermistorCircuit.h">
+<area shape="rect" id="node1" title="thermistorCircuit header file." alt="" coords="141,5,337,61"/>
+<area shape="rect" id="node2" href="$thermistor_circuit_util_8h.html" title=" " alt="" coords="141,109,337,165"/>
+<area shape="rect" id="node3" href="$thermistor_circuit_8c.html" title=" " alt="" coords="5,213,201,269"/>
+<area shape="rect" id="node5" href="$thermistor_8c.html" title="Find the temperature readings according to a given temperature table and thermistor circuit." alt="" coords="361,109,557,165"/>
+<area shape="rect" id="node4" href="$thermistor_circuit_util_8c.html" title=" " alt="" coords="225,213,421,269"/>
+</map>

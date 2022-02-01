@@ -1,0 +1,7 @@
+<map id="eThermistorGetTemperatureBeta" name="eThermistorGetTemperatureBeta">
+<area shape="rect" id="node1" title="Get the temperature from the resistor measured and beta coefficient of thermistor." alt="" coords="5,38,216,65"/>
+<area shape="rect" id="node2" href="$thermistor_circuit_8h.html#aed69a032a66c1a64e3e4adfe977a5f50" title="Allows to get the thermistance from the base circuit." alt="" coords="264,13,491,39"/>
+<area shape="rect" id="node5" href="$thermistor_8h.html#a7ebea4cdaf41d4c999eb778f248c8941" title="Calculate the log of a double for beta calculation." alt="" coords="304,63,451,90"/>
+<area shape="rect" id="node3" href="$thermistor_circuit_util_8h.html#adf006a51b592cc8a298bc15605f89c7b" title="Get the temperature from the resistor measured and beta coefficient of thermistor." alt="" coords="539,5,705,47"/>
+<area shape="rect" id="node4" href="$thermistor_8h.html#a8180a10e615b64caaf0387afe7d385fb" title="Get the voltage of the thermistor input in mV." alt="" coords="753,13,933,39"/>
+</map>

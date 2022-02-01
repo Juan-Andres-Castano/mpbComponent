@@ -1,0 +1,91 @@
+\doxysection{Components/mbp\+Temperature\+Sensors/\+Thermistor/\+Sources/thermistor\+Circuit\+Util.c File Reference}
+\label{thermistor_circuit_util_8c}\index{Components/mbpTemperatureSensors/Thermistor/Sources/thermistorCircuitUtil.c@{Components/mbpTemperatureSensors/Thermistor/Sources/thermistorCircuitUtil.c}}
+
+
+~\newline
+  
+
+
+{\ttfamily \#include \char`\"{}thermistor\+Circuit\+Util.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mpb\+Math.\+h\char`\"{}}\newline
+Include dependency graph for thermistor\+Circuit\+Util.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{thermistor_circuit_util_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+e\+Mpb\+Error\+\_\+t \textbf{ e\+Thermistor\+Circuit\+Util\+Get\+Thermistance\+Value} (handle\+\_\+t x\+Stream, x\+Thermistor\+Circuit\+Config\+\_\+t x\+Thermistor\+Circuit\+Config, uint32\+\_\+t $\ast$pul\+Thermistance)
+\begin{DoxyCompactList}\small\item\em Get the temperature from the resistor measured and beta coefficient of thermistor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+~\newline
+ 
+
+\begin{DoxyAuthor}{Author}
+juan 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Created on 2021-\/3-\/9 
+\end{DoxyDate}
+\begin{DoxyNote}{Note}
+
+\end{DoxyNote}
+\begin{DoxyCopyright}{Copyright}
+MPB, Montreal, Qc \doxysubsubsection*{\begin{center}\copyright{} COPYRIGHT 2021 MPB, Montreal, Quebec, Canada\end{center} }
+\end{DoxyCopyright}
+\doxysubsubsection*{\begin{center}\copyright{} All rights reserved.\end{center} }
+
+~\newline
+~\newline
+ \begin{center}This document contains confidential and proprietary information of MPB (subject to a non-\/disclosure agreement) and shall\end{center}  \begin{center}not be disclosed, distributed, or reproduced in whole or in part, without the prior written authorization of MPB.\end{center}  
+
+\doxysubsection{Function Documentation}
+\mbox{\label{thermistor_circuit_util_8c_adf006a51b592cc8a298bc15605f89c7b}} 
+\index{thermistorCircuitUtil.c@{thermistorCircuitUtil.c}!eThermistorCircuitUtilGetThermistanceValue@{eThermistorCircuitUtilGetThermistanceValue}}
+\index{eThermistorCircuitUtilGetThermistanceValue@{eThermistorCircuitUtilGetThermistanceValue}!thermistorCircuitUtil.c@{thermistorCircuitUtil.c}}
+\doxysubsubsection{eThermistorCircuitUtilGetThermistanceValue()}
+{\footnotesize\ttfamily e\+Mpb\+Error\+\_\+t e\+Thermistor\+Circuit\+Util\+Get\+Thermistance\+Value (\begin{DoxyParamCaption}\item[{handle\+\_\+t}]{x\+Stream,  }\item[{x\+Thermistor\+Circuit\+Config\+\_\+t}]{x\+Thermistor\+Circuit\+Config,  }\item[{uint32\+\_\+t $\ast$}]{pul\+Thermistance }\end{DoxyParamCaption})}
+
+
+
+Get the temperature from the resistor measured and beta coefficient of thermistor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x\+Stream} & Application specific peripheral channel identifier \\
+\hline
+\mbox{\texttt{ in}}  & {\em x\+Thermistor\+Circuit\+Config} & The circuit configuration structure \\
+\hline
+\mbox{\texttt{ out}}  & {\em pul\+Thermistance} & Pointer to a variable where to save the resistance read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Success or library error message 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Temperature precision is to the hundredths 
+\end{DoxyNote}
+
+
+Definition at line 29 of file thermistor\+Circuit\+Util.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{thermistor_circuit_util_8c_adf006a51b592cc8a298bc15605f89c7b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{thermistor_circuit_util_8c_adf006a51b592cc8a298bc15605f89c7b_icgraph}
+\end{center}
+\end{figure}

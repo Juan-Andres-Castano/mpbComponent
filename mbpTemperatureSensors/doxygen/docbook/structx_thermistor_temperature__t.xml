@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structx_thermistor_temperature__t" xml:lang="en-US">
+<title>xThermistorTemperature_t Struct Reference</title>
+<indexterm><primary>xThermistorTemperature_t</primary></indexterm>
+<para>
+
+<para>Structure to associate a temperature to a resistance. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;thermistor.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para>uint32_t <link linkend="_structx_thermistor_temperature__t_1a139c20c722ce0ff259795529e569b7f6">ulResistance</link></para>
+</listitem>
+            <listitem><para>int16_t <link linkend="_structx_thermistor_temperature__t_1a6448fbd6389def45908887b538373c9c">ssTemperature</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Structure to associate a temperature to a resistance. </para>
+
+
+
+<para><note><title>Note</title>
+
+<para>Temperature value in hundredths of degree celsius (x100) </para>
+</note>
+</para>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_structx_thermistor_temperature__t_1a6448fbd6389def45908887b538373c9c"/>    <section>
+    <title>ssTemperature</title>
+<indexterm><primary>ssTemperature</primary><secondary>xThermistorTemperature_t</secondary></indexterm>
+<indexterm><primary>xThermistorTemperature_t</primary><secondary>ssTemperature</secondary></indexterm>
+<para><computeroutput>int16_t ssTemperature</computeroutput></para>
+<para>Temperature value in hundredths of degree celsius (x100) </para>
+    </section><anchor xml:id="_structx_thermistor_temperature__t_1a139c20c722ce0ff259795529e569b7f6"/>    <section>
+    <title>ulResistance</title>
+<indexterm><primary>ulResistance</primary><secondary>xThermistorTemperature_t</secondary></indexterm>
+<indexterm><primary>xThermistorTemperature_t</primary><secondary>ulResistance</secondary></indexterm>
+<para><computeroutput>uint32_t ulResistance</computeroutput></para>
+<para>Resistance value in ohms </para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+Thermistor/Includes/<link linkend="_thermistor_8h">thermistor.h</link></section>
+</section>

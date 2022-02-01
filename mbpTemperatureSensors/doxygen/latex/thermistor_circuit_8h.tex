@@ -1,0 +1,90 @@
+\doxysection{Components/mbp\+Temperature\+Sensors/\+Thermistor/\+Includes/thermistor\+Circuit.h File Reference}
+\label{thermistor_circuit_8h}\index{Components/mbpTemperatureSensors/Thermistor/Includes/thermistorCircuit.h@{Components/mbpTemperatureSensors/Thermistor/Includes/thermistorCircuit.h}}
+
+
+thermistor\+Circuit header file.  
+
+
+{\ttfamily \#include \char`\"{}thermistor.\+h\char`\"{}}\newline
+Include dependency graph for thermistor\+Circuit.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{thermistor_circuit_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{thermistor_circuit_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+e\+Mpb\+Error\+\_\+t \textbf{ e\+Thermistor\+Circuit\+Get\+Thermistance} (handle\+\_\+t x\+Stream, x\+Thermistor\+Circuit\+Config\+\_\+t x\+Thermistor\+Circuit\+Config, uint32\+\_\+t $\ast$pul\+Thermistance)
+\begin{DoxyCompactList}\small\item\em Allows to get the thermistance from the base circuit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+thermistor\+Circuit header file. 
+
+\begin{DoxyAuthor}{Author}
+juan 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Created on 2021-\/03-\/09 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+MPB, Montreal, Qc \doxysubsubsection*{\begin{center}\copyright{} COPYRIGHT 2021 MPB, Montreal, Quebec, Canada\end{center} }
+\end{DoxyCopyright}
+\doxysubsubsection*{\begin{center}\copyright{} All rights reserved.\end{center} }
+
+~\newline
+~\newline
+ \begin{center}This document contains confidential and proprietary information of MPB (subject to a non-\/disclosure agreement) and shall\end{center}  \begin{center}not be disclosed, distributed, or reproduced in whole or in part, without the prior written authorization of MPB.\end{center}  
+
+\doxysubsection{Function Documentation}
+\mbox{\label{thermistor_circuit_8h_aed69a032a66c1a64e3e4adfe977a5f50}} 
+\index{thermistorCircuit.h@{thermistorCircuit.h}!eThermistorCircuitGetThermistance@{eThermistorCircuitGetThermistance}}
+\index{eThermistorCircuitGetThermistance@{eThermistorCircuitGetThermistance}!thermistorCircuit.h@{thermistorCircuit.h}}
+\doxysubsubsection{eThermistorCircuitGetThermistance()}
+{\footnotesize\ttfamily e\+Mpb\+Error\+\_\+t e\+Thermistor\+Circuit\+Get\+Thermistance (\begin{DoxyParamCaption}\item[{handle\+\_\+t}]{x\+Stream,  }\item[{x\+Thermistor\+Circuit\+Config\+\_\+t}]{x\+Thermistor\+Circuit\+Config,  }\item[{uint32\+\_\+t $\ast$}]{pul\+Thermistance }\end{DoxyParamCaption})}
+
+
+
+Allows to get the thermistance from the base circuit. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x\+Stream} & Application specific peripheral channel identifier \\
+\hline
+\mbox{\texttt{ in}}  & {\em x\+Thermistor\+Circuit\+Config} & The circuit configuration structure \\
+\hline
+\mbox{\texttt{ out}}  & {\em pul\+Thermistance} & The thermistance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Success or library error message 
+\end{DoxyReturn}
+
+
+Definition at line 29 of file thermistor\+Circuit.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{thermistor_circuit_8h_aed69a032a66c1a64e3e4adfe977a5f50_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{thermistor_circuit_8h_aed69a032a66c1a64e3e4adfe977a5f50_icgraph}
+\end{center}
+\end{figure}

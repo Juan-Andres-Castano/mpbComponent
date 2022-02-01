@@ -1,0 +1,36 @@
+LibraryName: nepDigitalFiltering		Version: v100		ReleaseDate: 30/10/2019
+--------------------------------------------------------------------------------
+General info:
+-Initial Release
+
+Bug fixed:
+
+Feature added:
+
+Other:
+
+Dependencies:
+-neplibs.h
+-nepMath.h
+
+ToDo:
+
+________________________________________________________________________________
+LibraryName: nepDigitalFiltering		Version: v101		ReleaseDate: 14/07/2020
+--------------------------------------------------------------------------------
+General info:
+
+Bug fixed:
+
+Feature added:
+-Added new moving average filter for float datatypes
+
+Other:
+
+Dependencies:
+-neplibs.h
+-nepMath.h
+
+ToDo:
+-Add support for other data types in moving average filter
+________________________________________________________________________________

@@ -1,0 +1,76 @@
+\hypertarget{test___thermistor_8h}{}\doxysection{Thermistor/\+Tests/test\+\_\+\+Thermistor.h File Reference}
+\label{test___thermistor_8h}\index{Thermistor/Tests/test\_Thermistor.h@{Thermistor/Tests/test\_Thermistor.h}}
+
+
+Header file for extern functions mocking.  
+
+
+{\ttfamily \#include \char`\"{}neplibs.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+e\+Nep\+Error\+\_\+t \mbox{\hyperlink{test___thermistor_8h_ac903d8eff273d04b017d0d5c1e19026c}{e\+Thermistor\+Analog\+ReadmV}} (handle\+\_\+t x\+Stream, uint16\+\_\+t $\ast$pus\+Voltage)
+\begin{DoxyCompactList}\small\item\em Get the voltage of the thermistor input in mV. \end{DoxyCompactList}\item 
+e\+Nep\+Error\+\_\+t \mbox{\hyperlink{test___thermistor_8h_abd89ff4056678a9a2a81a99f29386f70}{e\+Thermistor\+Logarithm}} (double d\+Value, double $\ast$pd\+Result)
+\begin{DoxyCompactList}\small\item\em Calculate the log of a double for beta calculation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for extern functions mocking. 
+
+\begin{DoxyAuthor}{Author}
+Mikael Plouffe 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Created on 3/20/2019 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+NEP, Montreal, Qc \doxysubsubsection*{\begin{center}\copyright{} COPYRIGHT 2015 NEP, Montreal, Quebec, Canada\end{center} }
+\end{DoxyCopyright}
+\doxysubsubsection*{\begin{center}\copyright{} All rights reserved.\end{center} }
+
+~\newline
+~\newline
+ \begin{center}This document contains confidential and proprietary information of NEPTRONIC (subject to a non-\/disclosure agreement) and shall\end{center}  \begin{center}not be disclosed, distributed, or reproduced in whole or in part, without the prior written authorization of NEPTRONIC.\end{center}  
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{test___thermistor_8h_ac903d8eff273d04b017d0d5c1e19026c}\label{test___thermistor_8h_ac903d8eff273d04b017d0d5c1e19026c}} 
+\index{test\_Thermistor.h@{test\_Thermistor.h}!eThermistorAnalogReadmV@{eThermistorAnalogReadmV}}
+\index{eThermistorAnalogReadmV@{eThermistorAnalogReadmV}!test\_Thermistor.h@{test\_Thermistor.h}}
+\doxysubsubsection{\texorpdfstring{eThermistorAnalogReadmV()}{eThermistorAnalogReadmV()}}
+{\footnotesize\ttfamily e\+Nep\+Error\+\_\+t e\+Thermistor\+Analog\+ReadmV (\begin{DoxyParamCaption}\item[{handle\+\_\+t}]{x\+Stream,  }\item[{uint16\+\_\+t $\ast$}]{pus\+Voltage }\end{DoxyParamCaption})}
+
+
+
+Get the voltage of the thermistor input in mV. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x\+Stream} & Application specific peripheral channel identifier \\
+\hline
+\mbox{\texttt{ out}}  & {\em pus\+Voltage} & Pointer to store the voltage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Success or library error message 
+\end{DoxyReturn}
+\mbox{\Hypertarget{test___thermistor_8h_abd89ff4056678a9a2a81a99f29386f70}\label{test___thermistor_8h_abd89ff4056678a9a2a81a99f29386f70}} 
+\index{test\_Thermistor.h@{test\_Thermistor.h}!eThermistorLogarithm@{eThermistorLogarithm}}
+\index{eThermistorLogarithm@{eThermistorLogarithm}!test\_Thermistor.h@{test\_Thermistor.h}}
+\doxysubsubsection{\texorpdfstring{eThermistorLogarithm()}{eThermistorLogarithm()}}
+{\footnotesize\ttfamily e\+Nep\+Error\+\_\+t e\+Thermistor\+Logarithm (\begin{DoxyParamCaption}\item[{double}]{d\+Value,  }\item[{double $\ast$}]{pd\+Result }\end{DoxyParamCaption})}
+
+
+
+Calculate the log of a double for beta calculation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em d\+Value} & Value that we want the log of \\
+\hline
+\mbox{\texttt{ out}}  & {\em pd\+Result} & Result of the log \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Success or library error message 
+\end{DoxyReturn}

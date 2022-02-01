@@ -1,0 +1,3 @@
+--create .\Objects\mpbPid.lib
+.\objects\mpbcontrolpid.o
+.\objects\mpbcontrolpidutil.o

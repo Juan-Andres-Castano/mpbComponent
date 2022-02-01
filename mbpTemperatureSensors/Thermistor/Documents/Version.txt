@@ -1,0 +1,18 @@
+LibraryName: nepThermistor		Version: v100			ReleaseDate: 30/10/2019
+--------------------------------------------------------------------------------
+General info:
+-Initial Release
+
+Bug fixed:
+
+Feature added:
+
+Other:
+
+Dependencies:
+-neplibs.h
+-nepMath.h
+
+ToDo:
+
+________________________________________________________________________________

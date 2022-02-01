@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_d55de51b9d77f985a80d96c4367bac9c" xml:lang="en-US">
+<title>Thermistor/Includes Directory Reference</title>
+<indexterm><primary>Thermistor/Includes Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_thermistor_8h">thermistor.h</link></para>
+
+<para>Thermistor header file. </para>
+</listitem>
+            <listitem><para>file <link linkend="_thermistor_circuit_8h">thermistorCircuit.h</link></para>
+
+<para>thermistorCircuit header file. </para>
+</listitem>
+            <listitem><para>file <link linkend="_thermistor_circuit_util_8h">thermistorCircuitUtil.h</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

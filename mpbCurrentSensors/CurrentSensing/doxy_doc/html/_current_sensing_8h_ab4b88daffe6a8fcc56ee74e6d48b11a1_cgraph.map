@@ -1,0 +1,4 @@
+<map id="eCurrentSensingGetPowermW" name="eCurrentSensingGetPowermW">
+<area shape="rect" id="node1" title="Get the power of the current sensing input in mW." alt="" coords="5,13,204,39"/>
+<area shape="rect" id="node2" href="$_current_sensing_8h.html#a4635ac4c1ca4316146a5760ddfd19863" title="Get the voltage of the power sensing input in mV." alt="" coords="252,5,447,47"/>
+</map>

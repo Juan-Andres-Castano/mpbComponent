@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_0405da3192f0505fb4c6a3db66126bf4" xml:lang="en-US">
+<title>Thermistor Directory Reference</title>
+<indexterm><primary>Thermistor Directory Reference</primary></indexterm>
+Directory dependency graph for Thermistor:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_0405da3192f0505fb4c6a3db66126bf4_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_d55de51b9d77f985a80d96c4367bac9c">Includes</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_defdbca609dd4e9c7727e15b13bf1ee7">Sources</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_defdbca609dd4e9c7727e15b13bf1ee7" xml:lang="en-US">
+<title>Thermistor/Sources Directory Reference</title>
+<indexterm><primary>Thermistor/Sources Directory Reference</primary></indexterm>
+Directory dependency graph for Sources:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_defdbca609dd4e9c7727e15b13bf1ee7_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_thermistor_8c">thermistor.c</link></para>
+
+<para>Find the temperature readings according to a given temperature table and thermistor circuit. </para>
+</listitem>
+            <listitem><para>file <link linkend="_thermistor_circuit_8c">thermistorCircuit.c</link></para>
+
+<para>
+<literallayout>&#160;&#xa;</literallayout>
+ </para>
+</listitem>
+            <listitem><para>file <link linkend="_thermistor_circuit_util_8c">thermistorCircuitUtil.c</link></para>
+
+<para>
+<literallayout>&#160;&#xa;</literallayout>
+ </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,4 @@
+<map id="eThermistorLogarithm" name="eThermistorLogarithm">
+<area shape="rect" id="node1" title="Calculate the log of a double for beta calculation." alt="" coords="264,5,411,32"/>
+<area shape="rect" id="node2" href="$thermistor_8h.html#abe60b8ef5c9a7ecc2926df1e750a737f" title="Get the temperature from the resistor measured and beta coefficient of thermistor." alt="" coords="5,5,216,32"/>
+</map>

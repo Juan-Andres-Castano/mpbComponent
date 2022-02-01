@@ -1,0 +1,35 @@
+LibraryName: nepControlPID		Version: V101		ReleaseDate: 18/09/2020
+--------------------------------------------------------------------------------
+General info:
+- Added anti wind-up mechanism called clamping.
+
+Bug fixed:
+
+Feature added:
+
+Other:
+
+Dependencies:
+
+ToDo:
+
+________________________________________________________________________________
+
+
+LibraryName: nepControlPID		Version: V100		ReleaseDate: 30/10/2019
+--------------------------------------------------------------------------------
+General info:
+-Initial Release
+
+Bug fixed:
+
+Feature added:
+
+Other:
+
+Dependencies:
+
+ToDo:
+-Complete TDD
+
+________________________________________________________________________________

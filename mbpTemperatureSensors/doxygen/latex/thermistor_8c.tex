@@ -1,0 +1,253 @@
+\doxysection{Components/mbp\+Temperature\+Sensors/\+Thermistor/\+Sources/thermistor.c File Reference}
+\label{thermistor_8c}\index{Components/mbpTemperatureSensors/Thermistor/Sources/thermistor.c@{Components/mbpTemperatureSensors/Thermistor/Sources/thermistor.c}}
+
+
+Find the temperature readings according to a given temperature table and thermistor circuit.  
+
+
+{\ttfamily \#include \char`\"{}thermistor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}thermistor\+Circuit.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mpb\+Math.\+h\char`\"{}}\newline
+Include dependency graph for thermistor.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{thermistor_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \textbf{ \+\_\+25\+\_\+\+DEGREES\+\_\+\+IN\+\_\+\+FAHRENHEIT}~( 298.\+15 )
+\item 
+\#define \textbf{ KELVIN\+\_\+\+TO\+\_\+\+DEGREE\+\_\+\+CONSTANT}~( 273.\+15 )
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+e\+Mpb\+Error\+\_\+t \textbf{ vprv\+Temperature\+Interpolation} (const x\+Thermistor\+Temperature\+\_\+t $\ast$px\+Temperature\+Table, uint8\+\_\+t uc\+Length, float $\ast$pf\+Temperature\+Calculated)
+\item 
+e\+Mpb\+Error\+\_\+t \textbf{ e\+Thermistor\+Init\+Base\+Circuit} (x\+Thermistor\+Circuit\+Config\+\_\+t $\ast$px\+Thermistor\+Circuit\+Config, uint32\+\_\+t ul\+Series\+Resistor1, uint32\+\_\+t ul\+Series\+Resistor2, uint16\+\_\+t us\+Reference\+VoltagemV)
+\begin{DoxyCompactList}\small\item\em Initialize the thermistor base circuit structure. \end{DoxyCompactList}\item 
+e\+Mpb\+Error\+\_\+t \textbf{ e\+Thermistor\+Get\+Temperature\+Table} (handle\+\_\+t x\+Stream, x\+Thermistor\+Circuit\+Config\+\_\+t x\+Thermistor\+Circuit\+Config, const x\+Thermistor\+Temperature\+\_\+t $\ast$px\+Temperature\+Table, uint8\+\_\+t uc\+Length, float $\ast$pf\+Temperature)
+\begin{DoxyCompactList}\small\item\em Get the temperature from the required look-\/up table using the ADC value. \end{DoxyCompactList}\item 
+e\+Mpb\+Error\+\_\+t \textbf{ e\+Thermistor\+Get\+Temperature\+Beta} (handle\+\_\+t x\+Stream, uint32\+\_\+t ul\+Beta\+Coefficient, x\+Thermistor\+Circuit\+Config\+\_\+t x\+Thermistor\+Circuit\+Config, \textbf{ e\+Thermistor\+Type\+\_\+t} e\+Thermistor\+Type, float $\ast$pf\+Temperature)
+\begin{DoxyCompactList}\small\item\em Get the temperature from the resistor measured and beta coefficient of thermistor. \end{DoxyCompactList}\item 
+e\+Mpb\+Error\+\_\+t \textbf{ e\+Temperature\+Averaging\+Thermistor} (handle\+\_\+t x\+Stream, uint8\+\_\+t uc\+Length, const x\+Thermistor\+Temperature\+\_\+t $\ast$px\+Temperature\+Table, float $\ast$pf\+Temperature\+Readed)
+\begin{DoxyCompactList}\small\item\em Get the temperature from the mpb table method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Find the temperature readings according to a given temperature table and thermistor circuit. 
+
+\begin{DoxyAuthor}{Author}
+juan andres 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Created on 3-\/8-\/ 2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+MPB, Montreal, Qc \doxysubsubsection*{\begin{center}\copyright{} COPYRIGHT 2021 MPB, Montreal, Quebec, Canada\end{center} }
+\end{DoxyCopyright}
+\doxysubsubsection*{\begin{center}\copyright{} All rights reserved.\end{center} }
+
+~\newline
+~\newline
+ \begin{center}This document contains confidential and proprietary information of MPB (subject to a non-\/disclosure agreement) and shall\end{center}  \begin{center}not be disclosed, distributed, or reproduced in whole or in part, without the prior written authorization of MPB.\end{center}  
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\label{thermistor_8c_abef80b005a8f54bbd2101e39cd348a4f}} 
+\index{thermistor.c@{thermistor.c}!\_25\_DEGREES\_IN\_FAHRENHEIT@{\_25\_DEGREES\_IN\_FAHRENHEIT}}
+\index{\_25\_DEGREES\_IN\_FAHRENHEIT@{\_25\_DEGREES\_IN\_FAHRENHEIT}!thermistor.c@{thermistor.c}}
+\doxysubsubsection{\_25\_DEGREES\_IN\_FAHRENHEIT}
+{\footnotesize\ttfamily \#define \+\_\+25\+\_\+\+DEGREES\+\_\+\+IN\+\_\+\+FAHRENHEIT~( 298.\+15 )}
+
+
+
+Definition at line 21 of file thermistor.\+c.
+
+\mbox{\label{thermistor_8c_a543fcf0c16da45eb8f72cef3b76187a4}} 
+\index{thermistor.c@{thermistor.c}!KELVIN\_TO\_DEGREE\_CONSTANT@{KELVIN\_TO\_DEGREE\_CONSTANT}}
+\index{KELVIN\_TO\_DEGREE\_CONSTANT@{KELVIN\_TO\_DEGREE\_CONSTANT}!thermistor.c@{thermistor.c}}
+\doxysubsubsection{KELVIN\_TO\_DEGREE\_CONSTANT}
+{\footnotesize\ttfamily \#define KELVIN\+\_\+\+TO\+\_\+\+DEGREE\+\_\+\+CONSTANT~( 273.\+15 )}
+
+
+
+Definition at line 22 of file thermistor.\+c.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{thermistor_8c_a0858366f11635b0d5edcd23f10091589}} 
+\index{thermistor.c@{thermistor.c}!eTemperatureAveragingThermistor@{eTemperatureAveragingThermistor}}
+\index{eTemperatureAveragingThermistor@{eTemperatureAveragingThermistor}!thermistor.c@{thermistor.c}}
+\doxysubsubsection{eTemperatureAveragingThermistor()}
+{\footnotesize\ttfamily e\+Mpb\+Error\+\_\+t e\+Temperature\+Averaging\+Thermistor (\begin{DoxyParamCaption}\item[{handle\+\_\+t}]{x\+Stream,  }\item[{uint8\+\_\+t}]{uc\+Length,  }\item[{const x\+Thermistor\+Temperature\+\_\+t $\ast$}]{px\+Temperature\+Table,  }\item[{float $\ast$}]{pf\+Temperature\+Readed }\end{DoxyParamCaption})}
+
+
+
+Get the temperature from the mpb table method. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x\+Stream} & Application specific peripheral channel identifier \\
+\hline
+\mbox{\texttt{ in}}  & {\em uc\+Length} & Length of the table \\
+\hline
+\mbox{\texttt{ in}}  & {\em px\+Temperature\+Table} & Pointer to the temperature look-\/up table \\
+\hline
+\mbox{\texttt{ out}}  & {\em pf\+Temperature\+Readed} & Pointer to a variable where to save the temperature \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Success or library error message 
+\end{DoxyReturn}
+
+
+Definition at line 221 of file thermistor.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{thermistor_8c_a0858366f11635b0d5edcd23f10091589_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{thermistor_8c_abe60b8ef5c9a7ecc2926df1e750a737f}} 
+\index{thermistor.c@{thermistor.c}!eThermistorGetTemperatureBeta@{eThermistorGetTemperatureBeta}}
+\index{eThermistorGetTemperatureBeta@{eThermistorGetTemperatureBeta}!thermistor.c@{thermistor.c}}
+\doxysubsubsection{eThermistorGetTemperatureBeta()}
+{\footnotesize\ttfamily e\+Mpb\+Error\+\_\+t e\+Thermistor\+Get\+Temperature\+Beta (\begin{DoxyParamCaption}\item[{handle\+\_\+t}]{x\+Stream,  }\item[{uint32\+\_\+t}]{ul\+Beta\+Coefficient,  }\item[{x\+Thermistor\+Circuit\+Config\+\_\+t}]{x\+Thermistor\+Circuit\+Config,  }\item[{\textbf{ e\+Thermistor\+Type\+\_\+t}}]{e\+Thermistor\+Type,  }\item[{float $\ast$}]{pf\+Temperature }\end{DoxyParamCaption})}
+
+
+
+Get the temperature from the resistor measured and beta coefficient of thermistor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x\+Stream} & Application specific peripheral channel identifier \\
+\hline
+\mbox{\texttt{ in}}  & {\em ul\+Beta\+Coefficient} & beta coefficient of thermistor \\
+\hline
+\mbox{\texttt{ in}}  & {\em x\+Thermistor\+Circuit\+Config} & The circuit configuration structure \\
+\hline
+\mbox{\texttt{ in}}  & {\em e\+Thermistor\+Type} & 10K Thermistor, 20K Thermistor, etc... \\
+\hline
+\mbox{\texttt{ out}}  & {\em pf\+Temperature} & Pointer to a variable where to save the temperature \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Success or library error message 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Temperature resolution is to the hundredths 
+
+Temperature precision depends on the temperature 
+
+{\texttt{ https\+://www.\+ametherm.\+com/thermistor/ntc-\/thermistor-\/beta}} 
+\end{DoxyNote}
+
+
+Definition at line 165 of file thermistor.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{thermistor_8c_abe60b8ef5c9a7ecc2926df1e750a737f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{thermistor_8c_a2eb378796930d13411ae6a6b1da9c8dd}} 
+\index{thermistor.c@{thermistor.c}!eThermistorGetTemperatureTable@{eThermistorGetTemperatureTable}}
+\index{eThermistorGetTemperatureTable@{eThermistorGetTemperatureTable}!thermistor.c@{thermistor.c}}
+\doxysubsubsection{eThermistorGetTemperatureTable()}
+{\footnotesize\ttfamily e\+Mpb\+Error\+\_\+t e\+Thermistor\+Get\+Temperature\+Table (\begin{DoxyParamCaption}\item[{handle\+\_\+t}]{x\+Stream,  }\item[{x\+Thermistor\+Circuit\+Config\+\_\+t}]{x\+Thermistor\+Circuit\+Config,  }\item[{const x\+Thermistor\+Temperature\+\_\+t $\ast$}]{px\+Temperature\+Table,  }\item[{uint8\+\_\+t}]{uc\+Length,  }\item[{float $\ast$}]{pf\+Temperature }\end{DoxyParamCaption})}
+
+
+
+Get the temperature from the required look-\/up table using the ADC value. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x\+Stream} & Application specific peripheral channel identifier \\
+\hline
+\mbox{\texttt{ in}}  & {\em x\+Thermistor\+Circuit\+Config} & The circuit configuration structure \\
+\hline
+\mbox{\texttt{ in}}  & {\em px\+Temperature\+Table} & Pointer to the temperature look-\/up table \\
+\hline
+\mbox{\texttt{ in}}  & {\em uc\+Length} & Temperature look-\/up table length \\
+\hline
+\mbox{\texttt{ out}}  & {\em pf\+Temperature} & Pointer to a variable where to save the data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Success or library error message 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Temperature precision is to the hundredths 
+\end{DoxyNote}
+
+
+Definition at line 114 of file thermistor.\+c.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{thermistor_8c_a2eb378796930d13411ae6a6b1da9c8dd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{thermistor_8c_add0fcf3c8f0bb8d04a1cb10b99a56fb4}} 
+\index{thermistor.c@{thermistor.c}!eThermistorInitBaseCircuit@{eThermistorInitBaseCircuit}}
+\index{eThermistorInitBaseCircuit@{eThermistorInitBaseCircuit}!thermistor.c@{thermistor.c}}
+\doxysubsubsection{eThermistorInitBaseCircuit()}
+{\footnotesize\ttfamily e\+Mpb\+Error\+\_\+t e\+Thermistor\+Init\+Base\+Circuit (\begin{DoxyParamCaption}\item[{x\+Thermistor\+Circuit\+Config\+\_\+t $\ast$}]{px\+Thermistor\+Circuit\+Config,  }\item[{uint32\+\_\+t}]{ul\+Series\+Resistor1,  }\item[{uint32\+\_\+t}]{ul\+Series\+Resistor2,  }\item[{uint16\+\_\+t}]{us\+Reference\+VoltagemV }\end{DoxyParamCaption})}
+
+
+
+Initialize the thermistor base circuit structure. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em px\+Thermistor\+Circuit\+Config} & Pointer to the circuit configuration structure \\
+\hline
+\mbox{\texttt{ in}}  & {\em ul\+Series\+Resistor1} & Resistor next to voltage source \\
+\hline
+\mbox{\texttt{ in}}  & {\em ul\+Series\+Resistor2} & Resistor next to output voltage \\
+\hline
+\mbox{\texttt{ in}}  & {\em us\+Reference\+VoltagemV} & reference voltage in mV \\
+\hline
+\mbox{\texttt{ in}}  & {\em us\+Input\+VoltagemV} & Source voltage in mV \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Success or library error message 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Input voltage also can\textquotesingle{}t be 0. 
+\end{DoxyNote}
+
+
+Definition at line 97 of file thermistor.\+c.
+
+\mbox{\label{thermistor_8c_a4e89f3727faf958ab4ab6966eb9f110d}} 
+\index{thermistor.c@{thermistor.c}!vprvTemperatureInterpolation@{vprvTemperatureInterpolation}}
+\index{vprvTemperatureInterpolation@{vprvTemperatureInterpolation}!thermistor.c@{thermistor.c}}
+\doxysubsubsection{vprvTemperatureInterpolation()}
+{\footnotesize\ttfamily e\+Mpb\+Error\+\_\+t vprv\+Temperature\+Interpolation (\begin{DoxyParamCaption}\item[{const x\+Thermistor\+Temperature\+\_\+t $\ast$}]{px\+Temperature\+Table,  }\item[{uint8\+\_\+t}]{uc\+Length,  }\item[{float $\ast$}]{pf\+Temperature\+Calculated }\end{DoxyParamCaption})}
+
+
+
+Definition at line 33 of file thermistor.\+c.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{thermistor_8c_a4e89f3727faf958ab4ab6966eb9f110d_icgraph}
+\end{center}
+\end{figure}

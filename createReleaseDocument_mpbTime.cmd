@@ -67,37 +67,40 @@ echo compilationTag :  >> templogFile.txt
 echo %1 >> templogFile.txt
 echo .... >> templogFile.txt
 
+
 cd "C:\mpbComponent\mpbTime\Release\"
 
 SET var1=
 
-for /f "delims=" %%i in (version.txt) do call :setVar1 %%i
-echo final var1 = %var1%
-goto exit1
+:: rem for /f "delims=" %%i in (version.txt) do call :setVar1 %%i
+::rem echo final var1 = %var1%
+::rem goto exit1
 
-:exit1
+::rem :exit1
 
  
 
-cd "C:\mpbComponent\configurationManagement"
-echo mpbMathLibraryVersion >> templogFile.txt
-echo %var% >> templogFile.txt
-echo .... >> templogFile.txt
+Rem cd "C:\mpbComponent\configurationManagement"
+Rem echo mpbMathLibraryVersion >> templogFile.txt
+Rem echo %var% >> templogFile.txt
+Rem Recho .... >> templogFile.txt
 Rem echo.>>templogFile.txt
 
 
 cd "C:\mpbComponent\mpbTime\Release\"
 SET var2=
 for /f "delims=" %%i in (version.txt) do call :setVar2 %%i
-::echo final var2=%var2%
+echo final var2=%var2%
 set var2=%var2: =%
+echo final var2=%var2%
+
 ::echo final var2 no spaces=%var2%
 
 set "variable=%1_V_%var2%"
-::echo %variable%
+echo %variable%
 set vari=%variable%
-::echo %vari%
-::echo %variable:~2,4%
+echo %vari%
+echo %variable:~2,4%
 
 
 ::%variable%.lib
@@ -107,11 +110,21 @@ set vari=%variable%
 
 ::xcopy  "C:\mpbComponent\mpbTime\Objects\mpbTime.lib" "c:\mpbComponent\mpbTime\Release\." /i /e 
 
-ren  c:\mpbComponent\mpbtime\release\templogFile.txt softwareReleaseDocument_buildNumber_%1_V_%var2%_@_%date:~4,2%-%date:~7,2%-%date:~10,4%_@_%time:~0,2%h%time:~3,2%m%time:~6,2%s%.txt
+set "newname=softwareReleaseDocument_buildNumber_%1_V_%var2%_@_%date:~4,2%-%date:~7,2%-%date:~10,4%_@_%time:~0,2%h%time:~3,2%m%time:~6,2%s%.txt"
+set newname=%newname: =0%
+ren c:\mpbComponent\mpbtime\release\templogFile.txt %newname%
+
+
+
+rem ren  c:\mpbComponent\mpbtime\release\templogFile.txt softwareReleaseDocument_buildNumber_%1_V_%var2%_@_%date:~4,2%-%date:~7,2%-%date:~10,4%_@_%time:~0,2%h%time:~3,2%m%time:~6,2%s%.txt
+::ren  c:\mpbComponent\mpbtime\release\templogFile.txt softwareReleaseDocument_buildNumber_%1_V_%var2%_@_%date:~4,2%-%date:~7,2%-%date:~10,4%_@_%time:~0,2%-%time:~3,2%.txt
+rem @_%date:~4,2%-%date:~7,2%-%date:~10,4%_@_%time:~0,2%h%time:~3,2%m%.txt
+
 ren  c:\mpbComponent\mpbtime\release\mpbTime.build_log.htm mpbTime.build_log_%1_V_%var2%_@_%date:~4,2%-%date:~7,2%-%date:~10,4%.htm
 
 
 :SetVar
+
 Set var=%var% %1%
 goto :eof
 

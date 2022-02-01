@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_thermistor_circuit_util_8c" xml:lang="en-US">
+<title>Thermistor/Sources/thermistorCircuitUtil.c File Reference</title>
+<indexterm><primary>Thermistor/Sources/thermistorCircuitUtil.c</primary></indexterm>
+<para>
+
+<para>
+<literallayout>&#160;&#xa;</literallayout>
+ </para>
+ 
+</para>
+<programlisting>#include &quot;thermistorCircuitUtil.h&quot;
+#include &quot;mpbMath.h&quot;
+</programlisting>Include dependency graph for thermistorCircuitUtil.c:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="thermistor_circuit_util_8c__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>eMpbError_t <link linkend="_thermistor_circuit_util_8c_1adf006a51b592cc8a298bc15605f89c7b">eThermistorCircuitUtilGetThermistanceValue</link> (handle_t xStream, <link linkend="_structx_thermistor_circuit_config__t">xThermistorCircuitConfig_t</link> xThermistorCircuitConfig, uint32_t *pulThermistance)</para>
+
+<para>Get the temperature from the resistor measured and beta coefficient of thermistor. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>
+<literallayout>&#160;&#xa;</literallayout>
+ </para>
+
+<para><formalpara><title>Author</title>
+
+<para>juan </para>
+</formalpara>
+<formalpara><title>Date</title>
+
+<para>Created on 2021-3-9 </para>
+</formalpara>
+<note><title>Note</title>
+
+<para></para>
+</note>
+<formalpara><title>Copyright</title>
+
+<para>MPB, Montreal, Qc <formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#169; COPYRIGHT 2021 MPB, Montreal, Quebec, Canada</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+</formalpara>
+<formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#169; All rights reserved.</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+
+<para>
+<literallayout>&#160;&#xa;</literallayout>
+
+<literallayout>&#160;&#xa;</literallayout>
+ <informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>This document contains confidential and proprietary information of MPB (subject to a non-disclosure agreement) and shall</entry></row></tbody></tgroup></informaltable> <informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>not be disclosed, distributed, or reproduced in whole or in part, without the prior written authorization of MPB.</entry></row></tbody></tgroup></informaltable> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_thermistor_circuit_util_8c_1adf006a51b592cc8a298bc15605f89c7b"/>    <section>
+    <title>eThermistorCircuitUtilGetThermistanceValue()</title>
+<indexterm><primary>eThermistorCircuitUtilGetThermistanceValue</primary><secondary>thermistorCircuitUtil.c</secondary></indexterm>
+<indexterm><primary>thermistorCircuitUtil.c</primary><secondary>eThermistorCircuitUtilGetThermistanceValue</secondary></indexterm>
+<para><computeroutput>eMpbError_t eThermistorCircuitUtilGetThermistanceValue (handle_t xStream, <link linkend="_structx_thermistor_circuit_config__t">xThermistorCircuitConfig_t</link> xThermistorCircuitConfig, uint32_t * pulThermistance)</computeroutput></para><para>
+
+<para>Get the temperature from the resistor measured and beta coefficient of thermistor. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>in                                </entry>                                <entry>xStream</entry>
+                                <entry>
+<para>Application specific peripheral channel identifier </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>in                                </entry>                                <entry>xThermistorCircuitConfig</entry>
+                                <entry>
+<para>The circuit configuration structure </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>out                                </entry>                                <entry>pulThermistance</entry>
+                                <entry>
+<para>Pointer to a variable where to save the resistance read </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Success or library error message </para>
+</formalpara>
+<note><title>Note</title>
+
+<para>Temperature precision is to the hundredths </para>
+</note>
+</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="thermistor_circuit_util_8c_adf006a51b592cc8a298bc15605f89c7b_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="thermistor_circuit_util_8c_adf006a51b592cc8a298bc15605f89c7b_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+</section>

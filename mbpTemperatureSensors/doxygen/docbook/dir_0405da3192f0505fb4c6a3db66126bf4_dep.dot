@@ -1,0 +1,12 @@
+digraph "Thermistor" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_0405da3192f0505fb4c6a3db66126bf4 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_0405da3192f0505fb4c6a3db66126bf4.html"];
+    dir_0405da3192f0505fb4c6a3db66126bf4 [shape=plaintext label="Thermistor"];
+  dir_d55de51b9d77f985a80d96c4367bac9c [shape=box label="Includes" fillcolor="white" style="filled" URL="dir_d55de51b9d77f985a80d96c4367bac9c.html"];
+  dir_defdbca609dd4e9c7727e15b13bf1ee7 [shape=box label="Sources" fillcolor="white" style="filled" URL="dir_defdbca609dd4e9c7727e15b13bf1ee7.html"];
+  }
+  dir_defdbca609dd4e9c7727e15b13bf1ee7->dir_d55de51b9d77f985a80d96c4367bac9c [headlabel="5", labeldistance=1.5 headhref="dir_000002_000001.html"];
+}

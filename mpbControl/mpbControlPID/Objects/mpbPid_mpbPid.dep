@@ -1,0 +1,19 @@
+Dependencies for Project 'mpbPid', Target 'mpbPid': (DO NOT MODIFY !)
+CompilerVersion: 6150000::V6.15::ARMCLANG
+F (.\Sources\mpbControlPID.c)(0x606F67FB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Includes -I ../../common-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/mpbcontrolpid.o -MD)
+I (Includes\mpbControlPID.h)(0x60649222)
+I (Includes\mpbControlPIDUtil.h)(0x605A4D2C)
+I (..\..\common\mpblibs.h)(0x603EB46E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F378778)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F37877E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5F378774)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5F378762)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F37877E)
+F (.\Sources\mpbControlPIDUtil.c)(0x605A4DB6)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Includes -I ../../common-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/mpbcontrolpidutil.o -MD)
+I (Includes\mpbControlPIDUtil.h)(0x605A4D2C)
+I (..\..\common\mpblibs.h)(0x603EB46E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F378778)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F37877E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5F378774)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5F378762)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F37877E)

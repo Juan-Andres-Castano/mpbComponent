@@ -1,0 +1,3 @@
+--create .\Objects\mpbCurrentOutput.lib
+.\objects\currentoutput.o
+..\mpbMath\V_100\mpbMath.lib

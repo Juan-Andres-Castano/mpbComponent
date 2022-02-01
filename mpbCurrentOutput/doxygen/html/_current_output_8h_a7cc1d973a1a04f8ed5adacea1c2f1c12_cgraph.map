@@ -1,0 +1,4 @@
+<map id="eCurrentOutputSetCurrentmA" name="eCurrentOutputSetCurrentmA">
+<area shape="rect" id="node1" title="set the current for the anlog output in mA" alt="" coords="5,5,197,32"/>
+<area shape="rect" id="node2" href="$_current_output_8h.html#a2a246f08e1ad7711de952981a41cdd9e" title="Set the voltage of the current sensing input in mV." alt="" coords="245,5,447,32"/>
+</map>

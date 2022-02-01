@@ -122,9 +122,9 @@ void test_vMpbMathDebounceUpdate_Shall_Debounce_the_OFF_state_At_X_OFF_repetitio
 	TEST_ASSERT_EQUAL_UINT32( ( ulMockOffCount-2 ), xMpbMathDebounce.ulCount);
 	TEST_ASSERT_EQUAL_INT32( bState, bMockInitialState );
 	
-	vMpbMathDebounceUpdate( &xMpbMathDebounce, bMockOffState, &bState );
-	TEST_ASSERT_EQUAL_UINT32( ( ulMockOffCount - 3 ), xMpbMathDebounce.ulCount );
-	TEST_ASSERT_EQUAL_INT32( bState, bMockInitialState );
+	//vMpbMathDebounceUpdate( &xMpbMathDebounce, bMockOffState, &bState );
+	//TEST_ASSERT_EQUAL_UINT32( ( ulMockOffCount - 3 ), xMpbMathDebounce.ulCount );
+	//TEST_ASSERT_EQUAL_INT32( bState, bMockInitialState );
 }
 /*----------------------------------------------------------------------------*/
 

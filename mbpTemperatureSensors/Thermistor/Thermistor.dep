@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>359641528</fileChecksum>
+    <configuration>
+        <name>ThermistorCortexM0</name>
+        <outputs>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+            <file>$PROJ_DIR$\ThermistorCortexM0\Obj\thermistor.__cstat.et</file>
+            <file>$PROJ_DIR$\Sources\thermistorCircuitUtil.c</file>
+            <file>$PROJ_DIR$\Includes\NCP18XH103F03RB.h</file>
+            <file>$PROJ_DIR$\Includes\thermistor.h</file>
+            <file>$PROJ_DIR$\Includes\thermistorCircuitUtil.h</file>
+            <file>$PROJ_DIR$\Sources\thermistorCircuit.c</file>
+            <file>$PROJ_DIR$\Includes\thermistorCircuit.h</file>
+            <file>$PROJ_DIR$\Sources\thermistor.c</file>
+            <file>$PROJ_DIR$\Includes\PT103J2.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$PROJ_DIR$\ThermistorCortexM0\Obj\thermistor.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\iar_intrinsics_common.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>$PROJ_DIR$\ThermistorCortexM0\Exe\Thermistor.out</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$PROJ_DIR$\ThermistorCortexM0\Obj\thermistor.o</file>
+            <file>$PROJ_DIR$\ThermistorCortexM0\Obj\Thermistor.pbd</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$PROJ_DIR$\ThermistorCortexM0\Exe\nepThermistorCortexM0_v.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\commun\V100\neplibs.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathRound.h</file>
+            <file>$PROJ_DIR$\ThermistorCortexM0\Obj\thermistorCircuitUtil.o</file>
+            <file>$PROJ_DIR$\ThermistorCortexM0\Obj\thermistorCircuit.pbi</file>
+            <file>$PROJ_DIR$\ThermistorCortexM0\Obj\thermistorCircuitUtil.pbi</file>
+            <file>$PROJ_DIR$\ThermistorCortexM0\Exe\nepThermistorCortexM0.a</file>
+            <file>$PROJ_DIR$\ThermistorCortexM0\Obj\thermistorCircuit.o</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathCoerce.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMath.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathFifo.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathCrc.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathAverage.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathDivision.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathLinearApprox.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathAbsolute.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathOpAmp.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathResistor.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathDebounce.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathCrcUtil.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathParity.h</file>
+            <file>$PROJ_DIR$\ThermistorCortexM0\Obj\thermistorCircuit.__cstat.et</file>
+            <file>$PROJ_DIR$\ThermistorCortexM0\Obj\thermistorCircuitUtil.__cstat.et</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\Sources\thermistorCircuitUtil.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 32</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 51</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 34</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 7 9 6 30 13 29 22 28 23 1 17 26 24 0 14 27 19 12 16 38 44 41 37 40 48 47 42 39 43 45 46 31 49</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 30 19 23 26 27 42 13 0 22 1 29 41 46 38 9 6 17 2 28 24 16 40 43 49 48 7 14 12 44 37 47 39 45 31</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Sources\thermistorCircuit.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 36</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 50</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 33</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 9 6 30 13 29 22 28 23 1 17 26 24 0 14 27 19 12 16 7</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 17 29 22 2 28 24 16 7 6 30 13 0 27 19 23 1 26 14 12 9</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Sources\thermistor.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 20</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 3</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 15</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 6 30 13 29 22 28 23 1 17 26 24 0 14 27 19 12 16 9 38 44 41 37 40 48 47 42 39 43 45 46 31 49</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 29 19 30 27 31 13 26 37 38 0 22 1 6 39 9 17 2 28 23 14 12 44 47 45 24 16 41 40 42 43 46 49 48</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 18</file>
+                </tool>
+                <tool>
+                    <name>IARCHIVE</name>
+                    <file> 35</file>
+                </tool>
+            </outputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\Tests\test_Thermistor.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>ThermistorCortexM3</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+</project>

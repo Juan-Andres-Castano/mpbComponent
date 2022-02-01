@@ -1,0 +1,8 @@
+<map id="eThermistorAnalogReadmV" name="eThermistorAnalogReadmV">
+<area shape="rect" id="node1" title="Get the voltage of the thermistor input in mV." alt="" coords="805,35,985,61"/>
+<area shape="rect" id="node2" href="$thermistor_8h.html#a0858366f11635b0d5edcd23f10091589" title="Get the temperature from the mpb table method." alt="" coords="539,5,757,32"/>
+<area shape="rect" id="node3" href="$thermistor_circuit_util_8h.html#adf006a51b592cc8a298bc15605f89c7b" title="Get the temperature from the resistor measured and beta coefficient of thermistor." alt="" coords="565,57,731,98"/>
+<area shape="rect" id="node4" href="$thermistor_circuit_8h.html#aed69a032a66c1a64e3e4adfe977a5f50" title="Allows to get the thermistance from the base circuit." alt="" coords="264,64,491,91"/>
+<area shape="rect" id="node5" href="$thermistor_8h.html#abe60b8ef5c9a7ecc2926df1e750a737f" title="Get the temperature from the resistor measured and beta coefficient of thermistor." alt="" coords="5,35,216,61"/>
+<area shape="rect" id="node6" href="$thermistor_8h.html#a2eb378796930d13411ae6a6b1da9c8dd" title="Get the temperature from the required look&#45;up table using the ADC value." alt="" coords="19,86,202,127"/>
+</map>

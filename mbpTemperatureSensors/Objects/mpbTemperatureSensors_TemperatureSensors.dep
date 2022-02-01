@@ -1,0 +1,55 @@
+Dependencies for Project 'mpbTemperatureSensors', Target 'TemperatureSensors': (DO NOT MODIFY !)
+CompilerVersion: 6150000::V6.15::ARMCLANG
+F (.\Thermistor\Sources\thermistor.c)(0x608FECD0)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../common -I ./Thermistor/Includes -I ../mpbMath/V_100/Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/thermistor.o -MD)
+I (Thermistor\Includes\thermistor.h)(0x607DDA37)
+I (..\common\mpblibs.h)(0x608C033E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F378778)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F37877E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5F378774)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5F378762)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F37877E)
+I (Thermistor\Includes\thermistorCircuit.h)(0x607DDA37)
+I (..\mpbMath\V_100\Includes\mpbMath.h)(0x607DDA37)
+I (..\mpbMath\V_100\Includes\mpbMathAbsolute.h)(0x607DDA37)
+I (..\mpbMath\V_100\Includes\mpbMathAverage.h)(0x607DDA37)
+I (..\mpbMath\V_100\Includes\mpbMathCoerce.h)(0x607DDA37)
+I (..\mpbMath\V_100\Includes\mpbMathCrc.h)(0x607DDA37)
+I (..\mpbMath\V_100\Includes\mpbMathCrcUtil.h)(0x607DDA37)
+I (..\mpbMath\V_100\Includes\mpbMathDebounce.h)(0x607DDA37)
+I (..\mpbMath\V_100\Includes\mpbMathDivision.h)(0x607DDA37)
+I (..\mpbMath\V_100\Includes\mpbMathFifo.h)(0x607DDA37)
+I (..\mpbMath\V_100\Includes\mpbMathLinearApprox.h)(0x607DDA37)
+I (..\mpbMath\V_100\Includes\mpbMathResistor.h)(0x607DDA37)
+I (..\mpbMath\V_100\Includes\mpbMathRound.h)(0x607DDA37)
+F (.\Thermistor\Sources\thermistorCircuit.c)(0x607DDA37)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../common -I ./Thermistor/Includes -I ../mpbMath/V_100/Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/thermistorcircuit.o -MD)
+I (Thermistor\Includes\thermistorCircuit.h)(0x607DDA37)
+I (Thermistor\Includes\thermistor.h)(0x607DDA37)
+I (..\common\mpblibs.h)(0x608C033E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F378778)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F37877E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5F378774)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5F378762)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F37877E)
+I (Thermistor\Includes\thermistorCircuitUtil.h)(0x607DDA37)
+F (.\Thermistor\Sources\thermistorCircuitUtil.c)(0x608C6B1F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../common -I ./Thermistor/Includes -I ../mpbMath/V_100/Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/thermistorcircuitutil.o -MD)
+I (Thermistor\Includes\thermistorCircuitUtil.h)(0x607DDA37)
+I (Thermistor\Includes\thermistorCircuit.h)(0x607DDA37)
+I (Thermistor\Includes\thermistor.h)(0x607DDA37)
+I (..\common\mpblibs.h)(0x608C033E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F378778)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F37877E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5F378774)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5F378762)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F37877E)
+I (..\mpbMath\V_100\Includes\mpbMath.h)(0x607DDA37)
+I (..\mpbMath\V_100\Includes\mpbMathAbsolute.h)(0x607DDA37)
+I (..\mpbMath\V_100\Includes\mpbMathAverage.h)(0x607DDA37)
+I (..\mpbMath\V_100\Includes\mpbMathCoerce.h)(0x607DDA37)
+I (..\mpbMath\V_100\Includes\mpbMathCrc.h)(0x607DDA37)
+I (..\mpbMath\V_100\Includes\mpbMathCrcUtil.h)(0x607DDA37)
+I (..\mpbMath\V_100\Includes\mpbMathDebounce.h)(0x607DDA37)
+I (..\mpbMath\V_100\Includes\mpbMathDivision.h)(0x607DDA37)
+I (..\mpbMath\V_100\Includes\mpbMathFifo.h)(0x607DDA37)
+I (..\mpbMath\V_100\Includes\mpbMathLinearApprox.h)(0x607DDA37)
+I (..\mpbMath\V_100\Includes\mpbMathResistor.h)(0x607DDA37)
+I (..\mpbMath\V_100\Includes\mpbMathRound.h)(0x607DDA37)

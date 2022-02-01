@@ -1,0 +1,116 @@
+\hypertarget{test___thermistor_8c}{}\doxysection{Thermistor/\+Tests/test\+\_\+\+Thermistor.c File Reference}
+\label{test___thermistor_8c}\index{Thermistor/Tests/test\_Thermistor.c@{Thermistor/Tests/test\_Thermistor.c}}
+
+
+Tests for the thermistor library.  
+
+
+{\ttfamily \#include \char`\"{}unity.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}thermistor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}thermistor\+Circuit\+Util.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}PT103\+J2.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mock\+\_\+test\+\_\+\+Thermistor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mock\+\_\+thermistor\+Circuit.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mock\+\_\+nep\+Math\+Division.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mock\+\_\+nep\+Math\+Linear\+Approx.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mock\+\_\+nep\+Math\+Resistor.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{test___thermistor_8c_a7782d59d4b0d60da9fe9283379909432}\label{test___thermistor_8c_a7782d59d4b0d60da9fe9283379909432}} 
+\#define {\bfseries BETA\+\_\+\+COEFFICIENT}~( 3575 )
+\item 
+\mbox{\Hypertarget{test___thermistor_8c_abef80b005a8f54bbd2101e39cd348a4f}\label{test___thermistor_8c_abef80b005a8f54bbd2101e39cd348a4f}} 
+\#define {\bfseries \+\_\+25\+\_\+\+DEGREES\+\_\+\+IN\+\_\+\+FAHRENHEIT}~( 298.\+15 )
+\item 
+\mbox{\Hypertarget{test___thermistor_8c_a543fcf0c16da45eb8f72cef3b76187a4}\label{test___thermistor_8c_a543fcf0c16da45eb8f72cef3b76187a4}} 
+\#define {\bfseries KELVIN\+\_\+\+TO\+\_\+\+DEGREE\+\_\+\+CONSTANT}~( 273.\+15 )
+\item 
+\mbox{\Hypertarget{test___thermistor_8c_ac24a3089a7a0f24126d3ae03c124fe99}\label{test___thermistor_8c_ac24a3089a7a0f24126d3ae03c124fe99}} 
+\#define {\bfseries PT103\+J2\+\_\+\+TABLE\+\_\+\+LENGTH}~( 206 )
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{test___thermistor_8c_a63326a1b70b6e3f070e51687798e02de}\label{test___thermistor_8c_a63326a1b70b6e3f070e51687798e02de}} 
+void {\bfseries set\+Up} ()
+\item 
+\mbox{\Hypertarget{test___thermistor_8c_ab804e0f66def63262c1d6b4e3d2a2bd7}\label{test___thermistor_8c_ab804e0f66def63262c1d6b4e3d2a2bd7}} 
+void {\bfseries tear\+Down} ()
+\item 
+\mbox{\Hypertarget{test___thermistor_8c_a9f49d4349cfad4d9d9b441800f9a06fe}\label{test___thermistor_8c_a9f49d4349cfad4d9d9b441800f9a06fe}} 
+void {\bfseries test\+\_\+e\+Thermistor\+Init\+Base\+Circuit\+\_\+\+Invalid\+Input\+Voltage\+\_\+\+Fail} ()
+\item 
+\mbox{\Hypertarget{test___thermistor_8c_aed6bf9333b8c1ccaa1d48323bd4469c3}\label{test___thermistor_8c_aed6bf9333b8c1ccaa1d48323bd4469c3}} 
+void {\bfseries test\+\_\+e\+Thermistor\+Init\+Base\+Circuit\+\_\+\+Invalid\+Resistances\+\_\+\+Fail} ()
+\item 
+\mbox{\Hypertarget{test___thermistor_8c_a80010ccae5787bc671d24417618653b6}\label{test___thermistor_8c_a80010ccae5787bc671d24417618653b6}} 
+void {\bfseries test\+\_\+e\+Thermistor\+Init\+Base\+Circuit\+\_\+\+Null\+Pointer\+\_\+\+Fail} ()
+\item 
+\mbox{\Hypertarget{test___thermistor_8c_abb9147b9978e69818acd42fdc3ca4e47}\label{test___thermistor_8c_abb9147b9978e69818acd42fdc3ca4e47}} 
+void {\bfseries test\+\_\+e\+Thermistor\+Init\+Base\+Circuit\+\_\+\+Success} ()
+\item 
+\mbox{\Hypertarget{test___thermistor_8c_a2af936bd3ae9e24e9b91519b29abd7f9}\label{test___thermistor_8c_a2af936bd3ae9e24e9b91519b29abd7f9}} 
+void {\bfseries test\+\_\+e\+Thermistor\+Get\+Temperature\+\_\+\+Null\+Pointer\+\_\+\+Fail} ()
+\item 
+\mbox{\Hypertarget{test___thermistor_8c_af2482009ce104b718a293e79a875a851}\label{test___thermistor_8c_af2482009ce104b718a293e79a875a851}} 
+void {\bfseries test\+\_\+e\+Thermistor\+Get\+Temperature\+\_\+\+Out\+Of\+Range\+Under\+\_\+\+Success} ()
+\item 
+\mbox{\Hypertarget{test___thermistor_8c_aed15b49e56f43a2414d32b1ded79c35d}\label{test___thermistor_8c_aed15b49e56f43a2414d32b1ded79c35d}} 
+void {\bfseries test\+\_\+e\+Thermistor\+Get\+Temperature\+\_\+\+Out\+Of\+Range\+Over\+\_\+\+Success} ()
+\item 
+\mbox{\Hypertarget{test___thermistor_8c_a2764ca1fcac3ece49a29681ce3ca14ea}\label{test___thermistor_8c_a2764ca1fcac3ece49a29681ce3ca14ea}} 
+void {\bfseries test\+\_\+e\+Thermistor\+Get\+Temperature\+\_\+\+Exact\+Value\+\_\+\+Success} ()
+\item 
+\mbox{\Hypertarget{test___thermistor_8c_a0f0a7cdc0977ad2feb96fa6317e6153d}\label{test___thermistor_8c_a0f0a7cdc0977ad2feb96fa6317e6153d}} 
+void {\bfseries test\+\_\+e\+Thermistor\+Get\+Temperature\+\_\+e\+Nep\+Math\+Linear\+Approx\+S32\+\_\+\+Fail} ()
+\item 
+\mbox{\Hypertarget{test___thermistor_8c_aed2ff7a7335e764aaa2a39acace34bc5}\label{test___thermistor_8c_aed2ff7a7335e764aaa2a39acace34bc5}} 
+void {\bfseries test\+\_\+e\+Thermistor\+Get\+Temperature\+\_\+\+Linear\+Approx\+\_\+\+Success} ()
+\item 
+\mbox{\Hypertarget{test___thermistor_8c_a712203c3219fd91049895639c763bd7e}\label{test___thermistor_8c_a712203c3219fd91049895639c763bd7e}} 
+void {\bfseries test\+\_\+e\+Beta\+Thermistor\+Get\+Temperature\+\_\+\+NULLResult\+Pointer\+Return\+Invalid\+Parameter\+\_\+\+Fail} ()
+\item 
+\mbox{\Hypertarget{test___thermistor_8c_a6e8a5d3eeba798b98b78f8a22f4dfc61}\label{test___thermistor_8c_a6e8a5d3eeba798b98b78f8a22f4dfc61}} 
+void {\bfseries test\+\_\+e\+Beta\+Thermistor\+Get\+Temperature\+\_\+\+Success} ()
+\item 
+\mbox{\Hypertarget{test___thermistor_8c_ae19d53c15b0f9389d5b6cb3ceea91d5b}\label{test___thermistor_8c_ae19d53c15b0f9389d5b6cb3ceea91d5b}} 
+void {\bfseries test\+\_\+e\+Beta\+Thermistor\+Get\+Temperature\+\_\+e\+Thermistor\+Circuit\+Get\+Thermistance\+\_\+\+Fail} ()
+\item 
+\mbox{\Hypertarget{test___thermistor_8c_afa9f3893121942fbc557c0d5065e5a95}\label{test___thermistor_8c_afa9f3893121942fbc557c0d5065e5a95}} 
+void {\bfseries test\+\_\+e\+Beta\+Thermistor\+Get\+Temperature\+\_\+e\+Nep\+Math\+Division\+Float1\+\_\+\+Fail} ()
+\item 
+\mbox{\Hypertarget{test___thermistor_8c_a49e449cae7e204438c7fc962ca7bab0f}\label{test___thermistor_8c_a49e449cae7e204438c7fc962ca7bab0f}} 
+void {\bfseries test\+\_\+e\+Beta\+Thermistor\+Get\+Temperature\+\_\+e\+Thermistor\+Logarithm\+\_\+\+Fail} ()
+\item 
+\mbox{\Hypertarget{test___thermistor_8c_a73a7114473f230f72ad2e1ab93b4f1c0}\label{test___thermistor_8c_a73a7114473f230f72ad2e1ab93b4f1c0}} 
+void {\bfseries test\+\_\+e\+Beta\+Thermistor\+Get\+Temperature\+\_\+e\+Nep\+Math\+Division\+Float2\+\_\+\+Fail} ()
+\item 
+\mbox{\Hypertarget{test___thermistor_8c_a1d097ff3ba589e01def0b674c0f3f121}\label{test___thermistor_8c_a1d097ff3ba589e01def0b674c0f3f121}} 
+void {\bfseries test\+\_\+e\+Beta\+Thermistor\+Get\+Temperature\+\_\+e\+Nep\+Math\+Division\+Float3\+\_\+\+Fail} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{test___thermistor_8c_a9642cca29ba8945744bff545608e834f}\label{test___thermistor_8c_a9642cca29ba8945744bff545608e834f}} 
+const \mbox{\hyperlink{structx_thermistor_temperature__t}{x\+Thermistor\+Temperature\+\_\+t}} {\bfseries x\+PT103\+J2\+Temperature\+Table} \mbox{[}PT103\+J2\+\_\+\+TABLE\+\_\+\+LENGTH\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Tests for the thermistor library. 
+
+\begin{DoxyAuthor}{Author}
+Mikael Plouffe 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Created on 2/5/2019 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+NEP, Montreal, Qc \doxysubsubsection*{\begin{center}\copyright{} COPYRIGHT 2015 NEP, Montreal, Quebec, Canada\end{center} }
+\end{DoxyCopyright}
+\doxysubsubsection*{\begin{center}\copyright{} All rights reserved.\end{center} }
+
+~\newline
+~\newline
+ \begin{center}This document contains confidential and proprietary information of NEPTRONIC (subject to a non-\/disclosure agreement) and shall\end{center}  \begin{center}not be disclosed, distributed, or reproduced in whole or in part, without the prior written authorization of NEPTRONIC.\end{center}  

@@ -1,0 +1,75 @@
+\hypertarget{_current_output_8c}{}\doxysection{Current\+Output/\+Sources/\+Current\+Output.c File Reference}
+\label{_current_output_8c}\index{CurrentOutput/Sources/CurrentOutput.c@{CurrentOutput/Sources/CurrentOutput.c}}
+
+
+Library to calculate a current according to a voltage output sensing signal input.  
+
+
+{\ttfamily \#include \char`\"{}Current\+Output.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mpb\+Math.\+h\char`\"{}}\newline
+Include dependency graph for Current\+Output.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{_current_output_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+e\+Mpb\+Error\+\_\+t \mbox{\hyperlink{_current_output_8c_a7cc1d973a1a04f8ed5adacea1c2f1c12}{e\+Current\+Output\+Set\+CurrentmA}} (handle\+\_\+t x\+Stream, \mbox{\hyperlink{structx_current_output_scaling__t}{x\+Current\+Output\+Scaling\+\_\+t}} x\+Current\+Output\+Scaling, float f\+Current, float $\ast$pf\+Voltage)
+\begin{DoxyCompactList}\small\item\em set the current for the anlog output in mA \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Library to calculate a current according to a voltage output sensing signal input. 
+
+\begin{DoxyAuthor}{Author}
+juan andres 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Created on 3/8/2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+MPB, Montreal, Qc \doxysubsubsection*{\begin{center}\copyright{} COPYRIGHT 2021 MPB, Montreal, Quebec, Canada\end{center} }
+\end{DoxyCopyright}
+\doxysubsubsection*{\begin{center}\copyright{} All rights reserved.\end{center} }
+
+~\newline
+~\newline
+ \begin{center}This document contains confidential and proprietary information of MPB (subject to a non-\/disclosure agreement) and shall\end{center}  \begin{center}not be disclosed, distributed, or reproduced in whole or in part, without the prior written authorization of MPB.\end{center}  
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_current_output_8c_a7cc1d973a1a04f8ed5adacea1c2f1c12}\label{_current_output_8c_a7cc1d973a1a04f8ed5adacea1c2f1c12}} 
+\index{CurrentOutput.c@{CurrentOutput.c}!eCurrentOutputSetCurrentmA@{eCurrentOutputSetCurrentmA}}
+\index{eCurrentOutputSetCurrentmA@{eCurrentOutputSetCurrentmA}!CurrentOutput.c@{CurrentOutput.c}}
+\doxysubsubsection{\texorpdfstring{eCurrentOutputSetCurrentmA()}{eCurrentOutputSetCurrentmA()}}
+{\footnotesize\ttfamily e\+Mpb\+Error\+\_\+t e\+Current\+Output\+Set\+CurrentmA (\begin{DoxyParamCaption}\item[{handle\+\_\+t}]{x\+Stream,  }\item[{\mbox{\hyperlink{structx_current_output_scaling__t}{x\+Current\+Output\+Scaling\+\_\+t}}}]{x\+Current\+Output\+Scaling,  }\item[{float}]{f\+Current,  }\item[{float $\ast$}]{pf\+Voltage }\end{DoxyParamCaption})}
+
+
+
+set the current for the anlog output in mA 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x\+Stream} & Application specific peripheral channel identifier \\
+\hline
+\mbox{\texttt{ out}}  & {\em pf\+Current} & Pointer to store the current \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Success or library error message 
+\end{DoxyReturn}
+
+
+Definition at line 31 of file Current\+Output.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_current_output_8c_a7cc1d973a1a04f8ed5adacea1c2f1c12_cgraph}
+\end{center}
+\end{figure}

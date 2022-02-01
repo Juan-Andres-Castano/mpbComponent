@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>299738361</fileChecksum>
+    <configuration>
+        <name>nepDigitalFilteringCortexM0</name>
+        <outputs>
+            <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathFifo.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathDivision.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\iar_intrinsics_common.h</file>
+            <file>$PROJ_DIR$\nepDigitalFilteringCortexM0\Obj\nepDigitalFilteringRclp.__cstat.et</file>
+            <file>$PROJ_DIR$\nepDigitalFilteringCortexM0\Exe\nepDigitalFiltering.out</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathRound.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathOpAmp.h</file>
+            <file>$PROJ_DIR$\Sources\nepDigitalFilteringNms.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$PROJ_DIR$\Includes\nepDigitalFilteringNms.h</file>
+            <file>$PROJ_DIR$\nepDigitalFilteringCortexM0\Exe\nepDigitalFilteringCortexM0.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\nepDigitalFilteringCortexM0\Obj\nepDigitalFilteringRclp.o</file>
+            <file>$PROJ_DIR$\nepDigitalFilteringCortexM0\Obj\nepDigitalFilteringRclp.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\nepDigitalFilteringCortexM0\Obj\nepDigitalFilteringNms.o</file>
+            <file>$PROJ_DIR$\Sources\nepDigitalFilteringRclp.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$PROJ_DIR$\Includes\nepDigitalFilteringRclp.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\commun\V100\neplibs.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathParity.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathAbsolute.h</file>
+            <file>$PROJ_DIR$\nepDigitalFilteringCortexM0\Obj\nepDigitalFilteringNms.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathResistor.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMath.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathCrcUtil.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathLinearApprox.h</file>
+            <file>$PROJ_DIR$\nepDigitalFilteringCortexM0\Obj\nepDigitalFilteringNms.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathCrc.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathDebounce.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathCoerce.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathAverage.h</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\Sources\nepDigitalFilteringNms.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 17</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 25</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 35</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 11 22 13 16 40 19 31 26 1 38 32 36 28 10 20 29 4 30 24 42 41 37 39 3 2 34 8 27 7 23</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 10 22 20 40 3 13 36 16 19 42 27 30 1 0 31 26 38 32 4 37 34 23 33 11 28 29 24 41 39 2 8 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Sources\nepDigitalFilteringRclp.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 14</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 15</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 5</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 21 22 13 16 40 19 31 26 1 38 32 36 28 10 20 29 4 30 24 42 41 37 39 3 2 34 8 27 7 23</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 22 13 3 10 20 40 36 16 19 42 27 30 1 0 31 26 38 32 4 37 34 23 33 21 28 29 24 41 39 2 8 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 6</file>
+                </tool>
+                <tool>
+                    <name>IARCHIVE</name>
+                    <file> 12</file>
+                </tool>
+            </outputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\Tests\test_nepDigitalFilteringRclp.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\Tests\test_nepDigitalFilteringNms.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>nepDigitalFilteringCortexM0+</name>
+        <outputs>
+            <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathFifo.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathDivision.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\iar_intrinsics_common.h</file>
+            <file>$PROJ_DIR$\Includes\nepDigitalFilteringMovingAverage.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathRound.h</file>
+            <file>$PROJ_DIR$\Sources\nepDigitalFilteringMovingAverage.c</file>
+            <file>$PROJ_DIR$\Tests\test_nepDigitalFilteringRclp.c</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathOpAmp.h</file>
+            <file>$PROJ_DIR$\Sources\nepDigitalFilteringNms.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$PROJ_DIR$\Includes\nepDigitalFilteringNms.h</file>
+            <file>$PROJ_DIR$\Tests\test_nepDigitalFilteringNms.c</file>
+            <file>$PROJ_DIR$\Includes\nepDigitalFiltering.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\Tests\test_nepDigitalFilteringMovingAverage.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\Sources\nepDigitalFilteringRclp.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$PROJ_DIR$\Includes\nepDigitalFilteringRclp.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\commun\V100\neplibs.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathParity.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathAbsolute.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathResistor.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$PROJ_DIR$\nepDigitalFilteringCortexM0+\Exe\nepDigitalFilteringCortexM0+.a</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMath.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathCrcUtil.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathLinearApprox.h</file>
+            <file>$PROJ_DIR$\nepDigitalFilteringCortexM0+\Obj\nepDigitalFilteringNms.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathCrc.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathDebounce.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathCoerce.h</file>
+            <file>\\srvdata01\commun\R&amp;D Projects\Embedded Software Teams Management\Components\nepMath\V100\Includes\nepMathAverage.h</file>
+            <file>$PROJ_DIR$\nepDigitalFilteringCortexM0+\Obj\nepDigitalFilteringRclp.xcl</file>
+            <file>$PROJ_DIR$\nepDigitalFilteringCortexM0+\Obj\nepDigitalFiltering.pbd</file>
+            <file>$PROJ_DIR$\nepDigitalFilteringCortexM0+\Obj\nepDigitalFilteringRclp.o</file>
+            <file>$PROJ_DIR$\nepDigitalFilteringCortexM0+\Obj\nepDigitalFilteringNms.xcl</file>
+            <file>$PROJ_DIR$\nepDigitalFilteringCortexM0+\Obj\nepDigitalFilteringMovingAverage.__cstat.et</file>
+            <file>$PROJ_DIR$\nepDigitalFilteringCortexM0+\Obj\nepDigitalFilteringMovingAverage.xcl</file>
+            <file>$PROJ_DIR$\nepDigitalFilteringCortexM0+\Obj\nepDigitalFilteringRclp.__cstat.et</file>
+            <file>$PROJ_DIR$\nepDigitalFilteringCortexM0+\Obj\nepDigitalFilteringMovingAverage.o</file>
+            <file>$PROJ_DIR$\nepDigitalFilteringCortexM0+\Obj\nepDigitalFilteringNms.__cstat.et</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\Sources\nepDigitalFilteringMovingAverage.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 50</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 48</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 47</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 5 22 15 17 40 19 31 25 1 38 32 36 27 0 11 20 28 4 30 24 42 41 37 33 39 3 2 34 9 26 6 23</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Sources\nepDigitalFilteringNms.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 35</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 46</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 51</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12 22 15 17 40 19 31 25 1 38 32 36 27 0 11 20 28 4 30 24 42 41 37 33 39 3 2 34 9 26 6 23</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Sources\nepDigitalFilteringRclp.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 45</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 43</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 49</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 21 22 15 17 40 19 31 25 1 38 32 36 27 0 11 20 28 4 30 24 42 41 37 33 39 3 2 34 9 26 6 23</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\nepDigitalFilteringCortexM0+\Exe\nepDigitalFilteringCortexM0+.a</name>
+            <inputs>
+                <tool>
+                    <name>IARCHIVE</name>
+                    <file> 50 35 45</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>IARCHIVE</name>
+                    <file> 29</file>
+                </tool>
+            </outputs>
+        </file>
+    </configuration>
+    <configuration>
+        <name>nepDigitalFilteringCortexM3</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+</project>
