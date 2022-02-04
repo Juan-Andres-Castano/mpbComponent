@@ -42,7 +42,7 @@ void tearDown()
 eMpbTimeBaseInit                      
 *******************************************************************************/
 
-void test_eMpbTimeBaseInit_InvalidParam_Fail()
+void test_eMpbTime_1_1_TimeBaseInit_InvalidParam_Fail()
 {
 	mpbTimeBase_t xTimeBase;
 	uint8_t ucMockTickPerMs = 2;
@@ -58,7 +58,7 @@ void test_eMpbTimeBaseInit_InvalidParam_Fail()
 }
 /*----------------------------------------------------------------------------*/
 
-void test_eMpbTimeBaseInit_Success()
+void test_eMpbTime_1_2_TimeBaseInit_Success()
 {
 	mpbTimeBase_t xTimeBase;
 	uint8_t ucMockTickPerMs = 2;
@@ -78,7 +78,7 @@ void test_eMpbTimeBaseInit_Success()
 eMpbTimeBaseTick                     
 *******************************************************************************/
 
-void test_eMpbTimeBaseTick_InvalidParam_Fail()
+void test_eMpbTime_1_3_TimeBaseTick_InvalidParam_Fail()
 {
 
 	eMpbError = eMpbTimeBaseTick( NULL );
@@ -86,7 +86,7 @@ void test_eMpbTimeBaseTick_InvalidParam_Fail()
 }
 /*----------------------------------------------------------------------------*/
 
-void test_eMpbTimeBaseTick_2TickPerMs_Success()
+void test_eMpbTime_1_4_TimeBaseTick_2TickPerMs_Success()
 {
 	mpbTimeBase_t xTimeBase;
 	uint8_t ucMockTickPerMs = 2;
@@ -104,7 +104,7 @@ void test_eMpbTimeBaseTick_2TickPerMs_Success()
 }
 /*----------------------------------------------------------------------------*/
 
-void test_eMpbTimeBaseTick_1TickPerMs_Success()
+void test_eMpbTime_1_5_TimeBase_1TickPerMs_Success()
 {
 	mpbTimeBase_t xTimeBase;
 	uint8_t ucMockTickPerMs = 1;
@@ -122,7 +122,7 @@ void test_eMpbTimeBaseTick_1TickPerMs_Success()
 }
 /*----------------------------------------------------------------------------*/
 
-void test_eMpbTimeBaseTick_1Second_Success()
+void test_eMpbTime_1_6_TimeBaseTick_1Second_Success()
 {
 	mpbTimeBase_t xTimeBase;
 	uint8_t ucMockTickPerMs = 1;
@@ -147,7 +147,7 @@ void test_eMpbTimeBaseTick_1Second_Success()
 ulMpbTimeBaseGetTick                     
 *******************************************************************************/
 
-void test_ulMpbTimeBaseGetTick_Success()
+void test_ulMpbTime_1_7_BaseGetTick_Success()
 {
 	mpbTimeBase_t xTimeBase;
 	uint8_t ucMockTickPerMs = 1;
@@ -166,7 +166,7 @@ void test_ulMpbTimeBaseGetTick_Success()
 ulMpbTimeBaseGetMs                     
 *******************************************************************************/
 
-void test_ulMpbTimeBaseGetMs_Success()
+void test_ulMpbTime_1_8_BaseGetMs_Success()
 {
 	mpbTimeBase_t xTimeBase;
 	uint8_t ucMockTickPerMs = 2;
@@ -185,7 +185,7 @@ void test_ulMpbTimeBaseGetMs_Success()
 ulMpbTimeBaseGetSecond                     
 *******************************************************************************/
 
-void test_ulMpbTimeBaseGetSecond_Success()
+void test_ulMpbTime_1_9_BaseGetSecond_Success()
 {
 	mpbTimeBase_t xTimeBase;
 	uint8_t ucMockTickPerMs = 1;
@@ -204,7 +204,7 @@ void test_ulMpbTimeBaseGetSecond_Success()
 ulMpbTimeBaseGetMinute                     
 *******************************************************************************/
 
-void test_ulMpbTimeBaseGetMinute_0minute_Success()
+void test_ulMpbTime_1_10_BaseGetMinute_0minute_Success()
 {
 	mpbTimeBase_t xTimeBase;
 	uint8_t ucMockTickPerMs = 1;
@@ -220,7 +220,7 @@ void test_ulMpbTimeBaseGetMinute_0minute_Success()
 }
 /*----------------------------------------------------------------------------*/
 
-void test_ulMpbTimeBaseGetMinute_1minute_Success()
+void test_ulMpbTime_1_11_BaseGetMinute_1minute_Success()
 {
 	mpbTimeBase_t xTimeBase;
 	uint8_t ucMockTickPerMs = 1;
@@ -236,7 +236,7 @@ void test_ulMpbTimeBaseGetMinute_1minute_Success()
 }
 /*----------------------------------------------------------------------------*/
 
-void test_ulMpbTimeBaseGetMinute_2minutes_Success()
+void test_ulMpbTime_1_12_BaseGetMinute_2minutes_Success()
 {
 	mpbTimeBase_t xTimeBase;
 	uint8_t ucMockTickPerMs = 1;
@@ -255,7 +255,7 @@ void test_ulMpbTimeBaseGetMinute_2minutes_Success()
 ulMpbTimeBaseGetHour                     
 *******************************************************************************/
 
-void test_ulMpbTimeBaseGetHour_0Hour_Success()
+void test_ulMpbTime_1_13_BaseGetHour_0Hour_Success()
 {
 	mpbTimeBase_t xTimeBase;
 	uint8_t ucMockTickPerMs = 1;
@@ -271,7 +271,7 @@ void test_ulMpbTimeBaseGetHour_0Hour_Success()
 }
 /*----------------------------------------------------------------------------*/
 
-void test_ulMpbTimeBaseGetHour_1Hour_Success()
+void test_ulMpbTime_1_14_BaseGetHour_1Hour_Success()
 {
 	mpbTimeBase_t xTimeBase;
 	uint8_t ucMockTickPerMs = 1;
@@ -293,7 +293,7 @@ void test_ulMpbTimeBaseGetHour_1Hour_Success()
 }
 /*----------------------------------------------------------------------------*/
 
-void test_ulMpbTimeBaseGetHour_MoreThen1Hour_Success()
+void test_ulMpbTime_1_15_BaseGetHour_MoreThen1Hour_Success()
 {
 	mpbTimeBase_t xTimeBase;
 	uint8_t ucMockTickPerMs = 1;
@@ -317,7 +317,7 @@ void test_ulMpbTimeBaseGetHour_MoreThen1Hour_Success()
 eMpbTimeBaseIsDelayDone                     
 *******************************************************************************/
 
-void test_eMpbTimeBaseIsDelayDone_eTrue_Success()
+void test_eMpbTime_1_16_BaseIsDelayDone_eTrue_Success()
 {
 	eBool_t eDelayCompleted;
 	uint32_t ulMockCounter = 2000, ulMockTimeStamp = 1000;
@@ -328,7 +328,7 @@ void test_eMpbTimeBaseIsDelayDone_eTrue_Success()
 }
 /*----------------------------------------------------------------------------*/
 
-void test_eMpbTimeBaseIsDelayDone_eFalse_Success()
+void test_eMpbMpbTime_1_17_IsDelayDone_eFalse_Success()
 {
 	eBool_t eDelayCompleted;
 	uint32_t ulMockCounter = 44575, ulMockTimeStamp = 48477;
@@ -339,7 +339,7 @@ void test_eMpbTimeBaseIsDelayDone_eFalse_Success()
 }
 /*----------------------------------------------------------------------------*/
 
-void test_eMpbTimeBaseIsDelayDone_eFalse_OverFlow_Success()
+void test_eMpbTime_1_18_IsDelayDone_eFalse_OverFlow_Success()
 {
 	eBool_t eDelayCompleted;
 	uint32_t ulMockCounter = 0xFFFFFFFF, ulMockTimeStamp = 0;
