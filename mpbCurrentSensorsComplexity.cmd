@@ -33,6 +33,6 @@ echo    `..-.`     ````               `......`       ......            `........
 echo "runing cyclomatic complexity.."
 
 
-sourcemonitor /C "C:\mpbComponent\mpbCurrentSensors\CurrentSensing\complexity\mpbCurrentSensor.xml" /L "C:\mpbComponent\mpbCurrentSensors\CurrentSensing\complexity\mpbtime.log"
+sourcemonitor /C "C:\mpbComponent\mpbCurrentSensors\CurrentSensing\complexity\mpbCurrentSensor.xml" /L "C:\mpbComponent\mpbCurrentSensors\CurrentSensing\complexity\mpbCurrentSensor.log"
 
  
