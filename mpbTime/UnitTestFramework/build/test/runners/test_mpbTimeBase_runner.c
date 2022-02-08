@@ -51,7 +51,7 @@ extern void test_ulMpbTime_1_13_BaseGetHour_0Hour_Success();
 extern void test_ulMpbTime_1_14_BaseGetHour_1Hour_Success();
 extern void test_ulMpbTime_1_15_BaseGetHour_MoreThen1Hour_Success();
 extern void test_eMpbTime_1_16_BaseIsDelayDone_eTrue_Success();
-extern void test_eMpbMpbTime_1_17_IsDelayDone_eFalse_Success();
+extern void test_eMpbTime_1_17_IsDelayDone_eFalse_Success();
 extern void test_eMpbTime_1_18_IsDelayDone_eFalse_OverFlow_Success();
 
 
@@ -103,7 +103,7 @@ int main(void)
   RUN_TEST(test_ulMpbTime_1_14_BaseGetHour_1Hour_Success, 274);
   RUN_TEST(test_ulMpbTime_1_15_BaseGetHour_MoreThen1Hour_Success, 296);
   RUN_TEST(test_eMpbTime_1_16_BaseIsDelayDone_eTrue_Success, 320);
-  RUN_TEST(test_eMpbMpbTime_1_17_IsDelayDone_eFalse_Success, 331);
+  RUN_TEST(test_eMpbTime_1_17_IsDelayDone_eFalse_Success, 331);
   RUN_TEST(test_eMpbTime_1_18_IsDelayDone_eFalse_OverFlow_Success, 342);
 
   return suite_teardown(UnityEnd());

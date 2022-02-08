@@ -5193,7 +5193,7 @@ void test_eMpbTime_1_16_BaseIsDelayDone_eTrue_Success()
 }
  
 
-void test_eMpbMpbTime_1_17_IsDelayDone_eFalse_Success()
+void test_eMpbTime_1_17_IsDelayDone_eFalse_Success()
 {
 	eBool_t eDelayCompleted;
 	uint32_t ulMockCounter = 44575, ulMockTimeStamp = 48477;
