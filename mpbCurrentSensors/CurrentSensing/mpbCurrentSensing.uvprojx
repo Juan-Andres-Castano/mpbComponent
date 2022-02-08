@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\Includes;..\..\common;..\..\mpbMath\V_100\Includes</IncludePath>
+              <IncludePath>.\Includes;..\..\commun\Includes;C:\myWorks\Qeyssat2021\Components\mpbMath\V_100\Includes</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -404,11 +404,6 @@
     <Layers>
       <Layer>
         <LayName>mpbCurrentSensing</LayName>
-        <LayDesc></LayDesc>
-        <LayUrl></LayUrl>
-        <LayKeys></LayKeys>
-        <LayCat></LayCat>
-        <LayLic></LayLic>
         <LayTarg>0</LayTarg>
         <LayPrjMark>1</LayPrjMark>
       </Layer>

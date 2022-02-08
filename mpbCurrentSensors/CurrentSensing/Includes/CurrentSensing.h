@@ -47,7 +47,7 @@ typedef struct
 * @param[out] pfCurrent: Pointer to store the current
 * @return     Success or library error message
 **/
-eMpbError_t eCurrentSensingGetCurrentmA( handle_t xStream, xCurrentInputScaling_t xCurrentInputScaling, float *pfCurrent );
+eMpbError_t eCurrentSensingGetCurrentmA( handle_t xStream, xCurrentInputScaling_t xCurrentInputScaling , float *pfCurrent );
 
 /**
 * @brief      Get the power of the current sensing input in mW

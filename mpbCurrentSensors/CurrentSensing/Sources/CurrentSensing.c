@@ -28,7 +28,7 @@
 /* Exported functions ------------------------------------------------------- */
 
 
-eMpbError_t eCurrentSensingGetCurrentmA( handle_t xStream, xCurrentInputScaling_t xCurrentInputScaling, float *pfCurrent )
+eMpbError_t eCurrentSensingGetCurrentmA( handle_t xStream, xCurrentInputScaling_t xCurrentInputScaling, float *pfCurrent  )
 {
 	eMpbError_t eResult = eInvalidParameter;
 	float xVoltage;
@@ -44,7 +44,7 @@ eMpbError_t eCurrentSensingGetCurrentmA( handle_t xStream, xCurrentInputScaling_
         return eResult;
     }
     
-		*pfCurrent = xCurrentInputScaling.fCalibration * ( xVoltage * xCurrentInputScaling.fSlope + xCurrentInputScaling.fIntercept );
+	*pfCurrent = xCurrentInputScaling.fCalibration * ( xVoltage * xCurrentInputScaling.fSlope + xCurrentInputScaling.fIntercept );
    	
 	return eResult;
 }

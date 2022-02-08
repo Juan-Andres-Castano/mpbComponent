@@ -1,22 +1,22 @@
 Dependencies for Project 'mpbCurrentSensing', Target 'currentSensing': (DO NOT MODIFY !)
 CompilerVersion: 6150000::V6.15::ARMCLANG
-F (.\Sources\CurrentSensing.c)(0x6058B521)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Includes -I ../../common -I ../../mpbMath/V_100/Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/currentsensing.o -MD)
-I (Includes\CurrentSensing.h)(0x60549EF6)
-I (..\..\common\mpblibs.h)(0x603EB46E)
+F (.\Sources\CurrentSensing.c)(0x6202B7B2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Includes -I ../../commun/Includes -I C:/myWorks/Qeyssat2021/Components/mpbMath/V_100/Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/currentsensing.o -MD)
+I (Includes\CurrentSensing.h)(0x6202B700)
+I (..\..\commun\Includes\mpblibs.h)(0x61EB03FA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F378778)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F37877E)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5F378774)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5F378762)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F37877E)
-I (..\..\mpbMath\V_100\Includes\mpbMath.h)(0x6048D8BD)
-I (..\..\mpbMath\V_100\Includes\mpbMathAbsolute.h)(0x60413068)
-I (..\..\mpbMath\V_100\Includes\mpbMathAverage.h)(0x6046962A)
-I (..\..\mpbMath\V_100\Includes\mpbMathCoerce.h)(0x6046962B)
-I (..\..\mpbMath\V_100\Includes\mpbMathCrc.h)(0x6046962B)
-I (..\..\mpbMath\V_100\Includes\mpbMathCrcUtil.h)(0x604133D8)
-I (..\..\mpbMath\V_100\Includes\mpbMathDebounce.h)(0x60413724)
-I (..\..\mpbMath\V_100\Includes\mpbMathDivision.h)(0x60413DD8)
-I (..\..\mpbMath\V_100\Includes\mpbMathFifo.h)(0x60413CA4)
-I (..\..\mpbMath\V_100\Includes\mpbMathLinearApprox.h)(0x6046962B)
-I (..\..\mpbMath\V_100\Includes\mpbMathResistor.h)(0x6048CE66)
-I (..\..\mpbMath\V_100\Includes\mpbMathRound.h)(0x604138A1)
+I (C:\myWorks\Qeyssat2021\Components\mpbMath\V_100\Includes\mpbMath.h)(0x60ACEC17)
+I (C:\myWorks\Qeyssat2021\Components\mpbMath\V_100\Includes\mpbMathAbsolute.h)(0x60ACEC17)
+I (C:\myWorks\Qeyssat2021\Components\mpbMath\V_100\Includes\mpbMathAverage.h)(0x60ACEC17)
+I (C:\myWorks\Qeyssat2021\Components\mpbMath\V_100\Includes\mpbMathCoerce.h)(0x60ACEC17)
+I (C:\myWorks\Qeyssat2021\Components\mpbMath\V_100\Includes\mpbMathCrc.h)(0x60ACEC17)
+I (C:\myWorks\Qeyssat2021\Components\mpbMath\V_100\Includes\mpbMathCrcUtil.h)(0x60ACEC17)
+I (C:\myWorks\Qeyssat2021\Components\mpbMath\V_100\Includes\mpbMathDebounce.h)(0x60ACEC17)
+I (C:\myWorks\Qeyssat2021\Components\mpbMath\V_100\Includes\mpbMathDivision.h)(0x60ACEC17)
+I (C:\myWorks\Qeyssat2021\Components\mpbMath\V_100\Includes\mpbMathFifo.h)(0x60ACEC17)
+I (C:\myWorks\Qeyssat2021\Components\mpbMath\V_100\Includes\mpbMathLinearApprox.h)(0x60ACEC17)
+I (C:\myWorks\Qeyssat2021\Components\mpbMath\V_100\Includes\mpbMathResistor.h)(0x60ACEC17)
+I (C:\myWorks\Qeyssat2021\Components\mpbMath\V_100\Includes\mpbMathRound.h)(0x60ACEC17)

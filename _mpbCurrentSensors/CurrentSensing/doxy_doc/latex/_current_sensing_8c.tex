@@ -1,0 +1,109 @@
+\hypertarget{_current_sensing_8c}{}\doxysection{Sources/\+Current\+Sensing.c File Reference}
+\label{_current_sensing_8c}\index{Sources/CurrentSensing.c@{Sources/CurrentSensing.c}}
+
+
+Library to calculate a current according to a current sensing signal input.  
+
+
+{\ttfamily \#include \char`\"{}Current\+Sensing.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mpb\+Math.\+h\char`\"{}}\newline
+Include dependency graph for Current\+Sensing.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{_current_sensing_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+e\+Mpb\+Error\+\_\+t \mbox{\hyperlink{_current_sensing_8c_adac8a54e681121c24ea639580b190177}{e\+Current\+Sensing\+Get\+CurrentmA}} (handle\+\_\+t x\+Stream, \mbox{\hyperlink{structx_current_input_scaling__t}{x\+Current\+Input\+Scaling\+\_\+t}} x\+Current\+Input\+Scaling, float $\ast$pf\+Current)
+\begin{DoxyCompactList}\small\item\em Get the current of the current sensing input in mA. \end{DoxyCompactList}\item 
+e\+Mpb\+Error\+\_\+t \mbox{\hyperlink{_current_sensing_8c_ab4b88daffe6a8fcc56ee74e6d48b11a1}{e\+Current\+Sensing\+Get\+PowermW}} (handle\+\_\+t x\+Stream, \mbox{\hyperlink{structx_power_input_scaling__t}{x\+Power\+Input\+Scaling\+\_\+t}} x\+Power\+Input\+Scaling, float $\ast$pf\+Power)
+\begin{DoxyCompactList}\small\item\em Get the power of the current sensing input in mW. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Library to calculate a current according to a current sensing signal input. 
+
+\begin{DoxyAuthor}{Author}
+juan andres 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Created on 3/8/2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+MPB, Montreal, Qc \doxysubsubsection*{\begin{center}\copyright{} COPYRIGHT 2021 MPB, Montreal, Quebec, Canada\end{center} }
+\end{DoxyCopyright}
+\doxysubsubsection*{\begin{center}\copyright{} All rights reserved.\end{center} }
+
+~\newline
+~\newline
+ \begin{center}This document contains confidential and proprietary information of MPB (subject to a non-\/disclosure agreement) and shall\end{center}  \begin{center}not be disclosed, distributed, or reproduced in whole or in part, without the prior written authorization of MPB.\end{center}  
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_current_sensing_8c_adac8a54e681121c24ea639580b190177}\label{_current_sensing_8c_adac8a54e681121c24ea639580b190177}} 
+\index{CurrentSensing.c@{CurrentSensing.c}!eCurrentSensingGetCurrentmA@{eCurrentSensingGetCurrentmA}}
+\index{eCurrentSensingGetCurrentmA@{eCurrentSensingGetCurrentmA}!CurrentSensing.c@{CurrentSensing.c}}
+\doxysubsubsection{\texorpdfstring{eCurrentSensingGetCurrentmA()}{eCurrentSensingGetCurrentmA()}}
+{\footnotesize\ttfamily e\+Mpb\+Error\+\_\+t e\+Current\+Sensing\+Get\+CurrentmA (\begin{DoxyParamCaption}\item[{handle\+\_\+t}]{x\+Stream,  }\item[{\mbox{\hyperlink{structx_current_input_scaling__t}{x\+Current\+Input\+Scaling\+\_\+t}}}]{x\+Current\+Input\+Scaling,  }\item[{float $\ast$}]{pf\+Current }\end{DoxyParamCaption})}
+
+
+
+Get the current of the current sensing input in mA. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x\+Stream} & Application specific peripheral channel identifier \\
+\hline
+\mbox{\texttt{ out}}  & {\em pf\+Current} & Pointer to store the current \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Success or library error message 
+\end{DoxyReturn}
+
+
+Definition at line 31 of file Current\+Sensing.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_current_sensing_8c_adac8a54e681121c24ea639580b190177_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_current_sensing_8c_ab4b88daffe6a8fcc56ee74e6d48b11a1}\label{_current_sensing_8c_ab4b88daffe6a8fcc56ee74e6d48b11a1}} 
+\index{CurrentSensing.c@{CurrentSensing.c}!eCurrentSensingGetPowermW@{eCurrentSensingGetPowermW}}
+\index{eCurrentSensingGetPowermW@{eCurrentSensingGetPowermW}!CurrentSensing.c@{CurrentSensing.c}}
+\doxysubsubsection{\texorpdfstring{eCurrentSensingGetPowermW()}{eCurrentSensingGetPowermW()}}
+{\footnotesize\ttfamily e\+Mpb\+Error\+\_\+t e\+Current\+Sensing\+Get\+PowermW (\begin{DoxyParamCaption}\item[{handle\+\_\+t}]{x\+Stream,  }\item[{\mbox{\hyperlink{structx_power_input_scaling__t}{x\+Power\+Input\+Scaling\+\_\+t}}}]{x\+Power\+Input\+Scaling,  }\item[{float $\ast$}]{pf\+Power }\end{DoxyParamCaption})}
+
+
+
+Get the power of the current sensing input in mW. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x\+Stream} & Application specific peripheral channel identifier \\
+\hline
+\mbox{\texttt{ out}}  & {\em pf\+Current} & Pointer to store the current \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Success or library error message 
+\end{DoxyReturn}
+
+
+Definition at line 52 of file Current\+Sensing.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_current_sensing_8c_ab4b88daffe6a8fcc56ee74e6d48b11a1_cgraph}
+\end{center}
+\end{figure}
