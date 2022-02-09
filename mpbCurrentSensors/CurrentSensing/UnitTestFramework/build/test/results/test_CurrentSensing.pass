@@ -3,18 +3,30 @@
   :path: "../Tests"
   :file: test_CurrentSensing.c
 :successes:
-- :test: test_eCurrentSensingGetCurrentmA_NullPointer_Fail
-  :line: 53
+- :test: test_1_1_eCurrentSensingSet_m_1_to_s_1_SlopeEquation_Success
+  :line: 54
   :message: ''
-- :test: test_eCurrentSensingGetCurrentmA_AnalogReadmV_Fail
-  :line: 61
+- :test: test_1_2_eCurrentSensingSet_m_2_to_s_1_SlopeEquation_Success
+  :line: 74
+  :message: ''
+- :test: test_1_3_eCurrentSensingSet_m_1_to_s_2_SlopeEquation_Success
+  :line: 94
+  :message: ''
+- :test: test_1_4_eCurrentSensingGetCurrentmA_Success
+  :line: 114
+  :message: ''
+- :test: test_1_5_eCurrentSensingGetCurrentmA_NullPointer_Fail
+  :line: 135
+  :message: ''
+- :test: test_1_6_eCurrentSensingGetCurrentmA_AnalogReadmV_Fail
+  :line: 143
   :message: ''
 :failures: []
 :ignores: []
 :counts:
-  :total: 2
-  :passed: 2
+  :total: 6
+  :passed: 6
   :failed: 0
   :ignored: 0
 :stdout: []
-:time: 1.8652731000911444
+:time: 0.7737554999766871

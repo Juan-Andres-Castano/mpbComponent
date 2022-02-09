@@ -2,8 +2,8 @@
 * @file           CurrentSensing.h
 * @brief          Library to calculate a current according to a current
 *                 sensing signal input.
-* @author         Mikael Plouffe
-* @date           Created on 4/15/2019
+* @author         juan andres
+* @date           Created on 3/8/2021
 * @copyright MPB, Montreal, Qc
 * <h2><center>&copy; COPYRIGHT 2021 MPB, Montreal, Quebec, Canada</center></h2>
 * <h2><center>&copy; All rights reserved.</center></h2><br/><br/>
@@ -28,14 +28,13 @@ typedef struct
 {
 	float fIntercept;
 	float fSlope;	
-	float fCalibration;
 }xCurrentInputScaling_t;
 
 typedef struct
 {
 	float fIntercept;
 	float fSlope;	
-	float fCalibration;
+
 }xPowerInputScaling_t;
 
 /* Global variables --------------------------------------------------------- */

@@ -1,6 +1,6 @@
 ﻿###############################################################################
 #
-# IAR ELF Linker V9.10.1.308/W64 for ARM                  08/Feb/2022  15:55:10
+# IAR ELF Linker V9.10.1.308/W64 for ARM                  09/Feb/2022  14:33:20
 # Copyright 2007-2021 IAR Systems AB.
 #
 #    Output file  =  build/test/out/test_CurrentSensing.out
@@ -12,8 +12,7 @@
 #        build/test/tests.map -o build/test/out/test_CurrentSensing.out
 #        build/test/out/c/test_CurrentSensing_runner.o
 #        build/test/out/c/test_CurrentSensing.o
-#        build/test/out/c/mock_test_CurrentSensing.o
-#        build/test/out/c/mock_mpbMathDivision.o build/test/out/c/unity.o
+#        build/test/out/c/mock_test_CurrentSensing.o build/test/out/c/unity.o
 #        build/test/out/c/CurrentSensing.o build/test/out/c/cmock.o
 #
 ###############################################################################
@@ -57,112 +56,112 @@ initialize by copy { rw };
   .intvec            ro code          0x0    0x40  vector_table_M.o [4]
                                    - 0x40    0x40
 
-"P1":                                      0x22b9
-  .text              ro code         0x40   0x910  unity.o [1]
-  .text              ro code        0x950     0xc  putchar.o [2]
-  .text              ro code        0x95c    0x28  FltCmpLe.o [3]
-  .text              ro code        0x984    0x1c  FltCmpEq.o [3]
-  .text              ro code        0x9a0   0x118  FltDiv.o [3]
-  .text              ro code        0xab8    0x40  unity.o [1]
-  .text              ro code        0xaf8    0xd8  FltMul.o [3]
-  .text              ro code        0xbd0    0x28  FltCmpGe.o [3]
-  .text              ro code        0xbf8   0x16e  FltAddSub.o [3]
-  .text              ro code        0xd66    0x76  lz77_init_single.o [4]
-  .text              ro code        0xddc    0x26  FltToS32.o [3]
-  .text              ro code        0xe02     0x2  vectortrap_M.o [4]
-  .text              ro code        0xe04    0x24  setjmp.o [3]
-  .text              ro code        0xe28    0x56  fputc.o [2]
-  .text              ro code        0xe7e    0xb4  xfwprep.o [2]
-  .text              ro code        0xf34    0xac  fflush.o [2]
-  .text              ro code        0xfe0   0x13c  heap0.o [2]
-  .text              ro code       0x111c    0x24  fseek.o [2]
-  .text              ro code       0x1140    0x10  write.o [5]
-  .text              ro code       0x1150    0x2c  xgetmemchunk.o [2]
-  .text              ro code       0x117c    0xd8  xfspos.o [2]
-  .text              ro code       0x1254    0x1e  dwrite.o [5]
-  .text              ro code       0x1272     0xc  xfgpos.o [2]
-  .text              ro code       0x127e    0x4e  lseek.o [5]
-  .text              ro code       0x12cc    0x20  iarwstd.o [5]
-  .text              ro code       0x12ec    0x22  iarwrite.o [5]
-  .text              ro code       0x1310    0xcc  XShHandles.o [2]
-  .text              ro code       0x13dc    0x7c  iarttio.o [5]
-  .text              ro code       0x1458     0x8  XShttio.o [2]
-  .text              ro code       0x1460   0x2e4  mock_test_CurrentSensing.o [1]
-  .text              ro code       0x1744   0x108  cmock.o [1]
-  .text              ro code       0x184c    0x66  ABImemset.o [4]
-  .text              ro code       0x18b4    0x76  ABImemcpy_unaligned.o [4]
-  .text              ro code       0x192c   0x14c  mock_mpbMathDivision.o [1]
-  .text              ro code       0x1a78   0x104  test_CurrentSensing_runner.o [1]
-  .text              ro code       0x1b7c    0xa8  test_CurrentSensing.o [1]
-  .text              ro code       0x1c24    0x48  CurrentSensing.o [1]
-  .text              ro code       0x1c6c    0x9c  xfofind.o [2]
-  .text              ro code       0x1d08     0x4  heaptramp0.o [2]
-  .text              ro code       0x1d0c    0x7e  fclose.o [2]
-  .text              ro code       0x1d8a    0x18  close.o [5]
-  .text              ro code       0x1da2    0x14  remove.o [5]
-  .text              ro code       0x1db8    0x36  strlen.o [4]
-  .text              ro code       0x1df0    0x40  xcloseall.o [2]
-  .rodata            const         0x1e30    0x38  unity.o [1]
-  .text              ro code       0x1e68    0x38  zero_init3.o [4]
-  .rodata            const         0x1ea0    0x34  test_CurrentSensing_runner.o [1]
-  .rodata            const         0x1ed4    0x34  test_CurrentSensing_runner.o [1]
-  .rodata            const         0x1f08    0x34  cmock.o [1]
-  .rodata            const         0x1f3c    0x30  cmock.o [1]
-  .text              ro code       0x1f6c    0x28  data_init.o [4]
-  .rodata            const         0x1f94    0x24  cmock.o [1]
-  .rodata            const         0x1fb8    0x24  cmock.o [1]
-  .iar.init_table    const         0x1fdc    0x20  - Linker created -
-  .rodata            const         0x1ffc    0x20  unity.o [1]
-  .rodata            const         0x201c    0x20  cmock.o [1]
-  .rodata            const         0x203c    0x20  cmock.o [1]
-  .text              ro code       0x205c    0x1e  cmain.o [4]
-  .text              ro code       0x207a     0x4  low_level_init.o [2]
-  .text              ro code       0x207e     0x4  exit.o [2]
-  .text              ro code       0x2084     0xe  cexit.o [4]
-  .text              ro code       0x2094    0x14  exit.o [5]
-  .rodata            const         0x20a8    0x1c  mock_test_CurrentSensing.o [1]
-  .rodata            const         0x20c4    0x1c  unity.o [1]
-  .rodata            const         0x20e0    0x1c  cmock.o [1]
-  .text              ro code       0x20fc    0x1c  cstartup_M.o [4]
-  .rodata            const         0x2118    0x18  test_CurrentSensing_runner.o [1]
-  .rodata            const         0x2130    0x18  mock_mpbMathDivision.o [1]
-  .rodata            const         0x2148    0x18  mock_mpbMathDivision.o [1]
-  .rodata            const         0x2160    0x18  unity.o [1]
-  .rodata            const         0x2178    0x14  mock_mpbMathDivision.o [1]
-  .rodata            const         0x218c    0x14  mock_mpbMathDivision.o [1]
-  .rodata            const         0x21a0    0x14  unity.o [1]
-  .rodata            const         0x21b4    0x14  cmock.o [1]
-  .rodata            const         0x21c8    0x10  cmock.o [1]
-  .rodata            const         0x21d8     0xc  mock_test_CurrentSensing.o [1]
-  .rodata            const         0x21e4     0xc  unity.o [1]
-  .rodata            const         0x21f0     0xc  unity.o [1]
-  .rodata            const         0x21fc     0xc  unity.o [1]
-  .rodata            const         0x2208     0xc  unity.o [1]
-  .rodata            const         0x2214     0xc  unity.o [1]
-  .rodata            const         0x2220     0xc  unity.o [1]
-  .rodata            const         0x222c     0x8  mock_test_CurrentSensing.o [1]
-  .rodata            const         0x2234     0x8  unity.o [1]
-  .rodata            const         0x223c     0x8  unity.o [1]
-  .rodata            const         0x2244     0x8  unity.o [1]
-  .rodata            const         0x224c     0x8  unity.o [1]
-  .rodata            const         0x2254     0x8  unity.o [1]
-  .rodata            const         0x225c     0x4  unity.o [1]
-  .rodata            const         0x2260     0x4  unity.o [1]
-  .text              ro code       0x2264     0x0  cstart_closeall.o [4]
-  .rodata            const         0x2264     0x0  zero_init3.o [4]
-  .rodata            const         0x2264     0x0  lz77_init_single.o [4]
-  Initializer bytes  const         0x2264    0x95  <for P2-1>
-                                 - 0x22f9  0x22b9
+"P1":                                      0x25bb
+  .text              ro code         0x40   0x970  unity.o [1]
+  .text              ro code        0x9b0     0xc  putchar.o [2]
+  .text              ro code        0x9bc    0x28  FltCmpLe.o [3]
+  .text              ro code        0x9e4    0x1c  FltCmpEq.o [3]
+  .text              ro code        0xa00   0x118  FltDiv.o [3]
+  .text              ro code        0xb18    0x40  unity.o [1]
+  .text              ro code        0xb58    0xd8  FltMul.o [3]
+  .text              ro code        0xc30    0x28  FltCmpGe.o [3]
+  .text              ro code        0xc58   0x16e  FltAddSub.o [3]
+  .text              ro code        0xdc6    0x76  lz77_init_single.o [4]
+  .text              ro code        0xe3c    0x26  FltToS32.o [3]
+  .text              ro code        0xe62     0x2  vectortrap_M.o [4]
+  .text              ro code        0xe64    0x24  setjmp.o [3]
+  .text              ro code        0xe88    0x56  fputc.o [2]
+  .text              ro code        0xede    0xb4  xfwprep.o [2]
+  .text              ro code        0xf94    0xac  fflush.o [2]
+  .text              ro code       0x1040   0x13c  heap0.o [2]
+  .text              ro code       0x117c    0x24  fseek.o [2]
+  .text              ro code       0x11a0    0x10  write.o [5]
+  .text              ro code       0x11b0    0x2c  xgetmemchunk.o [2]
+  .text              ro code       0x11dc    0xd8  xfspos.o [2]
+  .text              ro code       0x12b4    0x1e  dwrite.o [5]
+  .text              ro code       0x12d2     0xc  xfgpos.o [2]
+  .text              ro code       0x12de    0x4e  lseek.o [5]
+  .text              ro code       0x132c    0x20  iarwstd.o [5]
+  .text              ro code       0x134c    0x22  iarwrite.o [5]
+  .text              ro code       0x1370    0xcc  XShHandles.o [2]
+  .text              ro code       0x143c    0x7c  iarttio.o [5]
+  .text              ro code       0x14b8     0x8  XShttio.o [2]
+  .text              ro code       0x14c0   0x314  mock_test_CurrentSensing.o [1]
+  .text              ro code       0x17d4   0x108  cmock.o [1]
+  .text              ro code       0x18dc    0x66  ABImemset.o [4]
+  .text              ro code       0x1944    0x76  ABImemcpy_unaligned.o [4]
+  .text              ro code       0x19bc   0x2a0  test_CurrentSensing.o [1]
+  .text              ro code       0x1c5c    0x36  CurrentSensing.o [1]
+  .text              ro code       0x1c94   0x220  test_CurrentSensing_runner.o [1]
+  .text              ro code       0x1eb4    0x9c  xfofind.o [2]
+  .text              ro code       0x1f50     0x4  heaptramp0.o [2]
+  .text              ro code       0x1f54    0x7e  fclose.o [2]
+  .text              ro code       0x1fd2    0x18  close.o [5]
+  .text              ro code       0x1fea    0x14  remove.o [5]
+  .text              ro code       0x2000    0x36  strlen.o [4]
+  .rodata            const         0x2038    0x40  test_CurrentSensing_runner.o [1]
+  .rodata            const         0x2078    0x40  test_CurrentSensing_runner.o [1]
+  .rodata            const         0x20b8    0x40  test_CurrentSensing_runner.o [1]
+  .text              ro code       0x20f8    0x40  xcloseall.o [2]
+  .rodata            const         0x2138    0x38  test_CurrentSensing_runner.o [1]
+  .rodata            const         0x2170    0x38  test_CurrentSensing_runner.o [1]
+  .rodata            const         0x21a8    0x38  unity.o [1]
+  .text              ro code       0x21e0    0x38  zero_init3.o [4]
+  .rodata            const         0x2218    0x34  cmock.o [1]
+  .rodata            const         0x224c    0x30  test_CurrentSensing_runner.o [1]
+  .rodata            const         0x227c    0x30  cmock.o [1]
+  .text              ro code       0x22ac    0x28  data_init.o [4]
+  .rodata            const         0x22d4    0x24  cmock.o [1]
+  .rodata            const         0x22f8    0x24  cmock.o [1]
+  .rodata            const         0x231c    0x24  cmock.o [1]
+  .iar.init_table    const         0x2340    0x20  - Linker created -
+  .rodata            const         0x2360    0x20  unity.o [1]
+  .rodata            const         0x2380    0x20  cmock.o [1]
+  .rodata            const         0x23a0    0x20  cmock.o [1]
+  .text              ro code       0x23c0    0x1e  cmain.o [4]
+  .text              ro code       0x23de     0x4  low_level_init.o [2]
+  .text              ro code       0x23e2     0x4  exit.o [2]
+  .text              ro code       0x23e8     0xe  cexit.o [4]
+  .text              ro code       0x23f8    0x14  exit.o [5]
+  .rodata            const         0x240c    0x1c  mock_test_CurrentSensing.o [1]
+  .rodata            const         0x2428    0x1c  unity.o [1]
+  .rodata            const         0x2444    0x1c  cmock.o [1]
+  .text              ro code       0x2460    0x1c  cstartup_M.o [4]
+  .rodata            const         0x247c    0x18  test_CurrentSensing_runner.o [1]
+  .rodata            const         0x2494    0x18  unity.o [1]
+  .rodata            const         0x24ac    0x14  unity.o [1]
+  .rodata            const         0x24c0    0x14  cmock.o [1]
+  .rodata            const         0x24d4    0x10  cmock.o [1]
+  .rodata            const         0x24e4     0xc  mock_test_CurrentSensing.o [1]
+  .rodata            const         0x24f0     0xc  unity.o [1]
+  .rodata            const         0x24fc     0xc  unity.o [1]
+  .rodata            const         0x2508     0xc  unity.o [1]
+  .rodata            const         0x2514     0xc  unity.o [1]
+  .rodata            const         0x2520     0xc  unity.o [1]
+  .rodata            const         0x252c     0xc  unity.o [1]
+  .rodata            const         0x2538     0x8  mock_test_CurrentSensing.o [1]
+  .rodata            const         0x2540     0x8  unity.o [1]
+  .rodata            const         0x2548     0x8  unity.o [1]
+  .rodata            const         0x2550     0x8  unity.o [1]
+  .rodata            const         0x2558     0x8  unity.o [1]
+  .rodata            const         0x2560     0x8  unity.o [1]
+  .rodata            const         0x2568     0x4  unity.o [1]
+  .rodata            const         0x256c     0x4  unity.o [1]
+  .text              ro code       0x2570     0x0  cstart_closeall.o [4]
+  .rodata            const         0x2570     0x0  zero_init3.o [4]
+  .rodata            const         0x2570     0x0  lz77_init_single.o [4]
+  Initializer bytes  const         0x2570    0x8b  <for P2-1>
+                                 - 0x25fb  0x25bb
 
-"P2", part 1 of 3:                          0x144
-  P2-1                        0x2000'0000   0x144  <Init block>
+"P2", part 1 of 3:                          0x138
+  P2-1                        0x2000'0000   0x138  <Init block>
     .data            inited   0x2000'0000     0x4  mock_test_CurrentSensing.o [1]
     .data            inited   0x2000'0004     0x4  mock_test_CurrentSensing.o [1]
     .data            inited   0x2000'0008     0x4  mock_test_CurrentSensing.o [1]
-    .data            inited   0x2000'000c     0x4  mock_mpbMathDivision.o [1]
-    .data            inited   0x2000'0010     0x4  mock_mpbMathDivision.o [1]
-    .data            inited   0x2000'0014     0x4  mock_mpbMathDivision.o [1]
-    .data            inited   0x2000'0018     0x4  mock_mpbMathDivision.o [1]
+    .data            inited   0x2000'000c     0x4  cmock.o [1]
+    .data            inited   0x2000'0010     0x4  cmock.o [1]
+    .data            inited   0x2000'0014     0x4  cmock.o [1]
+    .data            inited   0x2000'0018     0x4  cmock.o [1]
     .data            inited   0x2000'001c     0x4  cmock.o [1]
     .data            inited   0x2000'0020     0x4  cmock.o [1]
     .data            inited   0x2000'0024     0x4  cmock.o [1]
@@ -170,49 +169,44 @@ initialize by copy { rw };
     .data            inited   0x2000'002c     0x4  cmock.o [1]
     .data            inited   0x2000'0030     0x4  cmock.o [1]
     .data            inited   0x2000'0034     0x4  cmock.o [1]
-    .data            inited   0x2000'0038     0x4  cmock.o [1]
-    .data            inited   0x2000'003c     0x4  cmock.o [1]
-    .data            inited   0x2000'0040     0x4  cmock.o [1]
-    .data            inited   0x2000'0044    0x48  xfiles.o [2]
-    .data            inited   0x2000'008c    0x48  xfiles.o [2]
-    .data            inited   0x2000'00d4    0x48  xfiles.o [2]
-    .data            inited   0x2000'011c    0x20  xfiles.o [2]
-    .data            inited   0x2000'013c     0x8  XShttio.o [2]
-                            - 0x2000'0144   0x144
+    .data            inited   0x2000'0038    0x48  xfiles.o [2]
+    .data            inited   0x2000'0080    0x48  xfiles.o [2]
+    .data            inited   0x2000'00c8    0x48  xfiles.o [2]
+    .data            inited   0x2000'0110    0x20  xfiles.o [2]
+    .data            inited   0x2000'0130     0x8  XShttio.o [2]
+                            - 0x2000'0138   0x138
 
-"P2", part 2 of 3:                         0x8220
-  .bss               zero     0x2000'0144  0x8000  cmock.o [1]
-  .bss               zero     0x2000'8144    0x80  XShHandles.o [2]
-  .bss               zero     0x2000'81c8    0x68  unity.o [1]
-  .bss               zero     0x2000'8230    0x50  mock_mpbMathDivision.o [1]
-  .bss               zero     0x2000'8280    0x50  xfiles.o [2]
-  .bss               zero     0x2000'82d0    0x50  xfiles.o [2]
-  .bss               zero     0x2000'8320    0x14  mock_test_CurrentSensing.o [1]
-  .bss               zero     0x2000'8334     0xc  test_CurrentSensing.o [1]
-  .bss               zero     0x2000'8340     0x8  heap0.o [2]
-  .bss               zero     0x2000'8348     0x4  test_CurrentSensing_runner.o [1]
-  .bss               zero     0x2000'834c     0x4  test_CurrentSensing_runner.o [1]
-  .bss               zero     0x2000'8350     0x4  test_CurrentSensing_runner.o [1]
-  .bss               zero     0x2000'8354     0x4  test_CurrentSensing.o [1]
-  .bss               zero     0x2000'8358     0x4  cmock.o [1]
-  .bss               zero     0x2000'835c     0x4  xgetmemchunk.o [2]
-  .bss               zero     0x2000'8360     0x1  test_CurrentSensing.o [1]
-                            - 0x2000'8361  0x821d
+"P2", part 2 of 3:                         0x81c8
+  .bss               zero     0x2000'0138  0x8000  cmock.o [1]
+  .bss               zero     0x2000'8138    0x80  XShHandles.o [2]
+  .bss               zero     0x2000'81b8    0x68  unity.o [1]
+  .bss               zero     0x2000'8220    0x50  xfiles.o [2]
+  .bss               zero     0x2000'8270    0x50  xfiles.o [2]
+  .bss               zero     0x2000'82c0    0x14  mock_test_CurrentSensing.o [1]
+  .bss               zero     0x2000'82d4     0x8  test_CurrentSensing.o [1]
+  .bss               zero     0x2000'82dc     0x8  heap0.o [2]
+  .bss               zero     0x2000'82e4     0x4  test_CurrentSensing_runner.o [1]
+  .bss               zero     0x2000'82e8     0x4  test_CurrentSensing_runner.o [1]
+  .bss               zero     0x2000'82ec     0x4  test_CurrentSensing_runner.o [1]
+  .bss               zero     0x2000'82f0     0x4  test_CurrentSensing.o [1]
+  .bss               zero     0x2000'82f4     0x4  cmock.o [1]
+  .bss               zero     0x2000'82f8     0x4  xgetmemchunk.o [2]
+  .bss               zero     0x2000'82fc     0x1  test_CurrentSensing.o [1]
+                            - 0x2000'82fd  0x81c5
 
 "P2", part 3 of 3:                          0xc00
-  CSTACK                      0x2000'8368   0x400  <Block>
-    CSTACK           uninit   0x2000'8368   0x400  <Block tail>
-  HEAP                        0x2000'8768   0x800  <Block>
-    HEAP             uninit   0x2000'8768   0x800  <Block tail>
-                            - 0x2000'8f68   0xc00
+  CSTACK                      0x2000'8300   0x400  <Block>
+    CSTACK           uninit   0x2000'8300   0x400  <Block tail>
+  HEAP                        0x2000'8700   0x800  <Block>
+    HEAP             uninit   0x2000'8700   0x800  <Block tail>
+                            - 0x2000'8f00   0xc00
 
 Unused ranges:
 
          From           To      Size
          ----           --      ----
-       0x22f9     0x7'ffff  0x7'dd07
-  0x2000'8364  0x2000'8367       0x4
-  0x2000'8f68  0x2000'ffff    0x7098
+       0x25fb     0x7'ffff  0x7'da05
+  0x2000'8f00  0x2000'ffff    0x7100
 
 
 *******************************************************************************
@@ -222,14 +216,14 @@ Unused ranges:
           Address      Size
           -------      ----
 Zero (__iar_zero_init3)
-    1 destination range, total size 0x821d:
-          0x2000'0144  0x821d
+    1 destination range, total size 0x81c5:
+          0x2000'0138  0x81c5
 
 Copy/lz77 (__iar_lz77_init_single3)
-    1 source range, total size 0x95 (45% of destination):
-               0x2264    0x95
-    1 destination range, total size 0x144:
-          0x2000'0000   0x144
+    1 source range, total size 0x8b (44% of destination):
+               0x2570    0x8b
+    1 destination range, total size 0x138:
+          0x2000'0000   0x138
 
 
 
@@ -244,15 +238,14 @@ command line/config:
     Total:
 
 C:\mpbComponent\mpbCurrentSensors\CurrentSensing\UnitTestFramework\build\test\out\c: [1]
-    CurrentSensing.o                   72
-    cmock.o                           264      319   32'812
-    mock_mpbMathDivision.o            332       95       96
-    mock_test_CurrentSensing.o        740       53       32
-    test_CurrentSensing.o             168                17
-    test_CurrentSensing_runner.o      260      128       12
-    unity.o                         2'384      280      104
+    CurrentSensing.o                   54
+    cmock.o                           264      355   32'816
+    mock_test_CurrentSensing.o        788       53       32
+    test_CurrentSensing.o             672                13
+    test_CurrentSensing_runner.o      544      376       12
+    unity.o                         2'480      280      104
     -------------------------------------------------------
-    Total:                          4'220      875   33'073
+    Total:                          4'802    1'064   32'977
 
 dl7M_tlf.a: [2]
     XShHandles.o                      204               128
@@ -268,13 +261,13 @@ dl7M_tlf.a: [2]
     putchar.o                          12
     xcloseall.o                        64
     xfgpos.o                           12
-    xfiles.o                                   114      408
+    xfiles.o                                   111      408
     xfofind.o                         156
     xfspos.o                          216
     xfwprep.o                         180
     xgetmemchunk.o                     44                 4
     -------------------------------------------------------
-    Total:                          1'644      118      556
+    Total:                          1'644      115      556
 
 m7M_tl.a: [3]
     FltAddSub.o                       366
@@ -317,10 +310,10 @@ shb_l.a: [5]
     -------------------------------------------------------
     Total:                            378
 
-    Gaps                               16                 4
+    Gaps                               16        2
     Linker created                              32    3'072
 -----------------------------------------------------------
-    Grand Total:                    7'928    1'025   36'705
+    Grand Total:                    8'510    1'213   36'605
 
 
 *******************************************************************************
@@ -329,78 +322,72 @@ shb_l.a: [5]
 
 Entry                       Address    Size  Type      Object
 -----                       -------    ----  ----      ------
-.iar.init_table$$Base        0x1fdc           --   Gb  - Linker created -
-.iar.init_table$$Limit       0x1ffc           --   Gb  - Linker created -
-?main                        0x205d          Code  Gb  cmain.o [4]
-Aldata                  0x2000'8340     0x8  Data  Lc  heap0.o [2]
-BusFault_Handler              0xe03          Code  Wk  vectortrap_M.o [4]
+.iar.init_table$$Base        0x2340           --   Gb  - Linker created -
+.iar.init_table$$Limit       0x2360           --   Gb  - Linker created -
+?main                        0x23c1          Code  Gb  cmain.o [4]
+Aldata                  0x2000'82dc     0x8  Data  Lc  heap0.o [2]
+BusFault_Handler              0xe63          Code  Wk  vectortrap_M.o [4]
 CMockExpectParameters_eCurrentSensingAnalogReadmV
-                             0x1631    0x28  Code  Gb  mock_test_CurrentSensing.o [1]
-CMockStringCalledEarly  0x2000'0028     0x4  Data  Gb  cmock.o [1]
-CMockStringCalledLate   0x2000'002c     0x4  Data  Gb  cmock.o [1]
-CMockStringCalledLess   0x2000'0024     0x4  Data  Gb  cmock.o [1]
-CMockStringCalledMore   0x2000'0020     0x4  Data  Gb  cmock.o [1]
-CMockStringExpNULL      0x2000'0038     0x4  Data  Gb  cmock.o [1]
-CMockStringIgnPreExp    0x2000'0030     0x4  Data  Gb  cmock.o [1]
-CMockStringMismatch     0x2000'003c     0x4  Data  Gb  cmock.o [1]
-CMockStringOutOfMemory  0x2000'001c     0x4  Data  Gb  cmock.o [1]
-CMockStringPtrIsNULL    0x2000'0034     0x4  Data  Gb  cmock.o [1]
+                             0x1691    0x28  Code  Gb  mock_test_CurrentSensing.o [1]
+CMockStringCalledEarly  0x2000'0018     0x4  Data  Gb  cmock.o [1]
+CMockStringCalledLate   0x2000'001c     0x4  Data  Gb  cmock.o [1]
+CMockStringCalledLess   0x2000'0014     0x4  Data  Gb  cmock.o [1]
+CMockStringCalledMore   0x2000'0010     0x4  Data  Gb  cmock.o [1]
+CMockStringExpNULL      0x2000'002c     0x4  Data  Gb  cmock.o [1]
+CMockStringIgnPreExp    0x2000'0020     0x4  Data  Gb  cmock.o [1]
+CMockStringMismatch     0x2000'0030     0x4  Data  Gb  cmock.o [1]
+CMockStringOutOfMemory  0x2000'000c     0x4  Data  Gb  cmock.o [1]
+CMockStringPtrIsNULL    0x2000'0028     0x4  Data  Gb  cmock.o [1]
+CMockStringPtrPreExp    0x2000'0024     0x4  Data  Gb  cmock.o [1]
 CMockString_eCurrentSensingAnalogReadmV
                         0x2000'0000     0x4  Data  Lc  mock_test_CurrentSensing.o [1]
-CMockString_eMpbMathDivisionDouble
-                        0x2000'000c     0x4  Data  Lc  mock_mpbMathDivision.o [1]
-CMockString_eMpbMathDivisionFloat
-                        0x2000'0010     0x4  Data  Lc  mock_mpbMathDivision.o [1]
-CMockString_eMpbMathDivisionS64
-                        0x2000'0014     0x4  Data  Lc  mock_mpbMathDivision.o [1]
-CMockString_eMpbMathDivisionU32
-                        0x2000'0018     0x4  Data  Lc  mock_mpbMathDivision.o [1]
 CMockString_pxVoltage   0x2000'0004     0x4  Data  Lc  mock_test_CurrentSensing.o [1]
 CMockString_xStream     0x2000'0008     0x4  Data  Lc  mock_test_CurrentSensing.o [1]
-CMock_Destroy                0x1aa3     0xc  Code  Lc  test_CurrentSensing_runner.o [1]
-CMock_Guts_BufferArray  0x2000'0144  0x8000  Data  Lc  cmock.o [1]
-CMock_Guts_BufferSize   0x2000'0040     0x4  Data  Lc  cmock.o [1]
-CMock_Guts_FreePtr      0x2000'8358     0x4  Data  Lc  cmock.o [1]
+CMock_Destroy                0x1cb7     0x8  Code  Lc  test_CurrentSensing_runner.o [1]
+CMock_Guts_BufferArray  0x2000'0138  0x8000  Data  Lc  cmock.o [1]
+CMock_Guts_BufferSize   0x2000'0034     0x4  Data  Lc  cmock.o [1]
+CMock_Guts_FreePtr      0x2000'82f4     0x4  Data  Lc  cmock.o [1]
 CMock_Guts_GetAddressFor
-                             0x181b    0x16  Code  Gb  cmock.o [1]
-CMock_Guts_MemChain          0x1787    0x58  Code  Gb  cmock.o [1]
+                             0x18ab    0x16  Code  Gb  cmock.o [1]
+CMock_Guts_MemChain          0x1817    0x58  Code  Gb  cmock.o [1]
 CMock_Guts_MemEndOfChain
-                             0x1805    0x16  Code  Gb  cmock.o [1]
-CMock_Guts_MemFreeAll        0x1831     0x8  Code  Gb  cmock.o [1]
+                             0x1895    0x16  Code  Gb  cmock.o [1]
+CMock_Guts_MemFreeAll        0x18c1     0x8  Code  Gb  cmock.o [1]
 CMock_Guts_MemFreeFinal
-                             0x1839     0x8  Code  Gb  cmock.o [1]
-CMock_Guts_MemNew            0x1745    0x42  Code  Gb  cmock.o [1]
-CMock_Guts_MemNext           0x17df    0x26  Code  Gb  cmock.o [1]
-CMock_Init                   0x1a79    0x1e  Code  Lc  test_CurrentSensing_runner.o [1]
-CMock_Verify                 0x1a97     0xc  Code  Lc  test_CurrentSensing_runner.o [1]
-CSTACK$$Base            0x2000'8368           --   Gb  - Linker created -
-CSTACK$$Limit           0x2000'8768           --   Gb  - Linker created -
-DebugMon_Handler              0xe03          Code  Wk  vectortrap_M.o [4]
-GlobalExpectCount       0x2000'8348     0x4  Data  Gb  test_CurrentSensing_runner.o [1]
-GlobalOrderError        0x2000'8350     0x4  Data  Gb  test_CurrentSensing_runner.o [1]
-GlobalVerifyOrder       0x2000'834c     0x4  Data  Gb  test_CurrentSensing_runner.o [1]
-HEAP$$Base              0x2000'8768           --   Gb  - Linker created -
-HEAP$$Limit             0x2000'8f68           --   Gb  - Linker created -
-HardFault_Handler             0xe03          Code  Wk  vectortrap_M.o [4]
-MemManage_Handler             0xe03          Code  Wk  vectortrap_M.o [4]
-Mock                    0x2000'8320    0x14  Data  Lc  mock_test_CurrentSensing.o [1]
-Mock                    0x2000'8230    0x50  Data  Lc  mock_mpbMathDivision.o [1]
-NMI_Handler                   0xe03          Code  Wk  vectortrap_M.o [4]
-PendSV_Handler                0xe03          Code  Wk  vectortrap_M.o [4]
-Region$$Table$$Base          0x1fdc           --   Gb  - Linker created -
-Region$$Table$$Limit         0x1ffc           --   Gb  - Linker created -
-SVC_Handler                   0xe03          Code  Wk  vectortrap_M.o [4]
-SysTick_Handler               0xe03          Code  Wk  vectortrap_M.o [4]
-Unity                   0x2000'81c8    0x68  Data  Gb  unity.o [1]
+                             0x18c9     0x8  Code  Gb  cmock.o [1]
+CMock_Guts_MemNew            0x17d5    0x42  Code  Gb  cmock.o [1]
+CMock_Guts_MemNext           0x186f    0x26  Code  Gb  cmock.o [1]
+CMock_Init                   0x1c95    0x1a  Code  Lc  test_CurrentSensing_runner.o [1]
+CMock_Verify                 0x1caf     0x8  Code  Lc  test_CurrentSensing_runner.o [1]
+CSTACK$$Base            0x2000'8300           --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'8700           --   Gb  - Linker created -
+DebugMon_Handler              0xe63          Code  Wk  vectortrap_M.o [4]
+GlobalExpectCount       0x2000'82e4     0x4  Data  Gb  test_CurrentSensing_runner.o [1]
+GlobalOrderError        0x2000'82ec     0x4  Data  Gb  test_CurrentSensing_runner.o [1]
+GlobalVerifyOrder       0x2000'82e8     0x4  Data  Gb  test_CurrentSensing_runner.o [1]
+HEAP$$Base              0x2000'8700           --   Gb  - Linker created -
+HEAP$$Limit             0x2000'8f00           --   Gb  - Linker created -
+HardFault_Handler             0xe63          Code  Wk  vectortrap_M.o [4]
+MemManage_Handler             0xe63          Code  Wk  vectortrap_M.o [4]
+Mock                    0x2000'82c0    0x14  Data  Lc  mock_test_CurrentSensing.o [1]
+NMI_Handler                   0xe63          Code  Wk  vectortrap_M.o [4]
+PendSV_Handler                0xe63          Code  Wk  vectortrap_M.o [4]
+Region$$Table$$Base          0x2340           --   Gb  - Linker created -
+Region$$Table$$Limit         0x2360           --   Gb  - Linker created -
+SVC_Handler                   0xe63          Code  Wk  vectortrap_M.o [4]
+SysTick_Handler               0xe63          Code  Wk  vectortrap_M.o [4]
+Unity                   0x2000'81b8    0x68  Data  Gb  unity.o [1]
 UnityAddMsgIfSpecified        0x3cb    0x4c  Code  Lc  unity.o [1]
 UnityAssertEqualFloatArray
                               0x5a9    0xf8  Code  Gb  unity.o [1]
-UnityAssertEqualMemory        0x6dd   0x124  Code  Gb  unity.o [1]
+UnityAssertEqualMemory        0x73d   0x124  Code  Gb  unity.o [1]
 UnityAssertEqualNumber        0x46d    0x64  Code  Gb  unity.o [1]
-UnityBegin                    0x885    0x2a  Code  Gb  unity.o [1]
+UnityAssertFloatsWithin
+                              0x6a1    0x5e  Code  Gb  unity.o [1]
+UnityBegin                    0x8e5    0x2a  Code  Gb  unity.o [1]
 UnityConcludeTest             0x389    0x42  Code  Gb  unity.o [1]
-UnityEnd                      0x8af    0x5e  Code  Gb  unity.o [1]
-UnityFail                     0x809    0x76  Code  Gb  unity.o [1]
+UnityEnd                      0x90f    0x5e  Code  Gb  unity.o [1]
+UnityFail                     0x869    0x76  Code  Gb  unity.o [1]
 UnityFloatsWithin             0x4d1    0xd8  Code  Lc  unity.o [1]
 UnityIsOneArrayNull           0x425    0x48  Code  Lc  unity.o [1]
 UnityPrint                     0x41    0x5e  Code  Gb  unity.o [1]
@@ -411,139 +398,143 @@ UnityPrintNumberByStyle
 UnityPrintNumberHex           0x133    0x40  Code  Gb  unity.o [1]
 UnityPrintNumberUnsigned
                                0xfd    0x36  Code  Gb  unity.o [1]
-UnityStrBreaker              0x2160    0x18  Data  Lc  unity.o [1]
-UnityStrByte                 0x224c     0x8  Data  Lc  unity.o [1]
-UnityStrDetail1Name          0x2214     0xc  Data  Lc  unity.o [1]
-UnityStrDetail2Name          0x2220     0xc  Data  Lc  unity.o [1]
-UnityStrElement              0x21f0     0xc  Data  Lc  unity.o [1]
-UnityStrExpected             0x21e4     0xc  Data  Lc  unity.o [1]
-UnityStrFail                 0x223c     0x8  Data  Lc  unity.o [1]
-UnityStrMemory               0x21a0    0x14  Data  Lc  unity.o [1]
+UnityStrBreaker              0x2494    0x18  Data  Lc  unity.o [1]
+UnityStrByte                 0x2558     0x8  Data  Lc  unity.o [1]
+UnityStrDetail1Name          0x2520     0xc  Data  Lc  unity.o [1]
+UnityStrDetail2Name          0x252c     0xc  Data  Lc  unity.o [1]
+UnityStrElement              0x24fc     0xc  Data  Lc  unity.o [1]
+UnityStrExpected             0x24f0     0xc  Data  Lc  unity.o [1]
+UnityStrFail                 0x2548     0x8  Data  Lc  unity.o [1]
+UnityStrMemory               0x24ac    0x14  Data  Lc  unity.o [1]
 UnityStrNullPointerForActual
-                             0x20c4    0x1c  Data  Lc  unity.o [1]
+                             0x2428    0x1c  Data  Lc  unity.o [1]
 UnityStrNullPointerForExpected
-                             0x1ffc    0x20  Data  Lc  unity.o [1]
-UnityStrOk                   0x225c     0x4  Data  Lc  unity.o [1]
-UnityStrPass                 0x2234     0x8  Data  Lc  unity.o [1]
-UnityStrPointless            0x1e30    0x38  Data  Lc  unity.o [1]
+                             0x2360    0x20  Data  Lc  unity.o [1]
+UnityStrOk                   0x2568     0x4  Data  Lc  unity.o [1]
+UnityStrPass                 0x2540     0x8  Data  Lc  unity.o [1]
+UnityStrPointless            0x21a8    0x38  Data  Lc  unity.o [1]
 UnityStrResultsFailures
-                             0x21fc     0xc  Data  Lc  unity.o [1]
-UnityStrResultsIgnored       0x2208     0xc  Data  Lc  unity.o [1]
-UnityStrResultsTests         0x2254     0x8  Data  Lc  unity.o [1]
-UnityStrSpacer               0x2260     0x4  Data  Lc  unity.o [1]
-UnityStrWas                  0x2244     0x8  Data  Lc  unity.o [1]
+                             0x2508     0xc  Data  Lc  unity.o [1]
+UnityStrResultsIgnored       0x2514     0xc  Data  Lc  unity.o [1]
+UnityStrResultsTests         0x2560     0x8  Data  Lc  unity.o [1]
+UnityStrSpacer               0x256c     0x4  Data  Lc  unity.o [1]
+UnityStrWas                  0x2550     0x8  Data  Lc  unity.o [1]
 UnityTestResultsBegin         0x33f    0x2c  Code  Lc  unity.o [1]
 UnityTestResultsFailBegin
                               0x36b    0x1e  Code  Lc  unity.o [1]
-UsageFault_Handler            0xe03          Code  Wk  vectortrap_M.o [4]
-_Close_all                   0x1df1    0x40  Code  Gb  xcloseall.o [2]
-_Files                  0x2000'011c    0x20  Data  Gb  xfiles.o [2]
-_Fofree                      0x1c6d    0x94  Code  Gb  xfofind.o [2]
-_Fspos                       0x117d    0xd8  Code  Gb  xfspos.o [2]
-_Fwprep                       0xe7f    0xb4  Code  Gb  xfwprep.o [2]
-_Nnl                         0x1273     0xc  Code  Gb  xfgpos.o [2]
+UsageFault_Handler            0xe63          Code  Wk  vectortrap_M.o [4]
+_Close_all                   0x20f9    0x40  Code  Gb  xcloseall.o [2]
+_Files                  0x2000'0110    0x20  Data  Gb  xfiles.o [2]
+_Fofree                      0x1eb5    0x94  Code  Gb  xfofind.o [2]
+_Fspos                       0x11dd    0xd8  Code  Gb  xfspos.o [2]
+_Fwprep                       0xedf    0xb4  Code  Gb  xfwprep.o [2]
+_Nnl                         0x12d3     0xc  Code  Gb  xfgpos.o [2]
 __aeabi_JMP_BUF_SIZE {Abs}
                                 0x8           --   Gb  setjmp.o [3]
-__aeabi_cfcmpeq               0x985          Code  Gb  FltCmpEq.o [3]
-__aeabi_cfcmple               0x95d          Code  Gb  FltCmpLe.o [3]
-__aeabi_cfrcmple              0xbd1          Code  Gb  FltCmpGe.o [3]
-__aeabi_f2iz                  0xddd          Code  Gb  FltToS32.o [3]
-__aeabi_fadd                  0xbf9          Code  Gb  FltAddSub.o [3]
-__aeabi_fdiv                  0x9a1          Code  Gb  FltDiv.o [3]
-__aeabi_fmul                  0xaf9          Code  Gb  FltMul.o [3]
-__aeabi_fsub                  0xcd9          Code  Gb  FltAddSub.o [3]
-__aeabi_memset               0x184d          Code  Gb  ABImemset.o [4]
-__basic_free                 0x108d    0x16  Code  Gb  heap0.o [2]
-__basic_free_intern          0x10a3    0x74  Code  Lc  heap0.o [2]
-__basic_malloc                0xfe1    0x18  Code  Gb  heap0.o [2]
-__basic_malloc_intern         0xff9    0x94  Code  Lc  heap0.o [2]
-__cexit_closeall             0x2087          Code  Gb  cexit.o [4]
-__close                      0x1d8b    0x18  Code  Gb  close.o [5]
-__cmain                      0x205d          Code  Gb  cmain.o [4]
-__cstart_closeall            0x2264          Data  Gb  cstart_closeall.o [4]
-__data_GetMemChunk           0x1151    0x2c  Code  Gb  xgetmemchunk.o [2]
+__aeabi_cfcmpeq               0x9e5          Code  Gb  FltCmpEq.o [3]
+__aeabi_cfcmple               0x9bd          Code  Gb  FltCmpLe.o [3]
+__aeabi_cfrcmple              0xc31          Code  Gb  FltCmpGe.o [3]
+__aeabi_f2iz                  0xe3d          Code  Gb  FltToS32.o [3]
+__aeabi_fadd                  0xc59          Code  Gb  FltAddSub.o [3]
+__aeabi_fdiv                  0xa01          Code  Gb  FltDiv.o [3]
+__aeabi_fmul                  0xb59          Code  Gb  FltMul.o [3]
+__aeabi_fsub                  0xd39          Code  Gb  FltAddSub.o [3]
+__aeabi_memset               0x18dd          Code  Gb  ABImemset.o [4]
+__basic_free                 0x10ed    0x16  Code  Gb  heap0.o [2]
+__basic_free_intern          0x1103    0x74  Code  Lc  heap0.o [2]
+__basic_malloc               0x1041    0x18  Code  Gb  heap0.o [2]
+__basic_malloc_intern        0x1059    0x94  Code  Lc  heap0.o [2]
+__cexit_closeall             0x23eb          Code  Gb  cexit.o [4]
+__close                      0x1fd3    0x18  Code  Gb  close.o [5]
+__cmain                      0x23c1          Code  Gb  cmain.o [4]
+__cstart_closeall            0x2570          Data  Gb  cstart_closeall.o [4]
+__data_GetMemChunk           0x11b1    0x2c  Code  Gb  xgetmemchunk.o [2]
 __data_GetMemChunk::start
-                        0x2000'835c     0x4  Data  Lc  xgetmemchunk.o [2]
-__dwrite                     0x1255    0x1e  Code  Gb  dwrite.o [5]
-__exit                       0x2095    0x14  Code  Gb  exit.o [5]
-__iar_Memset                 0x184d          Code  Gb  ABImemset.o [4]
-__iar_Memset_word            0x1855          Code  Gb  ABImemset.o [4]
-__iar_Stderr            0x2000'00d4    0x48  Data  Gb  xfiles.o [2]
-__iar_Stdin             0x2000'0044    0x48  Data  Gb  xfiles.o [2]
-__iar_Stdout            0x2000'008c    0x48  Data  Gb  xfiles.o [2]
-__iar_close_ttio             0x13dd    0x2c  Code  Gb  iarttio.o [5]
-__iar_data_init3             0x1f6d    0x28  Code  Gb  data_init.o [4]
-__iar_get_ttio               0x1409    0x4c  Code  Gb  iarttio.o [5]
-__iar_lookup_ttioh           0x1459     0x8  Code  Gb  XShttio.o [2]
+                        0x2000'82f8     0x4  Data  Lc  xgetmemchunk.o [2]
+__dwrite                     0x12b5    0x1e  Code  Gb  dwrite.o [5]
+__exit                       0x23f9    0x14  Code  Gb  exit.o [5]
+__iar_Memset                 0x18dd          Code  Gb  ABImemset.o [4]
+__iar_Memset_word            0x18e5          Code  Gb  ABImemset.o [4]
+__iar_Stderr            0x2000'00c8    0x48  Data  Gb  xfiles.o [2]
+__iar_Stdin             0x2000'0038    0x48  Data  Gb  xfiles.o [2]
+__iar_Stdout            0x2000'0080    0x48  Data  Gb  xfiles.o [2]
+__iar_close_ttio             0x143d    0x2c  Code  Gb  iarttio.o [5]
+__iar_data_init3             0x22ad    0x28  Code  Gb  data_init.o [4]
+__iar_get_ttio               0x1469    0x4c  Code  Gb  iarttio.o [5]
+__iar_lookup_ttioh           0x14b9     0x8  Code  Gb  XShttio.o [2]
 __iar_lz77_init_single3
-                              0xd67    0x76  Code  Gb  lz77_init_single.o [4]
-__iar_program_start          0x20fd          Code  Gb  cstartup_M.o [4]
-__iar_sh_Discard             0x1311    0x42  Code  Gb  XShHandles.o [2]
-__iar_sh_Move                0x1353    0x46  Code  Gb  XShHandles.o [2]
-__iar_sh_Pos                 0x1399    0x40  Code  Gb  XShHandles.o [2]
-__iar_sh_stdout              0x12cd    0x20  Code  Gb  iarwstd.o [5]
-__iar_sh_write               0x12ed    0x22  Code  Gb  iarwrite.o [5]
-__iar_ttio_handles      0x2000'013c     0x8  Data  Lc  XShttio.o [2]
-__iar_unaligned_memcpy       0x18b5          Code  Gb  ABImemcpy_unaligned.o [4]
+                              0xdc7    0x76  Code  Gb  lz77_init_single.o [4]
+__iar_program_start          0x2461          Code  Gb  cstartup_M.o [4]
+__iar_sh_Discard             0x1371    0x42  Code  Gb  XShHandles.o [2]
+__iar_sh_Move                0x13b3    0x46  Code  Gb  XShHandles.o [2]
+__iar_sh_Pos                 0x13f9    0x40  Code  Gb  XShHandles.o [2]
+__iar_sh_stdout              0x132d    0x20  Code  Gb  iarwstd.o [5]
+__iar_sh_write               0x134d    0x22  Code  Gb  iarwrite.o [5]
+__iar_ttio_handles      0x2000'0130     0x8  Data  Lc  XShttio.o [2]
+__iar_unaligned_memcpy       0x1945          Code  Gb  ABImemcpy_unaligned.o [4]
 __iar_unaligned_memcpy4
-                             0x18d5          Code  Gb  ABImemcpy_unaligned.o [4]
+                             0x1965          Code  Gb  ABImemcpy_unaligned.o [4]
 __iar_unaligned_memcpy8
-                             0x18d5          Code  Gb  ABImemcpy_unaligned.o [4]
-__iar_zero_init3             0x1e69    0x38  Code  Gb  zero_init3.o [4]
-__isinff                      0xab9    0x40  Code  Gb  unity.o [1]
-__low_level_init             0x207b     0x4  Code  Gb  low_level_init.o [2]
-__lseek                      0x127f    0x4e  Code  Gb  lseek.o [5]
+                             0x1965          Code  Gb  ABImemcpy_unaligned.o [4]
+__iar_zero_init3             0x21e1    0x38  Code  Gb  zero_init3.o [4]
+__isinff                      0xb19    0x40  Code  Gb  unity.o [1]
+__low_level_init             0x23df     0x4  Code  Gb  low_level_init.o [2]
+__lseek                      0x12df    0x4e  Code  Gb  lseek.o [5]
 __vector_table                  0x0          Data  Gb  vector_table_M.o [4]
-__write                      0x1141    0x10  Code  Gb  write.o [5]
-_call_main                   0x2069          Code  Gb  cmain.o [4]
-_exit                        0x2085          Code  Gb  cexit.o [4]
+__write                      0x11a1    0x10  Code  Gb  write.o [5]
+_call_main                   0x23cd          Code  Gb  cmain.o [4]
+_exit                        0x23e9          Code  Gb  cexit.o [4]
 eCurrentSensingAnalogReadmV
-                             0x14d7   0x15a  Code  Gb  mock_test_CurrentSensing.o [1]
+                             0x1537   0x15a  Code  Gb  mock_test_CurrentSensing.o [1]
 eCurrentSensingAnalogReadmV_CMockExpectAndReturn
-                             0x1659    0x84  Code  Gb  mock_test_CurrentSensing.o [1]
+                             0x16b9    0x84  Code  Gb  mock_test_CurrentSensing.o [1]
 eCurrentSensingAnalogReadmV_CMockIgnoreArg_pxVoltage
-                             0x16dd    0x26  Code  Gb  mock_test_CurrentSensing.o [1]
+                             0x176b    0x26  Code  Gb  mock_test_CurrentSensing.o [1]
+eCurrentSensingAnalogReadmV_CMockReturnMemThruPtr_pxVoltage
+                             0x173d    0x2e  Code  Gb  mock_test_CurrentSensing.o [1]
 eCurrentSensingGetCurrentmA
-                             0x1c25    0x48  Code  Gb  CurrentSensing.o [1]
-eResult                 0x2000'8360     0x1  Data  Lc  test_CurrentSensing.o [1]
-ebuf                    0x2000'8280    0x50  Data  Lc  xfiles.o [2]
-exit                         0x207f     0x4  Code  Gb  exit.o [2]
-fclose                       0x1d0d    0x7e  Code  Gb  fclose.o [2]
-fflush                        0xfa9    0x34  Code  Gb  fflush.o [2]
-fflushOne                     0xf35    0x74  Code  Lc  fflush.o [2]
-fputc                         0xe29    0x56  Code  Gb  fputc.o [2]
-free                         0x1d09     0x4  Code  Gb  heaptramp0.o [2]
-fseek                        0x111d    0x24  Code  Gb  fseek.o [2]
-longjmp                       0xe15          Code  Gb  setjmp.o [3]
-main                         0x1ab3    0xac  Code  Gb  test_CurrentSensing_runner.o [1]
-mock_mpbMathDivision_Destroy
-                             0x1a0b    0x48  Code  Gb  mock_mpbMathDivision.o [1]
-mock_mpbMathDivision_Init
-                             0x1a03     0x8  Code  Gb  mock_mpbMathDivision.o [1]
-mock_mpbMathDivision_Verify
-                             0x192d    0xd6  Code  Gb  mock_mpbMathDivision.o [1]
+                             0x1c5d    0x36  Code  Gb  CurrentSensing.o [1]
+eResult                 0x2000'82fc     0x1  Data  Lc  test_CurrentSensing.o [1]
+ebuf                    0x2000'8220    0x50  Data  Lc  xfiles.o [2]
+exit                         0x23e3     0x4  Code  Gb  exit.o [2]
+fclose                       0x1f55    0x7e  Code  Gb  fclose.o [2]
+fflush                       0x1009    0x34  Code  Gb  fflush.o [2]
+fflushOne                     0xf95    0x74  Code  Lc  fflush.o [2]
+fputc                         0xe89    0x56  Code  Gb  fputc.o [2]
+free                         0x1f51     0x4  Code  Gb  heaptramp0.o [2]
+fseek                        0x117d    0x24  Code  Gb  fseek.o [2]
+longjmp                       0xe75          Code  Gb  setjmp.o [3]
+main                         0x1cc3   0x1c4  Code  Gb  test_CurrentSensing_runner.o [1]
 mock_test_CurrentSensing_Destroy
-                             0x14a7    0x30  Code  Gb  mock_test_CurrentSensing.o [1]
+                             0x1507    0x30  Code  Gb  mock_test_CurrentSensing.o [1]
 mock_test_CurrentSensing_Init
-                             0x149f     0x8  Code  Gb  mock_test_CurrentSensing.o [1]
+                             0x14ff     0x8  Code  Gb  mock_test_CurrentSensing.o [1]
 mock_test_CurrentSensing_Verify
-                             0x1461    0x3e  Code  Gb  mock_test_CurrentSensing.o [1]
-obuf                    0x2000'82d0    0x50  Data  Lc  xfiles.o [2]
-putchar                       0x951     0xc  Code  Gb  putchar.o [2]
-remove                       0x1da3    0x14  Code  Gb  remove.o [5]
-sFileInfo               0x2000'8144    0x80  Data  Lc  XShHandles.o [2]
-setUp                        0x1b7d    0x1e  Code  Gb  test_CurrentSensing.o [1]
-setjmp                        0xe05          Code  Gb  setjmp.o [3]
-strlen                       0x1db9          Code  Gb  strlen.o [4]
-suite_setup                  0x1aaf     0x2  Code  Lc  test_CurrentSensing_runner.o [1]
-suite_teardown               0x1ab1     0x2  Code  Lc  test_CurrentSensing_runner.o [1]
-tearDown                     0x1b9b     0x2  Code  Gb  test_CurrentSensing.o [1]
-test_eCurrentSensingGetCurrentmA_AnalogReadmV_Fail
-                             0x1bcb    0x42  Code  Gb  test_CurrentSensing.o [1]
-test_eCurrentSensingGetCurrentmA_NullPointer_Fail
-                             0x1b9d    0x2e  Code  Gb  test_CurrentSensing.o [1]
-xCurrentInputScaling    0x2000'8334     0xc  Data  Lc  test_CurrentSensing.o [1]
-xMockStream             0x2000'8354     0x4  Data  Lc  test_CurrentSensing.o [1]
+                             0x14c1    0x3e  Code  Gb  mock_test_CurrentSensing.o [1]
+obuf                    0x2000'8270    0x50  Data  Lc  xfiles.o [2]
+putchar                       0x9b1     0xc  Code  Gb  putchar.o [2]
+remove                       0x1feb    0x14  Code  Gb  remove.o [5]
+sFileInfo               0x2000'8138    0x80  Data  Lc  XShHandles.o [2]
+setUp                        0x19bd    0x1a  Code  Gb  test_CurrentSensing.o [1]
+setjmp                        0xe65          Code  Gb  setjmp.o [3]
+strlen                       0x2001          Code  Gb  strlen.o [4]
+suite_setup                  0x1cbf     0x2  Code  Lc  test_CurrentSensing_runner.o [1]
+suite_teardown               0x1cc1     0x2  Code  Lc  test_CurrentSensing_runner.o [1]
+tearDown                     0x19d7     0x2  Code  Gb  test_CurrentSensing.o [1]
+test_1_1_eCurrentSensingSet_m_1_to_s_1_SlopeEquation_Success
+                             0x19d9    0x68  Code  Gb  test_CurrentSensing.o [1]
+test_1_2_eCurrentSensingSet_m_2_to_s_1_SlopeEquation_Success
+                             0x1a41    0x8a  Code  Gb  test_CurrentSensing.o [1]
+test_1_3_eCurrentSensingSet_m_1_to_s_2_SlopeEquation_Success
+                             0x1acb    0x8c  Code  Gb  test_CurrentSensing.o [1]
+test_1_4_eCurrentSensingGetCurrentmA_Success
+                             0x1b57    0x76  Code  Gb  test_CurrentSensing.o [1]
+test_1_5_eCurrentSensingGetCurrentmA_NullPointer_Fail
+                             0x1bcd    0x30  Code  Gb  test_CurrentSensing.o [1]
+test_1_6_eCurrentSensingGetCurrentmA_AnalogReadmV_Fail
+                             0x1bfd    0x44  Code  Gb  test_CurrentSensing.o [1]
+xCurrentInputScaling    0x2000'82d4     0x8  Data  Lc  test_CurrentSensing.o [1]
+xMockStream             0x2000'82f0     0x4  Data  Lc  test_CurrentSensing.o [1]
 
 
 [1] = C:\mpbComponent\mpbCurrentSensors\CurrentSensing\UnitTestFramework\build\test\out\c
@@ -552,9 +543,9 @@ xMockStream             0x2000'8354     0x4  Data  Lc  test_CurrentSensing.o [1]
 [4] = rt7M_tl.a
 [5] = shb_l.a
 
-   7'928 bytes of readonly  code memory
-   1'025 bytes of readonly  data memory
-  36'705 bytes of readwrite data memory
+   8'510 bytes of readonly  code memory
+   1'213 bytes of readonly  data memory
+  36'605 bytes of readwrite data memory
 
 Errors: none
 Warnings: none

@@ -15,7 +15,6 @@
 **/
 /* Includes ----------------------------------------------------------------- */
 #include "CurrentSensing.h"
-#include "mpbMath.h"
 
 /* Private define ----------------------------------------------------------- */
 /* Private macro ------------------------------------------------------------ */
@@ -31,21 +30,17 @@
 eMpbError_t eCurrentSensingGetCurrentmA( handle_t xStream, xCurrentInputScaling_t xCurrentInputScaling, float *pfCurrent  )
 {
 	eMpbError_t eResult = eInvalidParameter;
-	float xVoltage;
+	float fVoltage;
 	
-    if( pfCurrent == NULL )
+    if( pfCurrent != NULL )
     {
-        return eResult;
-    }
-    
-    eResult = eCurrentSensingAnalogReadmV( xStream, &xVoltage );
-    if( eResult != eSuccess )
-    {
-        return eResult;
-    }
-    
-	*pfCurrent = xCurrentInputScaling.fCalibration * ( xVoltage * xCurrentInputScaling.fSlope + xCurrentInputScaling.fIntercept );
-   	
+			eResult = eCurrentSensingAnalogReadmV( xStream, &fVoltage );
+			if( eResult == eSuccess )
+			{
+				*pfCurrent =  ( fVoltage *  xCurrentInputScaling.fSlope ) + xCurrentInputScaling.fIntercept  ;
+			}
+   	}
+		
 	return eResult;
 }
 /*----------------------------------------------------------------------------*/
@@ -65,7 +60,7 @@ eMpbError_t eCurrentSensingGetPowermW( handle_t xStream, xPowerInputScaling_t xP
         return eResult;
     }
     
-		*pfPower = xPowerInputScaling.fCalibration * ( xVoltage * xPowerInputScaling.fSlope + xPowerInputScaling.fIntercept );
+		*pfPower =  xVoltage * xPowerInputScaling.fSlope + xPowerInputScaling.fIntercept ;
    	
 	return eResult;
 }

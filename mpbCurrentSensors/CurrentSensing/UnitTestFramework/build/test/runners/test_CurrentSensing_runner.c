@@ -33,7 +33,6 @@
 #endif
 #include <stdio.h>
 #include "mock_test_CurrentSensing.h"
-#include "mock_mpbMathDivision.h"
 
 int GlobalExpectCount;
 int GlobalVerifyOrder;
@@ -42,8 +41,12 @@ char* GlobalOrderError;
 /*=======External Functions This Runner Calls=====*/
 extern void setUp(void);
 extern void tearDown(void);
-extern void test_eCurrentSensingGetCurrentmA_NullPointer_Fail();
-extern void test_eCurrentSensingGetCurrentmA_AnalogReadmV_Fail();
+extern void test_1_1_eCurrentSensingSet_m_1_to_s_1_SlopeEquation_Success();
+extern void test_1_2_eCurrentSensingSet_m_2_to_s_1_SlopeEquation_Success();
+extern void test_1_3_eCurrentSensingSet_m_1_to_s_2_SlopeEquation_Success();
+extern void test_1_4_eCurrentSensingGetCurrentmA_Success();
+extern void test_1_5_eCurrentSensingGetCurrentmA_NullPointer_Fail();
+extern void test_1_6_eCurrentSensingGetCurrentmA_AnalogReadmV_Fail();
 
 
 /*=======Mock Management=====*/
@@ -53,17 +56,14 @@ static void CMock_Init(void)
   GlobalVerifyOrder = 0;
   GlobalOrderError = NULL;
   mock_test_CurrentSensing_Init();
-  mock_mpbMathDivision_Init();
 }
 static void CMock_Verify(void)
 {
   mock_test_CurrentSensing_Verify();
-  mock_mpbMathDivision_Verify();
 }
 static void CMock_Destroy(void)
 {
   mock_test_CurrentSensing_Destroy();
-  mock_mpbMathDivision_Destroy();
 }
 
 /*=======Suite Setup=====*/
@@ -101,8 +101,12 @@ int main(void)
 {
   suite_setup();
   UnityBegin("test_CurrentSensing.c");
-  RUN_TEST(test_eCurrentSensingGetCurrentmA_NullPointer_Fail, 53);
-  RUN_TEST(test_eCurrentSensingGetCurrentmA_AnalogReadmV_Fail, 61);
+  RUN_TEST(test_1_1_eCurrentSensingSet_m_1_to_s_1_SlopeEquation_Success, 54);
+  RUN_TEST(test_1_2_eCurrentSensingSet_m_2_to_s_1_SlopeEquation_Success, 74);
+  RUN_TEST(test_1_3_eCurrentSensingSet_m_1_to_s_2_SlopeEquation_Success, 94);
+  RUN_TEST(test_1_4_eCurrentSensingGetCurrentmA_Success, 114);
+  RUN_TEST(test_1_5_eCurrentSensingGetCurrentmA_NullPointer_Fail, 135);
+  RUN_TEST(test_1_6_eCurrentSensingGetCurrentmA_AnalogReadmV_Fail, 143);
 
   CMock_Guts_MemFreeFinal();
   return suite_teardown(UnityEnd());

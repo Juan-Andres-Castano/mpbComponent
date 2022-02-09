@@ -16,7 +16,7 @@
 #include "unity.h"
 #include "CurrentSensing.h"
 #include "mock_test_CurrentSensing.h"
-#include "mock_mpbMathDivision.h"
+
 
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
@@ -25,7 +25,6 @@
 /* Private variables ---------------------------------------------------------*/
 static eMpbError_t eResult;
 static handle_t xMockStream;
-//static float xMockResistor;
 static xCurrentInputScaling_t  xCurrentInputScaling;
 
 /* External variables --------------------------------------------------------*/
@@ -37,9 +36,9 @@ void setUp()
 {
     eResult = eUnknownError;
     xMockStream = 77;
-		xCurrentInputScaling.fIntercept = 0.1f;
-		xCurrentInputScaling.fSlope = 0.2f;	
-	  xCurrentInputScaling.fCalibration = 0.3f;
+		xCurrentInputScaling.fIntercept = 1.0f;
+		xCurrentInputScaling.fSlope = 1.0f;	
+	  
 	
 }
 /*----------------------------------------------------------------------------*/
@@ -48,9 +47,89 @@ void tearDown()
 {
     
 }
+
+
 /*----------------------------------------------------------------------------*/
 
-void test_eCurrentSensingGetCurrentmA_NullPointer_Fail()
+void test_1_1_eCurrentSensingSet_m_1_to_s_1_SlopeEquation_Success()
+{
+    float fCurrent;
+    float xMockReadmV;
+		xCurrentInputScaling.fIntercept = 0.0f;
+		xCurrentInputScaling.fSlope = 1.0f;	
+	  
+	
+    
+    xMockReadmV = 3.30f;
+    eCurrentSensingAnalogReadmV_ExpectAndReturn( xMockStream, NULL, eSuccess );
+    eCurrentSensingAnalogReadmV_IgnoreArg_pxVoltage();
+	
+    eCurrentSensingAnalogReadmV_ReturnThruPtr_pxVoltage( &xMockReadmV );
+
+	  
+    eResult = eCurrentSensingGetCurrentmA( xMockStream, xCurrentInputScaling, &fCurrent );
+    TEST_ASSERT_EQUAL_FLOAT( xMockReadmV, fCurrent );
+}
+/*----------------------------------------------------------------------------*/
+void test_1_2_eCurrentSensingSet_m_2_to_s_1_SlopeEquation_Success()
+{
+    float fCurrent;
+    float fMockReadmV;
+		xCurrentInputScaling.fIntercept = 2.0f;
+		xCurrentInputScaling.fSlope = 0.0f;	
+	  
+	
+    
+    fMockReadmV = 3.30f;
+    eCurrentSensingAnalogReadmV_ExpectAndReturn( xMockStream, NULL, eSuccess );
+    eCurrentSensingAnalogReadmV_IgnoreArg_pxVoltage();
+	
+    eCurrentSensingAnalogReadmV_ReturnThruPtr_pxVoltage( &fMockReadmV );
+
+	  
+    eResult = eCurrentSensingGetCurrentmA( xMockStream, xCurrentInputScaling, &fCurrent );
+    TEST_ASSERT_EQUAL_FLOAT( (xCurrentInputScaling.fSlope * fMockReadmV + xCurrentInputScaling.fIntercept ), fCurrent );
+}
+/*----------------------------------------------------------------------------*/
+void test_1_3_eCurrentSensingSet_m_1_to_s_2_SlopeEquation_Success()
+{
+    float fCurrent;
+    float fMockReadV;
+		xCurrentInputScaling.fIntercept = 1.0f;
+		xCurrentInputScaling.fSlope = 2.0f;	
+	  
+	    
+    fMockReadV = 3.30f;
+    eCurrentSensingAnalogReadmV_ExpectAndReturn( xMockStream, NULL, eSuccess );
+    eCurrentSensingAnalogReadmV_IgnoreArg_pxVoltage();
+	
+    eCurrentSensingAnalogReadmV_ReturnThruPtr_pxVoltage( &fMockReadV );
+
+	  
+    eResult = eCurrentSensingGetCurrentmA( xMockStream, xCurrentInputScaling, &fCurrent );
+    TEST_ASSERT_EQUAL_FLOAT( ( xCurrentInputScaling.fSlope * fMockReadV + xCurrentInputScaling.fIntercept  ), fCurrent );
+}
+/*----------------------------------------------------------------------------*/
+
+void test_1_4_eCurrentSensingGetCurrentmA_Success() 
+{
+    float fCurrent;
+    float fMockReadmV, fMockCurrentmA;
+    
+    fMockReadmV = 7.30f;
+    eCurrentSensingAnalogReadmV_ExpectAndReturn( xMockStream, NULL, eSuccess );
+    eCurrentSensingAnalogReadmV_IgnoreArg_pxVoltage();
+    eCurrentSensingAnalogReadmV_ReturnThruPtr_pxVoltage( &fMockReadmV );
+	
+	  fMockCurrentmA = 8.30f;
+	
+    eResult = eCurrentSensingGetCurrentmA( xMockStream, xCurrentInputScaling, &fCurrent );
+    TEST_ASSERT_EQUAL( eSuccess, eResult );
+    TEST_ASSERT_EQUAL_FLOAT( fMockCurrentmA, fCurrent );
+}
+/*----------------------------------------------------------------------------*/
+
+void test_1_5_eCurrentSensingGetCurrentmA_NullPointer_Fail()
 {
     /* pulCurrent is NULL */
     eResult = eCurrentSensingGetCurrentmA( xMockStream, xCurrentInputScaling ,NULL );
@@ -58,54 +137,17 @@ void test_eCurrentSensingGetCurrentmA_NullPointer_Fail()
 }
 /*----------------------------------------------------------------------------*/
 
-void test_eCurrentSensingGetCurrentmA_AnalogReadmV_Fail()
+void test_1_6_eCurrentSensingGetCurrentmA_AnalogReadmV_Fail()
 {
     float fCurrent;
 
+	
     eCurrentSensingAnalogReadmV_ExpectAndReturn( xMockStream, NULL, eUnknownError );
-    eCurrentSensingAnalogReadmV_IgnoreArg_pxVoltage();
+	  eCurrentSensingAnalogReadmV_IgnoreArg_pxVoltage();
+    
 
     eResult = eCurrentSensingGetCurrentmA( xMockStream, xCurrentInputScaling, &fCurrent );
     TEST_ASSERT_EQUAL( eUnknownError, eResult );
 }
 
-/*----------------------------------------------------------------------------*/
-/*
-void test_eCurrentSensingGetCurrentmA_DivisionFloat_Fail()
-{
-    float fCurrent;
-    float xMockReadmV;
-    
-    xMockReadmV = 7.30f;
-    eCurrentSensingAnalogReadmV_ExpectAndReturn( xMockStream, NULL, eSuccess );
-    eCurrentSensingAnalogReadmV_IgnoreArg_pxVoltage();
-    eCurrentSensingAnalogReadmV_ReturnThruPtr_pxVoltage( &xMockReadmV );
-
-	eNepMathDivisionFloat_ExpectAndReturn( xMockReadmV, xMockResistor, NULL, eUnknownError );
-    eNepMathDivisionFloat_IgnoreArg_pfResult();
-
-    eResult = eCurrentSensingGetCurrentmA( xMockStream, xMockResistor, &fCurrent );
-    TEST_ASSERT_EQUAL( eUnknownError, eResult );
-}*/
-/*----------------------------------------------------------------------------*/
-/*
-void test_eCurrentSensingGetCurrentmA_Success()
-{
-    float fCurrent;
-    float xMockReadmV, xMockCurrentmA;
-    
-    xMockReadmV = 7.30f;
-    eCurrentSensingAnalogReadmV_ExpectAndReturn( xMockStream, NULL, eSuccess );
-    eCurrentSensingAnalogReadmV_IgnoreArg_pxVoltage();
-    eCurrentSensingAnalogReadmV_ReturnThruPtr_pxVoltage( &xMockReadmV );
-	
-	xMockCurrentmA = 74.5;
-	eNepMathDivisionFloat_ExpectAndReturn( xMockReadmV, xMockResistor, NULL, eSuccess );
-    eNepMathDivisionFloat_IgnoreArg_pfResult();
-	eNepMathDivisionFloat_ReturnThruPtr_pfResult( &xMockCurrentmA );
-	
-    eResult = eCurrentSensingGetCurrentmA( xMockStream, xMockResistor, &fCurrent );
-    TEST_ASSERT_EQUAL( eSuccess, eResult );
-    TEST_ASSERT_EQUAL_UINT32( ( uint32_t )xMockCurrentmA, fCurrent );
-}*/
 /*----------------------------------------------------------------------------*/
