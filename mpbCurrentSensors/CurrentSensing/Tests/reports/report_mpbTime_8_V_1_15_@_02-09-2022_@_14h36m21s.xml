@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<TestRun>
+	<FailedTests/>
+	<SuccessfulTests>
+		<Test id="1">
+			<Name>../Tests/test_CurrentSensing.c::test_1_1_eCurrentSensingSet_m_1_to_s_1_SlopeEquation_Success</Name>
+		</Test>
+		<Test id="2">
+			<Name>../Tests/test_CurrentSensing.c::test_1_2_eCurrentSensingSet_m_2_to_s_1_SlopeEquation_Success</Name>
+		</Test>
+		<Test id="3">
+			<Name>../Tests/test_CurrentSensing.c::test_1_3_eCurrentSensingSet_m_1_to_s_2_SlopeEquation_Success</Name>
+		</Test>
+		<Test id="4">
+			<Name>../Tests/test_CurrentSensing.c::test_1_4_eCurrentSensingGetCurrentmA_Success</Name>
+		</Test>
+		<Test id="5">
+			<Name>../Tests/test_CurrentSensing.c::test_1_5_eCurrentSensingGetCurrentmA_NullPointer_Fail</Name>
+		</Test>
+		<Test id="6">
+			<Name>../Tests/test_CurrentSensing.c::test_1_6_eCurrentSensingGetCurrentmA_AnalogReadmV_Fail</Name>
+		</Test>
+	</SuccessfulTests>
+	<IgnoredTests/>
+	<Statistics>
+		<Tests>6</Tests>
+		<Ignores>0</Ignores>
+		<FailuresTotal>0</FailuresTotal>
+		<Errors>0</Errors>
+		<Failures>0</Failures>
+	</Statistics>
+</TestRun>

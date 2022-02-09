@@ -3,30 +3,33 @@
   :path: "../Tests"
   :file: test_CurrentSensing.c
 :successes:
-- :test: test_1_1_eCurrentSensingSet_m_1_to_s_1_SlopeEquation_Success
+- :test: test_1_1_eCurrentSensingSet_m_1_to_b_0_SlopeEquation_Success
   :line: 54
   :message: ''
-- :test: test_1_2_eCurrentSensingSet_m_2_to_s_1_SlopeEquation_Success
+- :test: test_1_2_eCurrentSensingSet_m_2_to_b_1_SlopeEquation_Success
   :line: 74
   :message: ''
-- :test: test_1_3_eCurrentSensingSet_m_1_to_s_2_SlopeEquation_Success
+- :test: test_1_3_eCurrentSensingSet_m_1_to_b_2_SlopeEquation_Success
   :line: 94
   :message: ''
 - :test: test_1_4_eCurrentSensingGetCurrentmA_Success
   :line: 114
   :message: ''
-- :test: test_1_5_eCurrentSensingGetCurrentmA_NullPointer_Fail
-  :line: 135
+- :test: test_1_5_eCurrentSensing_Slope_negative_Fail
+  :line: 131
   :message: ''
-- :test: test_1_6_eCurrentSensingGetCurrentmA_AnalogReadmV_Fail
-  :line: 143
+- :test: test_1_6_eCurrentSensingGetCurrentmA_NullPointer_Fail
+  :line: 145
+  :message: ''
+- :test: test_1_7_eCurrentSensingGetCurrentmA_AnalogReadmV_Fail
+  :line: 153
   :message: ''
 :failures: []
 :ignores: []
 :counts:
-  :total: 6
-  :passed: 6
+  :total: 7
+  :passed: 7
   :failed: 0
   :ignored: 0
 :stdout: []
-:time: 0.7737554999766871
+:time: 0.27105769992340356

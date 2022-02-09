@@ -25,32 +25,32 @@
         <metric_name id="M11" type="average" values="block_depths">Average Block Depth</metric_name>
         <metric_name id="M12" type="average">Average Complexity</metric_name>
       </metric_names>
-      <checkpoint checkpoint_name="Alpha One" checkpoint_date="2022-02-08" ignore_blank_lines="false" modified_complexity="false">
+      <checkpoint checkpoint_name="Alpha One" checkpoint_date="2022-02-09" ignore_blank_lines="false" modified_complexity="false">
         <files file_count="1">
           <file file_name="CurrentSensing.c">
             <metrics metric_count="13">
-              <metric id="M0">74</metric>
-              <metric id="M1">22</metric>
-              <metric id="M2">18.2</metric>
-              <metric id="M3">36.5</metric>
+              <metric id="M0">69</metric>
+              <metric id="M1">19</metric>
+              <metric id="M2">21.1</metric>
+              <metric id="M3">39.1</metric>
               <metric id="M4">2</metric>
-              <metric id="M5">9.0</metric>
-              <metric id="M6">31</metric>
+              <metric id="M5">8.0</metric>
+              <metric id="M6">30</metric>
               <metric id="M7">eCurrentSensingGetCurrentmA()</metric>
               <metric id="M8">3</metric>
-              <metric id="M9">38</metric>
-              <metric id="M10">2</metric>
-              <metric id="M11">1.00</metric>
+              <metric id="M9">40</metric>
+              <metric id="M10">3</metric>
+              <metric id="M11">1.16</metric>
               <metric id="M12">3.00</metric>
             </metrics>
             <function_metrics function_count="2">
-              <function name="eCurrentSensingGetCurrentmA()" line="31">
+              <function name="eCurrentSensingGetCurrentmA()" line="30">
                 <complexity>3</complexity>
-                <statements>9</statements>
-                <maximum_depth>2</maximum_depth>
+                <statements>7</statements>
+                <maximum_depth>3</maximum_depth>
                 <calls>1</calls>
               </function>
-              <function name="eCurrentSensingGetPowermW()" line="52">
+              <function name="eCurrentSensingGetPowermW()" line="47">
                 <complexity>3</complexity>
                 <statements>9</statements>
                 <maximum_depth>2</maximum_depth>
@@ -58,10 +58,10 @@
               </function>
             </function_metrics>
             <block_depths depth_count="10">
-              <block_depth level="0">4</block_depth>
-              <block_depth level="1">14</block_depth>
+              <block_depth level="0">3</block_depth>
+              <block_depth level="1">11</block_depth>
               <block_depth level="2">4</block_depth>
-              <block_depth level="3">0</block_depth>
+              <block_depth level="3">1</block_depth>
               <block_depth level="4">0</block_depth>
               <block_depth level="5">0</block_depth>
               <block_depth level="6">0</block_depth>
@@ -76,28 +76,28 @@
         <files file_count="1">
           <file file_name="CurrentSensing.c">
             <metrics metric_count="13">
-              <metric id="M0">74</metric>
-              <metric id="M1">22</metric>
-              <metric id="M2">18.2</metric>
-              <metric id="M3">13.5</metric>
+              <metric id="M0">69</metric>
+              <metric id="M1">19</metric>
+              <metric id="M2">21.1</metric>
+              <metric id="M3">14.5</metric>
               <metric id="M4">2</metric>
-              <metric id="M5">9.0</metric>
-              <metric id="M6">31</metric>
+              <metric id="M5">8.0</metric>
+              <metric id="M6">30</metric>
               <metric id="M7">eCurrentSensingGetCurrentmA()</metric>
               <metric id="M8">3</metric>
-              <metric id="M9">38</metric>
-              <metric id="M10">2</metric>
-              <metric id="M11">1.00</metric>
+              <metric id="M9">40</metric>
+              <metric id="M10">3</metric>
+              <metric id="M11">1.16</metric>
               <metric id="M12">3.00</metric>
             </metrics>
             <function_metrics function_count="2">
-              <function name="eCurrentSensingGetCurrentmA()" line="31">
+              <function name="eCurrentSensingGetCurrentmA()" line="30">
                 <complexity>3</complexity>
-                <statements>9</statements>
-                <maximum_depth>2</maximum_depth>
+                <statements>7</statements>
+                <maximum_depth>3</maximum_depth>
                 <calls>1</calls>
               </function>
-              <function name="eCurrentSensingGetPowermW()" line="52">
+              <function name="eCurrentSensingGetPowermW()" line="47">
                 <complexity>3</complexity>
                 <statements>9</statements>
                 <maximum_depth>2</maximum_depth>
@@ -105,10 +105,10 @@
               </function>
             </function_metrics>
             <block_depths depth_count="10">
-              <block_depth level="0">4</block_depth>
-              <block_depth level="1">14</block_depth>
+              <block_depth level="0">3</block_depth>
+              <block_depth level="1">11</block_depth>
               <block_depth level="2">4</block_depth>
-              <block_depth level="3">0</block_depth>
+              <block_depth level="3">1</block_depth>
               <block_depth level="4">0</block_depth>
               <block_depth level="5">0</block_depth>
               <block_depth level="6">0</block_depth>

@@ -51,7 +51,7 @@ void tearDown()
 
 /*----------------------------------------------------------------------------*/
 
-void test_1_1_eCurrentSensingSet_m_1_to_s_1_SlopeEquation_Success()
+void test_1_1_eCurrentSensingSet_m_1_to_b_0_SlopeEquation_Success()
 {
     float fCurrent;
     float xMockReadmV;
@@ -71,12 +71,12 @@ void test_1_1_eCurrentSensingSet_m_1_to_s_1_SlopeEquation_Success()
     TEST_ASSERT_EQUAL_FLOAT( xMockReadmV, fCurrent );
 }
 /*----------------------------------------------------------------------------*/
-void test_1_2_eCurrentSensingSet_m_2_to_s_1_SlopeEquation_Success()
+void test_1_2_eCurrentSensingSet_m_2_to_b_1_SlopeEquation_Success()
 {
     float fCurrent;
     float fMockReadmV;
-		xCurrentInputScaling.fIntercept = 2.0f;
-		xCurrentInputScaling.fSlope = 0.0f;	
+		xCurrentInputScaling.fIntercept = 1.0f;
+		xCurrentInputScaling.fSlope = 2.0f;	
 	  
 	
     
@@ -91,12 +91,12 @@ void test_1_2_eCurrentSensingSet_m_2_to_s_1_SlopeEquation_Success()
     TEST_ASSERT_EQUAL_FLOAT( (xCurrentInputScaling.fSlope * fMockReadmV + xCurrentInputScaling.fIntercept ), fCurrent );
 }
 /*----------------------------------------------------------------------------*/
-void test_1_3_eCurrentSensingSet_m_1_to_s_2_SlopeEquation_Success()
+void test_1_3_eCurrentSensingSet_m_1_to_b_2_SlopeEquation_Success()
 {
     float fCurrent;
     float fMockReadV;
-		xCurrentInputScaling.fIntercept = 1.0f;
-		xCurrentInputScaling.fSlope = 2.0f;	
+		xCurrentInputScaling.fIntercept = 2.0f;
+		xCurrentInputScaling.fSlope = 1.0f;	
 	  
 	    
     fMockReadV = 3.30f;
@@ -128,8 +128,20 @@ void test_1_4_eCurrentSensingGetCurrentmA_Success()
     TEST_ASSERT_EQUAL_FLOAT( fMockCurrentmA, fCurrent );
 }
 /*----------------------------------------------------------------------------*/
+void test_1_5_eCurrentSensing_Slope_negative_Fail() 
+{
+    float fCurrent;
+  
+	   xCurrentInputScaling.fSlope = -4.0f;
+    
+  
+    eResult = eCurrentSensingGetCurrentmA( xMockStream, xCurrentInputScaling, &fCurrent );
+    TEST_ASSERT_EQUAL( eInvalidParameter, eResult );
+    
+}
+/*----------------------------------------------------------------------------*/
 
-void test_1_5_eCurrentSensingGetCurrentmA_NullPointer_Fail()
+void test_1_6_eCurrentSensingGetCurrentmA_NullPointer_Fail()
 {
     /* pulCurrent is NULL */
     eResult = eCurrentSensingGetCurrentmA( xMockStream, xCurrentInputScaling ,NULL );
@@ -137,7 +149,7 @@ void test_1_5_eCurrentSensingGetCurrentmA_NullPointer_Fail()
 }
 /*----------------------------------------------------------------------------*/
 
-void test_1_6_eCurrentSensingGetCurrentmA_AnalogReadmV_Fail()
+void test_1_7_eCurrentSensingGetCurrentmA_AnalogReadmV_Fail()
 {
     float fCurrent;
 

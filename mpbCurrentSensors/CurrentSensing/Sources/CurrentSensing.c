@@ -32,7 +32,7 @@ eMpbError_t eCurrentSensingGetCurrentmA( handle_t xStream, xCurrentInputScaling_
 	eMpbError_t eResult = eInvalidParameter;
 	float fVoltage;
 	
-    if( pfCurrent != NULL )
+    if( ( pfCurrent != NULL ) && ( xCurrentInputScaling.fSlope > 0.0f ) )
     {
 			eResult = eCurrentSensingAnalogReadmV( xStream, &fVoltage );
 			if( eResult == eSuccess )

@@ -1,8 +1,53 @@
-#line 1 "build/test/mocks/mock_test_CurrentSensing.c"
+#line 1 "../Tests/test_CurrentSensing.c"
+
+
+
+
+
+
+
+
+
+
+
+
+
  
-#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\string.h"
+ 
+#line 1 "C:/mpbComponent/mpbCurrentSensors/CurrentSensing/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+#line 1 "C:\\mpbComponent\\mpbCurrentSensors\\CurrentSensing\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\setjmp.h"
  
  
+
 
 
 
@@ -39,7 +84,7 @@
 
 
 
-#line 11 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\string.h"
+#line 12 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\setjmp.h"
 #line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\yvals.h"
  
  
@@ -890,555 +935,7 @@ typedef struct
 
 
  
-#line 12 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\string.h"
-#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
- 
- 
-
-
-
-
-
-  #pragma system_include
-
-
-#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ycheck.h"
- 
- 
-
- 
-
-
-  #pragma system_include
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-#line 12 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
-
-
- 
-
-
-
-  typedef _Sizet size_t;
-
-
-
-
-typedef unsigned int __data_size_t;
-
-
-
-
-#line 13 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\string.h"
-
-#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product_string.h"
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-  #pragma system_include
-
-
-
-
-  
-
-
-
-
-
- 
-
-
-  
-
-
-
-
- 
-
-
-
-#line 44 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product_string.h"
-
-
-
-  
-
-
- 
-
-
-
-
-  #pragma inline=forced_no_body
-  _Pragma("function_effects = no_state, no_read(1), no_write(2), returns 1, always_returns") __intrinsic __nounwind void * memcpy(void * _D, const void * _S, size_t _N)
-  {
-    __aeabi_memcpy(_D, _S, _N);
-    return _D;
-  }
-
-
-  #pragma inline=forced_no_body
-  _Pragma("function_effects = no_state, no_read(1), no_write(2), returns 1, always_returns") __intrinsic __nounwind void * memmove(void * _D, const void * _S, size_t _N)
-  {
-    __aeabi_memmove(_D, _S, _N);
-    return _D;
-  }
-
-
-  #pragma inline=forced_no_body
-  _Pragma("function_effects = no_state, no_read(1), returns 1, always_returns") __intrinsic __nounwind void * memset(void * _D, int _C, size_t _N)
-  {
-    __aeabi_memset(_D, _N, _C);
-    return _D;
-  }
-
-
-
-
-
-#line 16 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\string.h"
-
-
- 
-
-
-
-
- 
-#line 35 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\string.h"
-
- 
-
-  _Pragma("function_effects = no_state, no_write(1,2), always_returns")   __intrinsic __nounwind   int       memcmp(const void *, const void *,
-                                                   size_t);
-  _Pragma("function_effects = no_state, no_read(1), no_write(2), returns 1, always_returns")  __intrinsic __nounwind void *    memcpy(void *restrict,
-                                                   const void *restrict,
-                                                   size_t);
-  _Pragma("function_effects = no_state, no_read(1), no_write(2), returns 1, always_returns")  __intrinsic __nounwind void *    memmove(void *, const void *,
-                                                    size_t);
-  _Pragma("function_effects = no_state, no_read(1), returns 1, always_returns")     __intrinsic __nounwind void *    memset(void *, int, size_t);
-  _Pragma("function_effects = no_state, no_write(2), returns 1, always_returns")     __intrinsic __nounwind char *    strcat(char *restrict,
-                                                   const char *restrict);
-  _Pragma("function_effects = no_state, no_write(1,2), always_returns")   __intrinsic __nounwind   int       strcmp(const char *, const char *);
-  _Pragma("function_effects = no_write(1,2), always_returns")     __intrinsic __nounwind   int       strcoll(const char *, const char *);
-  _Pragma("function_effects = no_state, no_read(1), no_write(2), returns 1, always_returns")  __intrinsic __nounwind char *    strcpy(char *restrict,
-                                                   const char *restrict);
-  _Pragma("function_effects = no_state, no_write(1,2), always_returns")   __intrinsic __nounwind   size_t    strcspn(const char *, const char *);
-                    __intrinsic __nounwind char *    strerror(int);
-  _Pragma("function_effects = no_state, no_write(1), always_returns")      __intrinsic __nounwind   size_t    strlen(const char *);
-  _Pragma("function_effects = no_state, no_write(2), returns 1, always_returns")     __intrinsic __nounwind char *    strncat(char *restrict,
-                                                    const char *restrict,
-                                                    size_t);
-  _Pragma("function_effects = no_state, no_write(1,2), always_returns")   __intrinsic __nounwind   int       strncmp(const char *, const char *,
-                                                    size_t);
-  _Pragma("function_effects = no_state, no_read(1), no_write(2), returns 1, always_returns")  __intrinsic __nounwind char *    strncpy(char *restrict,
-                                                    const char *restrict,
-                                                    size_t);
-  _Pragma("function_effects = no_state, no_write(1,2), always_returns")   __intrinsic __nounwind   size_t    strspn(const char *, const char *);
-  _Pragma("function_effects = no_write(2), always_returns")         __intrinsic __nounwind char *    strtok(char *restrict,
-                                                   const char *restrict);
-  _Pragma("function_effects = no_write(2), always_returns")        __intrinsic __nounwind   size_t    strxfrm(char *restrict,
-                                                    const char *restrict,
-                                                    size_t);
-
-    _Pragma("function_effects = no_write(1), always_returns")      __intrinsic __nounwind   char *    strdup(const char *);
-    _Pragma("function_effects = no_write(1,2), always_returns")   __intrinsic __nounwind   int       strcasecmp(const char *,
-                                                       const char *);
-    _Pragma("function_effects = no_write(1,2), always_returns")   __intrinsic __nounwind   int       strncasecmp(const char *,
-                                                        const char *, size_t);
-    _Pragma("function_effects = no_state, no_write(2), always_returns")    __intrinsic __nounwind   char *    strtok_r(char *, const char *,
-                                                     char **);
-    _Pragma("function_effects = no_state, no_write(1), always_returns")     __intrinsic __nounwind size_t    strnlen(char const *, size_t);
-
-
-
-#line 171 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\string.h"
-  _Pragma("function_effects = no_state, no_write(1), always_returns")    __intrinsic __nounwind void *memchr(const void *_S, int _C, size_t _N);
-  _Pragma("function_effects = no_state, no_write(1), always_returns")    __intrinsic __nounwind char *strchr(const char *_S, int _C);
-  _Pragma("function_effects = no_state, no_write(1,2), always_returns") __intrinsic __nounwind char *strpbrk(const char *_S, const char *_P);
-  _Pragma("function_effects = no_state, no_write(1), always_returns")    __intrinsic __nounwind char *strrchr(const char *_S, int _C);
-  _Pragma("function_effects = no_state, no_write(1,2), always_returns") __intrinsic __nounwind char *strstr(const char *_S, const char *_P);
-
-
-#line 200 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\string.h"
-
-
-
-
-
-
- 
-#line 3 "build/test/mocks/mock_test_CurrentSensing.c"
-#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdlib.h"
- 
- 
-
-
-
-
-
-  #pragma system_include
-
-
-#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ycheck.h"
- 
- 
-
- 
-
-
-  #pragma system_include
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-#line 12 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdlib.h"
-
-
-
- 
-#pragma rtmodel="__dlib_full_locale_support",   "0"
-
-
-#line 28 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdlib.h"
-  
-    __intrinsic __nounwind size_t __iar_Mbcurmax(void);
-  
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-  typedef _Wchart wchar_t;
-
-
-typedef struct
-{  
-  int quot;
-  int rem;
-} div_t;
-
-typedef struct
-{  
-  long quot;
-  long rem;
-} ldiv_t;
-
-
-  typedef struct
-  {  
-    long long quot;
-    long long rem;
-  } lldiv_t;
-
-
-#line 86 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdlib.h"
-
- 
-  
-  __intrinsic __nounwind int             atexit(void (*)(void));
-
-    __intrinsic __nounwind          int  at_quick_exit(void (*)(void)) ;
-    __intrinsic __noreturn __nounwind void _Exit(int) ;
-    __intrinsic __noreturn __nounwind void quick_exit(int) ;
-
-  __intrinsic __noreturn __nounwind void   exit(int);
-   __intrinsic __nounwind        char * getenv(const char *);
-  __intrinsic __nounwind          int    system(const char *);
-
-
-
-
-               __intrinsic __nounwind void *    aligned_alloc(size_t, size_t);
-
-          __intrinsic __noreturn __nounwind void  abort(void) ;
-  _Pragma("function_effects = no_state, always_returns")     __intrinsic __nounwind int       abs(int);
-               __intrinsic __nounwind void *    calloc(size_t, size_t);
-  _Pragma("function_effects = no_state, always_returns")     __intrinsic __nounwind div_t     div(int, int);
-               __intrinsic __nounwind void      free(void *);
-  _Pragma("function_effects = no_state, always_returns")     __intrinsic __nounwind long      labs(long);
-  _Pragma("function_effects = no_state, always_returns")     __intrinsic __nounwind ldiv_t    ldiv(long, long);
-
-    _Pragma("function_effects = no_state, always_returns")   __intrinsic __nounwind long long llabs(long long);
-    _Pragma("function_effects = no_state, always_returns")   __intrinsic __nounwind lldiv_t   lldiv(long long, long long);
-
-               __intrinsic __nounwind void *    malloc(size_t);
-  _Pragma("function_effects = no_write(1), always_returns")    __intrinsic __nounwind int       mblen(const char *, size_t);
-
-    _Pragma("function_effects = no_read(1), no_write(2), always_returns")  __intrinsic __nounwind size_t mbstowcs(wchar_t *restrict,
-                                                const char *restrict, size_t);
-    _Pragma("function_effects = no_read(1), no_write(2), always_returns") __intrinsic __nounwind   int    mbtowc(wchar_t *restrict,
-                                              const char *restrict, size_t);
-
-               __intrinsic __nounwind int    rand(void);
-               __intrinsic __nounwind void   srand(unsigned int);
-               __intrinsic __nounwind void * realloc(void *, size_t);
-
-               __intrinsic __nounwind void * __iar_realloc_in_place(void *, size_t);
-
-  _Pragma("function_effects = no_write(1), no_read(2), always_returns") __intrinsic __nounwind long          strtol(const char *restrict,
-                                                 char **restrict, int);
-  _Pragma("function_effects = no_write(1), no_read(2), always_returns") __intrinsic __nounwind unsigned long strtoul(const char *, char **, int);
-
-    _Pragma("function_effects = no_read(1), no_write(2), always_returns")  __intrinsic __nounwind size_t wcstombs(char *restrict,
-                                               const wchar_t *restrict,
-                                               size_t);
-    _Pragma("function_effects = no_read(1), always_returns")     __intrinsic __nounwind int    wctomb(char *, wchar_t);
-
-
-    _Pragma("function_effects = no_write(1), no_read(2), always_returns") __intrinsic __nounwind long long strtoll(const char *, char **, int);
-    _Pragma("function_effects = no_write(1), no_read(2), always_returns") __intrinsic __nounwind unsigned long long strtoull(const char *,
-                                                          char **, int);
-
-
-#line 162 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdlib.h"
-
-
-  typedef int _Cmpfun(const void *, const void *);
-  _Pragma("function_effects = no_write(1,2), always_returns")  __intrinsic void * bsearch(const void *,
-                                                       const void *, size_t,
-                                                       size_t, _Cmpfun *);
-                __intrinsic void   qsort(void *, size_t, size_t,
-                                                     _Cmpfun *);
-               __intrinsic void     __qsortbbl(void *, size_t,
-                                                          size_t, _Cmpfun *);
-  _Pragma("function_effects = no_write(1), always_returns")    __intrinsic __nounwind double             atof(const char *);
-  _Pragma("function_effects = no_write(1), always_returns")    __intrinsic __nounwind int                atoi(const char *);
-  _Pragma("function_effects = no_write(1), always_returns")    __intrinsic __nounwind long               atol(const char *);
-
-     _Pragma("function_effects = no_write(1), always_returns") __intrinsic __nounwind long long        atoll(const char *);
-     _Pragma("function_effects = no_write(1), no_read(2), always_returns") __intrinsic __nounwind float         strtof(const char *restrict,
-                                                    char **restrict);
-     _Pragma("function_effects = no_write(1), no_read(2), always_returns") __intrinsic __nounwind long double   strtold(const char *, char **);
-
-  _Pragma("function_effects = no_write(1), no_read(2), always_returns") __intrinsic __nounwind double           strtod(const char *restrict,
-                                                    char **restrict);
-
-    _Pragma("function_effects = no_state, always_returns")   __intrinsic __nounwind int              __iar_DLib_library_version(void);
-
-
-
-
-  
-  #pragma inline=no_body
-  int abs(int i)
-  {       
-    return i < 0 ? -i : i;
-  }
-
-  #pragma inline=no_body
-  long labs(long i)
-  {  
-    return i < 0 ? -i : i;
-  }
-
-
-    #pragma inline=no_body
-    long long llabs(long long i)
-    {  
-      return i < 0 ? -i : i;
-    }
-
-  
-
-
-#line 244 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdlib.h"
-
-#line 283 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdlib.h"
-
-#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product_stdlib.h"
-
-
-
-
-
-
- 
-
-
-
-
-
-  #pragma system_include
-
-
-
-
-
-
-
-
-
-
-
-
-
-#pragma inline=forced_no_body
-__intrinsic __nounwind
-div_t div(int a, int b)
-{
-
-  int q = a / b;
-  int r = a - (q*b);
-  div_t d;
-  d.quot = q;
-  d.rem = r;
-  return d;
-
-
-
-}
-
-#pragma inline=forced_no_body
-__intrinsic __nounwind
-ldiv_t ldiv(long a, long b)
-{
-#line 54 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product_stdlib.h"
-  int q = a / b;
-  int r = a - (q*b);
-  ldiv_t ld;
-  ld.quot = q;
-  ld.rem = r;
-#line 65 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product_stdlib.h"
-  return ld;
-}
-
-#line 82 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product_stdlib.h"
-    #pragma type_attribute=__value_in_regs
-    lldiv_t __aeabi_ldivmod(long long n, long long d);
-
-    #pragma inline=forced_no_body
-    __intrinsic __nounwind
-    lldiv_t lldiv(long long a, long long b)
-    {
-      return __aeabi_ldivmod(a, b);
-    }
-
-
-
-
-
-
-
-
-
-#line 287 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdlib.h"
-
-
-
-
-
-
-
-
- 
-#line 4 "build/test/mocks/mock_test_CurrentSensing.c"
-#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\setjmp.h"
- 
- 
-
-
-
-
-
-  #pragma system_include
-
-
-#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ycheck.h"
- 
- 
-
- 
-
-
-  #pragma system_include
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-#line 12 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\setjmp.h"
-
+#line 13 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\setjmp.h"
 
 #line 24 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\setjmp.h"
 
@@ -1463,51 +960,6 @@ ldiv_t ldiv(long a, long b)
   __intrinsic __noreturn __nounwind void longjmp(jmp_buf, int);
 
 
-
-
-
-
-
-
-
-
- 
-#line 5 "build/test/mocks/mock_test_CurrentSensing.c"
-#line 1 "C:/mpbComponent/mpbCurrentSensors/CurrentSensing/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-#line 1 "C:\\mpbComponent\\mpbCurrentSensors\\CurrentSensing\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-
-
-
- 
-
-
-
-
-
-
-
-
-#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\setjmp.h"
- 
- 
-
-#line 56 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\setjmp.h"
 
 
 
@@ -2698,8 +2150,64 @@ typedef int __data_intptr_t; typedef unsigned int __data_uintptr_t;
 
 
 #line 11 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\time.h"
+#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
+ 
+ 
 
 
+
+
+
+  #pragma system_include
+
+
+#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ycheck.h"
+ 
+ 
+
+ 
+
+
+  #pragma system_include
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+#line 12 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
+
+
+ 
+
+
+
+  typedef _Sizet size_t;
+
+
+
+
+typedef unsigned int __data_size_t;
+
+
+
+
+#line 13 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\time.h"
 
  
 #line 21 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\time.h"
@@ -3703,108 +3211,9 @@ int suiteTearDown(int num_failures);
 #line 498 "C:/mpbComponent/mpbCurrentSensors/CurrentSensing/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
 
  
-#line 6 "build/test/mocks/mock_test_CurrentSensing.c"
-#line 1 "C:/mpbComponent/mpbCurrentSensors/CurrentSensing/UnitTestFramework/vendor/ceedling/vendor/cmock/src/cmock.h"
+#line 17 "../Tests/test_CurrentSensing.c"
+#line 1 "../Includes/CurrentSensing.h"
 
-
-
-
- 
-
-
-
-
-#line 1 "C:\\mpbComponent\\mpbCurrentSensors\\CurrentSensing\\UnitTestFramework\\vendor\\ceedling\\vendor\\cmock\\src\\cmock_internals.h"
-
-
-
-
- 
-
-
-
-
-
-extern const char* CMockStringOutOfMemory;
-extern const char* CMockStringCalledMore;
-extern const char* CMockStringCalledLess;
-extern const char* CMockStringCalledEarly;
-extern const char* CMockStringCalledLate;
-extern const char* CMockStringCallOrder;
-extern const char* CMockStringIgnPreExp;
-extern const char* CMockStringPtrPreExp;
-extern const char* CMockStringPtrIsNULL;
-extern const char* CMockStringExpNULL;
-extern const char* CMockStringMismatch;
-
-
-
-
-
-
-
-
-
-
-
-
-#line 43 "C:\\mpbComponent\\mpbCurrentSensors\\CurrentSensing\\UnitTestFramework\\vendor\\ceedling\\vendor\\cmock\\src\\cmock_internals.h"
-
-#line 56 "C:\\mpbComponent\\mpbCurrentSensors\\CurrentSensing\\UnitTestFramework\\vendor\\ceedling\\vendor\\cmock\\src\\cmock_internals.h"
-
-
-
-
-
-
-#line 77 "C:\\mpbComponent\\mpbCurrentSensors\\CurrentSensing\\UnitTestFramework\\vendor\\ceedling\\vendor\\cmock\\src\\cmock_internals.h"
-
-
-
-
-
-
-
-
-
-
-
-
-#line 11 "C:/mpbComponent/mpbCurrentSensors/CurrentSensing/UnitTestFramework/vendor/ceedling/vendor/cmock/src/cmock.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-unsigned int  CMock_Guts_MemNew(unsigned int size);
-unsigned int  CMock_Guts_MemChain(unsigned int root_index, unsigned int obj_index);
-unsigned int  CMock_Guts_MemNext(unsigned int previous_item_index);
-unsigned int  CMock_Guts_MemEndOfChain(unsigned int root_index);
-
-void*                 CMock_Guts_GetAddressFor(unsigned int index);
-
-unsigned int  CMock_Guts_MemBytesFree(void);
-unsigned int  CMock_Guts_MemBytesUsed(void);
-void                  CMock_Guts_MemFreeAll(void);
-void                  CMock_Guts_MemFreeFinal(void);
-
-#line 7 "build/test/mocks/mock_test_CurrentSensing.c"
-#line 1 "C:\\mpbComponent\\mpbCurrentSensors\\CurrentSensing\\UnitTestFramework\\build\\test\\mocks\\mock_test_CurrentSensing.h"
- 
-
-
-
-#line 1 "../Tests/test_CurrentSensing.h"
 
 
 
@@ -3848,6 +3257,496 @@ void                  CMock_Guts_MemFreeFinal(void);
  
 
  
+#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdlib.h"
+ 
+ 
+
+
+
+
+
+  #pragma system_include
+
+
+#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ycheck.h"
+ 
+ 
+
+ 
+
+
+  #pragma system_include
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+#line 12 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdlib.h"
+
+
+
+ 
+#pragma rtmodel="__dlib_full_locale_support",   "0"
+
+
+#line 28 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdlib.h"
+  
+    __intrinsic __nounwind size_t __iar_Mbcurmax(void);
+  
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+  typedef _Wchart wchar_t;
+
+
+typedef struct
+{  
+  int quot;
+  int rem;
+} div_t;
+
+typedef struct
+{  
+  long quot;
+  long rem;
+} ldiv_t;
+
+
+  typedef struct
+  {  
+    long long quot;
+    long long rem;
+  } lldiv_t;
+
+
+#line 86 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdlib.h"
+
+ 
+  
+  __intrinsic __nounwind int             atexit(void (*)(void));
+
+    __intrinsic __nounwind          int  at_quick_exit(void (*)(void)) ;
+    __intrinsic __noreturn __nounwind void _Exit(int) ;
+    __intrinsic __noreturn __nounwind void quick_exit(int) ;
+
+  __intrinsic __noreturn __nounwind void   exit(int);
+   __intrinsic __nounwind        char * getenv(const char *);
+  __intrinsic __nounwind          int    system(const char *);
+
+
+
+
+               __intrinsic __nounwind void *    aligned_alloc(size_t, size_t);
+
+          __intrinsic __noreturn __nounwind void  abort(void) ;
+  _Pragma("function_effects = no_state, always_returns")     __intrinsic __nounwind int       abs(int);
+               __intrinsic __nounwind void *    calloc(size_t, size_t);
+  _Pragma("function_effects = no_state, always_returns")     __intrinsic __nounwind div_t     div(int, int);
+               __intrinsic __nounwind void      free(void *);
+  _Pragma("function_effects = no_state, always_returns")     __intrinsic __nounwind long      labs(long);
+  _Pragma("function_effects = no_state, always_returns")     __intrinsic __nounwind ldiv_t    ldiv(long, long);
+
+    _Pragma("function_effects = no_state, always_returns")   __intrinsic __nounwind long long llabs(long long);
+    _Pragma("function_effects = no_state, always_returns")   __intrinsic __nounwind lldiv_t   lldiv(long long, long long);
+
+               __intrinsic __nounwind void *    malloc(size_t);
+  _Pragma("function_effects = no_write(1), always_returns")    __intrinsic __nounwind int       mblen(const char *, size_t);
+
+    _Pragma("function_effects = no_read(1), no_write(2), always_returns")  __intrinsic __nounwind size_t mbstowcs(wchar_t *restrict,
+                                                const char *restrict, size_t);
+    _Pragma("function_effects = no_read(1), no_write(2), always_returns") __intrinsic __nounwind   int    mbtowc(wchar_t *restrict,
+                                              const char *restrict, size_t);
+
+               __intrinsic __nounwind int    rand(void);
+               __intrinsic __nounwind void   srand(unsigned int);
+               __intrinsic __nounwind void * realloc(void *, size_t);
+
+               __intrinsic __nounwind void * __iar_realloc_in_place(void *, size_t);
+
+  _Pragma("function_effects = no_write(1), no_read(2), always_returns") __intrinsic __nounwind long          strtol(const char *restrict,
+                                                 char **restrict, int);
+  _Pragma("function_effects = no_write(1), no_read(2), always_returns") __intrinsic __nounwind unsigned long strtoul(const char *, char **, int);
+
+    _Pragma("function_effects = no_read(1), no_write(2), always_returns")  __intrinsic __nounwind size_t wcstombs(char *restrict,
+                                               const wchar_t *restrict,
+                                               size_t);
+    _Pragma("function_effects = no_read(1), always_returns")     __intrinsic __nounwind int    wctomb(char *, wchar_t);
+
+
+    _Pragma("function_effects = no_write(1), no_read(2), always_returns") __intrinsic __nounwind long long strtoll(const char *, char **, int);
+    _Pragma("function_effects = no_write(1), no_read(2), always_returns") __intrinsic __nounwind unsigned long long strtoull(const char *,
+                                                          char **, int);
+
+
+#line 162 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdlib.h"
+
+
+  typedef int _Cmpfun(const void *, const void *);
+  _Pragma("function_effects = no_write(1,2), always_returns")  __intrinsic void * bsearch(const void *,
+                                                       const void *, size_t,
+                                                       size_t, _Cmpfun *);
+                __intrinsic void   qsort(void *, size_t, size_t,
+                                                     _Cmpfun *);
+               __intrinsic void     __qsortbbl(void *, size_t,
+                                                          size_t, _Cmpfun *);
+  _Pragma("function_effects = no_write(1), always_returns")    __intrinsic __nounwind double             atof(const char *);
+  _Pragma("function_effects = no_write(1), always_returns")    __intrinsic __nounwind int                atoi(const char *);
+  _Pragma("function_effects = no_write(1), always_returns")    __intrinsic __nounwind long               atol(const char *);
+
+     _Pragma("function_effects = no_write(1), always_returns") __intrinsic __nounwind long long        atoll(const char *);
+     _Pragma("function_effects = no_write(1), no_read(2), always_returns") __intrinsic __nounwind float         strtof(const char *restrict,
+                                                    char **restrict);
+     _Pragma("function_effects = no_write(1), no_read(2), always_returns") __intrinsic __nounwind long double   strtold(const char *, char **);
+
+  _Pragma("function_effects = no_write(1), no_read(2), always_returns") __intrinsic __nounwind double           strtod(const char *restrict,
+                                                    char **restrict);
+
+    _Pragma("function_effects = no_state, always_returns")   __intrinsic __nounwind int              __iar_DLib_library_version(void);
+
+
+
+
+  
+  #pragma inline=no_body
+  int abs(int i)
+  {       
+    return i < 0 ? -i : i;
+  }
+
+  #pragma inline=no_body
+  long labs(long i)
+  {  
+    return i < 0 ? -i : i;
+  }
+
+
+    #pragma inline=no_body
+    long long llabs(long long i)
+    {  
+      return i < 0 ? -i : i;
+    }
+
+  
+
+
+#line 244 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdlib.h"
+
+#line 283 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdlib.h"
+
+#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product_stdlib.h"
+
+
+
+
+
+
+ 
+
+
+
+
+
+  #pragma system_include
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma inline=forced_no_body
+__intrinsic __nounwind
+div_t div(int a, int b)
+{
+
+  int q = a / b;
+  int r = a - (q*b);
+  div_t d;
+  d.quot = q;
+  d.rem = r;
+  return d;
+
+
+
+}
+
+#pragma inline=forced_no_body
+__intrinsic __nounwind
+ldiv_t ldiv(long a, long b)
+{
+#line 54 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product_stdlib.h"
+  int q = a / b;
+  int r = a - (q*b);
+  ldiv_t ld;
+  ld.quot = q;
+  ld.rem = r;
+#line 65 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product_stdlib.h"
+  return ld;
+}
+
+#line 82 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product_stdlib.h"
+    #pragma type_attribute=__value_in_regs
+    lldiv_t __aeabi_ldivmod(long long n, long long d);
+
+    #pragma inline=forced_no_body
+    __intrinsic __nounwind
+    lldiv_t lldiv(long long a, long long b)
+    {
+      return __aeabi_ldivmod(a, b);
+    }
+
+
+
+
+
+
+
+
+
+#line 287 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdlib.h"
+
+
+
+
+
+
+
+
+ 
+#line 26 "../../../commun/Includes/mpblibs.h"
+#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\string.h"
+ 
+ 
+
+
+
+
+  #pragma system_include
+
+
+#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ycheck.h"
+ 
+ 
+
+ 
+
+
+  #pragma system_include
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+#line 11 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\string.h"
+
+
+
+#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product_string.h"
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+  #pragma system_include
+
+
+
+
+  
+
+
+
+
+
+ 
+
+
+  
+
+
+
+
+ 
+
+
+
+#line 44 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Product_string.h"
+
+
+
+  
+
+
+ 
+
+
+
+
+  #pragma inline=forced_no_body
+  _Pragma("function_effects = no_state, no_read(1), no_write(2), returns 1, always_returns") __intrinsic __nounwind void * memcpy(void * _D, const void * _S, size_t _N)
+  {
+    __aeabi_memcpy(_D, _S, _N);
+    return _D;
+  }
+
+
+  #pragma inline=forced_no_body
+  _Pragma("function_effects = no_state, no_read(1), no_write(2), returns 1, always_returns") __intrinsic __nounwind void * memmove(void * _D, const void * _S, size_t _N)
+  {
+    __aeabi_memmove(_D, _S, _N);
+    return _D;
+  }
+
+
+  #pragma inline=forced_no_body
+  _Pragma("function_effects = no_state, no_read(1), returns 1, always_returns") __intrinsic __nounwind void * memset(void * _D, int _C, size_t _N)
+  {
+    __aeabi_memset(_D, _N, _C);
+    return _D;
+  }
+
+
+
+
+
+#line 16 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\string.h"
+
+
+ 
+
+
+
+
+ 
+#line 35 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\string.h"
+
+ 
+
+  _Pragma("function_effects = no_state, no_write(1,2), always_returns")   __intrinsic __nounwind   int       memcmp(const void *, const void *,
+                                                   size_t);
+  _Pragma("function_effects = no_state, no_read(1), no_write(2), returns 1, always_returns")  __intrinsic __nounwind void *    memcpy(void *restrict,
+                                                   const void *restrict,
+                                                   size_t);
+  _Pragma("function_effects = no_state, no_read(1), no_write(2), returns 1, always_returns")  __intrinsic __nounwind void *    memmove(void *, const void *,
+                                                    size_t);
+  _Pragma("function_effects = no_state, no_read(1), returns 1, always_returns")     __intrinsic __nounwind void *    memset(void *, int, size_t);
+  _Pragma("function_effects = no_state, no_write(2), returns 1, always_returns")     __intrinsic __nounwind char *    strcat(char *restrict,
+                                                   const char *restrict);
+  _Pragma("function_effects = no_state, no_write(1,2), always_returns")   __intrinsic __nounwind   int       strcmp(const char *, const char *);
+  _Pragma("function_effects = no_write(1,2), always_returns")     __intrinsic __nounwind   int       strcoll(const char *, const char *);
+  _Pragma("function_effects = no_state, no_read(1), no_write(2), returns 1, always_returns")  __intrinsic __nounwind char *    strcpy(char *restrict,
+                                                   const char *restrict);
+  _Pragma("function_effects = no_state, no_write(1,2), always_returns")   __intrinsic __nounwind   size_t    strcspn(const char *, const char *);
+                    __intrinsic __nounwind char *    strerror(int);
+  _Pragma("function_effects = no_state, no_write(1), always_returns")      __intrinsic __nounwind   size_t    strlen(const char *);
+  _Pragma("function_effects = no_state, no_write(2), returns 1, always_returns")     __intrinsic __nounwind char *    strncat(char *restrict,
+                                                    const char *restrict,
+                                                    size_t);
+  _Pragma("function_effects = no_state, no_write(1,2), always_returns")   __intrinsic __nounwind   int       strncmp(const char *, const char *,
+                                                    size_t);
+  _Pragma("function_effects = no_state, no_read(1), no_write(2), returns 1, always_returns")  __intrinsic __nounwind char *    strncpy(char *restrict,
+                                                    const char *restrict,
+                                                    size_t);
+  _Pragma("function_effects = no_state, no_write(1,2), always_returns")   __intrinsic __nounwind   size_t    strspn(const char *, const char *);
+  _Pragma("function_effects = no_write(2), always_returns")         __intrinsic __nounwind char *    strtok(char *restrict,
+                                                   const char *restrict);
+  _Pragma("function_effects = no_write(2), always_returns")        __intrinsic __nounwind   size_t    strxfrm(char *restrict,
+                                                    const char *restrict,
+                                                    size_t);
+
+    _Pragma("function_effects = no_write(1), always_returns")      __intrinsic __nounwind   char *    strdup(const char *);
+    _Pragma("function_effects = no_write(1,2), always_returns")   __intrinsic __nounwind   int       strcasecmp(const char *,
+                                                       const char *);
+    _Pragma("function_effects = no_write(1,2), always_returns")   __intrinsic __nounwind   int       strncasecmp(const char *,
+                                                        const char *, size_t);
+    _Pragma("function_effects = no_state, no_write(2), always_returns")    __intrinsic __nounwind   char *    strtok_r(char *, const char *,
+                                                     char **);
+    _Pragma("function_effects = no_state, no_write(1), always_returns")     __intrinsic __nounwind size_t    strnlen(char const *, size_t);
+
+
+
+#line 171 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\string.h"
+  _Pragma("function_effects = no_state, no_write(1), always_returns")    __intrinsic __nounwind void *memchr(const void *_S, int _C, size_t _N);
+  _Pragma("function_effects = no_state, no_write(1), always_returns")    __intrinsic __nounwind char *strchr(const char *_S, int _C);
+  _Pragma("function_effects = no_state, no_write(1,2), always_returns") __intrinsic __nounwind char *strpbrk(const char *_S, const char *_P);
+  _Pragma("function_effects = no_state, no_write(1), always_returns")    __intrinsic __nounwind char *strrchr(const char *_S, int _C);
+  _Pragma("function_effects = no_state, no_write(1,2), always_returns") __intrinsic __nounwind char *strstr(const char *_S, const char *_P);
+
+
+#line 200 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\string.h"
+
+
+
+
+
+
+ 
+#line 27 "../../../commun/Includes/mpblibs.h"
 #line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdarg.h"
  
 
@@ -4902,7 +4801,88 @@ extern void vMpblibsMallocFailedHook( size_t xSizeRequired );
  
 
  
-#line 21 "../Tests/test_CurrentSensing.h"
+#line 22 "../Includes/CurrentSensing.h"
+
+ 
+ 
+ 
+ 
+typedef struct
+{
+	float fIntercept;
+	float fSlope;	
+}xCurrentInputScaling_t;
+
+typedef struct
+{
+	float fIntercept;
+	float fSlope;	
+
+}xPowerInputScaling_t;
+
+ 
+ 
+
+
+
+
+
+
+ 
+eMpbError_t eCurrentSensingGetCurrentmA( handle_t xStream, xCurrentInputScaling_t xCurrentInputScaling , float *pfCurrent );
+
+
+
+
+
+
+ 
+eMpbError_t eCurrentSensingGetPowermW( handle_t xStream, xPowerInputScaling_t xPowerInputScaling, float *pfPower );
+
+
+
+
+
+
+ 
+extern eMpbError_t eCurrentSensingAnalogReadmV( handle_t xStream, float *pxVoltage );
+
+
+
+
+
+
+
+ 
+extern eMpbError_t eCurrentSensingPowerAnalogReadmV( handle_t xStream, float *pxVoltage );
+
+#line 18 "../Tests/test_CurrentSensing.c"
+#line 1 "build/test/mocks/mock_test_CurrentSensing.h"
+ 
+
+
+
+#line 1 "C:\\mpbComponent\\mpbCurrentSensors\\CurrentSensing\\Tests\\test_CurrentSensing.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+ 
+
 
  
  
@@ -4912,10 +4892,10 @@ extern void vMpblibsMallocFailedHook( size_t xSizeRequired );
  
 eMpbError_t eCurrentSensingAnalogReadmV( handle_t xStream, float *pxVoltage );
 
-#line 6 "C:\\mpbComponent\\mpbCurrentSensors\\CurrentSensing\\UnitTestFramework\\build\\test\\mocks\\mock_test_CurrentSensing.h"
+#line 6 "build/test/mocks/mock_test_CurrentSensing.h"
 
  
-#line 18 "C:\\mpbComponent\\mpbCurrentSensors\\CurrentSensing\\UnitTestFramework\\build\\test\\mocks\\mock_test_CurrentSensing.h"
+#line 18 "build/test/mocks/mock_test_CurrentSensing.h"
 
 void mock_test_CurrentSensing_Init(void);
 void mock_test_CurrentSensing_Destroy(void);
@@ -4949,215 +4929,152 @@ void eCurrentSensingAnalogReadmV_CMockIgnoreArg_pxVoltage(UNITY_UINT cmock_line)
 
 
 
-#line 8 "build/test/mocks/mock_test_CurrentSensing.c"
+#line 19 "../Tests/test_CurrentSensing.c"
 
-static const char* CMockString_eCurrentSensingAnalogReadmV = "eCurrentSensingAnalogReadmV";
-static const char* CMockString_pxVoltage = "pxVoltage";
-static const char* CMockString_xStream = "xStream";
 
-typedef struct _CMOCK_eCurrentSensingAnalogReadmV_CALL_INSTANCE
+ 
+ 
+ 
+ 
+ 
+static eMpbError_t eResult;
+static handle_t xMockStream;
+static xCurrentInputScaling_t  xCurrentInputScaling;
+
+ 
+ 
+ 
+ 
+ 
+void setUp()
 {
-  UNITY_UINT LineNumber;
-  unsigned int IgnoreMode;
-  eMpbError_t ReturnVal;
-  int CallOrder;
-  handle_t Expected_xStream;
-  float* Expected_pxVoltage;
-  int Expected_pxVoltage_Depth;
-  int ReturnThruPtr_pxVoltage_Used;
-  float* ReturnThruPtr_pxVoltage_Val;
-  int ReturnThruPtr_pxVoltage_Size;
-  int IgnoreArg_xStream;
-  int IgnoreArg_pxVoltage;
+    eResult = eUnknownError;
+    xMockStream = 77;
+		xCurrentInputScaling.fIntercept = 1.0f;
+		xCurrentInputScaling.fSlope = 1.0f;	
+	  
+	
+}
+ 
 
-} CMOCK_eCurrentSensingAnalogReadmV_CALL_INSTANCE;
-
-static struct mock_test_CurrentSensingInstance
+void tearDown()
 {
-  int eCurrentSensingAnalogReadmV_IgnoreBool;
-  eMpbError_t eCurrentSensingAnalogReadmV_FinalReturn;
-  CMOCK_eCurrentSensingAnalogReadmV_CALLBACK eCurrentSensingAnalogReadmV_CallbackFunctionPointer;
-  int eCurrentSensingAnalogReadmV_CallbackCalls;
-  unsigned int eCurrentSensingAnalogReadmV_CallInstance;
-} Mock;
-
-extern jmp_buf AbortFrame;
-extern int GlobalExpectCount;
-extern int GlobalVerifyOrder;
-
-void mock_test_CurrentSensing_Verify(void)
-{
-  UNITY_UINT cmock_line = (Unity . CurrentTestLineNumber);
-  if (Mock.eCurrentSensingAnalogReadmV_IgnoreBool)
-    Mock.eCurrentSensingAnalogReadmV_CallInstance = (0);
-  { Unity . CurrentDetail1 = (CMockString_eCurrentSensingAnalogReadmV); Unity . CurrentDetail2 = 0; };
-  if ((0) == Mock . eCurrentSensingAnalogReadmV_CallInstance) {} else {UnityFail( ((CMockStringCalledLess)), (UNITY_UINT)((UNITY_UINT)(cmock_line)));};
-  if (Mock.eCurrentSensingAnalogReadmV_CallbackFunctionPointer != 0)
-    Mock.eCurrentSensingAnalogReadmV_CallInstance = (0);
+    
 }
 
-void mock_test_CurrentSensing_Init(void)
+
+ 
+
+void test_1_1_eCurrentSensingSet_m_1_to_b_0_SlopeEquation_Success()
 {
-  mock_test_CurrentSensing_Destroy();
+    float fCurrent;
+    float xMockReadmV;
+		xCurrentInputScaling.fIntercept = 0.0f;
+		xCurrentInputScaling.fSlope = 1.0f;	
+	  
+	
+    
+    xMockReadmV = 3.30f;
+    eCurrentSensingAnalogReadmV_CMockExpectAndReturn(64, xMockStream, 0, eSuccess);
+    eCurrentSensingAnalogReadmV_CMockIgnoreArg_pxVoltage(65);
+	
+    eCurrentSensingAnalogReadmV_CMockReturnMemThruPtr_pxVoltage(67, &xMockReadmV, sizeof(* &xMockReadmV));
+
+	  
+    eResult = eCurrentSensingGetCurrentmA( xMockStream, xCurrentInputScaling, &fCurrent );
+    UnityAssertFloatsWithin((UNITY_FLOAT)((UNITY_FLOAT)((xMockReadmV)) * (UNITY_FLOAT)(0.00001f)), (UNITY_FLOAT)((UNITY_FLOAT)((xMockReadmV))), (UNITY_FLOAT)((UNITY_FLOAT)((fCurrent))), ((0)), (UNITY_UINT)((UNITY_UINT)(71)));
+}
+ 
+void test_1_2_eCurrentSensingSet_m_2_to_b_1_SlopeEquation_Success()
+{
+    float fCurrent;
+    float fMockReadmV;
+		xCurrentInputScaling.fIntercept = 1.0f;
+		xCurrentInputScaling.fSlope = 2.0f;	
+	  
+	
+    
+    fMockReadmV = 3.30f;
+    eCurrentSensingAnalogReadmV_CMockExpectAndReturn(84, xMockStream, 0, eSuccess);
+    eCurrentSensingAnalogReadmV_CMockIgnoreArg_pxVoltage(85);
+	
+    eCurrentSensingAnalogReadmV_CMockReturnMemThruPtr_pxVoltage(87, &fMockReadmV, sizeof(* &fMockReadmV));
+
+	  
+    eResult = eCurrentSensingGetCurrentmA( xMockStream, xCurrentInputScaling, &fCurrent );
+    UnityAssertFloatsWithin((UNITY_FLOAT)((UNITY_FLOAT)(((xCurrentInputScaling . fSlope * fMockReadmV + xCurrentInputScaling . fIntercept ))) * (UNITY_FLOAT)(0.00001f)), (UNITY_FLOAT)((UNITY_FLOAT)(((xCurrentInputScaling . fSlope * fMockReadmV + xCurrentInputScaling . fIntercept )))), (UNITY_FLOAT)((UNITY_FLOAT)((fCurrent))), ((0)), (UNITY_UINT)((UNITY_UINT)(91)));
+}
+ 
+void test_1_3_eCurrentSensingSet_m_1_to_b_2_SlopeEquation_Success()
+{
+    float fCurrent;
+    float fMockReadV;
+		xCurrentInputScaling.fIntercept = 2.0f;
+		xCurrentInputScaling.fSlope = 1.0f;	
+	  
+	    
+    fMockReadV = 3.30f;
+    eCurrentSensingAnalogReadmV_CMockExpectAndReturn(103, xMockStream, 0, eSuccess);
+    eCurrentSensingAnalogReadmV_CMockIgnoreArg_pxVoltage(104);
+	
+    eCurrentSensingAnalogReadmV_CMockReturnMemThruPtr_pxVoltage(106, &fMockReadV, sizeof(* &fMockReadV));
+
+	  
+    eResult = eCurrentSensingGetCurrentmA( xMockStream, xCurrentInputScaling, &fCurrent );
+    UnityAssertFloatsWithin((UNITY_FLOAT)((UNITY_FLOAT)((( xCurrentInputScaling . fSlope * fMockReadV + xCurrentInputScaling . fIntercept ))) * (UNITY_FLOAT)(0.00001f)), (UNITY_FLOAT)((UNITY_FLOAT)((( xCurrentInputScaling . fSlope * fMockReadV + xCurrentInputScaling . fIntercept )))), (UNITY_FLOAT)((UNITY_FLOAT)((fCurrent))), ((0)), (UNITY_UINT)((UNITY_UINT)(110)));
+}
+ 
+
+void test_1_4_eCurrentSensingGetCurrentmA_Success() 
+{
+    float fCurrent;
+    float fMockReadmV, fMockCurrentmA;
+    
+    fMockReadmV = 7.30f;
+    eCurrentSensingAnalogReadmV_CMockExpectAndReturn(120, xMockStream, 0, eSuccess);
+    eCurrentSensingAnalogReadmV_CMockIgnoreArg_pxVoltage(121);
+    eCurrentSensingAnalogReadmV_CMockReturnMemThruPtr_pxVoltage(122, &fMockReadmV, sizeof(* &fMockReadmV));
+	
+	  fMockCurrentmA = 8.30f;
+	
+    eResult = eCurrentSensingGetCurrentmA( xMockStream, xCurrentInputScaling, &fCurrent );
+    UnityAssertEqualNumber((UNITY_INT)((eSuccess)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(127), UNITY_DISPLAY_STYLE_INT);
+    UnityAssertFloatsWithin((UNITY_FLOAT)((UNITY_FLOAT)((fMockCurrentmA)) * (UNITY_FLOAT)(0.00001f)), (UNITY_FLOAT)((UNITY_FLOAT)((fMockCurrentmA))), (UNITY_FLOAT)((UNITY_FLOAT)((fCurrent))), ((0)), (UNITY_UINT)((UNITY_UINT)(128)));
+}
+ 
+void test_1_5_eCurrentSensing_Slope_negative_Fail() 
+{
+    float fCurrent;
+  
+	  
+	  xCurrentInputScaling.fSlope = -4.0f;
+    
+  
+    eResult = eCurrentSensingGetCurrentmA( xMockStream, xCurrentInputScaling, &fCurrent );
+    UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(140), UNITY_DISPLAY_STYLE_INT);
+    
+}
+ 
+
+void test_1_6_eCurrentSensingGetCurrentmA_NullPointer_Fail()
+{
+     
+    eResult = eCurrentSensingGetCurrentmA( xMockStream, xCurrentInputScaling ,0 );
+    UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(149), UNITY_DISPLAY_STYLE_INT);
+}
+ 
+
+void test_1_7_eCurrentSensingGetCurrentmA_AnalogReadmV_Fail()
+{
+    float fCurrent;
+
+	
+    eCurrentSensingAnalogReadmV_CMockExpectAndReturn(158, xMockStream, 0, eUnknownError);
+	  eCurrentSensingAnalogReadmV_CMockIgnoreArg_pxVoltage(159);
+    
+
+    eResult = eCurrentSensingGetCurrentmA( xMockStream, xCurrentInputScaling, &fCurrent );
+    UnityAssertEqualNumber((UNITY_INT)((eUnknownError)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(163), UNITY_DISPLAY_STYLE_INT);
 }
 
-void mock_test_CurrentSensing_Destroy(void)
-{
-  CMock_Guts_MemFreeAll();
-  memset(&Mock, 0, sizeof(Mock));
-  Mock.eCurrentSensingAnalogReadmV_CallbackFunctionPointer = 0;
-  Mock.eCurrentSensingAnalogReadmV_CallbackCalls = 0;
-  GlobalExpectCount = 0;
-  GlobalVerifyOrder = 0;
-}
-
-eMpbError_t eCurrentSensingAnalogReadmV(handle_t xStream, float* pxVoltage)
-{
-  UNITY_UINT cmock_line = (Unity . CurrentTestLineNumber);
-  CMOCK_eCurrentSensingAnalogReadmV_CALL_INSTANCE* cmock_call_instance;
-  { Unity . CurrentDetail1 = (CMockString_eCurrentSensingAnalogReadmV); Unity . CurrentDetail2 = 0; };
-  cmock_call_instance = (CMOCK_eCurrentSensingAnalogReadmV_CALL_INSTANCE*)CMock_Guts_GetAddressFor(Mock.eCurrentSensingAnalogReadmV_CallInstance);
-  Mock.eCurrentSensingAnalogReadmV_CallInstance = CMock_Guts_MemNext(Mock.eCurrentSensingAnalogReadmV_CallInstance);
-  if (Mock.eCurrentSensingAnalogReadmV_IgnoreBool)
-  {
-    { Unity . CurrentDetail1 = 0; Unity . CurrentDetail2 = 0; };
-    if (cmock_call_instance == 0)
-      return Mock.eCurrentSensingAnalogReadmV_FinalReturn;
-    memcpy(&Mock.eCurrentSensingAnalogReadmV_FinalReturn, &cmock_call_instance->ReturnVal, sizeof(eMpbError_t));
-    return cmock_call_instance->ReturnVal;
-  }
-  if (Mock.eCurrentSensingAnalogReadmV_CallbackFunctionPointer != 0)
-  {
-    return Mock.eCurrentSensingAnalogReadmV_CallbackFunctionPointer(xStream, pxVoltage, Mock.eCurrentSensingAnalogReadmV_CallbackCalls++);
-  }
-  if (((cmock_call_instance) != 0)) {} else {UnityFail( (((CMockStringCalledMore))), (UNITY_UINT)((UNITY_UINT)((UNITY_UINT)(cmock_line))));};
-  cmock_line = cmock_call_instance->LineNumber;
-  if (cmock_call_instance->CallOrder > ++GlobalVerifyOrder)
-    UnityFail( (CMockStringCalledEarly), (UNITY_UINT)(cmock_line));
-  if (cmock_call_instance->CallOrder < GlobalVerifyOrder)
-    UnityFail( (CMockStringCalledLate), (UNITY_UINT)(cmock_line));
-  if (cmock_call_instance->IgnoreMode != ((unsigned int)(~0U)))
-  {
-  if (!cmock_call_instance->IgnoreArg_xStream)
-  {
-    { Unity . CurrentDetail1 = (CMockString_eCurrentSensingAnalogReadmV); Unity . CurrentDetail2 = (CMockString_xStream); };
-    UnityAssertEqualMemory(( const void*)((void*)(&cmock_call_instance ->Expected_xStream)), ( const void*)((void*)(&xStream)), (UNITY_UINT32)(sizeof(handle_t)), 1, (CMockStringMismatch), (UNITY_UINT)(cmock_line), UNITY_ARRAY_TO_ARRAY);
-  }
-  if (!cmock_call_instance->IgnoreArg_pxVoltage)
-  {
-    { Unity . CurrentDetail1 = (CMockString_eCurrentSensingAnalogReadmV); Unity . CurrentDetail2 = (CMockString_pxVoltage); };
-    if (cmock_call_instance->Expected_pxVoltage == 0)
-      { if (((pxVoltage) == 0)) {} else {UnityFail( (((CMockStringExpNULL))), (UNITY_UINT)((UNITY_UINT)((UNITY_UINT)(cmock_line))));}; }
-    else
-      { UnityAssertEqualFloatArray((UNITY_FLOAT*)(cmock_call_instance ->Expected_pxVoltage), (UNITY_FLOAT*)(pxVoltage), (UNITY_UINT32)(cmock_call_instance ->Expected_pxVoltage_Depth), (CMockStringMismatch), (UNITY_UINT)(cmock_line), UNITY_ARRAY_TO_ARRAY); }
-  }
-  }
-  if (cmock_call_instance->ReturnThruPtr_pxVoltage_Used)
-  {
-    if (((pxVoltage) != 0)) {} else {UnityFail( (((CMockStringPtrIsNULL))), (UNITY_UINT)((UNITY_UINT)((UNITY_UINT)(cmock_line))));};
-    memcpy((void*)pxVoltage, (void*)cmock_call_instance->ReturnThruPtr_pxVoltage_Val,
-      cmock_call_instance->ReturnThruPtr_pxVoltage_Size);
-  }
-  { Unity . CurrentDetail1 = 0; Unity . CurrentDetail2 = 0; };
-  return cmock_call_instance->ReturnVal;
-}
-
-void CMockExpectParameters_eCurrentSensingAnalogReadmV(CMOCK_eCurrentSensingAnalogReadmV_CALL_INSTANCE* cmock_call_instance, handle_t xStream, float* pxVoltage, int pxVoltage_Depth)
-{
-  memcpy(&cmock_call_instance->Expected_xStream, &xStream, sizeof(handle_t));
-  cmock_call_instance->IgnoreArg_xStream = 0;
-  cmock_call_instance->Expected_pxVoltage = pxVoltage;
-  cmock_call_instance->Expected_pxVoltage_Depth = pxVoltage_Depth;
-  cmock_call_instance->IgnoreArg_pxVoltage = 0;
-  cmock_call_instance->ReturnThruPtr_pxVoltage_Used = 0;
-}
-
-void eCurrentSensingAnalogReadmV_CMockIgnoreAndReturn(UNITY_UINT cmock_line, eMpbError_t cmock_to_return)
-{
-  unsigned int cmock_guts_index = CMock_Guts_MemNew(sizeof(CMOCK_eCurrentSensingAnalogReadmV_CALL_INSTANCE));
-  CMOCK_eCurrentSensingAnalogReadmV_CALL_INSTANCE* cmock_call_instance = (CMOCK_eCurrentSensingAnalogReadmV_CALL_INSTANCE*)CMock_Guts_GetAddressFor(cmock_guts_index);
-  if (((cmock_call_instance) != 0)) {} else {UnityFail( (((CMockStringOutOfMemory))), (UNITY_UINT)((UNITY_UINT)((UNITY_UINT)(cmock_line))));};
-  memset(cmock_call_instance, 0, sizeof(*cmock_call_instance));
-  Mock.eCurrentSensingAnalogReadmV_CallInstance = CMock_Guts_MemChain(Mock.eCurrentSensingAnalogReadmV_CallInstance, cmock_guts_index);
-  Mock.eCurrentSensingAnalogReadmV_IgnoreBool = (int)0;
-  cmock_call_instance->LineNumber = cmock_line;
-  cmock_call_instance->IgnoreMode = 0;
-  cmock_call_instance->ReturnVal = cmock_to_return;
-  Mock.eCurrentSensingAnalogReadmV_IgnoreBool = (int)1;
-}
-
-void eCurrentSensingAnalogReadmV_CMockExpectAnyArgsAndReturn(UNITY_UINT cmock_line, eMpbError_t cmock_to_return)
-{
-  unsigned int cmock_guts_index = CMock_Guts_MemNew(sizeof(CMOCK_eCurrentSensingAnalogReadmV_CALL_INSTANCE));
-  CMOCK_eCurrentSensingAnalogReadmV_CALL_INSTANCE* cmock_call_instance = (CMOCK_eCurrentSensingAnalogReadmV_CALL_INSTANCE*)CMock_Guts_GetAddressFor(cmock_guts_index);
-  if (((cmock_call_instance) != 0)) {} else {UnityFail( (((CMockStringOutOfMemory))), (UNITY_UINT)((UNITY_UINT)((UNITY_UINT)(cmock_line))));};
-  memset(cmock_call_instance, 0, sizeof(*cmock_call_instance));
-  Mock.eCurrentSensingAnalogReadmV_CallInstance = CMock_Guts_MemChain(Mock.eCurrentSensingAnalogReadmV_CallInstance, cmock_guts_index);
-  Mock.eCurrentSensingAnalogReadmV_IgnoreBool = (int)0;
-  cmock_call_instance->LineNumber = cmock_line;
-  cmock_call_instance->CallOrder = ++GlobalExpectCount;
-  cmock_call_instance->IgnoreMode = 0;
-  cmock_call_instance->ReturnVal = cmock_to_return;
-  cmock_call_instance->IgnoreMode = ((unsigned int)(~0U));
-}
-
-void eCurrentSensingAnalogReadmV_CMockExpectAndReturn(UNITY_UINT cmock_line, handle_t xStream, float* pxVoltage, eMpbError_t cmock_to_return)
-{
-  unsigned int cmock_guts_index = CMock_Guts_MemNew(sizeof(CMOCK_eCurrentSensingAnalogReadmV_CALL_INSTANCE));
-  CMOCK_eCurrentSensingAnalogReadmV_CALL_INSTANCE* cmock_call_instance = (CMOCK_eCurrentSensingAnalogReadmV_CALL_INSTANCE*)CMock_Guts_GetAddressFor(cmock_guts_index);
-  if (((cmock_call_instance) != 0)) {} else {UnityFail( (((CMockStringOutOfMemory))), (UNITY_UINT)((UNITY_UINT)((UNITY_UINT)(cmock_line))));};
-  memset(cmock_call_instance, 0, sizeof(*cmock_call_instance));
-  Mock.eCurrentSensingAnalogReadmV_CallInstance = CMock_Guts_MemChain(Mock.eCurrentSensingAnalogReadmV_CallInstance, cmock_guts_index);
-  Mock.eCurrentSensingAnalogReadmV_IgnoreBool = (int)0;
-  cmock_call_instance->LineNumber = cmock_line;
-  cmock_call_instance->CallOrder = ++GlobalExpectCount;
-  cmock_call_instance->IgnoreMode = 0;
-  CMockExpectParameters_eCurrentSensingAnalogReadmV(cmock_call_instance, xStream, pxVoltage, 1);
-  memcpy(&cmock_call_instance->ReturnVal, &cmock_to_return, sizeof(eMpbError_t));
-  { Unity . CurrentDetail1 = 0; Unity . CurrentDetail2 = 0; };
-}
-
-void eCurrentSensingAnalogReadmV_StubWithCallback(CMOCK_eCurrentSensingAnalogReadmV_CALLBACK Callback)
-{
-  Mock.eCurrentSensingAnalogReadmV_IgnoreBool = (int)0;
-  Mock.eCurrentSensingAnalogReadmV_CallbackFunctionPointer = Callback;
-}
-
-void eCurrentSensingAnalogReadmV_CMockExpectWithArrayAndReturn(UNITY_UINT cmock_line, handle_t xStream, float* pxVoltage, int pxVoltage_Depth, eMpbError_t cmock_to_return)
-{
-  unsigned int cmock_guts_index = CMock_Guts_MemNew(sizeof(CMOCK_eCurrentSensingAnalogReadmV_CALL_INSTANCE));
-  CMOCK_eCurrentSensingAnalogReadmV_CALL_INSTANCE* cmock_call_instance = (CMOCK_eCurrentSensingAnalogReadmV_CALL_INSTANCE*)CMock_Guts_GetAddressFor(cmock_guts_index);
-  if (((cmock_call_instance) != 0)) {} else {UnityFail( (((CMockStringOutOfMemory))), (UNITY_UINT)((UNITY_UINT)((UNITY_UINT)(cmock_line))));};
-  memset(cmock_call_instance, 0, sizeof(*cmock_call_instance));
-  Mock.eCurrentSensingAnalogReadmV_CallInstance = CMock_Guts_MemChain(Mock.eCurrentSensingAnalogReadmV_CallInstance, cmock_guts_index);
-  Mock.eCurrentSensingAnalogReadmV_IgnoreBool = (int)0;
-  cmock_call_instance->LineNumber = cmock_line;
-  cmock_call_instance->CallOrder = ++GlobalExpectCount;
-  cmock_call_instance->IgnoreMode = 0;
-  CMockExpectParameters_eCurrentSensingAnalogReadmV(cmock_call_instance, xStream, pxVoltage, pxVoltage_Depth);
-  cmock_call_instance->ReturnVal = cmock_to_return;
-}
-
-void eCurrentSensingAnalogReadmV_CMockReturnMemThruPtr_pxVoltage(UNITY_UINT cmock_line, float* pxVoltage, int cmock_size)
-{
-  CMOCK_eCurrentSensingAnalogReadmV_CALL_INSTANCE* cmock_call_instance = (CMOCK_eCurrentSensingAnalogReadmV_CALL_INSTANCE*)CMock_Guts_GetAddressFor(CMock_Guts_MemEndOfChain(Mock.eCurrentSensingAnalogReadmV_CallInstance));
-  if (((cmock_call_instance) != 0)) {} else {UnityFail( (((CMockStringPtrPreExp))), (UNITY_UINT)((UNITY_UINT)((UNITY_UINT)(cmock_line))));};
-  cmock_call_instance->ReturnThruPtr_pxVoltage_Used = 1;
-  cmock_call_instance->ReturnThruPtr_pxVoltage_Val = pxVoltage;
-  cmock_call_instance->ReturnThruPtr_pxVoltage_Size = cmock_size;
-}
-
-void eCurrentSensingAnalogReadmV_CMockIgnoreArg_xStream(UNITY_UINT cmock_line)
-{
-  CMOCK_eCurrentSensingAnalogReadmV_CALL_INSTANCE* cmock_call_instance = (CMOCK_eCurrentSensingAnalogReadmV_CALL_INSTANCE*)CMock_Guts_GetAddressFor(CMock_Guts_MemEndOfChain(Mock.eCurrentSensingAnalogReadmV_CallInstance));
-  if (((cmock_call_instance) != 0)) {} else {UnityFail( (((CMockStringIgnPreExp))), (UNITY_UINT)((UNITY_UINT)((UNITY_UINT)(cmock_line))));};
-  cmock_call_instance->IgnoreArg_xStream = 1;
-}
-
-void eCurrentSensingAnalogReadmV_CMockIgnoreArg_pxVoltage(UNITY_UINT cmock_line)
-{
-  CMOCK_eCurrentSensingAnalogReadmV_CALL_INSTANCE* cmock_call_instance = (CMOCK_eCurrentSensingAnalogReadmV_CALL_INSTANCE*)CMock_Guts_GetAddressFor(CMock_Guts_MemEndOfChain(Mock.eCurrentSensingAnalogReadmV_CallInstance));
-  if (((cmock_call_instance) != 0)) {} else {UnityFail( (((CMockStringIgnPreExp))), (UNITY_UINT)((UNITY_UINT)((UNITY_UINT)(cmock_line))));};
-  cmock_call_instance->IgnoreArg_pxVoltage = 1;
-}
-
+ 
