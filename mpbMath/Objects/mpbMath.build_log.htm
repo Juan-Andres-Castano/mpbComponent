@@ -27,7 +27,7 @@ Project File Date:  02/15/2022
 <h2>Output:</h2>
 *** Using Compiler 'V6.15', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 *** Note: Rebuilding project, since 'Options->Output->Create Batch File' is selected.
-Rebuild target 'Target 1'
+Rebuild target 'mpbMath'
 compiling mpbMathDebounce.c...
 Sources/mpbMathDebounce.c(30): warning: In file included from...
 ./Includes\mpbMathDebounce.h(29): warning: padding size of 'MpbMathDebounce_t' with 2 bytes to alignment boundary [-Wpadded]
@@ -67,10 +67,10 @@ compiling mpbMathDivision.c...
 Sources/mpbMathDivision.c(38): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
     float value = (float)(var * 100 + .5); 
                           ~~~~^~~~~ ~
-Sources/mpbMathDivision.c(100): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
+Sources/mpbMathDivision.c(101): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
     fdResultCheck = ( vroundf( ulSixthDecimalPrecision * fdResultCheck ) / ulSixthDecimalPrecision ); 
                   ~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
-Sources/mpbMathDivision.c(100): warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+Sources/mpbMathDivision.c(101): warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
     fdResultCheck = ( vroundf( ulSixthDecimalPrecision * fdResultCheck ) / ulSixthDecimalPrecision ); 
                       ~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
 3 warnings generated.
