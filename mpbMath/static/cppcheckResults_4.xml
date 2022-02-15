@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.6"/>
+    <errors>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;ucResult&apos; can be reduced." verbose="The scope of the variable &apos;ucResult&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="C:/mpbComponent/mpbMath/Sources/mpbMathCrcUtil.c">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathCrcUtil.c" line="64" column="13"/>
+            <symbol>ucResult</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;ucMask&apos; can be reduced." verbose="The scope of the variable &apos;ucMask&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="C:/mpbComponent/mpbMath/Sources/mpbMathCrcUtil.c">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathCrcUtil.c" line="65" column="13"/>
+            <symbol>ucMask</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;ucData&apos; can be reduced." verbose="The scope of the variable &apos;ucData&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="C:/mpbComponent/mpbMath/Sources/mpbMathCrcUtil.c">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathCrcUtil.c" line="66" column="13"/>
+            <symbol>ucData</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eMpbMathAbsoluteSubstractionFloat&apos; is never used." verbose="The function &apos;eMpbMathAbsoluteSubstractionFloat&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathAbsolute.c" line="28" column="0"/>
+            <symbol>eMpbMathAbsoluteSubstractionFloat</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eMpbMathAverageS32&apos; is never used." verbose="The function &apos;eMpbMathAverageS32&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathAverage.c" line="30" column="0"/>
+            <symbol>eMpbMathAverageS32</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eMpbMathCrcCalculate&apos; is never used." verbose="The function &apos;eMpbMathCrcCalculate&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathCrc.c" line="108" column="0"/>
+            <symbol>eMpbMathCrcCalculate</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eMpbMathCrcInit&apos; is never used." verbose="The function &apos;eMpbMathCrcInit&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathCrc.c" line="34" column="0"/>
+            <symbol>eMpbMathCrcInit</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eMpbMathCrcValidate&apos; is never used." verbose="The function &apos;eMpbMathCrcValidate&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathCrc.c" line="51" column="0"/>
+            <symbol>eMpbMathCrcValidate</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eMpbMathFifoInit&apos; is never used." verbose="The function &apos;eMpbMathFifoInit&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathFifo.c" line="29" column="0"/>
+            <symbol>eMpbMathFifoInit</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eMpbMathFifoIsEmpty&apos; is never used." verbose="The function &apos;eMpbMathFifoIsEmpty&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathFifo.c" line="218" column="0"/>
+            <symbol>eMpbMathFifoIsEmpty</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eMpbMathFifoIsFull&apos; is never used." verbose="The function &apos;eMpbMathFifoIsFull&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathFifo.c" line="206" column="0"/>
+            <symbol>eMpbMathFifoIsFull</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eMpbMathFifoPeak&apos; is never used." verbose="The function &apos;eMpbMathFifoPeak&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathFifo.c" line="160" column="0"/>
+            <symbol>eMpbMathFifoPeak</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eMpbMathFifoPop&apos; is never used." verbose="The function &apos;eMpbMathFifoPop&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathFifo.c" line="115" column="0"/>
+            <symbol>eMpbMathFifoPop</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eMpbMathFifoPush&apos; is never used." verbose="The function &apos;eMpbMathFifoPush&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathFifo.c" line="61" column="0"/>
+            <symbol>eMpbMathFifoPush</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eMpbMathFifoReset&apos; is never used." verbose="The function &apos;eMpbMathFifoReset&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathFifo.c" line="46" column="0"/>
+            <symbol>eMpbMathFifoReset</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eMpbMathLinearApproxFloat&apos; is never used." verbose="The function &apos;eMpbMathLinearApproxFloat&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathLinearApprox.c" line="31" column="0"/>
+            <symbol>eMpbMathLinearApproxFloat</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eMpbMathResistorFloatVoltageDividerGetPullDownResistor&apos; is never used." verbose="The function &apos;eMpbMathResistorFloatVoltageDividerGetPullDownResistor&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathResistor.c" line="129" column="0"/>
+            <symbol>eMpbMathResistorFloatVoltageDividerGetPullDownResistor</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eMpbMathResistorFloatVoltageDividerGetPullUpResistor&apos; is never used." verbose="The function &apos;eMpbMathResistorFloatVoltageDividerGetPullUpResistor&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathResistor.c" line="107" column="0"/>
+            <symbol>eMpbMathResistorFloatVoltageDividerGetPullUpResistor</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eMpbMathResistorFloatVoltageDividerGetVin&apos; is never used." verbose="The function &apos;eMpbMathResistorFloatVoltageDividerGetVin&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathResistor.c" line="96" column="0"/>
+            <symbol>eMpbMathResistorFloatVoltageDividerGetVin</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eMpbMathResistorFloatVoltageDividerGetVout&apos; is never used." verbose="The function &apos;eMpbMathResistorFloatVoltageDividerGetVout&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathResistor.c" line="85" column="0"/>
+            <symbol>eMpbMathResistorFloatVoltageDividerGetVout</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eMpbMathResistorGetEquivalentInParallel&apos; is never used." verbose="The function &apos;eMpbMathResistorGetEquivalentInParallel&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathResistor.c" line="150" column="0"/>
+            <symbol>eMpbMathResistorGetEquivalentInParallel</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eMpbMathResistorGetResistorInParallel&apos; is never used." verbose="The function &apos;eMpbMathResistorGetResistorInParallel&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathResistor.c" line="161" column="0"/>
+            <symbol>eMpbMathResistorGetResistorInParallel</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eMpbMathResistorGetResistorNortonEquivalent&apos; is never used." verbose="The function &apos;eMpbMathResistorGetResistorNortonEquivalent&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathResistor.c" line="172" column="0"/>
+            <symbol>eMpbMathResistorGetResistorNortonEquivalent</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eMpbMathResistorVoltageDividerGetPullDownResistor&apos; is never used." verbose="The function &apos;eMpbMathResistorVoltageDividerGetPullDownResistor&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathResistor.c" line="74" column="0"/>
+            <symbol>eMpbMathResistorVoltageDividerGetPullDownResistor</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eMpbMathResistorVoltageDividerGetPullUpResistor&apos; is never used." verbose="The function &apos;eMpbMathResistorVoltageDividerGetPullUpResistor&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathResistor.c" line="52" column="0"/>
+            <symbol>eMpbMathResistorVoltageDividerGetPullUpResistor</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eMpbMathResistorVoltageDividerGetVin&apos; is never used." verbose="The function &apos;eMpbMathResistorVoltageDividerGetVin&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathResistor.c" line="41" column="0"/>
+            <symbol>eMpbMathResistorVoltageDividerGetVin</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eMpbMathResistorVoltageDividerGetVout&apos; is never used." verbose="The function &apos;eMpbMathResistorVoltageDividerGetVout&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathResistor.c" line="30" column="0"/>
+            <symbol>eMpbMathResistorVoltageDividerGetVout</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eNepMathAverageFloat&apos; is never used." verbose="The function &apos;eNepMathAverageFloat&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathAverage.c" line="55" column="0"/>
+            <symbol>eNepMathAverageFloat</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eNepMathRoundToPrecisionFloat&apos; is never used." verbose="The function &apos;eNepMathRoundToPrecisionFloat&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathRound.c" line="36" column="0"/>
+            <symbol>eNepMathRoundToPrecisionFloat</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;vMpbMathDebounceInit&apos; is never used." verbose="The function &apos;vMpbMathDebounceInit&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathDebounce.c" line="41" column="0"/>
+            <symbol>vMpbMathDebounceInit</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;vMpbMathDebounceUpdate&apos; is never used." verbose="The function &apos;vMpbMathDebounceUpdate&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathDebounce.c" line="63" column="0"/>
+            <symbol>vMpbMathDebounceUpdate</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;xMpbMathCoerceFloat&apos; is never used." verbose="The function &apos;xMpbMathCoerceFloat&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbMath\Sources\mpbMathCoerce.c" line="71" column="0"/>
+            <symbol>xMpbMathCoerceFloat</symbol>
+        </error>
+        <error id="missingInclude" severity="information" msg="Cppcheck cannot find all the include files (use --check-config for details)" verbose="Cppcheck cannot find all the include files. Cppcheck can check the code without the include files found. But the results will probably be more accurate if all the include files are found. Please check your project&apos;s include directories and add all of them as include directories for Cppcheck. To see what files Cppcheck cannot find use --check-config."/>
+    </errors>
+</results>

@@ -42,15 +42,15 @@
 - :test: test_eMpbMathDivisionDouble_DivideBy0AndNullPointer_Fail
   :line: 196
   :message: ''
-:failures:
 - :test: test_eMpbMathDivisionDouble_DivisionAndReturn_Success
-  :line: 234
-  :message: Unity Double Precision Disabled
+  :line: 205
+  :message: ''
+:failures: []
 :ignores: []
 :counts:
   :total: 14
-  :passed: 13
-  :failed: 1
+  :passed: 14
+  :failed: 0
   :ignored: 0
 :stdout: []
-:time: 1.064678399998229
+:time: 1.0775628999981564

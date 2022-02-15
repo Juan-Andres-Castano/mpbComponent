@@ -1,6 +1,6 @@
 ﻿###############################################################################
 #
-# IAR ELF Linker V9.10.1.308/W64 for ARM                  15/Feb/2022  16:42:14
+# IAR ELF Linker V9.10.1.308/W64 for ARM                  15/Feb/2022  16:43:50
 # Copyright 2007-2021 IAR Systems AB.
 #
 #    Output file  =  build/test/out/test_mpbMathDivision.out
@@ -56,7 +56,7 @@ initialize by copy { rw };
   .intvec            ro code          0x0    0x40  vector_table_M.o [4]
                                    - 0x40    0x40
 
-"P1":                                      0x3632
+"P1":                                      0x3606
   .text              ro code         0x40   0x85c  mock_mpbMath.o [1]
   .text              ro code        0x89c   0x6e8  unity.o [1]
   .text              ro code        0xf84    0xf4  cmock.o [1]
@@ -91,75 +91,74 @@ initialize by copy { rw };
   .text              ro code       0x1b80    0xcc  XShHandles.o [2]
   .text              ro code       0x1c4c    0x7c  iarttio.o [5]
   .text              ro code       0x1cc8     0x8  XShttio.o [2]
-  .text              ro code       0x1cd0   0x558  test_mpbMathDivision.o [1]
-  .text              ro code       0x2228   0x114  mpbMathDivision.o [1]
-  .text              ro code       0x233c    0x48  FltToDbl.o [3]
-  .text              ro code       0x2384   0x24e  DblAddSub.o [3]
-  .text              ro code       0x25d4    0x1a  U32ToFlt.o [3]
-  .text              ro code       0x25f0   0x246  DblDiv.o [3]
-  .text              ro code       0x2838    0x1c  U32ToDbl.o [3]
-  .text              ro code       0x2854   0x1aa  DblMul.o [3]
-  .text              ro code       0x2a00   0x47c  test_mpbMathDivision_runner.o [1]
-  .text              ro code       0x2e7c    0x9c  xfofind.o [2]
-  .text              ro code       0x2f18     0x4  heaptramp0.o [2]
-  .text              ro code       0x2f1c    0x7e  fclose.o [2]
-  .text              ro code       0x2f9a    0x18  close.o [5]
-  .text              ro code       0x2fb2    0x14  remove.o [5]
-  .text              ro code       0x2fc8    0x36  strlen.o [4]
-  .text              ro code       0x3000    0x40  xcloseall.o [2]
-  .rodata            const         0x3040    0x3c  test_mpbMathDivision_runner.o [1]
-  .rodata            const         0x307c    0x38  test_mpbMathDivision_runner.o [1]
-  .rodata            const         0x30b4    0x38  test_mpbMathDivision_runner.o [1]
-  .rodata            const         0x30ec    0x38  test_mpbMathDivision_runner.o [1]
-  .rodata            const         0x3124    0x38  test_mpbMathDivision_runner.o [1]
-  .text              ro code       0x315c    0x38  zero_init3.o [4]
-  .rodata            const         0x3194    0x34  test_mpbMathDivision_runner.o [1]
-  .rodata            const         0x31c8    0x34  test_mpbMathDivision_runner.o [1]
-  .rodata            const         0x31fc    0x34  test_mpbMathDivision_runner.o [1]
-  .rodata            const         0x3230    0x34  cmock.o [1]
-  .rodata            const         0x3264    0x30  test_mpbMathDivision_runner.o [1]
-  .rodata            const         0x3294    0x30  test_mpbMathDivision_runner.o [1]
-  .rodata            const         0x32c4    0x30  cmock.o [1]
-  .rodata            const         0x32f4    0x2c  test_mpbMathDivision_runner.o [1]
-  .rodata            const         0x3320    0x2c  test_mpbMathDivision_runner.o [1]
-  .rodata            const         0x334c    0x2c  test_mpbMathDivision_runner.o [1]
-  .rodata            const         0x3378    0x28  test_mpbMathDivision_runner.o [1]
-  .text              ro code       0x33a0    0x28  data_init.o [4]
-  .rodata            const         0x33c8    0x24  cmock.o [1]
-  .rodata            const         0x33ec    0x24  cmock.o [1]
-  .iar.init_table    const         0x3410    0x20  - Linker created -
-  .rodata            const         0x3430    0x20  unity.o [1]
-  .rodata            const         0x3450    0x20  cmock.o [1]
-  .text              ro code       0x3470    0x1e  cmain.o [4]
-  .text              ro code       0x348e     0x4  low_level_init.o [2]
-  .text              ro code       0x3492     0x4  exit.o [2]
-  .text              ro code       0x3498     0xe  cexit.o [4]
-  .text              ro code       0x34a8    0x14  exit.o [5]
-  .rodata            const         0x34bc    0x1c  mock_mpbMath.o [1]
-  .rodata            const         0x34d8    0x1c  cmock.o [1]
-  .text              ro code       0x34f4    0x1c  cstartup_M.o [4]
-  .rodata            const         0x3510    0x18  test_mpbMathDivision_runner.o [1]
-  .rodata            const         0x3528    0x18  mock_mpbMath.o [1]
-  .rodata            const         0x3540    0x18  unity.o [1]
-  .rodata            const         0x3558    0x14  mock_mpbMath.o [1]
-  .rodata            const         0x356c    0x14  mock_mpbMath.o [1]
-  .rodata            const         0x3580     0xc  unity.o [1]
-  .rodata            const         0x358c     0xc  unity.o [1]
-  .rodata            const         0x3598     0xc  unity.o [1]
-  .rodata            const         0x35a4     0xc  unity.o [1]
-  .rodata            const         0x35b0     0xc  unity.o [1]
-  .rodata            const         0x35bc     0x8  mock_mpbMath.o [1]
-  .rodata            const         0x35c4     0x8  unity.o [1]
-  .rodata            const         0x35cc     0x8  unity.o [1]
-  .rodata            const         0x35d4     0x8  unity.o [1]
-  .rodata            const         0x35dc     0x8  unity.o [1]
-  .rodata            const         0x35e4     0x4  unity.o [1]
-  .rodata            const         0x35e8     0x4  unity.o [1]
-  .text              ro code       0x35ec     0x0  cstart_closeall.o [4]
-  .rodata            const         0x35ec     0x0  zero_init3.o [4]
-  .rodata            const         0x35ec     0x0  lz77_init_single.o [4]
-  Initializer bytes  const         0x35ec    0x86  <for P2-1>
-                                 - 0x3672  0x3632
+  .text              ro code       0x1cd0   0x54c  test_mpbMathDivision.o [1]
+  .text              ro code       0x221c   0x114  mpbMathDivision.o [1]
+  .text              ro code       0x2330    0x48  FltToDbl.o [3]
+  .text              ro code       0x2378   0x24e  DblAddSub.o [3]
+  .text              ro code       0x25c8    0x1a  U32ToFlt.o [3]
+  .text              ro code       0x25e4   0x246  DblDiv.o [3]
+  .text              ro code       0x282c    0x1c  U32ToDbl.o [3]
+  .text              ro code       0x2848   0x1aa  DblMul.o [3]
+  .text              ro code       0x29f4   0x47c  test_mpbMathDivision_runner.o [1]
+  .text              ro code       0x2e70    0x9c  xfofind.o [2]
+  .text              ro code       0x2f0c     0x4  heaptramp0.o [2]
+  .text              ro code       0x2f10    0x7e  fclose.o [2]
+  .text              ro code       0x2f8e    0x18  close.o [5]
+  .text              ro code       0x2fa6    0x14  remove.o [5]
+  .text              ro code       0x2fbc    0x36  strlen.o [4]
+  .text              ro code       0x2ff4    0x40  xcloseall.o [2]
+  .rodata            const         0x3034    0x3c  test_mpbMathDivision_runner.o [1]
+  .rodata            const         0x3070    0x38  test_mpbMathDivision_runner.o [1]
+  .rodata            const         0x30a8    0x38  test_mpbMathDivision_runner.o [1]
+  .rodata            const         0x30e0    0x38  test_mpbMathDivision_runner.o [1]
+  .rodata            const         0x3118    0x38  test_mpbMathDivision_runner.o [1]
+  .text              ro code       0x3150    0x38  zero_init3.o [4]
+  .rodata            const         0x3188    0x34  test_mpbMathDivision_runner.o [1]
+  .rodata            const         0x31bc    0x34  test_mpbMathDivision_runner.o [1]
+  .rodata            const         0x31f0    0x34  test_mpbMathDivision_runner.o [1]
+  .rodata            const         0x3224    0x34  cmock.o [1]
+  .rodata            const         0x3258    0x30  test_mpbMathDivision_runner.o [1]
+  .rodata            const         0x3288    0x30  test_mpbMathDivision_runner.o [1]
+  .rodata            const         0x32b8    0x30  cmock.o [1]
+  .rodata            const         0x32e8    0x2c  test_mpbMathDivision_runner.o [1]
+  .rodata            const         0x3314    0x2c  test_mpbMathDivision_runner.o [1]
+  .rodata            const         0x3340    0x2c  test_mpbMathDivision_runner.o [1]
+  .rodata            const         0x336c    0x28  test_mpbMathDivision_runner.o [1]
+  .text              ro code       0x3394    0x28  data_init.o [4]
+  .rodata            const         0x33bc    0x24  cmock.o [1]
+  .rodata            const         0x33e0    0x24  cmock.o [1]
+  .iar.init_table    const         0x3404    0x20  - Linker created -
+  .rodata            const         0x3424    0x20  cmock.o [1]
+  .text              ro code       0x3444    0x1e  cmain.o [4]
+  .text              ro code       0x3462     0x4  low_level_init.o [2]
+  .text              ro code       0x3466     0x4  exit.o [2]
+  .text              ro code       0x346c     0xe  cexit.o [4]
+  .text              ro code       0x347c    0x14  exit.o [5]
+  .rodata            const         0x3490    0x1c  mock_mpbMath.o [1]
+  .rodata            const         0x34ac    0x1c  cmock.o [1]
+  .text              ro code       0x34c8    0x1c  cstartup_M.o [4]
+  .rodata            const         0x34e4    0x18  test_mpbMathDivision_runner.o [1]
+  .rodata            const         0x34fc    0x18  mock_mpbMath.o [1]
+  .rodata            const         0x3514    0x18  unity.o [1]
+  .rodata            const         0x352c    0x14  mock_mpbMath.o [1]
+  .rodata            const         0x3540    0x14  mock_mpbMath.o [1]
+  .rodata            const         0x3554     0xc  unity.o [1]
+  .rodata            const         0x3560     0xc  unity.o [1]
+  .rodata            const         0x356c     0xc  unity.o [1]
+  .rodata            const         0x3578     0xc  unity.o [1]
+  .rodata            const         0x3584     0xc  unity.o [1]
+  .rodata            const         0x3590     0x8  mock_mpbMath.o [1]
+  .rodata            const         0x3598     0x8  unity.o [1]
+  .rodata            const         0x35a0     0x8  unity.o [1]
+  .rodata            const         0x35a8     0x8  unity.o [1]
+  .rodata            const         0x35b0     0x8  unity.o [1]
+  .rodata            const         0x35b8     0x4  unity.o [1]
+  .rodata            const         0x35bc     0x4  unity.o [1]
+  .text              ro code       0x35c0     0x0  cstart_closeall.o [4]
+  .rodata            const         0x35c0     0x0  zero_init3.o [4]
+  .rodata            const         0x35c0     0x0  lz77_init_single.o [4]
+  Initializer bytes  const         0x35c0    0x86  <for P2-1>
+                                 - 0x3646  0x3606
 
 "P2", part 1 of 3:                          0x130
   P2-1                        0x2000'0000   0x130  <Init block>
@@ -208,7 +207,7 @@ Unused ranges:
 
          From           To      Size
          ----           --      ----
-       0x3672     0x7'ffff  0x7'c98e
+       0x3646     0x7'ffff  0x7'c9ba
   0x2000'8324  0x2000'8327       0x4
   0x2000'8f28  0x2000'ffff    0x70d8
 
@@ -225,7 +224,7 @@ Zero (__iar_zero_init3)
 
 Copy/lz77 (__iar_lz77_init_single3)
     1 source range, total size 0x86 (44% of destination):
-               0x35ec    0x86
+               0x35c0    0x86
     1 destination range, total size 0x130:
           0x2000'0000   0x130
 
@@ -245,11 +244,11 @@ C:\mpbComponent\mpbMath\UnitTestFramework\build\test\out\c: [1]
     cmock.o                            244      245   32'800
     mock_mpbMath.o                   2'140      108      100
     mpbMathDivision.o                  276
-    test_mpbMathDivision.o           1'368
+    test_mpbMathDivision.o           1'356
     test_mpbMathDivision_runner.o    1'148      732       12
-    unity.o                          1'832      156      104
+    unity.o                          1'832      124      104
     --------------------------------------------------------
-    Total:                           7'008    1'241   33'016
+    Total:                           6'996    1'209   33'016
 
 dl7M_tlf.a: [2]
     XShHandles.o                       204               128
@@ -324,7 +323,7 @@ shb_l.a: [5]
     Gaps                                24
     Linker created                               32    3'072
 ------------------------------------------------------------
-    Grand Total:                    12'552    1'386   36'644
+    Grand Total:                    12'540    1'354   36'644
 
 
 *******************************************************************************
@@ -333,9 +332,9 @@ shb_l.a: [5]
 
 Entry                       Address    Size  Type      Object
 -----                       -------    ----  ----      ------
-.iar.init_table$$Base        0x3410           --   Gb  - Linker created -
-.iar.init_table$$Limit       0x3430           --   Gb  - Linker created -
-?main                        0x3471          Code  Gb  cmain.o [4]
+.iar.init_table$$Base        0x3404           --   Gb  - Linker created -
+.iar.init_table$$Limit       0x3424           --   Gb  - Linker created -
+?main                        0x3445          Code  Gb  cmain.o [4]
 Aldata                  0x2000'8308     0x8  Data  Lc  heap0.o [2]
 BusFault_Handler             0x11cb          Code  Wk  vectortrap_M.o [4]
 CMockExpectParameters_eMpbMathDoubleIsInfinity
@@ -361,7 +360,7 @@ CMockString_eMpbMathFloatIsInfinity
 CMockString_eMpbMathFloatIsNaN
                         0x2000'000c     0x4  Data  Lc  mock_mpbMath.o [1]
 CMockString_xValue      0x2000'0010     0x4  Data  Lc  mock_mpbMath.o [1]
-CMock_Destroy                0x2a29     0x8  Code  Lc  test_mpbMathDivision_runner.o [1]
+CMock_Destroy                0x2a1d     0x8  Code  Lc  test_mpbMathDivision_runner.o [1]
 CMock_Guts_BufferArray  0x2000'0130  0x8000  Data  Lc  cmock.o [1]
 CMock_Guts_BufferSize   0x2000'002c     0x4  Data  Lc  cmock.o [1]
 CMock_Guts_FreePtr      0x2000'831c     0x4  Data  Lc  cmock.o [1]
@@ -373,8 +372,8 @@ CMock_Guts_MemFreeFinal
                              0x1063     0x8  Code  Gb  cmock.o [1]
 CMock_Guts_MemNew             0xf85    0x42  Code  Gb  cmock.o [1]
 CMock_Guts_MemNext           0x101f    0x26  Code  Gb  cmock.o [1]
-CMock_Init                   0x2a01    0x20  Code  Lc  test_mpbMathDivision_runner.o [1]
-CMock_Verify                 0x2a21     0x8  Code  Lc  test_mpbMathDivision_runner.o [1]
+CMock_Init                   0x29f5    0x20  Code  Lc  test_mpbMathDivision_runner.o [1]
+CMock_Verify                 0x2a15     0x8  Code  Lc  test_mpbMathDivision_runner.o [1]
 CSTACK$$Base            0x2000'8328           --   Gb  - Linker created -
 CSTACK$$Limit           0x2000'8728           --   Gb  - Linker created -
 DebugMon_Handler             0x11cb          Code  Wk  vectortrap_M.o [4]
@@ -388,8 +387,8 @@ MemManage_Handler            0x11cb          Code  Wk  vectortrap_M.o [4]
 Mock                    0x2000'8218    0x50  Data  Lc  mock_mpbMath.o [1]
 NMI_Handler                  0x11cb          Code  Wk  vectortrap_M.o [4]
 PendSV_Handler               0x11cb          Code  Wk  vectortrap_M.o [4]
-Region$$Table$$Base          0x3410           --   Gb  - Linker created -
-Region$$Table$$Limit         0x3430           --   Gb  - Linker created -
+Region$$Table$$Base          0x3404           --   Gb  - Linker created -
+Region$$Table$$Limit         0x3424           --   Gb  - Linker created -
 SVC_Handler                  0x11cb          Code  Wk  vectortrap_M.o [4]
 SysTick_Handler              0x11cb          Code  Wk  vectortrap_M.o [4]
 Unity                   0x2000'81b0    0x68  Data  Gb  unity.o [1]
@@ -410,27 +409,26 @@ UnityPrintNumberByStyle
 UnityPrintNumberHex           0x98f    0x40  Code  Gb  unity.o [1]
 UnityPrintNumberUnsigned
                               0x959    0x36  Code  Gb  unity.o [1]
-UnityStrBreaker              0x3540    0x18  Data  Lc  unity.o [1]
-UnityStrDetail1Name          0x35a4     0xc  Data  Lc  unity.o [1]
-UnityStrDetail2Name          0x35b0     0xc  Data  Lc  unity.o [1]
-UnityStrErrDouble            0x3430    0x20  Data  Gb  unity.o [1]
-UnityStrExpected             0x3580     0xc  Data  Lc  unity.o [1]
-UnityStrFail                 0x35cc     0x8  Data  Lc  unity.o [1]
-UnityStrOk                   0x35e4     0x4  Data  Lc  unity.o [1]
-UnityStrPass                 0x35c4     0x8  Data  Lc  unity.o [1]
+UnityStrBreaker              0x3514    0x18  Data  Lc  unity.o [1]
+UnityStrDetail1Name          0x3578     0xc  Data  Lc  unity.o [1]
+UnityStrDetail2Name          0x3584     0xc  Data  Lc  unity.o [1]
+UnityStrExpected             0x3554     0xc  Data  Lc  unity.o [1]
+UnityStrFail                 0x35a0     0x8  Data  Lc  unity.o [1]
+UnityStrOk                   0x35b8     0x4  Data  Lc  unity.o [1]
+UnityStrPass                 0x3598     0x8  Data  Lc  unity.o [1]
 UnityStrResultsFailures
-                             0x358c     0xc  Data  Lc  unity.o [1]
-UnityStrResultsIgnored       0x3598     0xc  Data  Lc  unity.o [1]
-UnityStrResultsTests         0x35dc     0x8  Data  Lc  unity.o [1]
-UnityStrSpacer               0x35e8     0x4  Data  Lc  unity.o [1]
-UnityStrWas                  0x35d4     0x8  Data  Lc  unity.o [1]
+                             0x3560     0xc  Data  Lc  unity.o [1]
+UnityStrResultsIgnored       0x356c     0xc  Data  Lc  unity.o [1]
+UnityStrResultsTests         0x35b0     0x8  Data  Lc  unity.o [1]
+UnityStrSpacer               0x35bc     0x4  Data  Lc  unity.o [1]
+UnityStrWas                  0x35a8     0x8  Data  Lc  unity.o [1]
 UnityTestResultsBegin         0xb9b    0x2c  Code  Lc  unity.o [1]
 UnityTestResultsFailBegin
                               0xbc7    0x1e  Code  Lc  unity.o [1]
 UsageFault_Handler           0x11cb          Code  Wk  vectortrap_M.o [4]
-_Close_all                   0x3001    0x40  Code  Gb  xcloseall.o [2]
+_Close_all                   0x2ff5    0x40  Code  Gb  xcloseall.o [2]
 _Files                  0x2000'0108    0x20  Data  Gb  xfiles.o [2]
-_Fofree                      0x2e7d    0x94  Code  Gb  xfofind.o [2]
+_Fofree                      0x2e71    0x94  Code  Gb  xfofind.o [2]
 _Fspos                       0x19ed    0xd8  Code  Gb  xfspos.o [2]
 _Fwprep                      0x16ef    0xb4  Code  Gb  xfwprep.o [2]
 _Nnl                         0x1ae3     0xc  Code  Gb  xfgpos.o [2]
@@ -440,43 +438,43 @@ __aeabi_cfcmpeq              0x1341          Code  Gb  FltCmpEq.o [3]
 __aeabi_cfcmple              0x1319          Code  Gb  FltCmpLe.o [3]
 __aeabi_cfrcmple             0x14b5          Code  Gb  FltCmpGe.o [3]
 __aeabi_d2f                  0x12a5          Code  Gb  DblToFlt.o [3]
-__aeabi_dadd                 0x2385          Code  Gb  DblAddSub.o [3]
-__aeabi_ddiv                 0x25f1          Code  Gb  DblDiv.o [3]
-__aeabi_dmul                 0x2855          Code  Gb  DblMul.o [3]
-__aeabi_f2d                  0x233d          Code  Gb  FltToDbl.o [3]
+__aeabi_dadd                 0x2379          Code  Gb  DblAddSub.o [3]
+__aeabi_ddiv                 0x25e5          Code  Gb  DblDiv.o [3]
+__aeabi_dmul                 0x2849          Code  Gb  DblMul.o [3]
+__aeabi_f2d                  0x2331          Code  Gb  FltToDbl.o [3]
 __aeabi_f2iz                 0x164d          Code  Gb  FltToS32.o [3]
 __aeabi_fadd                 0x14dd          Code  Gb  FltAddSub.o [3]
 __aeabi_fdiv                 0x135d          Code  Gb  FltDiv.o [3]
 __aeabi_fmul                 0x11cd          Code  Gb  FltMul.o [3]
 __aeabi_fsub                 0x15bd          Code  Gb  FltAddSub.o [3]
 __aeabi_memset               0x1079          Code  Gb  ABImemset.o [4]
-__aeabi_ui2d                 0x2839          Code  Gb  U32ToDbl.o [3]
-__aeabi_ui2f                 0x25d5          Code  Gb  U32ToFlt.o [3]
+__aeabi_ui2d                 0x282d          Code  Gb  U32ToDbl.o [3]
+__aeabi_ui2f                 0x25c9          Code  Gb  U32ToFlt.o [3]
 __basic_free                 0x18fd    0x16  Code  Gb  heap0.o [2]
 __basic_free_intern          0x1913    0x74  Code  Lc  heap0.o [2]
 __basic_malloc               0x1851    0x18  Code  Gb  heap0.o [2]
 __basic_malloc_intern        0x1869    0x94  Code  Lc  heap0.o [2]
-__cexit_closeall             0x349b          Code  Gb  cexit.o [4]
-__close                      0x2f9b    0x18  Code  Gb  close.o [5]
-__cmain                      0x3471          Code  Gb  cmain.o [4]
-__cstart_closeall            0x35ec          Data  Gb  cstart_closeall.o [4]
+__cexit_closeall             0x346f          Code  Gb  cexit.o [4]
+__close                      0x2f8f    0x18  Code  Gb  close.o [5]
+__cmain                      0x3445          Code  Gb  cmain.o [4]
+__cstart_closeall            0x35c0          Data  Gb  cstart_closeall.o [4]
 __data_GetMemChunk           0x19c1    0x2c  Code  Gb  xgetmemchunk.o [2]
 __data_GetMemChunk::start
                         0x2000'8320     0x4  Data  Lc  xgetmemchunk.o [2]
 __dwrite                     0x1ac5    0x1e  Code  Gb  dwrite.o [5]
-__exit                       0x34a9    0x14  Code  Gb  exit.o [5]
+__exit                       0x347d    0x14  Code  Gb  exit.o [5]
 __iar_Memset                 0x1079          Code  Gb  ABImemset.o [4]
 __iar_Memset_word            0x1081          Code  Gb  ABImemset.o [4]
 __iar_Stderr            0x2000'00c0    0x48  Data  Gb  xfiles.o [2]
 __iar_Stdin             0x2000'0030    0x48  Data  Gb  xfiles.o [2]
 __iar_Stdout            0x2000'0078    0x48  Data  Gb  xfiles.o [2]
 __iar_close_ttio             0x1c4d    0x2c  Code  Gb  iarttio.o [5]
-__iar_data_init3             0x33a1    0x28  Code  Gb  data_init.o [4]
+__iar_data_init3             0x3395    0x28  Code  Gb  data_init.o [4]
 __iar_get_ttio               0x1c79    0x4c  Code  Gb  iarttio.o [5]
 __iar_lookup_ttioh           0x1cc9     0x8  Code  Gb  XShttio.o [2]
 __iar_lz77_init_single3
                              0x10df    0x76  Code  Gb  lz77_init_single.o [4]
-__iar_program_start          0x34f5          Code  Gb  cstartup_M.o [4]
+__iar_program_start          0x34c9          Code  Gb  cstartup_M.o [4]
 __iar_sh_Discard             0x1b81    0x42  Code  Gb  XShHandles.o [2]
 __iar_sh_Move                0x1bc3    0x46  Code  Gb  XShHandles.o [2]
 __iar_sh_Pos                 0x1c09    0x40  Code  Gb  XShHandles.o [2]
@@ -488,17 +486,17 @@ __iar_unaligned_memcpy4
                              0x1175          Code  Gb  ABImemcpy_unaligned.o [4]
 __iar_unaligned_memcpy8
                              0x1175          Code  Gb  ABImemcpy_unaligned.o [4]
-__iar_zero_init3             0x315d    0x38  Code  Gb  zero_init3.o [4]
+__iar_zero_init3             0x3151    0x38  Code  Gb  zero_init3.o [4]
 __isinff                     0x1475    0x40  Code  Gb  unity.o [1]
-__low_level_init             0x348f     0x4  Code  Gb  low_level_init.o [2]
+__low_level_init             0x3463     0x4  Code  Gb  low_level_init.o [2]
 __lseek                      0x1aef    0x4e  Code  Gb  lseek.o [5]
 __vector_table                  0x0          Data  Gb  vector_table_M.o [4]
 __write                      0x19b1    0x10  Code  Gb  write.o [5]
-_call_main                   0x347d          Code  Gb  cmain.o [4]
-_exit                        0x3499          Code  Gb  cexit.o [4]
-eMpbMathDivisionDouble       0x22bf    0x70  Code  Gb  mpbMathDivision.o [1]
-eMpbMathDivisionFloat        0x2265    0x5a  Code  Gb  mpbMathDivision.o [1]
-eMpbMathDivisionU32          0x2249    0x1c  Code  Gb  mpbMathDivision.o [1]
+_call_main                   0x3451          Code  Gb  cmain.o [4]
+_exit                        0x346d          Code  Gb  cexit.o [4]
+eMpbMathDivisionDouble       0x22b3    0x70  Code  Gb  mpbMathDivision.o [1]
+eMpbMathDivisionFloat        0x2259    0x5a  Code  Gb  mpbMathDivision.o [1]
+eMpbMathDivisionU32          0x223d    0x1c  Code  Gb  mpbMathDivision.o [1]
 eMpbMathDoubleIsInfinity
                               0x68d   0x138  Code  Gb  mock_mpbMath.o [1]
 eMpbMathDoubleIsInfinity_CMockExpectAndReturn
@@ -514,42 +512,42 @@ eMpbMathFloatIsNaN            0x167   0x11c  Code  Gb  mock_mpbMath.o [1]
 eMpbMathFloatIsNaN_CMockExpectAndReturn
                               0x28b    0x84  Code  Gb  mock_mpbMath.o [1]
 ebuf                    0x2000'8268    0x50  Data  Lc  xfiles.o [2]
-exit                         0x3493     0x4  Code  Gb  exit.o [2]
-fclose                       0x2f1d    0x7e  Code  Gb  fclose.o [2]
+exit                         0x3467     0x4  Code  Gb  exit.o [2]
+fclose                       0x2f11    0x7e  Code  Gb  fclose.o [2]
 fflush                       0x1819    0x34  Code  Gb  fflush.o [2]
 fflushOne                    0x17a5    0x74  Code  Lc  fflush.o [2]
 fputc                        0x1699    0x56  Code  Gb  fputc.o [2]
-free                         0x2f19     0x4  Code  Gb  heaptramp0.o [2]
+free                         0x2f0d     0x4  Code  Gb  heaptramp0.o [2]
 fseek                        0x198d    0x24  Code  Gb  fseek.o [2]
 longjmp                      0x1685          Code  Gb  setjmp.o [3]
-main                         0x2a35   0x3fc  Code  Gb  test_mpbMathDivision_runner.o [1]
+main                         0x2a29   0x3fc  Code  Gb  test_mpbMathDivision_runner.o [1]
 mock_mpbMath_Destroy          0x11f    0x48  Code  Gb  mock_mpbMath.o [1]
 mock_mpbMath_Init             0x117     0x8  Code  Gb  mock_mpbMath.o [1]
 mock_mpbMath_Verify            0x41    0xd6  Code  Gb  mock_mpbMath.o [1]
 obuf                    0x2000'82b8    0x50  Data  Lc  xfiles.o [2]
 putchar                      0x130d     0xc  Code  Gb  putchar.o [2]
-remove                       0x2fb3    0x14  Code  Gb  remove.o [5]
+remove                       0x2fa7    0x14  Code  Gb  remove.o [5]
 sFileInfo               0x2000'8130    0x80  Data  Lc  XShHandles.o [2]
 setUp                        0x1cd1     0x2  Code  Gb  test_mpbMathDivision.o [1]
 setjmp                       0x1675          Code  Gb  setjmp.o [3]
-strlen                       0x2fc9          Code  Gb  strlen.o [4]
-suite_setup                  0x2a31     0x2  Code  Lc  test_mpbMathDivision_runner.o [1]
-suite_teardown               0x2a33     0x2  Code  Lc  test_mpbMathDivision_runner.o [1]
+strlen                       0x2fbd          Code  Gb  strlen.o [4]
+suite_setup                  0x2a25     0x2  Code  Lc  test_mpbMathDivision_runner.o [1]
+suite_teardown               0x2a27     0x2  Code  Lc  test_mpbMathDivision_runner.o [1]
 tearDown                     0x1cd3     0x2  Code  Gb  test_mpbMathDivision.o [1]
 test_eMpbMathDivisionDouble_DivideBy0AndNullPointer_Fail
-                             0x200b    0x2a  Code  Gb  test_mpbMathDivision.o [1]
+                             0x2009    0x2a  Code  Gb  test_mpbMathDivision.o [1]
 test_eMpbMathDivisionDouble_DivisionAndReturn_Success
-                             0x2035   0x190  Code  Gb  test_mpbMathDivision.o [1]
+                             0x2033   0x188  Code  Gb  test_mpbMathDivision.o [1]
 test_eMpbMathDivisionDouble_InfinityDivision_Fail
-                             0x1f5b    0x38  Code  Gb  test_mpbMathDivision.o [1]
+                             0x1f59    0x38  Code  Gb  test_mpbMathDivision.o [1]
 test_eMpbMathDivisionDouble_NaNDivision_Fail
-                             0x1f93    0x4e  Code  Gb  test_mpbMathDivision.o [1]
+                             0x1f91    0x4e  Code  Gb  test_mpbMathDivision.o [1]
 test_eMpbMathDivisionDouble_NullPointer_Fail
-                             0x1fe1    0x2a  Code  Gb  test_mpbMathDivision.o [1]
+                             0x1fdf    0x2a  Code  Gb  test_mpbMathDivision.o [1]
 test_eMpbMathDivisionFloat_DivideBy0AndNullPointer_Fail
                              0x1e09    0x24  Code  Gb  test_mpbMathDivision.o [1]
 test_eMpbMathDivisionFloat_DivisionAndReturn_Success
-                             0x1e2d   0x12e  Code  Gb  test_mpbMathDivision.o [1]
+                             0x1e2d   0x12c  Code  Gb  test_mpbMathDivision.o [1]
 test_eMpbMathDivisionFloat_InfinityDivision_Fail
                              0x1d79    0x30  Code  Gb  test_mpbMathDivision.o [1]
 test_eMpbMathDivisionFloat_NaNDivision_Fail
@@ -564,7 +562,7 @@ test_eMpbMathDivisionU32_DivisionAndReturn_Success
                              0x1d43    0x36  Code  Gb  test_mpbMathDivision.o [1]
 test_eMpbMathDivisionU32_NullPointer_Fail
                              0x1cf9    0x26  Code  Gb  test_mpbMathDivision.o [1]
-vroundf                      0x2229    0x20  Code  Gb  mpbMathDivision.o [1]
+vroundf                      0x221d    0x20  Code  Gb  mpbMathDivision.o [1]
 
 
 [1] = C:\mpbComponent\mpbMath\UnitTestFramework\build\test\out\c
@@ -573,8 +571,8 @@ vroundf                      0x2229    0x20  Code  Gb  mpbMathDivision.o [1]
 [4] = rt7M_tl.a
 [5] = shb_l.a
 
-  12'552 bytes of readonly  code memory
-   1'386 bytes of readonly  data memory
+  12'540 bytes of readonly  code memory
+   1'354 bytes of readonly  data memory
   36'644 bytes of readwrite data memory
 
 Errors: none

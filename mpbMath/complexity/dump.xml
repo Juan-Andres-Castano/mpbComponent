@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<sourcemonitor_metrics>
+  <project version="3.5">
+    <project_name>mpbMathComplexity</project_name>
+    <project_directory>C:\mpbcomponent\mpbMath\sources</project_directory>
+    <project_language>C</project_language>
+    <ignore_headers_footers>false</ignore_headers_footers>
+    <export_raw_numbers>false</export_raw_numbers>
+    <checkpoints checkpoint_count="1">
+      <metric_names name_count="13">
+        <metric_name id="M0" type="number">Lines</metric_name>
+        <metric_name id="M1" type="number">Statements</metric_name>
+        <metric_name id="M2" type="percent" divisor="M1">Percent Branch Statements</metric_name>
+        <metric_name id="M3" type="percent" divisor="M0">Percent Lines with Comments</metric_name>
+        <metric_name id="M4" type="number">Functions</metric_name>
+        <metric_name id="M5" type="average" divisor="M4">Average Statements per Function</metric_name>
+        <metric_name id="M6" type="string">Line Number of Most Complex Function</metric_name>
+        <metric_name id="M7" type="string">Name of Most Complex Function</metric_name>
+        <metric_name id="M8" type="maximum">Complexity of Most Complex Function</metric_name>
+        <metric_name id="M9" type="string">Line Number of Deepest Block</metric_name>
+        <metric_name id="M10" type="maximum">Maximum Block Depth</metric_name>
+        <metric_name id="M11" type="average" values="block_depths">Average Block Depth</metric_name>
+        <metric_name id="M12" type="average">Average Complexity</metric_name>
+      </metric_names>
+      <checkpoint checkpoint_name="Checkpoint1" checkpoint_date="2022-02-15" ignore_blank_lines="false" modified_complexity="false">
+        <files file_count="11">
+          <file file_name="mpbMathAbsolute.c">
+            <metrics metric_count="13">
+              <metric id="M0">48</metric>
+              <metric id="M1">9</metric>
+              <metric id="M2">33.3</metric>
+              <metric id="M3">58.3</metric>
+              <metric id="M4">1</metric>
+              <metric id="M5">7.0</metric>
+              <metric id="M6">28</metric>
+              <metric id="M7">eMpbMathAbsoluteSubstractionFloat()</metric>
+              <metric id="M8">4</metric>
+              <metric id="M9">33</metric>
+              <metric id="M10">2</metric>
+              <metric id="M11">1.11</metric>
+              <metric id="M12">4.00</metric>
+            </metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">2</block_depth>
+              <block_depth level="1">4</block_depth>
+              <block_depth level="2">3</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="mpbMathAverage.c">
+            <metrics metric_count="13">
+              <metric id="M0">78</metric>
+              <metric id="M1">24</metric>
+              <metric id="M2">25.0</metric>
+              <metric id="M3">34.6</metric>
+              <metric id="M4">2</metric>
+              <metric id="M5">10.0</metric>
+              <metric id="M6">30</metric>
+              <metric id="M7">eMpbMathAverageS32()</metric>
+              <metric id="M8">6</metric>
+              <metric id="M9">37</metric>
+              <metric id="M10">2</metric>
+              <metric id="M11">1.08</metric>
+              <metric id="M12">6.00</metric>
+            </metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">4</block_depth>
+              <block_depth level="1">14</block_depth>
+              <block_depth level="2">6</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="mpbMathCoerce.c">
+            <metrics metric_count="13">
+              <metric id="M0">174</metric>
+              <metric id="M1">10</metric>
+              <metric id="M2">30.0</metric>
+              <metric id="M3">86.8</metric>
+              <metric id="M4">1</metric>
+              <metric id="M5">8.0</metric>
+              <metric id="M6">71</metric>
+              <metric id="M7">xMpbMathCoerceFloat()</metric>
+              <metric id="M8">4</metric>
+              <metric id="M9">77</metric>
+              <metric id="M10">2</metric>
+              <metric id="M11">1.10</metric>
+              <metric id="M12">4.00</metric>
+            </metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">2</block_depth>
+              <block_depth level="1">5</block_depth>
+              <block_depth level="2">3</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="mpbMathCrc.c">
+            <metrics metric_count="13">
+              <metric id="M0">160</metric>
+              <metric id="M1">61</metric>
+              <metric id="M2">23.0</metric>
+              <metric id="M3">23.1</metric>
+              <metric id="M4">3</metric>
+              <metric id="M5">18.3</metric>
+              <metric id="M6">51</metric>
+              <metric id="M7">eMpbMathCrcValidate()</metric>
+              <metric id="M8">9</metric>
+              <metric id="M9">38</metric>
+              <metric id="M10">2</metric>
+              <metric id="M11">1.15</metric>
+              <metric id="M12">7.33</metric>
+            </metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">6</block_depth>
+              <block_depth level="1">40</block_depth>
+              <block_depth level="2">15</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="mpbMathCrcUtil.c">
+            <metrics metric_count="13">
+              <metric id="M0">129</metric>
+              <metric id="M1">55</metric>
+              <metric id="M2">16.4</metric>
+              <metric id="M3">22.5</metric>
+              <metric id="M4">3</metric>
+              <metric id="M5">15.7</metric>
+              <metric id="M6">93</metric>
+              <metric id="M7">vMpbMathCrcUtilCalculate()</metric>
+              <metric id="M8">5</metric>
+              <metric id="M9">83</metric>
+              <metric id="M10">4</metric>
+              <metric id="M11">1.49</metric>
+              <metric id="M12">4.00</metric>
+            </metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">8</block_depth>
+              <block_depth level="1">26</block_depth>
+              <block_depth level="2">11</block_depth>
+              <block_depth level="3">6</block_depth>
+              <block_depth level="4">4</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="mpbMathDebounce.c">
+            <metrics metric_count="13">
+              <metric id="M0">95</metric>
+              <metric id="M1">29</metric>
+              <metric id="M2">34.5</metric>
+              <metric id="M3">42.1</metric>
+              <metric id="M4">2</metric>
+              <metric id="M5">13.0</metric>
+              <metric id="M6">63</metric>
+              <metric id="M7">vMpbMathDebounceUpdate()</metric>
+              <metric id="M8">9</metric>
+              <metric id="M9">81</metric>
+              <metric id="M10">5</metric>
+              <metric id="M11">1.90</metric>
+              <metric id="M12">6.50</metric>
+            </metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">3</block_depth>
+              <block_depth level="1">8</block_depth>
+              <block_depth level="2">11</block_depth>
+              <block_depth level="3">4</block_depth>
+              <block_depth level="4">2</block_depth>
+              <block_depth level="5">1</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="mpbMathDivision.c">
+            <metrics metric_count="13">
+              <metric id="M0">116</metric>
+              <metric id="M1">36</metric>
+              <metric id="M2">19.4</metric>
+              <metric id="M3">31.0</metric>
+              <metric id="M4">4</metric>
+              <metric id="M5">7.3</metric>
+              <metric id="M6">59</metric>
+              <metric id="M7">eMpbMathDivisionFloat()</metric>
+              <metric id="M8">5</metric>
+              <metric id="M9">48</metric>
+              <metric id="M10">2</metric>
+              <metric id="M11">1.00</metric>
+              <metric id="M12">3.50</metric>
+            </metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">7</block_depth>
+              <block_depth level="1">22</block_depth>
+              <block_depth level="2">7</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="mpbMathFifo.c">
+            <metrics metric_count="13">
+              <metric id="M0">235</metric>
+              <metric id="M1">92</metric>
+              <metric id="M2">25.0</metric>
+              <metric id="M3">27.2</metric>
+              <metric id="M4">7</metric>
+              <metric id="M5">12.0</metric>
+              <metric id="M6">61</metric>
+              <metric id="M7">eMpbMathFifoPush()</metric>
+              <metric id="M8">12</metric>
+              <metric id="M9">107</metric>
+              <metric id="M10">4</metric>
+              <metric id="M11">1.43</metric>
+              <metric id="M12">6.71</metric>
+            </metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">8</block_depth>
+              <block_depth level="1">46</block_depth>
+              <block_depth level="2">29</block_depth>
+              <block_depth level="3">8</block_depth>
+              <block_depth level="4">1</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="mpbMathLinearApprox.c">
+            <metrics metric_count="13">
+              <metric id="M0">92</metric>
+              <metric id="M1">29</metric>
+              <metric id="M2">34.5</metric>
+              <metric id="M3">34.8</metric>
+              <metric id="M4">1</metric>
+              <metric id="M5">26.0</metric>
+              <metric id="M6">31</metric>
+              <metric id="M7">eMpbMathLinearApproxFloat()</metric>
+              <metric id="M8">12</metric>
+              <metric id="M9">46</metric>
+              <metric id="M10">5</metric>
+              <metric id="M11">2.93</metric>
+              <metric id="M12">12.00</metric>
+            </metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">3</block_depth>
+              <block_depth level="1">5</block_depth>
+              <block_depth level="2">3</block_depth>
+              <block_depth level="3">6</block_depth>
+              <block_depth level="4">4</block_depth>
+              <block_depth level="5">8</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="mpbMathResistor.c">
+            <metrics metric_count="13">
+              <metric id="M0">182</metric>
+              <metric id="M1">64</metric>
+              <metric id="M2">21.9</metric>
+              <metric id="M3">19.8</metric>
+              <metric id="M4">11</metric>
+              <metric id="M5">4.6</metric>
+              <metric id="M6">129</metric>
+              <metric id="M7">eMpbMathResistorFloatVoltageDividerGetPullDownResistor()</metric>
+              <metric id="M8">4</metric>
+              <metric id="M9">34</metric>
+              <metric id="M10">2</metric>
+              <metric id="M11">1.02</metric>
+              <metric id="M12">2.55</metric>
+            </metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">13</block_depth>
+              <block_depth level="1">37</block_depth>
+              <block_depth level="2">14</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="mpbMathRound.c">
+            <metrics metric_count="13">
+              <metric id="M0">59</metric>
+              <metric id="M1">12</metric>
+              <metric id="M2">25.0</metric>
+              <metric id="M3">49.2</metric>
+              <metric id="M4">1</metric>
+              <metric id="M5">9.0</metric>
+              <metric id="M6">36</metric>
+              <metric id="M7">eNepMathRoundToPrecisionFloat()</metric>
+              <metric id="M8">4</metric>
+              <metric id="M9">42</metric>
+              <metric id="M10">2</metric>
+              <metric id="M11">1.00</metric>
+              <metric id="M12">4.00</metric>
+            </metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">3</block_depth>
+              <block_depth level="1">6</block_depth>
+              <block_depth level="2">3</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+        </files>
+      </checkpoint>
+    </checkpoints>
+  </project>
+</sourcemonitor_metrics>

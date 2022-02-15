@@ -6032,7 +6032,7 @@ void test_eMpbMathDivisionDouble_DivisionAndReturn_Success()
 	eMpbMathDoubleIsInfinity_CMockExpectAndReturn(231, 6.9, eFalse);
 	eMpbMathDoubleIsNaN_CMockExpectAndReturn(232, 6.9, eFalse);
 	eResult = eMpbMathDivisionDouble( -30.36, -4.4, &fdResult );
-    UnityFail( (UnityStrErrDouble), (UNITY_UINT)((UNITY_UINT)(234)));
+    
     UnityAssertFloatsWithin((UNITY_FLOAT)((UNITY_FLOAT)((6.9)) * (UNITY_FLOAT)(0.00001f)), (UNITY_FLOAT)((UNITY_FLOAT)((6.9))), (UNITY_FLOAT)((UNITY_FLOAT)((fdResult))), ((0)), (UNITY_UINT)((UNITY_UINT)(235)));
 	UnityAssertEqualNumber((UNITY_INT)((eSuccess)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(236), UNITY_DISPLAY_STYLE_INT);
 }
