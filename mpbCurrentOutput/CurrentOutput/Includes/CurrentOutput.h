@@ -28,7 +28,7 @@ typedef struct
 {
 	float fIntercept;
 	float fSlope;	
-	float fCalibration;
+	
 }__attribute__ ((packed))xCurrentOutputScaling_t;
 
 

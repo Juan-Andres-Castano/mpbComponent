@@ -1,0 +1,8 @@
+eMpbTimeBaseInit
+eMpbTimeBaseTick
+ulMpbTimeBaseGetTick
+ulMpbTimeBaseGetMs
+ulMpbTimeBaseGetSecond
+ulMpbTimeBaseGetMinute call:[return] noreturn:[return]
+ulMpbTimeBaseGetHour call:[return] noreturn:[return]
+eMpbTimeBaseIsDelayDone

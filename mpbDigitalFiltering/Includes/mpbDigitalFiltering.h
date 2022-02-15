@@ -1,8 +1,8 @@
 /**
-* @file         nepDigitalFiltering.h
+* @file         mpbDigitalFiltering.h
 * @brief        Contains the NMS Filter and RCLP Filter configurations
 * @author       juan andres
-* @date         Created on 3/18-201
+* @date         Created on 3/18-2022
 * @copyright MPB, Montreal, Qc
 * <h2><center>&copy; COPYRIGHT 2021 MPB, Montreal, Quebec, Canada</center></h2>
 * <h2><center>&copy; All rights reserved.</center></h2><br/><br/>

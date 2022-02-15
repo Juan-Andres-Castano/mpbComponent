@@ -25,6 +25,7 @@
   - :path:
     - 'C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin'
     - 'C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin'
+    - 'C:\mingw\bin'
     - #{ENV['PATH']}
 
 
@@ -73,7 +74,30 @@
   :treat_externs: :include 
 
 :gcov:
-    :html_report_type: basic
+  :utilities:
+    - gcovr           # Use gcovr to create the specified reports (default).
+    - ReportGenerator # Use ReportGenerator to create the specified reports.
+
+  :reports:
+    #:arguments:
+    - Xml
+    #- HtmlDetailed
+    #- -g
+    #- -o build/artifacts/gcov/GcovCoverageResults.html
+    #:xml_report: true
+
+  :gcovr:
+   # :text_artifact_filename: reporte
+   # :report_include: "^../Sources/"
+   # :report_exclude: "^vendor.*|^build.*|^test.*|^lib.*"
+  #:gcov:
+  #:utilities:
+  #  - gcovr           # Use gcovr to create the specified reports (default).
+  #  - ReportGenerator # Use ReportGenerator to create the specified reports.
+    #:xml_pretty: true
+    #:xml_artifact_filename: covertura
+  #:html_report: true
+  #:html_report_type: detailed
 
 :tools:
 # Ceedling defaults to using gcc for compiling, linking, etc.
@@ -81,6 +105,8 @@
 # See documentation to configure a given toolchain for use
 # For NAF's need to use IAR, https://stackoverflow.com/questions/41140188/how-can-i-configure-ceedling-for-an-iar-embedded-workbench-project
 # was implemented
+  
+
   :test_compiler:
     :executable: iccarm
     :name: 'iar test compiler'
@@ -152,5 +178,8 @@
     - xml_tests_report
     - stdout_pretty_tests_report
     - module_generator
+    - gcov
+    #- beep
     #- raw_output_report
+
 ...

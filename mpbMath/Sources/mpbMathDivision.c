@@ -18,7 +18,6 @@
 
 #include "mpbMathDivision.h"
 #include "mpbMath.h"
-//#include "math.h"
 
 /* Private define ----------------------------------------------------------- */
 /* Private macro ------------------------------------------------------------ */
@@ -36,32 +35,10 @@ float vroundf(float var)
     // 3766.66 + .5 =3767.16    for rounding off value 
     // then type cast to int so value is 3767 
     // then divided by 100 so the value converted into 37.67 
-    float value = (int)(var * 100 + .5); 
+    float value = (float)(var * 100 + .5); 
     return (float)value / 100; 
 } 
 
-//eMpbError_t eMpbMathDivisionS32( int32_t slNumerator, int32_t slDenominator, int32_t *pslResult )
-//{	
-//	if( ( slDenominator == 0 ) || ( pslResult == NULL ) )
-//    {
-//        return eInvalidParameter;
-//    }
-//       
-//	/* If result is positive */
-//	if( ( ( slNumerator > 0 ) && ( slDenominator > 0 ) ) || ( ( slNumerator < 0 ) && ( slDenominator < 0 ) ) )
-//	{
-//		/* Add half of divider for rounding */
-//		slNumerator += ( slDenominator >> 1 );
-//	}
-//	else
-//	{
-//		/* Remove half of divider for rounding */
-//		slNumerator -= ( slDenominator >> 1 );
-//	}
-//    
-//	*pslResult = ( slNumerator / slDenominator );	
-//	return eSuccess;
-//}
 /*----------------------------------------------------------------------------*/
 
 eMpbError_t eMpbMathDivisionU32( uint32_t ulNumerator, uint32_t ulDenominator, uint32_t *pulResult )
@@ -89,10 +66,11 @@ eMpbError_t eMpbMathDivisionFloat( float fNumerator, float fDenominator, float *
         return eInvalidParameter;
     }
     
+		
     fResultCheck = ( fNumerator / fDenominator );
     
     /* Rounding to the 6th decimal */
-	fResultCheck = ( vroundf( ulSixthDecimalPrecision * fResultCheck ) / ulSixthDecimalPrecision ); 
+		fResultCheck = ( vroundf( ulSixthDecimalPrecision * fResultCheck ) / ulSixthDecimalPrecision ); 
 		
     if( ( eMpbMathFloatIsInfinity( fResultCheck ) == eTrue ) || ( eMpbMathFloatIsNaN( fResultCheck ) == eTrue ) )
     {
@@ -136,43 +114,3 @@ eMpbError_t eMpbMathDivisionDouble( double fdNumerator, double fdDenominator, do
 }
 /*----------------------------------------------------------------------------*/
 
-//eMpbError_t eMpbMathDivisionU64( uint64_t ullNumerator, uint64_t ullDenominator, uint64_t *pullResult )
-//{
-//    if( ( ullDenominator == 0 ) || ( pullResult == NULL ) )
-//    {
-//        return eInvalidParameter;
-//    }
-//    
-//	/* Add half of divider for rounding */
-//	ullNumerator += ( ullDenominator >> 1 );
-//    
-//	*pullResult = ( ullNumerator / ullDenominator );
-//
-//	return eSuccess;
-//}
-/*----------------------------------------------------------------------------*/
-
-eMpbError_t eMpbMathDivisionS64( int64_t sllNumerator, int64_t sllDenominator, int64_t *psllResult )
-{
-    if( ( sllDenominator == 0 ) || ( psllResult == NULL ) )
-    {
-        return eInvalidParameter;
-    }
-	
-    /* If result is positive */
-	if( ( ( sllNumerator > 0 ) && ( sllDenominator > 0 ) ) || ( ( sllNumerator < 0 ) && ( sllDenominator < 0 ) ) )
-	{
-		/* Add half of divider for rounding */
-		sllNumerator += ( sllDenominator >> 1 );
-	}
-	else
-	{
-		/* Remove half of divider for rounding */
-		sllNumerator -= ( sllDenominator >> 1 );
-	}
-    
-	*psllResult = ( sllNumerator / sllDenominator );
-	
-	return eSuccess;
-}
-/*----------------------------------------------------------------------------*/

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="652798859">
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="../Sources/mpbTimeBase.c:94:10" my-argnr="1" my-argname="pxTimeBase" file="../Sources/mpbTimeBase.c" line="96" col="9" value="0"/>
+    <unsafe-usage my-id="../Sources/mpbTimeBase.c:100:10" my-argnr="1" my-argname="pxTimeBase" file="../Sources/mpbTimeBase.c" line="102" col="9" value="0"/>
+    <unsafe-usage my-id="../Sources/mpbTimeBase.c:106:10" my-argnr="1" my-argname="pxTimeBase" file="../Sources/mpbTimeBase.c" line="108" col="9" value="0"/>
+    <unsafe-usage my-id="../Sources/mpbTimeBase.c:112:10" my-argnr="1" my-argname="pxTimeBase" file="../Sources/mpbTimeBase.c" line="114" col="11" value="0"/>
+    <unsafe-usage my-id="../Sources/mpbTimeBase.c:118:10" my-argnr="1" my-argname="pxTimeBase" file="../Sources/mpbTimeBase.c" line="120" col="11" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="../Sources/mpbTimeBase.c:94:10" my-argnr="1" my-argname="pxTimeBase" file="../Sources/mpbTimeBase.c" line="96" col="9" value="0"/>
+    <unsafe-usage my-id="../Sources/mpbTimeBase.c:100:10" my-argnr="1" my-argname="pxTimeBase" file="../Sources/mpbTimeBase.c" line="102" col="9" value="0"/>
+    <unsafe-usage my-id="../Sources/mpbTimeBase.c:106:10" my-argnr="1" my-argname="pxTimeBase" file="../Sources/mpbTimeBase.c" line="108" col="9" value="0"/>
+    <unsafe-usage my-id="../Sources/mpbTimeBase.c:112:10" my-argnr="1" my-argname="pxTimeBase" file="../Sources/mpbTimeBase.c" line="114" col="11" value="0"/>
+    <unsafe-usage my-id="../Sources/mpbTimeBase.c:118:10" my-argnr="1" my-argname="pxTimeBase" file="../Sources/mpbTimeBase.c" line="120" col="11" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="eMpbTimeBaseInit" lineNumber="46"/>
+    <functiondecl functionName="eMpbTimeBaseTick" lineNumber="65"/>
+    <functiondecl functionName="ulMpbTimeBaseGetTick" lineNumber="94"/>
+    <functiondecl functionName="ulMpbTimeBaseGetMs" lineNumber="100"/>
+    <functiondecl functionName="ulMpbTimeBaseGetSecond" lineNumber="106"/>
+    <functiondecl functionName="ulMpbTimeBaseGetMinute" lineNumber="112"/>
+    <functiondecl functionName="ulMpbTimeBaseGetHour" lineNumber="118"/>
+    <functiondecl functionName="eMpbTimeBaseIsDelayDone" lineNumber="124"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="int32_t"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="ucTickPerMs"/>
+    <functioncall functionName="ucTickReload"/>
+    <functioncall functionName="ulMs"/>
+    <functioncall functionName="ulSecond"/>
+    <functioncall functionName="ulTick"/>
+    <functioncall functionName="ulTimeStamp"/>
+  </FileInfo>
+</analyzerinfo>

@@ -32,7 +32,7 @@ typedef struct //eMpbATTR_PACKED
 	uint16_t usPop;  	/**< Pop index */     
 	uint16_t usSize; 	/**< Size of the FIFO*/
 	void*    pvBuf;  	/**< Pointer to the FIFO */
-}xMpbMathFifo_t;
+}__attribute__ ((packed))xMpbMathFifo_t;
 
 /* Global variables --------------------------------------------------------- */
 /* Exported function prototypes --------------------------------------------- */
@@ -101,4 +101,4 @@ eMpbError_t eMpbMathFifoIsFull( xMpbMathFifo_t *pxFifo, eBool_t *peFifoIsFull );
 */
 eMpbError_t eMpbMathFifoIsEmpty( xMpbMathFifo_t *pxFifo, eBool_t *peFifoIsEmpty );
 
-#endif /* __NEPMATHFIFO_H */
+#endif /* __MPBMATHFIFO_H */

@@ -1,4 +1,4 @@
-#line 1 "../Tests/test_mpbMathDebounce.c"
+#line 1 "../Tests/test_mpbMathDivision.c"
 
 
 
@@ -15,6 +15,7 @@
 
  
  
+
 #line 1 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
 
 
@@ -3212,8 +3213,8 @@ int suiteTearDown(int num_failures);
 #line 498 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
 
  
-#line 18 "../Tests/test_mpbMathDebounce.c"
-#line 1 "../Includes/mpbMathDebounce.h"
+#line 19 "../Tests/test_mpbMathDivision.c"
+#line 1 "../Includes/mpbMathDivision.h"
 
 
 
@@ -3227,8 +3228,6 @@ int suiteTearDown(int num_failures);
 
 
 
-
- 
  
  
 
@@ -4802,7 +4801,471 @@ extern void vMpblibsMallocFailedHook( size_t xSizeRequired );
  
 
  
-#line 22 "../Includes/mpbMathDebounce.h"
+#line 20 "../Includes/mpbMathDivision.h"
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+eMpbError_t eMpbMathDivisionU32( uint32_t ulNumerator, uint32_t ulDenominator, uint32_t *pulResult );
+
+
+
+
+
+
+
+
+
+ 
+eMpbError_t eMpbMathDivisionFloat( float fNumerator, float fDenominator, float *pfResult );
+
+
+
+
+
+
+
+
+
+ 
+eMpbError_t eMpbMathDivisionDouble( double fdNumerator, double fdDenominator, double *pfdResult );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+#line 20 "../Tests/test_mpbMathDivision.c"
+#line 1 "build/test/mocks/mock_mpbMath.h"
+ 
+
+
+
+#line 1 "../Includes/mpbMath.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+ 
+
+#line 1 "C:\\mpbComponent\\mpbMath\\Includes\\mpbMathAbsolute.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+eMpbError_t eMpbMathAbsoluteSubstractionFloat( float fValue1, float fValue2, float *pfAbsoluteDiffrence );
+
+#line 23 "../Includes/mpbMath.h"
+#line 1 "C:\\mpbComponent\\mpbMath\\Includes\\mpbMathAverage.h"
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+    
+eMpbError_t	eMpbMathAverageS32( const int32_t *pslArray, uint16_t usLength, int32_t *pslResult );
+
+
+
+
+
+
+
+
+    
+eMpbError_t	eMpbMathAverageFloat( const float *pxArray, uint16_t usLength, float *pxResult );
+
+#line 24 "../Includes/mpbMath.h"
+#line 1 "C:\\mpbComponent\\mpbMath\\Includes\\mpbMathCoerce.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+float xMpbMathCoerceFloat( float xMinimum, float xMaximum, float xValue );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 25 "../Includes/mpbMath.h"
+#line 1 "C:\\mpbComponent\\mpbMath\\Includes\\mpbMathCrc.h"
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+ 
+
+#line 1 "C:\\mpbComponent\\mpbMath\\Includes\\mpbMathCrcUtil.h"
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+ 
+void vMpbMathCrcUtilReflectData( uint8_t ucNumberOfBits, uint32_t ulData, uint32_t *pulResult );
+
+
+
+
+
+
+ 
+void vMpbMathCrcUtilReflectBytes( uint32_t ulNumberOfBytes, const uint8_t* pucBuffer, uint8_t* pucResult );
+
+
+
+
+
+
+
+
+
+
+ 
+void vMpbMathCrcUtilCalculate( uint8_t ucWidth, uint32_t ulInitial, uint32_t ulPolynomial, uint32_t ulNumberOfBytes, const uint8_t* pucBuffer, uint32_t *pulCrcValue );
+
+#line 22 "C:\\mpbComponent\\mpbMath\\Includes\\mpbMathCrc.h"
+
+ 
+ 
+
+
+
+
+
+
+      
+ 
+ 
+
+
+
+ 
+typedef struct
+{
+    uint8_t  ucWidth;
+  	uint32_t ulPolynomial;
+	uint32_t ulInitial;
+    uint32_t ulXorOutput;
+    uint32_t ulResidue;
+    eBool_t bRefInput;
+	eBool_t bRefOutput;
+}
+xMpbCrc_t;
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+eMpbError_t eMpbMathCrcInit( uint8_t ucWidth, uint32_t ulInitial, uint32_t ulPolynomial, uint32_t ulXorOutput, eBool_t bRefInput, eBool_t bRefOutput, xMpbCrc_t *pxMpbCrc );
+
+
+
+
+
+
+
+
+ 
+eMpbError_t eMpbMathCrcValidate( xMpbCrc_t xMpbCrc, uint32_t ulCrcRead, uint32_t ulNumberOfBytes, const uint8_t *pucBuffer );
+
+
+
+
+
+
+
+
+ 
+eMpbError_t eMpbMathCrcCalculate( xMpbCrc_t xMpbCrc, uint32_t ulNumberOfBytes, const uint8_t* pucBuffer, uint32_t *pulCrcValue );
+
+
+#line 26 "../Includes/mpbMath.h"
+#line 1 "C:\\mpbComponent\\mpbMath\\Includes\\mpbMathDebounce.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+ 
+
  
  
  
@@ -4842,209 +5305,736 @@ eMpbError_t vMpbMathDebounceInit( MpbMathDebounce_t *pxMpbMathDebounce, uint32_t
  
 eMpbError_t vMpbMathDebounceUpdate( MpbMathDebounce_t *pxMpbMathDebounce, eBool_t bActualState, eBool_t *pbFinalState );
 
-#line 19 "../Tests/test_mpbMathDebounce.c"
+#line 27 "../Includes/mpbMath.h"
+#line 1 "C:\\mpbComponent\\mpbMath\\Includes\\mpbMathFifo.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+ 
+
+ 
+ 
+ 
+ 
+
+
+ 
+typedef struct 
+{
+	eBool_t	 bFull;		 
+	uint16_t usPush; 	 
+	uint16_t usPop;  	      
+	uint16_t usSize; 	 
+	void*    pvBuf;  	 
+}__attribute__ ((packed))xMpbMathFifo_t;
+
+ 
+ 
+
+
+
+
+
+
+
+ 
+eMpbError_t eMpbMathFifoInit( xMpbMathFifo_t *pxFifo, uint16_t usSize, void *pvBuf );
+
+
+
+
+
+ 
+eMpbError_t eMpbMathFifoReset( xMpbMathFifo_t *pxFifo );
+
+
+
+
+
+
+
+
+ 
+eMpbError_t	eMpbMathFifoPush( xMpbMathFifo_t * pxFifo, const void * pvData, uint16_t usLen, eBool_t eOverwrite );
+
+
+
+
+
+
+
+
+ 
+eMpbError_t	eMpbMathFifoPop( xMpbMathFifo_t * pxFifo, void * pvData, uint16_t usLen );
+
+
+
+
+
+
+
+
+
+
+ 
+eMpbError_t	eMpbMathFifoPeak( xMpbMathFifo_t * pxFifo, void * pvData, uint16_t usLen, uint32_t * ulBytesRead );
+
+
+
+
+
+
+ 
+eMpbError_t eMpbMathFifoIsFull( xMpbMathFifo_t *pxFifo, eBool_t *peFifoIsFull );
+
+
+
+
+
+
+ 
+eMpbError_t eMpbMathFifoIsEmpty( xMpbMathFifo_t *pxFifo, eBool_t *peFifoIsEmpty );
+
+#line 29 "../Includes/mpbMath.h"
+#line 1 "C:\\mpbComponent\\mpbMath\\Includes\\mpbMathLinearApprox.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+ 
+
+ 
+ 
+ 
+typedef enum
+{
+	eMpbMathCoerce = 0,
+	eMpbMathNoCoerce,
+}eMpbCoerce_t;
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+eMpbError_t eMpbMathLinearApproxFloat( float xCoordinate1X, float xCoordinate1Y, float xCoordinate2X, float xCoordinate2Y, float xApproxCoordinateX, eMpbCoerce_t eCoerce, float *pxApproxCoordinateY );
+
+
+#line 30 "../Includes/mpbMath.h"
+#line 1 "C:\\mpbComponent\\mpbMath\\Includes\\mpbMathResistor.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+ 
+
  
  
  
  
  
-eMpbError_t eMpbError;
  
  
  
  
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+ 
+eMpbError_t eMpbMathResistorVoltageDividerGetVout( uint32_t ulPullUpResistor, uint32_t ulPullDownResistor, uint32_t ulInputVoltage, uint32_t *pulOutputVoltage );
+
+
+
+
+
+
+
+
+ 
+eMpbError_t eMpbMathResistorVoltageDividerGetVin( uint32_t ulPullUpResistor, uint32_t ulPullDownResistor, uint32_t ulOutputVoltage, uint32_t *pulInputVoltage );
+
+
+
+
+
+
+
+
+ 
+eMpbError_t eMpbMathResistorVoltageDividerGetPullUpResistor( uint32_t ulPullDownResistor, uint32_t ulInputVoltage, uint32_t ulOutputVoltage, uint32_t *pulPullUpResistor );
+
+
+
+
+
+
+
+
+ 
+eMpbError_t eMpbMathResistorVoltageDividerGetPullDownResistor( uint32_t ulPullUpResistor, uint32_t ulInputVoltage, uint32_t ulOutputVoltage, uint32_t *pulPullDownResistor );
+
+
+
+
+
+
+
+
+
+ 
+eMpbError_t eMpbMathResistorFloatVoltageDividerGetVout( uint32_t ulPullUpResistor, uint32_t ulPullDownResistor, float xInputVoltage, float *pxOutputVoltage );
+
+
+
+
+
+
+
+
+
+ 
+eMpbError_t eMpbMathResistorFloatVoltageDividerGetVin( uint32_t ulPullUpResistor, uint32_t ulPullDownResistor, float xOutputVoltage, float *pxInputVoltage );
+
+
+
+
+
+
+
+
+
+ 
+eMpbError_t eMpbMathResistorFloatVoltageDividerGetPullUpResistor( uint32_t ulPullDownResistor, float xInputVoltage, float xOutputVoltage, uint32_t *pulPullUpResistor );
+
+
+
+
+
+
+
+
+
+ 
+eMpbError_t eMpbMathResistorFloatVoltageDividerGetPullDownResistor( uint32_t ulPullUpResistor, float xInputVoltage, float xOutputVoltage, uint32_t *pulPullDownResistor );
+
+
+
+
+
+
+
+
+
+ 
+eMpbError_t eMpbMathResistorGetEquivalentInParallel( uint32_t ulResistor1, uint32_t ulResistor2, uint32_t *pulEquivalentResistor );
+
+
+
+
+
+
+
+ 
+eMpbError_t eMpbMathResistorGetResistorInParallel( uint32_t ulEquivalentResistor, uint32_t ulResistor1, uint32_t *pulResistor2 );
+
+
+
+
+
+
+
+ 
+eMpbError_t eMpbMathResistorGetResistorNortonEquivalent( uint16_t usVoltageReaded, uint16_t usVoltageReference, uint32_t ulResistor1, uint32_t *pulThermistance );
+
+
+
+#line 31 "../Includes/mpbMath.h"
+#line 1 "C:\\mpbComponent\\mpbMath\\Includes\\mpbMathRound.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+ 
+eMpbError_t eNepMathRoundToPrecisionFloat(float *fValue, uint64_t ullPrecision );
+
+#line 32 "../Includes/mpbMath.h"
+
+
+ 
+
+
+
+
+
+ 
+#line 53 "../Includes/mpbMath.h"
+
+
+
+ 
+ 
+ 
+ 
+
+
+
+
+ 
+extern eBool_t eMpbMathFloatIsNaN( float xValue );
+
+
+
+
+
+ 
+extern eBool_t eMpbMathFloatIsInfinity( float xValue );
+
+
+
+
+
+ 
+extern eBool_t eMpbMathDoubleIsNaN( double xValue );
+
+
+
+
+
+ 
+extern eBool_t eMpbMathDoubleIsInfinity( double xValue );
+
+#line 6 "build/test/mocks/mock_mpbMath.h"
+
+ 
+#line 18 "build/test/mocks/mock_mpbMath.h"
+
+void mock_mpbMath_Init(void);
+void mock_mpbMath_Destroy(void);
+void mock_mpbMath_Verify(void);
+
+
+
+
+
+void eMpbMathFloatIsNaN_CMockIgnoreAndReturn(UNITY_UINT cmock_line, eBool_t cmock_to_return);
+
+void eMpbMathFloatIsNaN_CMockExpectAnyArgsAndReturn(UNITY_UINT cmock_line, eBool_t cmock_to_return);
+
+void eMpbMathFloatIsNaN_CMockExpectAndReturn(UNITY_UINT cmock_line, float xValue, eBool_t cmock_to_return);
+typedef eBool_t (* CMOCK_eMpbMathFloatIsNaN_CALLBACK)(float xValue, int cmock_num_calls);
+void eMpbMathFloatIsNaN_StubWithCallback(CMOCK_eMpbMathFloatIsNaN_CALLBACK Callback);
+
+void eMpbMathFloatIsNaN_CMockIgnoreArg_xValue(UNITY_UINT cmock_line);
+
+void eMpbMathFloatIsInfinity_CMockIgnoreAndReturn(UNITY_UINT cmock_line, eBool_t cmock_to_return);
+
+void eMpbMathFloatIsInfinity_CMockExpectAnyArgsAndReturn(UNITY_UINT cmock_line, eBool_t cmock_to_return);
+
+void eMpbMathFloatIsInfinity_CMockExpectAndReturn(UNITY_UINT cmock_line, float xValue, eBool_t cmock_to_return);
+typedef eBool_t (* CMOCK_eMpbMathFloatIsInfinity_CALLBACK)(float xValue, int cmock_num_calls);
+void eMpbMathFloatIsInfinity_StubWithCallback(CMOCK_eMpbMathFloatIsInfinity_CALLBACK Callback);
+
+void eMpbMathFloatIsInfinity_CMockIgnoreArg_xValue(UNITY_UINT cmock_line);
+
+void eMpbMathDoubleIsNaN_CMockIgnoreAndReturn(UNITY_UINT cmock_line, eBool_t cmock_to_return);
+
+void eMpbMathDoubleIsNaN_CMockExpectAnyArgsAndReturn(UNITY_UINT cmock_line, eBool_t cmock_to_return);
+
+void eMpbMathDoubleIsNaN_CMockExpectAndReturn(UNITY_UINT cmock_line, double xValue, eBool_t cmock_to_return);
+typedef eBool_t (* CMOCK_eMpbMathDoubleIsNaN_CALLBACK)(double xValue, int cmock_num_calls);
+void eMpbMathDoubleIsNaN_StubWithCallback(CMOCK_eMpbMathDoubleIsNaN_CALLBACK Callback);
+
+void eMpbMathDoubleIsNaN_CMockIgnoreArg_xValue(UNITY_UINT cmock_line);
+
+void eMpbMathDoubleIsInfinity_CMockIgnoreAndReturn(UNITY_UINT cmock_line, eBool_t cmock_to_return);
+
+void eMpbMathDoubleIsInfinity_CMockExpectAnyArgsAndReturn(UNITY_UINT cmock_line, eBool_t cmock_to_return);
+
+void eMpbMathDoubleIsInfinity_CMockExpectAndReturn(UNITY_UINT cmock_line, double xValue, eBool_t cmock_to_return);
+typedef eBool_t (* CMOCK_eMpbMathDoubleIsInfinity_CALLBACK)(double xValue, int cmock_num_calls);
+void eMpbMathDoubleIsInfinity_StubWithCallback(CMOCK_eMpbMathDoubleIsInfinity_CALLBACK Callback);
+
+void eMpbMathDoubleIsInfinity_CMockIgnoreArg_xValue(UNITY_UINT cmock_line);
+
+
+
+
+
+
+
+#line 21 "../Tests/test_mpbMathDivision.c"
+
+
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
 void setUp()
 {
-	eMpbError = eUnknownError;
+	
 }
-  
+
 void tearDown()
 {
+	
 }
- 
-
 
  
-void test_vMpbMathDebounceInit_Shall_fail_if_no_valid_pointer_is_allocated_for_Debouncing_fail()
+
+ 
+void test_eMpbMathDivisionU32_DivideBy0_Fail()
 {
-	uint32_t ulMockOnCount = 5, ulMockOffCount = 10;
-	eBool_t bMockValue = eTrue;
-	
-	eMpbError = vMpbMathDebounceInit( 0, ulMockOnCount, ulMockOffCount, bMockValue );
-	
-	UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eMpbError)), (0), (UNITY_UINT)(48), UNITY_DISPLAY_STYLE_INT);
+    eMpbError_t eResult;
+    uint32_t ulResult;
+    
+	eResult = eMpbMathDivisionU32( 834632, 0, &ulResult );
+	UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(55), UNITY_DISPLAY_STYLE_INT);
 }
  
 
-void test_vMpbMathDebounceInit_Shall_set_Values_GreaterThan_0_Success()
+void test_eMpbMathDivisionU32_NullPointer_Fail()
 {
-	MpbMathDebounce_t xMpbMathDebounce;
-	uint32_t ulMockOnCount = 5, ulMockOffCount = 10;
-	
-	eBool_t bMockValue = eTrue;
-	
-	vMpbMathDebounceInit( &xMpbMathDebounce, ulMockOnCount, ulMockOffCount, bMockValue );
-	
-	UnityAssertEqualNumber((UNITY_INT)(UNITY_UINT32)((ulMockOffCount)), (UNITY_INT)(UNITY_UINT32)((xMpbMathDebounce . ulOffCount)), (0), (UNITY_UINT)(61), UNITY_DISPLAY_STYLE_UINT32);
-	UnityAssertEqualNumber((UNITY_INT)(UNITY_UINT32)((ulMockOnCount)), (UNITY_INT)(UNITY_UINT32)((xMpbMathDebounce . ulOnCount)), (0), (UNITY_UINT)(62), UNITY_DISPLAY_STYLE_UINT32);
-	UnityAssertEqualNumber((UNITY_INT)(UNITY_UINT32)((ulMockOnCount)), (UNITY_INT)(UNITY_UINT32)((xMpbMathDebounce . ulCount)), (0), (UNITY_UINT)(63), UNITY_DISPLAY_STYLE_UINT32);
-	UnityAssertEqualNumber((UNITY_INT)(UNITY_UINT32)((bMockValue)), (UNITY_INT)(UNITY_UINT32)((xMpbMathDebounce . bActualState)), (0), (UNITY_UINT)(64), UNITY_DISPLAY_STYLE_UINT32);
-	UnityAssertEqualNumber((UNITY_INT)(UNITY_UINT32)((bMockValue)), (UNITY_INT)(UNITY_UINT32)((xMpbMathDebounce . bNewProbablyState)), (0), (UNITY_UINT)(65), UNITY_DISPLAY_STYLE_UINT32);
+    eMpbError_t eResult;
+     
+	eResult = eMpbMathDivisionU32( 834632, 3456, 0 );
+	UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(64), UNITY_DISPLAY_STYLE_INT);
 }
  
 
-void test_vMpbMathDebounceInit_Shall_run_with_initial_value_EqualTo_0_Success()
+void test_eMpbMathDivisionU32_DivideBy0AndNullPointer_Fail()
 {
-	MpbMathDebounce_t xMpbMathDebounce;
-	uint32_t ulMockOnCount = 5, ulMockOffCount = 10;
-	eBool_t bMockValue = eFalse;
-	
-	vMpbMathDebounceInit( &xMpbMathDebounce, ulMockOnCount, ulMockOffCount, bMockValue );
-	
-	UnityAssertEqualNumber((UNITY_INT)(UNITY_UINT32)((ulMockOffCount)), (UNITY_INT)(UNITY_UINT32)((xMpbMathDebounce . ulOffCount)), (0), (UNITY_UINT)(77), UNITY_DISPLAY_STYLE_UINT32);
-	UnityAssertEqualNumber((UNITY_INT)(UNITY_UINT32)((ulMockOnCount)), (UNITY_INT)(UNITY_UINT32)((xMpbMathDebounce . ulOnCount)), (0), (UNITY_UINT)(78), UNITY_DISPLAY_STYLE_UINT32);
-	UnityAssertEqualNumber((UNITY_INT)(UNITY_UINT32)((ulMockOffCount)), (UNITY_INT)(UNITY_UINT32)((xMpbMathDebounce . ulCount)), (0), (UNITY_UINT)(79), UNITY_DISPLAY_STYLE_UINT32);
-	UnityAssertEqualNumber((UNITY_INT)(UNITY_UINT32)((bMockValue)), (UNITY_INT)(UNITY_UINT32)((xMpbMathDebounce . bActualState)), (0), (UNITY_UINT)(80), UNITY_DISPLAY_STYLE_UINT32);
-	UnityAssertEqualNumber((UNITY_INT)(UNITY_UINT32)((bMockValue)), (UNITY_INT)(UNITY_UINT32)((xMpbMathDebounce . bNewProbablyState)), (0), (UNITY_UINT)(81), UNITY_DISPLAY_STYLE_UINT32);
+    eMpbError_t eResult;
+    
+	eResult = eMpbMathDivisionU32( 54734576, 0, 0 );
+	UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(73), UNITY_DISPLAY_STYLE_INT);
 }
  
 
-
- 
-
-void test_vMpbMathDebounceUpdate_Shall_fill_the_ADT_with_correct_values_Success()
+void test_eMpbMathDivisionU32_DivisionAndReturn_Success()
 {
-	MpbMathDebounce_t xMpbMathDebounce;
-	uint32_t ulMockOnCount = 5, ulMockOffCount = 10;
-	eBool_t bMockInitialStateONValue = eTrue, bMockValue2 = eFalse, bState;
-	
-	vMpbMathDebounceInit( &xMpbMathDebounce, ulMockOnCount, ulMockOffCount, bMockInitialStateONValue );
-	
-	vMpbMathDebounceUpdate( &xMpbMathDebounce, bMockValue2, &bState );
-	
-	UnityAssertEqualNumber((UNITY_INT)(UNITY_UINT32)((ulMockOffCount)), (UNITY_INT)(UNITY_UINT32)((xMpbMathDebounce . ulCount)), (0), (UNITY_UINT)(98), UNITY_DISPLAY_STYLE_UINT32);
-	UnityAssertEqualNumber((UNITY_INT)(UNITY_UINT32)((bMockInitialStateONValue)), (UNITY_INT)(UNITY_UINT32)((xMpbMathDebounce . bActualState)), (0), (UNITY_UINT)(99), UNITY_DISPLAY_STYLE_UINT32);
-	UnityAssertEqualNumber((UNITY_INT)(UNITY_UINT32)((bMockValue2)), (UNITY_INT)(UNITY_UINT32)((xMpbMathDebounce . bNewProbablyState)), (0), (UNITY_UINT)(100), UNITY_DISPLAY_STYLE_UINT32);
-	UnityAssertEqualNumber((UNITY_INT)(UNITY_UINT32)((bState)), (UNITY_INT)(UNITY_UINT32)((xMpbMathDebounce . bActualState)), (0), (UNITY_UINT)(101), UNITY_DISPLAY_STYLE_UINT32);
+    eMpbError_t eResult;
+    uint32_t ulResult;
+    
+	eResult = eMpbMathDivisionU32( 351852, 6, &ulResult );
+	UnityAssertEqualNumber((UNITY_INT)(UNITY_UINT32)((58642)), (UNITY_INT)(UNITY_UINT32)((ulResult)), (0), (UNITY_UINT)(83), UNITY_DISPLAY_STYLE_UINT32);
+	UnityAssertEqualNumber((UNITY_INT)((eSuccess)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(84), UNITY_DISPLAY_STYLE_INT);
 }
  
-
-void test_vMpbMathDebounceUpdate_Shall_Debounce_the_OFF_state_At_X_OFF_repetitions_Success()
+ 
+void test_eMpbMathDivisionFloat_InfinityDivision_Fail()
 {
-	MpbMathDebounce_t xMpbMathDebounce;
-	uint32_t ulMockOnCount = 2, ulMockOffCount = 3;
-	eBool_t bMockInitialState = eTrue, bMockOffState = eFalse, bState = eFalse;
-	
-	vMpbMathDebounceInit( &xMpbMathDebounce, ulMockOnCount, ulMockOffCount, bMockInitialState );
-	
-	vMpbMathDebounceUpdate( &xMpbMathDebounce, bMockOffState, &bState );
-	UnityAssertEqualNumber((UNITY_INT)(UNITY_UINT32)((( ulMockOffCount ))), (UNITY_INT)(UNITY_UINT32)((xMpbMathDebounce . ulCount)), (0), (UNITY_UINT)(114), UNITY_DISPLAY_STYLE_UINT32);
-	UnityAssertEqualNumber((UNITY_INT)(UNITY_INT32)((bState)), (UNITY_INT)(UNITY_INT32)((bMockInitialState)), (0), (UNITY_UINT)(115), UNITY_DISPLAY_STYLE_INT32);
-	
-	vMpbMathDebounceUpdate( &xMpbMathDebounce, bMockOffState, &bState );
-	UnityAssertEqualNumber((UNITY_INT)(UNITY_UINT32)((( ulMockOffCount - 1 ))), (UNITY_INT)(UNITY_UINT32)((xMpbMathDebounce . ulCount)), (0), (UNITY_UINT)(118), UNITY_DISPLAY_STYLE_UINT32);
-	UnityAssertEqualNumber((UNITY_INT)(UNITY_INT32)((bState)), (UNITY_INT)(UNITY_INT32)((bMockInitialState)), (0), (UNITY_UINT)(119), UNITY_DISPLAY_STYLE_INT32);
-	
-	vMpbMathDebounceUpdate( &xMpbMathDebounce, bMockOffState, &bState );
-	UnityAssertEqualNumber((UNITY_INT)(UNITY_UINT32)((( ulMockOffCount-2 ))), (UNITY_INT)(UNITY_UINT32)((xMpbMathDebounce . ulCount)), (0), (UNITY_UINT)(122), UNITY_DISPLAY_STYLE_UINT32);
-	UnityAssertEqualNumber((UNITY_INT)(UNITY_INT32)((bState)), (UNITY_INT)(UNITY_INT32)((bMockInitialState)), (0), (UNITY_UINT)(123), UNITY_DISPLAY_STYLE_INT32);
-	
-	
-	
-	
+    eMpbError_t eResult;
+    float fResult;
+    
+    eMpbMathFloatIsInfinity_CMockExpectAndReturn(93, ((float) 0.Infinity), eTrue);
+    
+	eResult = eMpbMathDivisionFloat( 456735.23f, 0.0f, &fResult );
+	UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(96), UNITY_DISPLAY_STYLE_INT);
 }
  
 
-void test_vMpbMathDebounceUpdate_OverCount_Success()
+void test_eMpbMathDivisionFloat_NaNDivision_Fail()
 {
-	MpbMathDebounce_t xMpbMathDebounce;
-	uint32_t ulMockOnCount = 2, ulMockOffCount = 3;
-	int32_t slMockValue1 = 1, slMockValue2 = 0, slState;
-	eBool_t bMockInitialState = eTrue, bMockOffState = eFalse, bState = eFalse;
-	
-	vMpbMathDebounceInit( &xMpbMathDebounce, ulMockOnCount, ulMockOffCount, slMockValue1 );	
-	vMpbMathDebounceUpdate( &xMpbMathDebounce, bMockOffState, &bState );	
-	UnityAssertEqualNumber((UNITY_INT)(UNITY_UINT32)((( ulMockOffCount ))), (UNITY_INT)(UNITY_UINT32)((xMpbMathDebounce . ulCount)), (0), (UNITY_UINT)(140), UNITY_DISPLAY_STYLE_UINT32);
-	UnityAssertEqualNumber((UNITY_INT)(UNITY_INT32)((bState)), (UNITY_INT)(UNITY_INT32)((bMockInitialState)), (0), (UNITY_UINT)(141), UNITY_DISPLAY_STYLE_INT32);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    eMpbError_t eResult;
+    float fResult;
+    
+    eMpbMathFloatIsInfinity_CMockExpectAndReturn(105, ((float) 0.NaN), eFalse);
+    eMpbMathFloatIsNaN_CMockExpectAndReturn(106, ((float) 0.NaN), eTrue);
+    
+	eResult = eMpbMathDivisionFloat( 0.0f, 0.0f, &fResult );
+	UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(109), UNITY_DISPLAY_STYLE_INT);
 }
  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+void test_eMpbMathDivisionFloat_NullPointer_Fail()
+{
+    eMpbError_t eResult;
+    
+	eResult = eMpbMathDivisionFloat( 2.0f, 1.0f, 0 );
+	UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(118), UNITY_DISPLAY_STYLE_INT);
+}
  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+void test_eMpbMathDivisionFloat_DivideBy0AndNullPointer_Fail()
+{
+    eMpbError_t eResult;
+    
+	eResult = eMpbMathDivisionFloat( 2.0f, 0.0f, 0 );
+	UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(127), UNITY_DISPLAY_STYLE_INT);
+}
  
+
+void test_eMpbMathDivisionFloat_DivisionAndReturn_Success()
+{
+    eMpbError_t eResult;
+    float fResult;
+    
+	eMpbMathFloatIsInfinity_CMockExpectAndReturn(136, 6.9f, eFalse);
+	eMpbMathFloatIsNaN_CMockExpectAndReturn(137, 6.9f, eFalse);
+	eResult = eMpbMathDivisionFloat( 30.36f, 4.4f, &fResult );
+	UnityAssertFloatsWithin((UNITY_FLOAT)((UNITY_FLOAT)((6.9f)) * (UNITY_FLOAT)(0.00001f)), (UNITY_FLOAT)((UNITY_FLOAT)((6.9f))), (UNITY_FLOAT)((UNITY_FLOAT)((fResult))), ((0)), (UNITY_UINT)((UNITY_UINT)(139)));
+	UnityAssertEqualNumber((UNITY_INT)((eSuccess)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(140), UNITY_DISPLAY_STYLE_INT);
+	
+	eMpbMathFloatIsInfinity_CMockExpectAndReturn(142, -6.9f, eFalse);
+	eMpbMathFloatIsNaN_CMockExpectAndReturn(143, -6.9f, eFalse);
+	eResult = eMpbMathDivisionFloat( -30.36f, 4.4f, &fResult );
+	UnityAssertFloatsWithin((UNITY_FLOAT)((UNITY_FLOAT)((-6.9f)) * (UNITY_FLOAT)(0.00001f)), (UNITY_FLOAT)((UNITY_FLOAT)((-6.9f))), (UNITY_FLOAT)((UNITY_FLOAT)((fResult))), ((0)), (UNITY_UINT)((UNITY_UINT)(145)));
+	UnityAssertEqualNumber((UNITY_INT)((eSuccess)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(146), UNITY_DISPLAY_STYLE_INT);
+	
+	eMpbMathFloatIsInfinity_CMockExpectAndReturn(148, -6.9f, eFalse);
+	eMpbMathFloatIsNaN_CMockExpectAndReturn(149, -6.9f, eFalse);
+	eResult = eMpbMathDivisionFloat( 30.36f, -4.4f, &fResult );
+	UnityAssertFloatsWithin((UNITY_FLOAT)((UNITY_FLOAT)((-6.9f)) * (UNITY_FLOAT)(0.00001f)), (UNITY_FLOAT)((UNITY_FLOAT)((-6.9f))), (UNITY_FLOAT)((UNITY_FLOAT)((fResult))), ((0)), (UNITY_UINT)((UNITY_UINT)(151)));
+	UnityAssertEqualNumber((UNITY_INT)((eSuccess)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(152), UNITY_DISPLAY_STYLE_INT);
+	
+	eMpbMathFloatIsInfinity_CMockExpectAndReturn(154, 6.9f, eFalse);
+	eMpbMathFloatIsNaN_CMockExpectAndReturn(155, 6.9f, eFalse);
+	eResult = eMpbMathDivisionFloat( -30.36f, -4.4f, &fResult );
+	UnityAssertFloatsWithin((UNITY_FLOAT)((UNITY_FLOAT)((6.9f)) * (UNITY_FLOAT)(0.00001f)), (UNITY_FLOAT)((UNITY_FLOAT)((6.9f))), (UNITY_FLOAT)((UNITY_FLOAT)((fResult))), ((0)), (UNITY_UINT)((UNITY_UINT)(157)));
+	UnityAssertEqualNumber((UNITY_INT)((eSuccess)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(158), UNITY_DISPLAY_STYLE_INT);
+}
+ 
+ 
+void test_eMpbMathDivisionDouble_InfinityDivision_Fail()
+{
+    eMpbError_t eResult;
+    double fdResult;
+    
+    eMpbMathDoubleIsInfinity_CMockExpectAndReturn(167, ((float) 0.Infinity), eTrue);
+    
+	eResult = eMpbMathDivisionDouble( 456735.23, 0.0, &fdResult );
+	UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(170), UNITY_DISPLAY_STYLE_INT);
+}
+ 
+
+void test_eMpbMathDivisionDouble_NaNDivision_Fail()
+{
+    eMpbError_t eResult;
+    double fdResult;
+    
+    eMpbMathDoubleIsInfinity_CMockExpectAndReturn(179, ((float) 0.NaN), eFalse);
+	eMpbMathDoubleIsNaN_CMockExpectAndReturn(180, ((float) 0.NaN), eTrue);
+    
+	eResult = eMpbMathDivisionDouble( 0.0, 0.0, &fdResult );
+	UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(183), UNITY_DISPLAY_STYLE_INT);
+}
+ 
+
+void test_eMpbMathDivisionDouble_NullPointer_Fail()
+{
+    eMpbError_t eResult;
+    
+	eResult = eMpbMathDivisionDouble( 2.0, 1.0, 0 );
+	UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(192), UNITY_DISPLAY_STYLE_INT);
+}
+ 
+
+void test_eMpbMathDivisionDouble_DivideBy0AndNullPointer_Fail()
+{
+    eMpbError_t eResult;
+    
+    eResult = eMpbMathDivisionDouble( 2.0, 0.0, 0 );
+    UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(201), UNITY_DISPLAY_STYLE_INT);
+}
+ 
+
+void test_eMpbMathDivisionDouble_DivisionAndReturn_Success()
+{
+    eMpbError_t eResult;
+    double fdResult;
+    
+	eMpbMathDoubleIsInfinity_CMockExpectAndReturn(210, 6.9, eFalse);
+	eMpbMathDoubleIsNaN_CMockExpectAndReturn(211, 6.9, eFalse);
+	eResult = eMpbMathDivisionDouble( 30.36, 4.4, &fdResult );
+	
+	UnityAssertFloatsWithin((UNITY_FLOAT)((UNITY_FLOAT)((6.9)) * (UNITY_FLOAT)(0.00001f)), (UNITY_FLOAT)((UNITY_FLOAT)((6.9))), (UNITY_FLOAT)((UNITY_FLOAT)((fdResult))), ((0)), (UNITY_UINT)((UNITY_UINT)(214)));
+	UnityAssertEqualNumber((UNITY_INT)((eSuccess)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(215), UNITY_DISPLAY_STYLE_INT);
+	
+	eMpbMathDoubleIsInfinity_CMockExpectAndReturn(217, -6.9, eFalse);
+	eMpbMathDoubleIsNaN_CMockExpectAndReturn(218, -6.9, eFalse);
+	eResult = eMpbMathDivisionDouble( -30.36, 4.4, &fdResult );
+	
+	UnityAssertFloatsWithin((UNITY_FLOAT)((UNITY_FLOAT)((-6.9)) * (UNITY_FLOAT)(0.00001f)), (UNITY_FLOAT)((UNITY_FLOAT)((-6.9))), (UNITY_FLOAT)((UNITY_FLOAT)((fdResult))), ((0)), (UNITY_UINT)((UNITY_UINT)(221)));
+	UnityAssertEqualNumber((UNITY_INT)((eSuccess)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(222), UNITY_DISPLAY_STYLE_INT);
+	
+	eMpbMathDoubleIsInfinity_CMockExpectAndReturn(224, -6.9, eFalse);
+	eMpbMathDoubleIsNaN_CMockExpectAndReturn(225, -6.9, eFalse);
+	eResult = eMpbMathDivisionDouble( 30.36, -4.4, &fdResult );
+    
+    UnityAssertFloatsWithin((UNITY_FLOAT)((UNITY_FLOAT)((-6.9)) * (UNITY_FLOAT)(0.00001f)), (UNITY_FLOAT)((UNITY_FLOAT)((-6.9))), (UNITY_FLOAT)((UNITY_FLOAT)((fdResult))), ((0)), (UNITY_UINT)((UNITY_UINT)(228)));
+	UnityAssertEqualNumber((UNITY_INT)((eSuccess)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(229), UNITY_DISPLAY_STYLE_INT);
+	
+	eMpbMathDoubleIsInfinity_CMockExpectAndReturn(231, 6.9, eFalse);
+	eMpbMathDoubleIsNaN_CMockExpectAndReturn(232, 6.9, eFalse);
+	eResult = eMpbMathDivisionDouble( -30.36, -4.4, &fdResult );
+    UnityFail( (UnityStrErrDouble), (UNITY_UINT)((UNITY_UINT)(234)));
+    UnityAssertFloatsWithin((UNITY_FLOAT)((UNITY_FLOAT)((6.9)) * (UNITY_FLOAT)(0.00001f)), (UNITY_FLOAT)((UNITY_FLOAT)((6.9))), (UNITY_FLOAT)((UNITY_FLOAT)((fdResult))), ((0)), (UNITY_UINT)((UNITY_UINT)(235)));
+	UnityAssertEqualNumber((UNITY_INT)((eSuccess)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(236), UNITY_DISPLAY_STYLE_INT);
+}
+
+

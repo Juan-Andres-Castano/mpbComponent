@@ -27,10 +27,9 @@
 #include "mpbMathDivision.h"
 #include "mpbMathFifo.h"
 #include "mpbMathLinearApprox.h"
-//#include "MpbMathOpAmp.h"
 #include "mpbMathResistor.h"
 #include "mpbMathRound.h"
-//#include "mpbMathParity.h"
+
 
 /* Define ------------------------------------------------------------------- */
 #define xMpbMathPI_IN_DEGREES               ( 180.0f )
@@ -86,4 +85,4 @@ extern eBool_t eMpbMathDoubleIsNaN( double xValue );
   **/
 extern eBool_t eMpbMathDoubleIsInfinity( double xValue );
 
-#endif /* __NEPMATH_H */
+#endif /* __MPBMATH_H */

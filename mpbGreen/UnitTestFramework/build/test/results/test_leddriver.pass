@@ -1,0 +1,23 @@
+---
+:source:
+  :path: "../Tests"
+  :file: test_leddriver.c
+:successes:
+- :test: test_LedsOffAfterCreate_Fail
+  :line: 47
+  :message: ''
+- :test: test_TurnOnLedOne_Success
+  :line: 56
+  :message: ''
+- :test: test_TurnOffLedOne_Success
+  :line: 65
+  :message: ''
+:failures: []
+:ignores: []
+:counts:
+  :total: 3
+  :passed: 3
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 1.2041347000013047

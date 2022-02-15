@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
+<?C:\mpbComponent\mpbCurrentSensors\CurrentSensing\Sources\?>
+
 <sourcemonitor_metrics>
   <project version="3.5">
     <project_name>mpbCurrentSensorsComplex</project_name>
@@ -23,7 +25,7 @@
         <metric_name id="M11" type="average" values="block_depths">Average Block Depth</metric_name>
         <metric_name id="M12" type="average">Average Complexity</metric_name>
       </metric_names>
-      <checkpoint checkpoint_name="Checkpoint1" checkpoint_date="2022-02-09" ignore_blank_lines="false" modified_complexity="false">
+      <checkpoint checkpoint_name="Checkpoint1" checkpoint_date="2022-02-11" ignore_blank_lines="false" modified_complexity="false">
         <files file_count="1">
           <file file_name="CurrentSensing.c">
             <metrics metric_count="13">
@@ -35,11 +37,11 @@
               <metric id="M5">8.0</metric>
               <metric id="M6">30</metric>
               <metric id="M7">eCurrentSensingGetCurrentmA()</metric>
-              <metric id="M8">3</metric>
+              <metric id="M8">4</metric>
               <metric id="M9">40</metric>
               <metric id="M10">3</metric>
               <metric id="M11">1.16</metric>
-              <metric id="M12">3.00</metric>
+              <metric id="M12">3.50</metric>
             </metrics>
             <block_depths depth_count="10">
               <block_depth level="0">3</block_depth>

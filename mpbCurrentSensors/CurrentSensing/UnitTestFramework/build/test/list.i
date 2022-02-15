@@ -5046,12 +5046,11 @@ void test_1_5_eCurrentSensing_Slope_negative_Fail()
 {
     float fCurrent;
   
-	  
-	  xCurrentInputScaling.fSlope = -4.0f;
+	   xCurrentInputScaling.fSlope = -4.0f;
     
   
     eResult = eCurrentSensingGetCurrentmA( xMockStream, xCurrentInputScaling, &fCurrent );
-    UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(140), UNITY_DISPLAY_STYLE_INT);
+    UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(139), UNITY_DISPLAY_STYLE_INT);
     
 }
  
@@ -5060,7 +5059,7 @@ void test_1_6_eCurrentSensingGetCurrentmA_NullPointer_Fail()
 {
      
     eResult = eCurrentSensingGetCurrentmA( xMockStream, xCurrentInputScaling ,0 );
-    UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(149), UNITY_DISPLAY_STYLE_INT);
+    UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(148), UNITY_DISPLAY_STYLE_INT);
 }
  
 
@@ -5069,12 +5068,12 @@ void test_1_7_eCurrentSensingGetCurrentmA_AnalogReadmV_Fail()
     float fCurrent;
 
 	
-    eCurrentSensingAnalogReadmV_CMockExpectAndReturn(158, xMockStream, 0, eUnknownError);
-	  eCurrentSensingAnalogReadmV_CMockIgnoreArg_pxVoltage(159);
+    eCurrentSensingAnalogReadmV_CMockExpectAndReturn(157, xMockStream, 0, eUnknownError);
+	  eCurrentSensingAnalogReadmV_CMockIgnoreArg_pxVoltage(158);
     
 
     eResult = eCurrentSensingGetCurrentmA( xMockStream, xCurrentInputScaling, &fCurrent );
-    UnityAssertEqualNumber((UNITY_INT)((eUnknownError)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(163), UNITY_DISPLAY_STYLE_INT);
+    UnityAssertEqualNumber((UNITY_INT)((eUnknownError)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(162), UNITY_DISPLAY_STYLE_INT);
 }
 
  

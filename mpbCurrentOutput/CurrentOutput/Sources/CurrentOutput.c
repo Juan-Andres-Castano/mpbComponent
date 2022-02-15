@@ -15,7 +15,6 @@
 **/
 /* Includes ----------------------------------------------------------------- */
 #include "CurrentOutput.h"
-#include "mpbMath.h"
 
 /* Private define ----------------------------------------------------------- */
 /* Private macro ------------------------------------------------------------ */
@@ -40,7 +39,7 @@ eMpbError_t eCurrentOutputSetCurrentmA( handle_t xStream, xCurrentOutputScaling_
         
 		if ( fCurrent > 0 )
 		{
-			fVoltage = xCurrentOutputScaling.fCalibration * ( fCurrent * xCurrentOutputScaling.fSlope + xCurrentOutputScaling.fIntercept );
+			fVoltage =  fCurrent * xCurrentOutputScaling.fSlope + xCurrentOutputScaling.fIntercept ;
 			*pfVoltage = fVoltage;
 		}
 		else

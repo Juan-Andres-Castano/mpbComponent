@@ -85,6 +85,6 @@ eMpbError_t eMpbMathDivisionDouble( double fdNumerator, double fdDenominator, do
   * @return     Success or library error message
   * @note       Signed 64 bits. This function rounds up.
   **/
-eMpbError_t eMpbMathDivisionS64( int64_t sllNumerator, int64_t sllDenominator, int64_t *psllResult );
+//eMpbError_t eMpbMathDivisionS64( int64_t sllNumerator, int64_t sllDenominator, int64_t *psllResult );
 
 #endif /* __MPBMATHDIVISION_H */

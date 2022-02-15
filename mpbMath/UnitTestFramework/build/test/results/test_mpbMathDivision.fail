@@ -1,0 +1,56 @@
+---
+:source:
+  :path: "../Tests"
+  :file: test_mpbMathDivision.c
+:successes:
+- :test: test_eMpbMathDivisionU32_DivideBy0_Fail
+  :line: 49
+  :message: ''
+- :test: test_eMpbMathDivisionU32_NullPointer_Fail
+  :line: 59
+  :message: ''
+- :test: test_eMpbMathDivisionU32_DivideBy0AndNullPointer_Fail
+  :line: 68
+  :message: ''
+- :test: test_eMpbMathDivisionU32_DivisionAndReturn_Success
+  :line: 77
+  :message: ''
+- :test: test_eMpbMathDivisionFloat_InfinityDivision_Fail
+  :line: 88
+  :message: ''
+- :test: test_eMpbMathDivisionFloat_NaNDivision_Fail
+  :line: 100
+  :message: ''
+- :test: test_eMpbMathDivisionFloat_NullPointer_Fail
+  :line: 113
+  :message: ''
+- :test: test_eMpbMathDivisionFloat_DivideBy0AndNullPointer_Fail
+  :line: 122
+  :message: ''
+- :test: test_eMpbMathDivisionFloat_DivisionAndReturn_Success
+  :line: 131
+  :message: ''
+- :test: test_eMpbMathDivisionDouble_InfinityDivision_Fail
+  :line: 162
+  :message: ''
+- :test: test_eMpbMathDivisionDouble_NaNDivision_Fail
+  :line: 174
+  :message: ''
+- :test: test_eMpbMathDivisionDouble_NullPointer_Fail
+  :line: 187
+  :message: ''
+- :test: test_eMpbMathDivisionDouble_DivideBy0AndNullPointer_Fail
+  :line: 196
+  :message: ''
+:failures:
+- :test: test_eMpbMathDivisionDouble_DivisionAndReturn_Success
+  :line: 234
+  :message: Unity Double Precision Disabled
+:ignores: []
+:counts:
+  :total: 14
+  :passed: 13
+  :failed: 1
+  :ignored: 0
+:stdout: []
+:time: 1.581580500002019

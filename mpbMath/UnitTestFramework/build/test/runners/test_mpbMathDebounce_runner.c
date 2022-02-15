@@ -37,10 +37,12 @@ extern void setUp(void);
 extern void tearDown(void);
 extern void test_vMpbMathDebounceInit_Shall_fail_if_no_valid_pointer_is_allocated_for_Debouncing_fail();
 extern void test_vMpbMathDebounceInit_Shall_set_Values_GreaterThan_0_Success();
-extern void test_vMpbMathDebounceInit_Shall_run_with_initial_value_EqualTo_0_Success();
+extern void test_vMpbMathDebounceInit_Shall_run_with_initial_state_EqualTo_0_Success();
 extern void test_vMpbMathDebounceUpdate_Shall_fill_the_ADT_with_correct_values_Success();
 extern void test_vMpbMathDebounceUpdate_Shall_Debounce_the_OFF_state_At_X_OFF_repetitions_Success();
 extern void test_vMpbMathDebounceUpdate_OverCount_Success();
+extern void test_vMpbMathDebounceUpdate_ChangeOfConsecutiveValue_Success();
+extern void test_vMpbMathDebounceUpdate_ChangeOfStates_Success();
 
 
 /*=======Suite Setup=====*/
@@ -77,10 +79,12 @@ int main(void)
   UnityBegin("test_mpbMathDebounce.c");
   RUN_TEST(test_vMpbMathDebounceInit_Shall_fail_if_no_valid_pointer_is_allocated_for_Debouncing_fail, 41);
   RUN_TEST(test_vMpbMathDebounceInit_Shall_set_Values_GreaterThan_0_Success, 52);
-  RUN_TEST(test_vMpbMathDebounceInit_Shall_run_with_initial_value_EqualTo_0_Success, 69);
+  RUN_TEST(test_vMpbMathDebounceInit_Shall_run_with_initial_state_EqualTo_0_Success, 69);
   RUN_TEST(test_vMpbMathDebounceUpdate_Shall_fill_the_ADT_with_correct_values_Success, 88);
-  RUN_TEST(test_vMpbMathDebounceUpdate_Shall_Debounce_the_OFF_state_At_X_OFF_repetitions_Success, 105);
-  RUN_TEST(test_vMpbMathDebounceUpdate_OverCount_Success, 131);
+  RUN_TEST(test_vMpbMathDebounceUpdate_Shall_Debounce_the_OFF_state_At_X_OFF_repetitions_Success, 106);
+  RUN_TEST(test_vMpbMathDebounceUpdate_OverCount_Success, 133);
+  RUN_TEST(test_vMpbMathDebounceUpdate_ChangeOfConsecutiveValue_Success, 164);
+  RUN_TEST(test_vMpbMathDebounceUpdate_ChangeOfStates_Success, 187);
 
   return suite_teardown(UnityEnd());
 }

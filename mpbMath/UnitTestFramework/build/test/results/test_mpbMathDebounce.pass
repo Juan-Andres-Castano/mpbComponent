@@ -9,24 +9,30 @@
 - :test: test_vMpbMathDebounceInit_Shall_set_Values_GreaterThan_0_Success
   :line: 52
   :message: ''
-- :test: test_vMpbMathDebounceInit_Shall_run_with_initial_value_EqualTo_0_Success
+- :test: test_vMpbMathDebounceInit_Shall_run_with_initial_state_EqualTo_0_Success
   :line: 69
   :message: ''
 - :test: test_vMpbMathDebounceUpdate_Shall_fill_the_ADT_with_correct_values_Success
   :line: 88
   :message: ''
 - :test: test_vMpbMathDebounceUpdate_Shall_Debounce_the_OFF_state_At_X_OFF_repetitions_Success
-  :line: 105
+  :line: 106
   :message: ''
 - :test: test_vMpbMathDebounceUpdate_OverCount_Success
-  :line: 131
+  :line: 133
+  :message: ''
+- :test: test_vMpbMathDebounceUpdate_ChangeOfConsecutiveValue_Success
+  :line: 164
+  :message: ''
+- :test: test_vMpbMathDebounceUpdate_ChangeOfStates_Success
+  :line: 187
   :message: ''
 :failures: []
 :ignores: []
 :counts:
-  :total: 6
-  :passed: 6
+  :total: 8
+  :passed: 8
   :failed: 0
   :ignored: 0
 :stdout: []
-:time: 1.2451624999994237
+:time: 0.9593782000010833

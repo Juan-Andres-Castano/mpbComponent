@@ -1,0 +1,392 @@
+﻿###############################################################################
+#
+# IAR ELF Linker V9.10.1.308/W64 for ARM                  10/Feb/2022  11:08:23
+# Copyright 2007-2021 IAR Systems AB.
+#
+#    Output file  =  build/test/out/test_leddriver.out
+#    Map file     =  build/test/tests.map
+#    Command line =
+#        --vfe --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull
+#        --semihosting --config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.0\arm\config\generic_cortex.icf" --map
+#        build/test/tests.map -o build/test/out/test_leddriver.out
+#        build/test/out/c/test_leddriver_runner.o
+#        build/test/out/c/test_leddriver.o build/test/out/c/unity.o
+#        build/test/out/c/LedDriver.o build/test/out/c/cmock.o
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor                   = *
+__Heap_Handler              = Basic
+__SystemLibrary             = DLib
+__dlib_jmp_buf_num_elements = 8
+__dlib_version              = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x0 { ro section .intvec };
+"P1":  place in [from 0x0 to 0x7'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block PROC_STACK with size = 0, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'ffff] {
+          rw, block CSTACK, block PROC_STACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address   Size  Object
+  -------            ----         -------   ----  ------
+"A0":                                       0x40
+  .intvec            ro code          0x0   0x40  vector_table_M.o [4]
+                                   - 0x40   0x40
+
+"P1":                                      0xf69
+  .text              ro code         0x40  0x334  unity.o [1]
+  .text              ro code        0x374    0xc  putchar.o [2]
+  .text              ro code        0x380   0x24  setjmp.o [3]
+  .text              ro code        0x3a4   0x56  fputc.o [2]
+  .text              ro code        0x3fa   0xb4  xfwprep.o [2]
+  .text              ro code        0x4ae   0x76  lz77_init_single.o [4]
+  .text              ro code        0x524   0xac  fflush.o [2]
+  .text              ro code        0x5d0  0x13c  heap0.o [2]
+  .text              ro code        0x70c   0x24  fseek.o [2]
+  .text              ro code        0x730   0x10  write.o [5]
+  .text              ro code        0x740   0x2c  xgetmemchunk.o [2]
+  .text              ro code        0x76c   0xd8  xfspos.o [2]
+  .text              ro code        0x844   0x1e  dwrite.o [5]
+  .text              ro code        0x862    0xc  xfgpos.o [2]
+  .text              ro code        0x86e   0x4e  lseek.o [5]
+  .text              ro code        0x8bc   0x20  iarwstd.o [5]
+  .text              ro code        0x8dc   0x22  iarwrite.o [5]
+  .text              ro code        0x8fe    0x2  vectortrap_M.o [4]
+  .text              ro code        0x900   0xcc  XShHandles.o [2]
+  .text              ro code        0x9cc   0x7c  iarttio.o [5]
+  .text              ro code        0xa48    0x8  XShttio.o [2]
+  .text              ro code        0xa50   0xcc  test_leddriver_runner.o [1]
+  .text              ro code        0xb1c   0x78  test_leddriver.o [1]
+  .text              ro code        0xb94   0x28  LedDriver.o [1]
+  .text              ro code        0xbbc   0x9c  xfofind.o [2]
+  .text              ro code        0xc58    0x4  heaptramp0.o [2]
+  .text              ro code        0xc5c   0x7e  fclose.o [2]
+  .text              ro code        0xcda   0x18  close.o [5]
+  .text              ro code        0xcf2   0x14  remove.o [5]
+  .text              ro code        0xd08   0x36  strlen.o [4]
+  .text              ro code        0xd40   0x40  xcloseall.o [2]
+  .text              ro code        0xd80   0x38  zero_init3.o [4]
+  .text              ro code        0xdb8   0x28  data_init.o [4]
+  .iar.init_table    const          0xde0   0x20  - Linker created -
+  .rodata            const          0xe00   0x20  test_leddriver_runner.o [1]
+  .text              ro code        0xe20   0x1e  cmain.o [4]
+  .text              ro code        0xe3e    0x4  low_level_init.o [2]
+  .text              ro code        0xe42    0x4  exit.o [2]
+  .text              ro code        0xe48    0xe  cexit.o [4]
+  .text              ro code        0xe58   0x14  exit.o [5]
+  .rodata            const          0xe6c   0x1c  test_leddriver_runner.o [1]
+  .rodata            const          0xe88   0x1c  test_leddriver_runner.o [1]
+  .text              ro code        0xea4   0x1c  cstartup_M.o [4]
+  .rodata            const          0xec0   0x18  unity.o [1]
+  .rodata            const          0xed8   0x14  test_leddriver_runner.o [1]
+  .rodata            const          0xeec    0xc  unity.o [1]
+  .rodata            const          0xef8    0xc  unity.o [1]
+  .rodata            const          0xf04    0xc  unity.o [1]
+  .rodata            const          0xf10    0xc  unity.o [1]
+  .rodata            const          0xf1c    0xc  unity.o [1]
+  .rodata            const          0xf28    0x8  unity.o [1]
+  .rodata            const          0xf30    0x8  unity.o [1]
+  .rodata            const          0xf38    0x8  unity.o [1]
+  .rodata            const          0xf40    0x8  unity.o [1]
+  .rodata            const          0xf48    0x4  unity.o [1]
+  .rodata            const          0xf4c    0x4  unity.o [1]
+  .text              ro code        0xf50    0x0  cstart_closeall.o [4]
+  .rodata            const          0xf50    0x0  zero_init3.o [4]
+  .rodata            const          0xf50    0x0  lz77_init_single.o [4]
+  Initializer bytes  const          0xf50   0x59  <for P2-1>
+                                  - 0xfa9  0xf69
+
+"P2", part 1 of 3:                         0x100
+  P2-1                        0x2000'0000  0x100  <Init block>
+    .data            inited   0x2000'0000   0x48  xfiles.o [2]
+    .data            inited   0x2000'0048   0x48  xfiles.o [2]
+    .data            inited   0x2000'0090   0x48  xfiles.o [2]
+    .data            inited   0x2000'00d8   0x20  xfiles.o [2]
+    .data            inited   0x2000'00f8    0x8  XShttio.o [2]
+                            - 0x2000'0100  0x100
+
+"P2", part 2 of 3:                         0x198
+  .bss               zero     0x2000'0100   0x80  XShHandles.o [2]
+  .bss               zero     0x2000'0180   0x68  unity.o [1]
+  .bss               zero     0x2000'01e8   0x50  xfiles.o [2]
+  .bss               zero     0x2000'0238   0x50  xfiles.o [2]
+  .bss               zero     0x2000'0288    0x8  heap0.o [2]
+  .bss               zero     0x2000'0290    0x4  LedDriver.o [1]
+  .bss               zero     0x2000'0294    0x4  xgetmemchunk.o [2]
+                            - 0x2000'0298  0x198
+
+"P2", part 3 of 3:                         0xc00
+  CSTACK                      0x2000'0298  0x400  <Block>
+    CSTACK           uninit   0x2000'0298  0x400  <Block tail>
+  HEAP                        0x2000'0698  0x800  <Block>
+    HEAP             uninit   0x2000'0698  0x800  <Block tail>
+                            - 0x2000'0e98  0xc00
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+        0xfa9     0x7'ffff  0x7'f057
+  0x2000'0e98  0x2000'ffff    0xf168
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x198:
+          0x2000'0100  0x198
+
+Copy/lz77 (__iar_lz77_init_single3)
+    1 source range, total size 0x59 (34% of destination):
+                0xf50   0x59
+    1 destination range, total size 0x100:
+          0x2000'0000  0x100
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                   ro code  ro data  rw data
+    ------                   -------  -------  -------
+command line/config:
+    --------------------------------------------------
+    Total:
+
+C:\mpbComponent\mpbGreen\UnitTestFramework\build\test\out\c: [1]
+    LedDriver.o                   40                 4
+    test_leddriver.o             120
+    test_leddriver_runner.o      204      108
+    unity.o                      820      124      104
+    --------------------------------------------------
+    Total:                     1'184      232      108
+
+dl7M_tlf.a: [2]
+    XShHandles.o                 204               128
+    XShttio.o                      8        3        8
+    exit.o                         4
+    fclose.o                     126
+    fflush.o                     172
+    fputc.o                       86
+    fseek.o                       36
+    heap0.o                      316                 8
+    heaptramp0.o                   4
+    low_level_init.o               4
+    putchar.o                     12
+    xcloseall.o                   64
+    xfgpos.o                      12
+    xfiles.o                               86      408
+    xfofind.o                    156
+    xfspos.o                     216
+    xfwprep.o                    180
+    xgetmemchunk.o                44                 4
+    --------------------------------------------------
+    Total:                     1'644       89      556
+
+m7M_tl.a: [3]
+    setjmp.o                      36
+    --------------------------------------------------
+    Total:                        36
+
+rt7M_tl.a: [4]
+    cexit.o                       14
+    cmain.o                       30
+    cstart_closeall.o
+    cstartup_M.o                  28
+    data_init.o                   40
+    lz77_init_single.o           118
+    strlen.o                      54
+    vector_table_M.o              64
+    vectortrap_M.o                 2
+    zero_init3.o                  56
+    --------------------------------------------------
+    Total:                       406
+
+shb_l.a: [5]
+    close.o                       24
+    dwrite.o                      30
+    exit.o                        20
+    iarttio.o                    124
+    iarwrite.o                    34
+    iarwstd.o                     32
+    lseek.o                       78
+    remove.o                      20
+    write.o                       16
+    --------------------------------------------------
+    Total:                       378
+
+    Gaps                           8
+    Linker created                         32    3'072
+------------------------------------------------------
+    Grand Total:               3'656      353    3'736
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address  Size  Type      Object
+-----                       -------  ----  ----      ------
+.iar.init_table$$Base         0xde0         --   Gb  - Linker created -
+.iar.init_table$$Limit        0xe00         --   Gb  - Linker created -
+?main                         0xe21        Code  Gb  cmain.o [4]
+Aldata                  0x2000'0288   0x8  Data  Lc  heap0.o [2]
+BusFault_Handler              0x8ff        Code  Wk  vectortrap_M.o [4]
+CSTACK$$Base            0x2000'0298         --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'0698         --   Gb  - Linker created -
+DebugMon_Handler              0x8ff        Code  Wk  vectortrap_M.o [4]
+HEAP$$Base              0x2000'0698         --   Gb  - Linker created -
+HEAP$$Limit             0x2000'0e98         --   Gb  - Linker created -
+HardFault_Handler             0x8ff        Code  Wk  vectortrap_M.o [4]
+LedDriver_Create              0xb95   0xc  Code  Gb  LedDriver.o [1]
+LedDriver_TurnOff             0xbab   0xa  Code  Gb  LedDriver.o [1]
+LedDriver_TurnOn              0xba1   0xa  Code  Gb  LedDriver.o [1]
+MemManage_Handler             0x8ff        Code  Wk  vectortrap_M.o [4]
+NMI_Handler                   0x8ff        Code  Wk  vectortrap_M.o [4]
+PendSV_Handler                0x8ff        Code  Wk  vectortrap_M.o [4]
+Region$$Table$$Base           0xde0         --   Gb  - Linker created -
+Region$$Table$$Limit          0xe00         --   Gb  - Linker created -
+SVC_Handler                   0x8ff        Code  Wk  vectortrap_M.o [4]
+SysTick_Handler               0x8ff        Code  Wk  vectortrap_M.o [4]
+Unity                   0x2000'0180  0x68  Data  Gb  unity.o [1]
+UnityAddMsgIfSpecified        0x1ff  0x4c  Code  Lc  unity.o [1]
+UnityAssertEqualNumber        0x24b  0x64  Code  Gb  unity.o [1]
+UnityBegin                    0x2d1  0x2a  Code  Gb  unity.o [1]
+UnityConcludeTest             0x1bd  0x42  Code  Gb  unity.o [1]
+UnityEnd                      0x2fb  0x5e  Code  Gb  unity.o [1]
+UnityPrint                     0x41  0x5e  Code  Gb  unity.o [1]
+UnityPrintNumber               0xe3  0x1a  Code  Gb  unity.o [1]
+UnityPrintNumberByStyle
+                               0x9f  0x44  Code  Gb  unity.o [1]
+UnityPrintNumberHex           0x133  0x40  Code  Gb  unity.o [1]
+UnityPrintNumberUnsigned
+                               0xfd  0x36  Code  Gb  unity.o [1]
+UnityStrBreaker               0xec0  0x18  Data  Lc  unity.o [1]
+UnityStrDetail1Name           0xf10   0xc  Data  Lc  unity.o [1]
+UnityStrDetail2Name           0xf1c   0xc  Data  Lc  unity.o [1]
+UnityStrExpected              0xeec   0xc  Data  Lc  unity.o [1]
+UnityStrFail                  0xf30   0x8  Data  Lc  unity.o [1]
+UnityStrOk                    0xf48   0x4  Data  Lc  unity.o [1]
+UnityStrPass                  0xf28   0x8  Data  Lc  unity.o [1]
+UnityStrResultsFailures
+                              0xef8   0xc  Data  Lc  unity.o [1]
+UnityStrResultsIgnored        0xf04   0xc  Data  Lc  unity.o [1]
+UnityStrResultsTests          0xf40   0x8  Data  Lc  unity.o [1]
+UnityStrSpacer                0xf4c   0x4  Data  Lc  unity.o [1]
+UnityStrWas                   0xf38   0x8  Data  Lc  unity.o [1]
+UnityTestResultsBegin         0x173  0x2c  Code  Lc  unity.o [1]
+UnityTestResultsFailBegin
+                              0x19f  0x1e  Code  Lc  unity.o [1]
+UsageFault_Handler            0x8ff        Code  Wk  vectortrap_M.o [4]
+_Close_all                    0xd41  0x40  Code  Gb  xcloseall.o [2]
+_Files                  0x2000'00d8  0x20  Data  Gb  xfiles.o [2]
+_Fofree                       0xbbd  0x94  Code  Gb  xfofind.o [2]
+_Fspos                        0x76d  0xd8  Code  Gb  xfspos.o [2]
+_Fwprep                       0x3fb  0xb4  Code  Gb  xfwprep.o [2]
+_Nnl                          0x863   0xc  Code  Gb  xfgpos.o [2]
+__aeabi_JMP_BUF_SIZE {Abs}
+                                0x8         --   Gb  setjmp.o [3]
+__basic_free                  0x67d  0x16  Code  Gb  heap0.o [2]
+__basic_free_intern           0x693  0x74  Code  Lc  heap0.o [2]
+__basic_malloc                0x5d1  0x18  Code  Gb  heap0.o [2]
+__basic_malloc_intern         0x5e9  0x94  Code  Lc  heap0.o [2]
+__cexit_closeall              0xe4b        Code  Gb  cexit.o [4]
+__close                       0xcdb  0x18  Code  Gb  close.o [5]
+__cmain                       0xe21        Code  Gb  cmain.o [4]
+__cstart_closeall             0xf50        Data  Gb  cstart_closeall.o [4]
+__data_GetMemChunk            0x741  0x2c  Code  Gb  xgetmemchunk.o [2]
+__data_GetMemChunk::start
+                        0x2000'0294   0x4  Data  Lc  xgetmemchunk.o [2]
+__dwrite                      0x845  0x1e  Code  Gb  dwrite.o [5]
+__exit                        0xe59  0x14  Code  Gb  exit.o [5]
+__iar_Stderr            0x2000'0090  0x48  Data  Gb  xfiles.o [2]
+__iar_Stdin             0x2000'0000  0x48  Data  Gb  xfiles.o [2]
+__iar_Stdout            0x2000'0048  0x48  Data  Gb  xfiles.o [2]
+__iar_close_ttio              0x9cd  0x2c  Code  Gb  iarttio.o [5]
+__iar_data_init3              0xdb9  0x28  Code  Gb  data_init.o [4]
+__iar_get_ttio                0x9f9  0x4c  Code  Gb  iarttio.o [5]
+__iar_lookup_ttioh            0xa49   0x8  Code  Gb  XShttio.o [2]
+__iar_lz77_init_single3
+                              0x4af  0x76  Code  Gb  lz77_init_single.o [4]
+__iar_program_start           0xea5        Code  Gb  cstartup_M.o [4]
+__iar_sh_Discard              0x901  0x42  Code  Gb  XShHandles.o [2]
+__iar_sh_Move                 0x943  0x46  Code  Gb  XShHandles.o [2]
+__iar_sh_Pos                  0x989  0x40  Code  Gb  XShHandles.o [2]
+__iar_sh_stdout               0x8bd  0x20  Code  Gb  iarwstd.o [5]
+__iar_sh_write                0x8dd  0x22  Code  Gb  iarwrite.o [5]
+__iar_ttio_handles      0x2000'00f8   0x8  Data  Lc  XShttio.o [2]
+__iar_zero_init3              0xd81  0x38  Code  Gb  zero_init3.o [4]
+__low_level_init              0xe3f   0x4  Code  Gb  low_level_init.o [2]
+__lseek                       0x86f  0x4e  Code  Gb  lseek.o [5]
+__vector_table                  0x0        Data  Gb  vector_table_M.o [4]
+__write                       0x731  0x10  Code  Gb  write.o [5]
+_call_main                    0xe2d        Code  Gb  cmain.o [4]
+_exit                         0xe49        Code  Gb  cexit.o [4]
+ebuf                    0x2000'01e8  0x50  Data  Lc  xfiles.o [2]
+exit                          0xe43   0x4  Code  Gb  exit.o [2]
+fclose                        0xc5d  0x7e  Code  Gb  fclose.o [2]
+fflush                        0x599  0x34  Code  Gb  fflush.o [2]
+fflushOne                     0x525  0x74  Code  Lc  fflush.o [2]
+fputc                         0x3a5  0x56  Code  Gb  fputc.o [2]
+free                          0xc59   0x4  Code  Gb  heaptramp0.o [2]
+fseek                         0x70d  0x24  Code  Gb  fseek.o [2]
+ledsAddress             0x2000'0290   0x4  Data  Lc  LedDriver.o [1]
+longjmp                       0x391        Code  Gb  setjmp.o [3]
+main                          0xa55  0xb2  Code  Gb  test_leddriver_runner.o [1]
+obuf                    0x2000'0238  0x50  Data  Lc  xfiles.o [2]
+putchar                       0x375   0xc  Code  Gb  putchar.o [2]
+remove                        0xcf3  0x14  Code  Gb  remove.o [5]
+sFileInfo               0x2000'0100  0x80  Data  Lc  XShHandles.o [2]
+setUp                         0xb1d   0x2  Code  Gb  test_leddriver.o [1]
+setjmp                        0x381        Code  Gb  setjmp.o [3]
+strlen                        0xd09        Code  Gb  strlen.o [4]
+suite_setup                   0xa51   0x2  Code  Lc  test_leddriver_runner.o [1]
+suite_teardown                0xa53   0x2  Code  Lc  test_leddriver_runner.o [1]
+tearDown                      0xb1f   0x2  Code  Gb  test_leddriver.o [1]
+test_LedsOffAfterCreate_Fail
+                              0xb21  0x26  Code  Gb  test_leddriver.o [1]
+test_TurnOffLedOne_Success
+                              0xb6b  0x2a  Code  Gb  test_leddriver.o [1]
+test_TurnOnLedOne_Success
+                              0xb47  0x24  Code  Gb  test_leddriver.o [1]
+
+
+[1] = C:\mpbComponent\mpbGreen\UnitTestFramework\build\test\out\c
+[2] = dl7M_tlf.a
+[3] = m7M_tl.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  3'656 bytes of readonly  code memory
+    353 bytes of readonly  data memory
+  3'736 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

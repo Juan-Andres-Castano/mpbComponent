@@ -1,0 +1,68 @@
+---
+:source:
+  :path: "../Tests"
+  :file: test_mpbTimeBase.c
+:successes:
+- :test: test_eMpbTime_1_1_TimeBaseInit_InvalidParam_Fail
+  :line: 45
+  :message: ''
+- :test: test_eMpbTime_1_2_TimeBaseInit_Success
+  :line: 61
+  :message: ''
+- :test: test_eMpbTime_1_3_TimeBaseTick_InvalidParam_Fail
+  :line: 81
+  :message: ''
+- :test: test_eMpbTime_1_4_TimeBaseTick_2TickPerMs_Success
+  :line: 89
+  :message: ''
+- :test: test_eMpbTime_1_5_TimeBase_1TickPerMs_Success
+  :line: 107
+  :message: ''
+- :test: test_eMpbTime_1_6_TimeBaseTick_1Second_Success
+  :line: 125
+  :message: ''
+- :test: test_ulMpbTime_1_7_BaseGetTick_Success
+  :line: 150
+  :message: ''
+- :test: test_ulMpbTime_1_8_BaseGetMs_Success
+  :line: 169
+  :message: ''
+- :test: test_ulMpbTime_1_9_BaseGetSecond_Success
+  :line: 188
+  :message: ''
+- :test: test_ulMpbTime_1_10_BaseGetMinute_0minute_Success
+  :line: 207
+  :message: ''
+- :test: test_ulMpbTime_1_11_BaseGetMinute_1minute_Success
+  :line: 223
+  :message: ''
+- :test: test_ulMpbTime_1_12_BaseGetMinute_2minutes_Success
+  :line: 239
+  :message: ''
+- :test: test_ulMpbTime_1_13_BaseGetHour_0Hour_Success
+  :line: 258
+  :message: ''
+- :test: test_ulMpbTime_1_14_BaseGetHour_1Hour_Success
+  :line: 274
+  :message: ''
+- :test: test_ulMpbTime_1_15_BaseGetHour_MoreThen1Hour_Success
+  :line: 296
+  :message: ''
+- :test: test_eMpbTime_1_16_BaseIsDelayDone_eTrue_Success
+  :line: 320
+  :message: ''
+- :test: test_eMpbTime_1_17_IsDelayDone_eFalse_Success
+  :line: 331
+  :message: ''
+- :test: test_eMpbTime_1_18_IsDelayDone_eFalse_OverFlow_Success
+  :line: 342
+  :message: ''
+:failures: []
+:ignores: []
+:counts:
+  :total: 18
+  :passed: 18
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 0.3397874000002048

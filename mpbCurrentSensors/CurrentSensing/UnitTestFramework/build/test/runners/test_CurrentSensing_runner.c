@@ -107,8 +107,8 @@ int main(void)
   RUN_TEST(test_1_3_eCurrentSensingSet_m_1_to_b_2_SlopeEquation_Success, 94);
   RUN_TEST(test_1_4_eCurrentSensingGetCurrentmA_Success, 114);
   RUN_TEST(test_1_5_eCurrentSensing_Slope_negative_Fail, 131);
-  RUN_TEST(test_1_6_eCurrentSensingGetCurrentmA_NullPointer_Fail, 145);
-  RUN_TEST(test_1_7_eCurrentSensingGetCurrentmA_AnalogReadmV_Fail, 153);
+  RUN_TEST(test_1_6_eCurrentSensingGetCurrentmA_NullPointer_Fail, 144);
+  RUN_TEST(test_1_7_eCurrentSensingGetCurrentmA_AnalogReadmV_Fail, 152);
 
   CMock_Guts_MemFreeFinal();
   return suite_teardown(UnityEnd());

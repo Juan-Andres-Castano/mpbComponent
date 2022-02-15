@@ -25,6 +25,7 @@
   - :path:
     - 'C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin'
     - 'C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin'
+    - 'C:\mingw\bin'
     - #{ENV['PATH']}
 
 
@@ -74,7 +75,14 @@
   :treat_externs: :include 
 
 :gcov:
-    :html_report_type: detailed
+  :utilities:
+    - gcovr           # Use gcovr to create the specified reports (default).
+    - ReportGenerator # Use ReportGenerator to create the specified reports.
+
+  :html_report_type: detailed
+  :reports:
+    #:arguments:
+    - Xml
 
 :tools:
 # Ceedling defaults to using gcc for compiling, linking, etc.
@@ -154,5 +162,6 @@
     - stdout_pretty_tests_report
     - module_generator
     - junit_tests_report
+    - gcov
     #- raw_output_report
 ...

@@ -1,0 +1,25 @@
+ :////////-        `://////:`     ://///////////////////:.      -/////////////::-`                 
+ -ssssssssss-       /ssssssss/    `osssssssssssssssssosssss+`    ssssssssssssssssss+-               
+ -sssssssssso.     `osssssssss:    -sssssssoo++////+++osssss+`   ssssssssssssssssssss+`             
+ -sssssssssss+`    :sssssssssss.    /oo+///+oosssssssssssssss.   ssssssssssssssssssssso             
+ -ssssssssssss/    osssssssssss+``.--/osssssso.`````./oooooo+.``.sssssssso-...-/sssssss`            
+ -sssssssssssss-  -sssssssssso+//.`  .ssssssss/   ```.:::////..``sssssssso-.----:///+++.`           
+ -ssssssssssssss` +sssssss+:/+oss.    :ssssssss-     :sssssss.   sssssssso`    .osssso:...````      
+ -sssssssssssssssosssss/-./ossssso.``  /ssssssssoooosssssssss.   ssssssssso++osssssss/`        ``   
+ -sssssssosssssssssso/-:/:ssssssss+    `ossssssssssssssssssso`   sssssssssssssssssss+-`             
+ -sssssss::ssssssso/:+ss-.ossssssss-    .sssssssssssssssssso.    sssssssssssssssssssssso:           
+ -sssssss: /ssss+//osss+-..ossssssss`    :ssssssss++++++/:.      sssssssssoooooosssssssss+`         
+ -sssssss:  :s+/+sssss+    .ssssssss+`   `+sssssss/              sssssssss.      `-ossssss:         
+ .sssssss:  .:+ossssso.     :ssssssss:    `ssssssss-             sssssssss.        -ssssss:         
+ .sssssss/.::-/ssssss:       /ssssssoo`    .::::::/:``````````   sssssssss.        :ssssss/         
+ .ssssso/:-`   :ssss+        `+/:--::::`    :ssssssso`   `````...+++ssssss/:::::/+osssssss:         
+ .oo+/::/:      .::-     ``````+ossssss/    `osssssss+           sssssososssssssssssssssss.         
+ `:://:+s:          ``...`     -ssssssss-    .osssssss:          ssssssssssssssssssssssso.          
+ `++:/sss-      `....`          :sssssss+     -osssssso          +sssssssssssssssssssso:`           
+   `..-.`     ````               `......`       ......            `.................``              
+----------------------------------------- 
+      configuration file  
+----------------------------------------- 
+compilationTag :  
+49 
+.... 

@@ -1,9 +1,115 @@
 Dependencies for Project 'mpbMath', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 6150000::V6.15::ARMCLANG
-F (.\Includes\mpbMathDebounce.h)(0x6196C9A5)()
-F (.\Sources\mpbMathDebounce.c)(0x6196CA3C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../commun/Includes -I ./Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/mpbmathdebounce.o -MD)
-I (Includes\mpbMathDebounce.h)(0x6196C9A5)
-I (..\commun\Includes\mpblibs.h)(0x60ACEC16)
+F (.\Includes\mpbMathDebounce.h)(0x620BC9D6)()
+F (.\Includes\mpbMath.h)(0x620BC6D5)()
+F (.\Includes\mpbMathAverage.h)(0x60ACEC17)()
+F (.\Includes\mpbMathCoerce.h)(0x60ACEC17)()
+F (.\Includes\mpbMathCrc.h)(0x60ACEC17)()
+F (.\Includes\mpbMathCrcUtil.h)(0x60ACEC17)()
+F (.\Includes\mpbMathDivision.h)(0x620BF874)()
+F (.\Includes\mpbMathFifo.h)(0x620BCEF7)()
+F (.\Includes\mpbMathLinearApprox.h)(0x60ACEC17)()
+F (.\Includes\mpbMathResistor.h)(0x60ACEC17)()
+F (.\Includes\mpbMathRound.h)(0x60ACEC17)()
+F (.\Sources\mpbMathDebounce.c)(0x620BDB5E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../commun/Includes -I ./Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/mpbmathdebounce.o -MD)
+I (Includes\mpbMathDebounce.h)(0x620BC9D6)
+I (..\commun\Includes\mpblibs.h)(0x61EB03FA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F378778)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F37877E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5F378774)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5F378762)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F37877E)
+F (.\Sources\mpbMathAbsolute.c)(0x60ACEC17)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../commun/Includes -I ./Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/mpbmathabsolute.o -MD)
+I (Includes\mpbMathAbsolute.h)(0x60ACEC17)
+I (..\commun\Includes\mpblibs.h)(0x61EB03FA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F378778)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F37877E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5F378774)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5F378762)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F37877E)
+F (.\Sources\mpbMathAverage.c)(0x60ACEC17)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../commun/Includes -I ./Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/mpbmathaverage.o -MD)
+I (Includes\mpbMathAverage.h)(0x60ACEC17)
+I (..\commun\Includes\mpblibs.h)(0x61EB03FA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F378778)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F37877E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5F378774)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5F378762)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F37877E)
+I (Includes\mpbMathDivision.h)(0x620BF874)
+F (.\Sources\mpbMathCoerce.c)(0x60ACEC17)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../commun/Includes -I ./Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/mpbmathcoerce.o -MD)
+I (Includes\mpbMathCoerce.h)(0x60ACEC17)
+I (..\commun\Includes\mpblibs.h)(0x61EB03FA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F378778)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F37877E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5F378774)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5F378762)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F37877E)
+F (.\Sources\mpbMathDivision.c)(0x620C0BD3)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../commun/Includes -I ./Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/mpbmathdivision.o -MD)
+I (Includes\mpbMathDivision.h)(0x620BF874)
+I (..\commun\Includes\mpblibs.h)(0x61EB03FA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F378778)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F37877E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5F378774)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5F378762)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F37877E)
+I (Includes\mpbMath.h)(0x620BC6D5)
+I (Includes\mpbMathAbsolute.h)(0x60ACEC17)
+I (Includes\mpbMathAverage.h)(0x60ACEC17)
+I (Includes\mpbMathCoerce.h)(0x60ACEC17)
+I (Includes\mpbMathCrc.h)(0x60ACEC17)
+I (Includes\mpbMathCrcUtil.h)(0x60ACEC17)
+I (Includes\mpbMathDebounce.h)(0x620BC9D6)
+I (Includes\mpbMathFifo.h)(0x620BCEF7)
+I (Includes\mpbMathLinearApprox.h)(0x60ACEC17)
+I (Includes\mpbMathResistor.h)(0x60ACEC17)
+I (Includes\mpbMathRound.h)(0x60ACEC17)
+F (.\Sources\mpbMathLinearApprox.c)(0x60ACEC17)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../commun/Includes -I ./Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/mpbmathlinearapprox.o -MD)
+I (Includes\mpbMathLinearApprox.h)(0x60ACEC17)
+I (..\commun\Includes\mpblibs.h)(0x61EB03FA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F378778)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F37877E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5F378774)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5F378762)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F37877E)
+I (Includes\mpbMathDivision.h)(0x620BF874)
+F (.\Sources\mpbMathResistor.c)(0x60ACEC17)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../commun/Includes -I ./Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/mpbmathresistor.o -MD)
+I (Includes\mpbMathResistor.h)(0x60ACEC17)
+I (..\commun\Includes\mpblibs.h)(0x61EB03FA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F378778)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F37877E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5F378774)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5F378762)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F37877E)
+I (Includes\mpbMathDivision.h)(0x620BF874)
+F (.\Sources\mpbMathRound.c)(0x620BC6D5)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../commun/Includes -I ./Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/mpbmathround.o -MD)
+I (Includes\mpbMathRound.h)(0x60ACEC17)
+I (..\commun\Includes\mpblibs.h)(0x61EB03FA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F378778)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F37877E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5F378774)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5F378762)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F37877E)
+I (Includes\mpbMathDivision.h)(0x620BF874)
+F (.\Sources\mpbMathCrc.c)(0x60ACEC17)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../commun/Includes -I ./Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/mpbmathcrc.o -MD)
+I (Includes\mpbMathCrc.h)(0x60ACEC17)
+I (Includes\mpbMathCrcUtil.h)(0x60ACEC17)
+I (..\commun\Includes\mpblibs.h)(0x61EB03FA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F378778)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F37877E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5F378774)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5F378762)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F37877E)
+F (.\Sources\mpbMathCrcUtil.c)(0x60ACEC17)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../commun/Includes -I ./Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/mpbmathcrcutil.o -MD)
+I (Includes\mpbMathCrcUtil.h)(0x60ACEC17)
+I (..\commun\Includes\mpblibs.h)(0x61EB03FA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F378778)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F37877E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5F378774)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5F378762)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F37877E)
+F (.\Sources\mpbMathFifo.c)(0x60ACEC17)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../commun/Includes -I ./Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/mpbmathfifo.o -MD)
+I (Includes\mpbMathFifo.h)(0x620BCEF7)
+I (..\commun\Includes\mpblibs.h)(0x61EB03FA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F378778)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F37877E)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5F378774)

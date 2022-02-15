@@ -1,47 +1,47 @@
-[09Feb2022 14:36:22] ****** SourceMonitor (V3.5.16.49): Begin Session
-[09Feb2022 14:36:22] Command Line Option: Process '/C "C:\mpbComponent\mpbCurrentSensors\CurrentSensing\complexity\mpbCurrentSensors.xml" /L "C:\mpbComponent\mpbCurrentSensors\CurrentSensing\complexity\mpbCurrentSensors.log"'
-[09Feb2022 14:36:22] Command File: Process Command File 'C:\mpbComponent\mpbCurrentSensors\CurrentSensing\complexity\mpbCurrentSensors.xml'
-[09Feb2022 14:36:22] Command File: Process Commands [Line 9]
-[09Feb2022 14:36:22] Command File: Execute Command [Line 41]
-[09Feb2022 14:36:22] Command File: Open Project 'C:\mpbComponent\mpbCurrentSensors\CurrentSensing\complexity\mpbCurrentSensorsComplex.smp'
-[09Feb2022 14:36:22] Create Checkpoint: Search for checkpoint files using base directory 'C:\mpbComponent\mpbCurrentSensors\CurrentSensing\Sources\'.
-[09Feb2022 14:36:22] Command File: Create Checkpoint 'Baseline' dated '2022-01-31T12:24:56'
-[09Feb2022 14:36:22] Command File: Export Checkpoint Summary to XML
-[09Feb2022 14:36:22] Export Metrics: Begin XML Summary export to file 'C:\mpbComponent\mpbCurrentSensors\CurrentSensing\complexity\dump.xml'.
-[09Feb2022 14:36:22] Export Metrics: Export Checkpoint 'Baseline'
-[09Feb2022 14:36:22] Export Metrics: End Export Checkpoint Summary to XML
-[09Feb2022 14:36:22] Command File: End Export
-[09Feb2022 14:36:22] Command File: End Command Execution
-[09Feb2022 14:36:22] Command File: Execute Command [Line 258]
-[09Feb2022 14:36:22] Command File: Open Project 'C:\mpbComponent\mpbCurrentSensors\CurrentSensing\complexity\mpbCurrentSensorsComplex.smp'
-[09Feb2022 14:36:22] Create Checkpoint: Search for checkpoint files using base directory 'C:\mpbComponent\mpbCurrentSensors\CurrentSensing\Sources\'.
-[09Feb2022 14:36:22] Command File: Create Checkpoint 'Checkpoint1' dated '2022-02-09T14:36:22'
-[09Feb2022 14:36:22] Command File: Export Checkpoint Details to XML
-[09Feb2022 14:36:22] Export Metrics: Begin XML Details export to file 'C:\mpbComponent\mpbCurrentSensors\CurrentSensing\complexity\dump.xml'.
-[09Feb2022 14:36:22] Export Metrics: Export Checkpoint 'Checkpoint1'
-[09Feb2022 14:36:22] Export Metrics: End Export Checkpoint Details to XML
-[09Feb2022 14:36:22] Command File: End Export
-[09Feb2022 14:36:22] Command File: Checkpoint 'Checkpoint1' deleted
-[09Feb2022 14:36:22] Command File: End Command Execution
-[09Feb2022 14:36:22] Command File: Execute Command [Line 336]
-[09Feb2022 14:36:22] Command File: Open Project 'C:\mpbComponent\mpbCurrentSensors\CurrentSensing\complexity\mpbCurrentSensorsComplex.smp'
-[09Feb2022 14:36:22] Create Checkpoint: Search for checkpoint files using base directory 'C:\mpbComponent\mpbCurrentSensors\CurrentSensing\Sources\'.
-[09Feb2022 14:36:22] Command File: Create Checkpoint 'Alpha One' dated '2022-02-09T14:36:22'
-[09Feb2022 14:36:22] Command File: Export Checkpoint Details to CSV
-[09Feb2022 14:36:22] Export Metrics: Begin CSV export to file 'C:\mpbComponent\mpbCurrentSensors\CurrentSensing\complexity\dump.txt'.
-[09Feb2022 14:36:22] Export Metrics: Export Checkpoint 'Alpha One'
-[09Feb2022 14:36:22] Export Metrics: End Export Checkpoint Details to CSV
-[09Feb2022 14:36:22] Command File: End Export
-[09Feb2022 14:36:22] Command File: End Command Execution
-[09Feb2022 14:36:22] Command File: Execute Command [Line 368]
-[09Feb2022 14:36:22] Command File: Open Project 'C:\mpbComponent\mpbCurrentSensors\CurrentSensing\complexity\mpbCurrentSensorsComplex.smp'
-[09Feb2022 14:36:22] Command File: Export Checkpoint Details to XML
-[09Feb2022 14:36:22] Export Metrics: Begin XML Details export to file 'C:\mpbComponent\mpbCurrentSensors\CurrentSensing\complexity\dump.txt'.
-[09Feb2022 14:36:22] Export Metrics: Export Checkpoint 'Alpha One'
-[09Feb2022 14:36:22] Export Metrics: Export Checkpoint 'Baseline'
-[09Feb2022 14:36:22] Export Metrics: End Export Checkpoint Details to XML
-[09Feb2022 14:36:22] Command File: End Export
-[09Feb2022 14:36:22] Command File: End Command Execution
-[09Feb2022 14:36:22] Command File: End Commands
-[09Feb2022 14:36:22] Command File: End Command File Processing
-[09Feb2022 14:36:22] ****** SourceMonitor (V3.5.16.49): ****** End Session
+[11Feb2022 10:17:34] ****** SourceMonitor (V3.5.16.49): Begin Session
+[11Feb2022 10:17:34] Command Line Option: Process '/C "C:\mpbComponent\mpbCurrentSensors\CurrentSensing\complexity\mpbCurrentSensors.xml" /L "C:\mpbComponent\mpbCurrentSensors\CurrentSensing\complexity\mpbCurrentSensors.log"'
+[11Feb2022 10:17:34] Command File: Process Command File 'C:\mpbComponent\mpbCurrentSensors\CurrentSensing\complexity\mpbCurrentSensors.xml'
+[11Feb2022 10:17:34] Command File: Process Commands [Line 9]
+[11Feb2022 10:17:34] Command File: Execute Command [Line 41]
+[11Feb2022 10:17:34] Command File: Open Project 'C:\mpbComponent\mpbCurrentSensors\CurrentSensing\complexity\mpbCurrentSensorsComplex.smp'
+[11Feb2022 10:17:34] Create Checkpoint: Search for checkpoint files using base directory 'C:\mpbComponent\mpbCurrentSensors\CurrentSensing\Sources\'.
+[11Feb2022 10:17:34] Command File: Create Checkpoint 'Baseline' dated '2022-01-31T12:24:56'
+[11Feb2022 10:17:34] Command File: Export Checkpoint Summary to XML
+[11Feb2022 10:17:34] Export Metrics: Begin XML Summary export to file 'C:\mpbComponent\mpbCurrentSensors\CurrentSensing\complexity\dump.xml'.
+[11Feb2022 10:17:34] Export Metrics: Export Checkpoint 'Baseline'
+[11Feb2022 10:17:34] Export Metrics: End Export Checkpoint Summary to XML
+[11Feb2022 10:17:34] Command File: End Export
+[11Feb2022 10:17:34] Command File: End Command Execution
+[11Feb2022 10:17:34] Command File: Execute Command [Line 258]
+[11Feb2022 10:17:34] Command File: Open Project 'C:\mpbComponent\mpbCurrentSensors\CurrentSensing\complexity\mpbCurrentSensorsComplex.smp'
+[11Feb2022 10:17:34] Create Checkpoint: Search for checkpoint files using base directory 'C:\mpbComponent\mpbCurrentSensors\CurrentSensing\Sources\'.
+[11Feb2022 10:17:34] Command File: Create Checkpoint 'Checkpoint1' dated '2022-02-11T10:17:34'
+[11Feb2022 10:17:34] Command File: Export Checkpoint Details to XML
+[11Feb2022 10:17:34] Export Metrics: Begin XML Details export to file 'C:\mpbComponent\mpbCurrentSensors\CurrentSensing\complexity\dump.xml'.
+[11Feb2022 10:17:34] Export Metrics: Export Checkpoint 'Checkpoint1'
+[11Feb2022 10:17:34] Export Metrics: End Export Checkpoint Details to XML
+[11Feb2022 10:17:34] Command File: End Export
+[11Feb2022 10:17:34] Command File: Checkpoint 'Checkpoint1' deleted
+[11Feb2022 10:17:34] Command File: End Command Execution
+[11Feb2022 10:17:34] Command File: Execute Command [Line 336]
+[11Feb2022 10:17:34] Command File: Open Project 'C:\mpbComponent\mpbCurrentSensors\CurrentSensing\complexity\mpbCurrentSensorsComplex.smp'
+[11Feb2022 10:17:34] Create Checkpoint: Search for checkpoint files using base directory 'C:\mpbComponent\mpbCurrentSensors\CurrentSensing\Sources\'.
+[11Feb2022 10:17:34] Command File: Create Checkpoint 'Alpha One' dated '2022-02-11T10:17:34'
+[11Feb2022 10:17:34] Command File: Export Checkpoint Details to CSV
+[11Feb2022 10:17:34] Export Metrics: Begin CSV export to file 'C:\mpbComponent\mpbCurrentSensors\CurrentSensing\complexity\dump.txt'.
+[11Feb2022 10:17:34] Export Metrics: Export Checkpoint 'Alpha One'
+[11Feb2022 10:17:34] Export Metrics: End Export Checkpoint Details to CSV
+[11Feb2022 10:17:34] Command File: End Export
+[11Feb2022 10:17:34] Command File: End Command Execution
+[11Feb2022 10:17:34] Command File: Execute Command [Line 368]
+[11Feb2022 10:17:34] Command File: Open Project 'C:\mpbComponent\mpbCurrentSensors\CurrentSensing\complexity\mpbCurrentSensorsComplex.smp'
+[11Feb2022 10:17:34] Command File: Export Checkpoint Details to XML
+[11Feb2022 10:17:34] Export Metrics: Begin XML Details export to file 'C:\mpbComponent\mpbCurrentSensors\CurrentSensing\complexity\dump.txt'.
+[11Feb2022 10:17:34] Export Metrics: Export Checkpoint 'Alpha One'
+[11Feb2022 10:17:34] Export Metrics: Export Checkpoint 'Baseline'
+[11Feb2022 10:17:34] Export Metrics: End Export Checkpoint Details to XML
+[11Feb2022 10:17:34] Command File: End Export
+[11Feb2022 10:17:34] Command File: End Command Execution
+[11Feb2022 10:17:34] Command File: End Commands
+[11Feb2022 10:17:34] Command File: End Command File Processing
+[11Feb2022 10:17:34] ****** SourceMonitor (V3.5.16.49): ****** End Session

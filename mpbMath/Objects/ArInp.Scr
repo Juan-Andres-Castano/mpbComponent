@@ -1,2 +1,12 @@
 --create .\Objects\mpbMath.lib
 .\objects\mpbmathdebounce.o
+.\objects\mpbmathabsolute.o
+.\objects\mpbmathaverage.o
+.\objects\mpbmathcoerce.o
+.\objects\mpbmathdivision.o
+.\objects\mpbmathlinearapprox.o
+.\objects\mpbmathresistor.o
+.\objects\mpbmathround.o
+.\objects\mpbmathcrc.o
+.\objects\mpbmathcrcutil.o
+.\objects\mpbmathfifo.o

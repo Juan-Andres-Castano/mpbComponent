@@ -5,10 +5,10 @@
 <h2>Tool Versions:</h2>
 IDE-Version: µVision V5.33.0.0
 Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: juan andres castano, mpb communications, LIC=----
+License Information: juan andres castano mpb communications Flex license: MDK Essential 5.33 (Flex): 1 user(s) (mdk_essential) Support: Mar 2022
  
 Tool Versions:
-Toolchain:       MDK-Lite  Version: 5.33.0.0
+Toolchain:       MDK Essential 5.33 (Flex): 1 user(s)  Version: 5.33.0.0
 Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
 C Compiler:      ArmClang.exe V6.15
 Assembler:       Armasm.exe V6.15
@@ -21,13 +21,40 @@ Target DLL:      UL2CM3.DLL V1.163.9.0
 Dialog DLL:      TCM.DLL V1.48.0.0
  
 <h2>Project:</h2>
-C:\myWorks\New folder\Components\mpbDigitalFiltering\mpbDigitalFiltering.uvprojx
-Project File Date:  03/04/2021
+C:\mpbComponent\mpbDigitalFiltering\mpbDigitalFiltering.uvprojx
+Project File Date:  02/15/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.15', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Build target 'mpbDigitalFiltering'
-".\Objects\mpbDigitalFiltering.lib" - 0 Error(s), 0 Warning(s).
+Sources/mpbDigitalFilteringMovingAverage.c(17): warning: In file included from...
+./Includes\mpbDigitalFilteringMovingAverage.h(30): warning: padding size of 'xMpbDigitalFilteringMovingAverageFilter_t' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+1 warning generated.
+compiling mpbDigitalFilteringMovingAverage.c...
+Sources/mpbDigitalFilteringRclp.c(221): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
+    pxFloatRclp->xAcc += xNewValue;
+                      ~~ ^~~~~~~~~
+Sources/mpbDigitalFilteringRclp.c(229): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
+        pxFloatRclp->xAcc -= xNewValue;
+                          ~~ ^~~~~~~~~
+Sources/mpbDigitalFilteringRclp.c(239): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
+        pxFloatRclp->xAcc -= *pxFilterOutput;
+                          ~~ ^~~~~~~~~~~~~~~
+Sources/mpbDigitalFilteringRclp.c(266): warning: no newline at end of file [-Wnewline-eof]
+/*----------------------------------------------------------------------------*/
+                                                                                ^
+4 warnings generated.
+compiling mpbDigitalFilteringRclp.c...
+Sources/mpbDigitalFilteringNms.c(79): warning: implicit declaration of function 'eMpbMathDivisionS32' is invalid in C99 [-Wimplicit-function-declaration]
+        eMpbMathDivisionS32( pslTable[ 0 ] - pslTable[ 2 ], 2, pslNumDeriv );
+        ^
+1 warning generated.
+compiling mpbDigitalFilteringNms.c...
+creating Library...
+Error: L6833E: File '..\mpbMath\mpbMath.lib' does not exist
+".\Objects\mpbDigitalFiltering.lib" - 0 Error(s), 6 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -40,7 +67,7 @@ Package Vendor: Vorago
   C:\Users\j.castano\AppData\Local\Arm\Packs\Vorago\VA416xx\1.0.3\core
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

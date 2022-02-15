@@ -1,51 +1,63 @@
 Dependencies for Project 'mpbDigitalFiltering', Target 'mpbDigitalFiltering': (DO NOT MODIFY !)
 CompilerVersion: 6150000::V6.15::ARMCLANG
-F (.\Sources\mpbDigitalFilteringMovingAverage.c)(0x6041431A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Includes -I ../common -I ../mpbMath/Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/mpbdigitalfilteringmovingaverage.o -MD)
-I (Includes\mpbDigitalFilteringMovingAverage.h)(0x6041426E)
-I (..\common\mpblibs.h)(0x603EB46E)
+F (.\Sources\mpbDigitalFilteringMovingAverage.c)(0x611EA896)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Includes -I ../commun/Includes -I ../mpbMath/Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/mpbdigitalfilteringmovingaverage.o -MD)
+I (Includes\mpbDigitalFilteringMovingAverage.h)(0x611EA896)
+I (..\commun\Includes\mpblibs.h)(0x61EB03FA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F378778)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F37877E)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5F378774)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5F378762)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F37877E)
-I (..\mpbMath\Includes\mpbMath.h)(0x604138E0)
-I (..\mpbMath\Includes\mpbMathAbsolute.h)(0x60413068)
-I (..\mpbMath\Includes\mpbMathCoerce.h)(0x604132A1)
-I (..\mpbMath\Includes\mpbMathDebounce.h)(0x60413724)
-I (..\mpbMath\Includes\mpbMathDivision.h)(0x60413DD8)
-I (..\mpbMath\Includes\mpbMathLinearApprox.h)(0x604139C6)
-I (..\mpbMath\Includes\mpbMathRound.h)(0x604138A1)
-I (..\mpbMath\Includes\mpbMathParity.h)(0x60413AC6)
-F (.\Sources\mpbDigitalFilteringNms.c)(0x604142E7)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Includes -I ../common -I ../mpbMath/Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/mpbdigitalfilteringnms.o -MD)
-I (Includes\mpbDigitalFilteringNms.h)(0x6041431A)
-I (..\common\mpblibs.h)(0x603EB46E)
+I (..\mpbMath\Includes\mpbMath.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathAbsolute.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathAverage.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathCoerce.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathCrc.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathCrcUtil.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathDebounce.h)(0x61EB03FA)
+I (..\mpbMath\Includes\mpbMathDivision.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathFifo.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathLinearApprox.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathResistor.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathRound.h)(0x60ACEC17)
+F (.\Sources\mpbDigitalFilteringNms.c)(0x611EA896)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Includes -I ../commun/Includes -I ../mpbMath/Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/mpbdigitalfilteringnms.o -MD)
+I (Includes\mpbDigitalFilteringNms.h)(0x611EA896)
+I (..\commun\Includes\mpblibs.h)(0x61EB03FA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F378778)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F37877E)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5F378774)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5F378762)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F37877E)
-I (..\mpbMath\Includes\mpbMath.h)(0x604138E0)
-I (..\mpbMath\Includes\mpbMathAbsolute.h)(0x60413068)
-I (..\mpbMath\Includes\mpbMathCoerce.h)(0x604132A1)
-I (..\mpbMath\Includes\mpbMathDebounce.h)(0x60413724)
-I (..\mpbMath\Includes\mpbMathDivision.h)(0x60413DD8)
-I (..\mpbMath\Includes\mpbMathLinearApprox.h)(0x604139C6)
-I (..\mpbMath\Includes\mpbMathRound.h)(0x604138A1)
-I (..\mpbMath\Includes\mpbMathParity.h)(0x60413AC6)
-F (.\Sources\mpbDigitalFilteringRclp.c)(0x6041438A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Includes -I ../common -I ../mpbMath/Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/mpbdigitalfilteringrclp.o -MD)
-I (Includes\mpbDigitalFilteringRclp.h)(0x6041437B)
-I (..\common\mpblibs.h)(0x603EB46E)
+I (..\mpbMath\Includes\mpbMath.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathAbsolute.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathAverage.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathCoerce.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathCrc.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathCrcUtil.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathDebounce.h)(0x61EB03FA)
+I (..\mpbMath\Includes\mpbMathDivision.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathFifo.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathLinearApprox.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathResistor.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathRound.h)(0x60ACEC17)
+F (.\Sources\mpbDigitalFilteringRclp.c)(0x620BB821)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Includes -I ../commun/Includes -I ../mpbMath/Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/mpbdigitalfilteringrclp.o -MD)
+I (Includes\mpbDigitalFilteringRclp.h)(0x611EA896)
+I (..\commun\Includes\mpblibs.h)(0x61EB03FA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F378778)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F37877E)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5F378774)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5F378762)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F37877E)
-I (..\mpbMath\Includes\mpbMath.h)(0x604138E0)
-I (..\mpbMath\Includes\mpbMathAbsolute.h)(0x60413068)
-I (..\mpbMath\Includes\mpbMathCoerce.h)(0x604132A1)
-I (..\mpbMath\Includes\mpbMathDebounce.h)(0x60413724)
-I (..\mpbMath\Includes\mpbMathDivision.h)(0x60413DD8)
-I (..\mpbMath\Includes\mpbMathLinearApprox.h)(0x604139C6)
-I (..\mpbMath\Includes\mpbMathRound.h)(0x604138A1)
-I (..\mpbMath\Includes\mpbMathParity.h)(0x60413AC6)
-F (..\mpbMath\mpbMath.lib)(0x60413FA2)()
+I (..\mpbMath\Includes\mpbMath.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathAbsolute.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathAverage.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathCoerce.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathCrc.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathCrcUtil.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathDebounce.h)(0x61EB03FA)
+I (..\mpbMath\Includes\mpbMathDivision.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathFifo.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathLinearApprox.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathResistor.h)(0x60ACEC17)
+I (..\mpbMath\Includes\mpbMathRound.h)(0x60ACEC17)
+F (..\mpbMath\mpbMath.lib)(0x00000000)()

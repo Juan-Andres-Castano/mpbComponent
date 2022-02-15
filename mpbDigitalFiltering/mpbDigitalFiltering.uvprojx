@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\Includes;..\common;..\mpbMath\Includes</IncludePath>
+              <IncludePath>.\Includes;..\commun\Includes;..\mpbMath\Includes</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
