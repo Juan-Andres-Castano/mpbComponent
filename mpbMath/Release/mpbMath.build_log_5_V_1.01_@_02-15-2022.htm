@@ -1,0 +1,138 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: juan andres castano mpb communications Flex license: MDK Essential 5.33 (Flex): 1 user(s) (mdk_essential) Support: Mar 2022
+ 
+Tool Versions:
+Toolchain:       MDK Essential 5.33 (Flex): 1 user(s)  Version: 5.33.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.15
+Assembler:       Armasm.exe V6.15
+Linker/Locator:  ArmLink.exe V6.15
+Library Manager: ArmAr.exe V6.15
+Hex Converter:   FromElf.exe V6.15
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.163.9.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+C:\mpbComponent\mpbMath\mpbMath.uvprojx
+Project File Date:  02/15/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.15', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+*** Note: Rebuilding project, since 'Options->Output->Create Batch File' is selected.
+Rebuild target 'mpbMath'
+compiling mpbMathDebounce.c...
+Sources/mpbMathDebounce.c(30): warning: In file included from...
+./Includes\mpbMathDebounce.h(29): warning: padding size of 'MpbMathDebounce_t' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+1 warning generated.
+compiling mpbMathAbsolute.c...
+compiling mpbMathAverage.c...
+Sources/mpbMathAverage.c(45): warning: implicit declaration of function 'eMpbMathDivisionS64' is invalid in C99 [-Wimplicit-function-declaration]
+        eResult = eMpbMathDivisionS64( sllResult, usLength, &sllResult );
+                  ^
+Sources/mpbMathAverage.c(45): warning: implicit conversion loses integer precision: 'int' to 'eMpbError_t' [-Wimplicit-int-conversion]
+        eResult = eMpbMathDivisionS64( sllResult, usLength, &sllResult );
+                ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Sources/mpbMathAverage.c(48): warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+                *pslResult = sllResult;
+                           ~ ^~~~~~~~~
+Sources/mpbMathAverage.c(67): warning: implicit conversion increases floating-point precision: 'const float' to 'double' [-Wdouble-promotion]
+                xResult += pxArray[ usI ];
+                        ~~ ^~~~~~~~~~~~~~
+Sources/mpbMathAverage.c(73): warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+                *pxResult = xResult;
+                          ~ ^~~~~~~
+Sources/mpbMathAverage.c(78): warning: no newline at end of file [-Wnewline-eof]
+/*----------------------------------------------------------------------------*/
+                                                                                ^
+Sources/mpbMathAverage.c(55): warning: no previous prototype for function 'eNepMathAverageFloat' [-Wmissing-prototypes]
+eMpbError_t     eNepMathAverageFloat( const float *pxArray, uint16_t usLength, float *pxResult )
+                ^
+Sources/mpbMathAverage.c(55): note: declare 'static' if the function is not intended to be used outside of this translation unit
+eMpbError_t     eNepMathAverageFloat( const float *pxArray, uint16_t usLength, float *pxResult )
+^
+static 
+7 warnings generated.
+compiling mpbMathCoerce.c...
+compiling mpbMathDivision.c...
+Sources/mpbMathDivision.c(38): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
+    float value = (float)(var * 100 + .5); 
+                          ~~~~^~~~~ ~
+Sources/mpbMathDivision.c(101): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
+    fdResultCheck = ( vroundf( ulSixthDecimalPrecision * fdResultCheck ) / ulSixthDecimalPrecision ); 
+                  ~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+Sources/mpbMathDivision.c(101): warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+    fdResultCheck = ( vroundf( ulSixthDecimalPrecision * fdResultCheck ) / ulSixthDecimalPrecision ); 
+                      ~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+3 warnings generated.
+compiling mpbMathLinearApprox.c...
+compiling mpbMathResistor.c...
+Sources/mpbMathResistor.c(92): warning: implicit conversion from 'unsigned int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+    return eMpbMathDivisionFloat( ( xInputVoltage * ulPullDownResistor ), ( ulPullUpResistor + ulPullDownResistor ), pxOutputVoltage );
+           ~~~~~~~~~~~~~~~~~~~~~                                            ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+Sources/mpbMathResistor.c(92): warning: implicit conversion from 'uint32_t' (aka 'unsigned int') to 'float' may lose precision [-Wimplicit-int-float-conversion]
+    return eMpbMathDivisionFloat( ( xInputVoltage * ulPullDownResistor ), ( ulPullUpResistor + ulPullDownResistor ), pxOutputVoltage );
+                                                  ~ ^~~~~~~~~~~~~~~~~~
+Sources/mpbMathResistor.c(103): warning: implicit conversion from 'uint32_t' (aka 'unsigned int') to 'float' may lose precision [-Wimplicit-int-float-conversion]
+    return eMpbMathDivisionFloat( ( ( ulPullUpResistor + ulPullDownResistor ) * xOutputVoltage ), ulPullDownResistor, pxInputVoltage );
+           ~~~~~~~~~~~~~~~~~~~~~                                                                  ^~~~~~~~~~~~~~~~~~
+Sources/mpbMathResistor.c(103): warning: implicit conversion from 'unsigned int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+    return eMpbMathDivisionFloat( ( ( ulPullUpResistor + ulPullDownResistor ) * xOutputVoltage ), ulPullDownResistor, pxInputVoltage );
+                                      ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~   ~
+Sources/mpbMathResistor.c(123): warning: implicit conversion from 'uint32_t' (aka 'unsigned int') to 'float' may lose precision [-Wimplicit-int-float-conversion]
+        *pulPullUpResistor = ( uint32_t )( ulPullDownResistor * ( xGain - 1 ) );
+                                           ^~~~~~~~~~~~~~~~~~ ~
+Sources/mpbMathResistor.c(139): warning: implicit conversion from 'uint32_t' (aka 'unsigned int') to 'float' may lose precision [-Wimplicit-int-float-conversion]
+    eResult = eMpbMathDivisionFloat( ( ulPullUpResistor * xOutputVoltage ), ( xInputVoltage - xOutputVoltage ), &xPullDownResistor );
+                                       ^~~~~~~~~~~~~~~~ ~
+6 warnings generated.
+compiling mpbMathRound.c...
+Sources/mpbMathRound.c(46): warning: implicit conversion from 'uint64_t' (aka 'unsigned long long') to 'float' may lose precision [-Wimplicit-int-float-conversion]
+        eResult = eMpbMathDivisionFloat( *fValue, ullPrecision, fValue );
+                  ~~~~~~~~~~~~~~~~~~~~~           ^~~~~~~~~~~~
+Sources/mpbMathRound.c(50): warning: implicit conversion from 'uint64_t' (aka 'unsigned long long') to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                *fValue *= ullPrecision;
+                        ~~ ^~~~~~~~~~~~
+2 warnings generated.
+compiling mpbMathCrc.c...
+Sources/mpbMathCrc.c(18): warning: In file included from...
+./Includes\mpbMathCrc.h(41): warning: padding struct 'xMpbCrc_t' with 3 bytes to align 'ulPolynomial' [-Wpadded]
+        uint32_t ulPolynomial;
+                 ^
+./Includes\mpbMathCrc.h(38): warning: padding size of 'xMpbCrc_t' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+2 warnings generated.
+compiling mpbMathCrcUtil.c...
+compiling mpbMathFifo.c...
+Sources/mpbMathFifo.c(79): warning: cast from 'const void *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+    pucData = ( uint8_t * )pvData;
+                           ^
+1 warning generated.
+creating Library...
+".\Objects\mpbMath.lib" - 0 Error(s), 22 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Vorago
+                http://www.voragotech.com/Vorago.VA416xx.1.0.3.pack
+                Vorago.VA416xx.1.0.3
+                VA416xx ARM Cortex-M4 Device Family Pack
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\j.castano\AppData\Local\Arm\Packs\Vorago\VA416xx\1.0.3\core
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

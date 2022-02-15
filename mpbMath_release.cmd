@@ -39,10 +39,10 @@ set t=%t: =0%
 ::time:~6,2%s%
 
 
-xcopy  "C:\mpbComponent\mpbTime\Objects\mpbTime.lib" "c:\mpbComponent\mpbTime\Release\." /i /e 
+xcopy  "C:\mpbComponent\mpbMath\Objects\mpbMath.lib" "c:\mpbComponent\mpbMath\Release\." /i /e 
 
 
-cd "C:\mpbComponent\mpbTime\Release\"
+cd "C:\mpbComponent\mpbMath\Release\"
 SET var2=
 for /f "delims=" %%i in (version.txt) do call :setVar2 %%i
 ::echo final var2=%var2%
@@ -58,7 +58,7 @@ set vari=%variable%
 
 ::%variable%.lib
 
-ren c:\mpbComponent\mpbTime\Release\mpbTime.lib mpbTime_%1_V_%var2%_@_%date:~4,2%-%date:~7,2%-%date:~10,4%.lib
+ren c:\mpbComponent\mpbMath\Release\mpbMath.lib mpbMath_%1_V_%var2%_@_%date:~4,2%-%date:~7,2%-%date:~10,4%.lib
 
 
 Rem RENAME "W:\TEST.TXT" "TEST_%d%_%t%.TXT"
