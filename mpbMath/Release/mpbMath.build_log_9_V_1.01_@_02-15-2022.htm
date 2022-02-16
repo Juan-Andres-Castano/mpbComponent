@@ -36,6 +36,12 @@ typedef struct
 1 warning generated.
 compiling mpbMathAbsolute.c...
 compiling mpbMathAverage.c...
+Sources/mpbMathAverage.c(45): warning: implicit declaration of function 'eMpbMathDivisionS64' is invalid in C99 [-Wimplicit-function-declaration]
+        eResult = eMpbMathDivisionS64( sllResult, usLength, &sllResult );
+                  ^
+Sources/mpbMathAverage.c(45): warning: implicit conversion loses integer precision: 'int' to 'eMpbError_t' [-Wimplicit-int-conversion]
+        eResult = eMpbMathDivisionS64( sllResult, usLength, &sllResult );
+                ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Sources/mpbMathAverage.c(48): warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
                 *pslResult = sllResult;
                            ~ ^~~~~~~~~
@@ -55,7 +61,7 @@ Sources/mpbMathAverage.c(55): note: declare 'static' if the function is not inte
 eMpbError_t     eNepMathAverageFloat( const float *pxArray, uint16_t usLength, float *pxResult )
 ^
 static 
-5 warnings generated.
+7 warnings generated.
 compiling mpbMathCoerce.c...
 compiling mpbMathDivision.c...
 Sources/mpbMathDivision.c(38): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
@@ -113,7 +119,7 @@ Sources/mpbMathFifo.c(79): warning: cast from 'const void *' to 'unsigned char *
                            ^
 1 warning generated.
 creating Library...
-".\Objects\mpbMath.lib" - 0 Error(s), 20 Warning(s).
+".\Objects\mpbMath.lib" - 0 Error(s), 22 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -126,7 +132,7 @@ Package Vendor: Vorago
   C:\Users\j.castano\AppData\Local\Arm\Packs\Vorago\VA416xx\1.0.3\core
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:03
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>

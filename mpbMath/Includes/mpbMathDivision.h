@@ -67,15 +67,15 @@ eMpbError_t eMpbMathDivisionFloat( float fNumerator, float fDenominator, float *
   **/
 eMpbError_t eMpbMathDivisionDouble( double fdNumerator, double fdDenominator, double *pfdResult );
 
-///**
-//  * @brief      Divide two values together, avoiding infinity and NaN results
-//  * @param[in]  ullNumerator: Numerator of the division
-//  * @param[in]  ullDenominator: Denominator of the division
-//  * @param[out] pullResult: Pointer to store the division result
-//  * @return     Success or library error message
-//  * @note       Unsigned 64 bits. This function rounds up.
-//  **/
-//eMpbError_t eMpbMathDivisionU64( uint64_t ullNumerator, uint64_t ullDenominator, uint64_t *pullResult );
+/**
+  * @brief      Divide two values together, avoiding infinity and NaN results
+  * @param[in]  ullNumerator: Numerator of the division
+  * @param[in]  ullDenominator: Denominator of the division
+  * @param[out] pullResult: Pointer to store the division result
+  * @return     Success or library error message
+  * @note       Unsigned 64 bits. This function rounds up.
+  **/
+eMpbError_t eMpbMathDivisionU64( uint64_t ullNumerator, uint64_t ullDenominator, uint64_t *pullResult );
 
 /**
   * @brief      Divide two values together, avoiding infinity and NaN results
@@ -85,6 +85,6 @@ eMpbError_t eMpbMathDivisionDouble( double fdNumerator, double fdDenominator, do
   * @return     Success or library error message
   * @note       Signed 64 bits. This function rounds up.
   **/
-//eMpbError_t eMpbMathDivisionS64( int64_t sllNumerator, int64_t sllDenominator, int64_t *psllResult );
+eMpbError_t eMpbMathDivisionS64( int64_t sllNumerator, int64_t sllDenominator, int64_t *psllResult );
 
 #endif /* __MPBMATHDIVISION_H */

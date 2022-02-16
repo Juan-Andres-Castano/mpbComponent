@@ -114,3 +114,43 @@ eMpbError_t eMpbMathDivisionDouble( double fdNumerator, double fdDenominator, do
 }
 /*----------------------------------------------------------------------------*/
 
+eMpbError_t eMpbMathDivisionU64( uint64_t ullNumerator, uint64_t ullDenominator, uint64_t *pullResult )
+{
+    if( ( ullDenominator == 0 ) || ( pullResult == NULL ) )
+    {
+        return eInvalidParameter;
+    }
+    
+	/* Add half of divider for rounding */
+	ullNumerator += ( ullDenominator >> 1 );
+    
+	*pullResult = ( ullNumerator / ullDenominator );
+
+	return eSuccess;
+}
+/*----------------------------------------------------------------------------*/
+
+eMpbError_t eMpbMathDivisionS64( int64_t sllNumerator, int64_t sllDenominator, int64_t *psllResult )
+{
+    if( ( sllDenominator == 0 ) || ( psllResult == NULL ) )
+    {
+        return eInvalidParameter;
+    }
+	
+    /* If result is positive */
+	if( ( ( sllNumerator > 0 ) && ( sllDenominator > 0 ) ) || ( ( sllNumerator < 0 ) && ( sllDenominator < 0 ) ) )
+	{
+		/* Add half of divider for rounding */
+		sllNumerator += ( sllDenominator >> 1 );
+	}
+	else
+	{
+		/* Remove half of divider for rounding */
+		sllNumerator -= ( sllDenominator >> 1 );
+	}
+    
+	*psllResult = ( sllNumerator / sllDenominator );
+	
+	return eSuccess;
+}
+/*----------------------------------------------------------------------------*/
