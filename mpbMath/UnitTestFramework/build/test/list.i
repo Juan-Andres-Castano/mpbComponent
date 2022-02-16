@@ -1,4 +1,43 @@
-#line 1 "../Tests/test_mpbMathDivision.c"
+#line 1 "../Sources/mpbMathDivision.c"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  
+ 
+
+#line 1 "../Includes/mpbMathDivision.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+ 
+#line 1 "../../commun/Includes/mpblibs.h"
+
 
 
 
@@ -16,40 +55,14 @@
  
  
 
-#line 1 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
-
-
 
 
  
 
-
-
-
-
-
-
-
-
-
-#line 1 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-
-
-
  
-
-
-
-
-
-
-
-
-#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\setjmp.h"
+#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdint.h"
  
  
-
 
 
 
@@ -86,7 +99,7 @@
 
 
 
-#line 12 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\setjmp.h"
+#line 11 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdint.h"
 #line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\yvals.h"
  
  
@@ -937,879 +950,7 @@ typedef struct
 
 
  
-#line 13 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\setjmp.h"
-
-#line 24 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\setjmp.h"
-
-
- 
-
-
-
-
-#line 42 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\setjmp.h"
-   
-  typedef unsigned long long int  jmp_buf[8];
-
-
-    #pragma rtmodel = "__dlib_jmp_buf_num_elements",                       "8"
-
-
-
-
-
-  __intrinsic __nounwind int           setjmp(jmp_buf);
-  __intrinsic __noreturn __nounwind void longjmp(jmp_buf, int);
-
-
-
-
-
-
-
-
-
-
- 
-#line 16 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-
-#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\math.h"
- 
- 
-
-
-
-
-  #pragma system_include
-
-
-#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ycheck.h"
- 
- 
-
- 
-
-
-  #pragma system_include
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-#line 11 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\math.h"
-#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_float_setup.h"
-
-
- 
-
-
-
-
-  #pragma system_include
-
-
-
-
-
- 
-
- 
- 
-
-
-
-
-
- 
-
- 
- 
-
-
-
-
-
- 
-
- 
- 
-
-
-
- 
-
-
-
- 
-typedef unsigned int __iar_FlagUType;
-typedef signed int  __iar_FlagSType;
-
-typedef signed int  __iar_ExpType;
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-#line 72 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_float_setup.h"
-
-
-
- 
-
-
-
-
-
-
-
-
-
-#pragma diag_suppress = Pe549 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-#pragma no_arith_checks
-_Pragma("inline=forced")
-__intrinsic unsigned int __iar_isfinite32(float x)
-{
-#line 116 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_float_setup.h"
-    signed int ix = __iar_fp2bits32(x);
-    return ((ix << 1) >> (23 + 1)) + 1;
-
-}
-
-#pragma no_arith_checks
-_Pragma("inline=forced")
-__intrinsic unsigned int __iar_isfinite64(double x)
-{
-#line 139 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_float_setup.h"
-    signed int ix = __iar_fpgethi64(x);
-    return ((ix << 1) >> (52 - 31)) + 1;
-
-}
-
-
- 
-#pragma no_arith_checks
-_Pragma("inline=forced")
-__intrinsic unsigned int __iar_isnan32(float x)
-{
-#line 162 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_float_setup.h"
-    signed int ix = __iar_fp2bits32(x) << 1;
-    return (ix >> (23 + 1)) + 1 ? 0 : (ix << (31 - 23));
-
-}
-
-#pragma no_arith_checks
-_Pragma("inline=forced")
-__intrinsic unsigned int __iar_isnan64(double x)
-{
-#line 185 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_float_setup.h"
-    signed int ix = __iar_fpgethi64(x);
-    return ((ix << 1) >> (52 - 31)) + 1 ? 0 : ix << (64 - 52);
-
-}
-
-
-
-
- 
-#pragma no_arith_checks
-_Pragma("inline=forced")
-__intrinsic unsigned int __iar_iszero32(float x)
-{
-#line 210 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_float_setup.h"
-    unsigned int ix = __iar_fp2bits32(x);
-    return (ix << 1) == 0;
-
-}
-
-#pragma no_arith_checks
-_Pragma("inline=forced")
-__intrinsic unsigned int __iar_iszero64(double x)
-{
-#line 231 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_float_setup.h"
-    unsigned long long int ix = __iar_fp2bits64(x);
-    return (ix & ~(1ULL << 63)) == 0;
-
-}
-
-
-
-
-
- 
-#pragma no_arith_checks
-_Pragma("inline=forced")
-__intrinsic unsigned int __iar_isinf32(float x)
-{
-#line 256 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_float_setup.h"
-    signed int ix = __iar_fp2bits32(x);
-    return ((ix << 1) >> (23 + 1)) + 1
-           ? 0
-           : ((ix << (32 - 23)) == 0);
-
-}
-
-#pragma no_arith_checks
-_Pragma("inline=forced")
-__intrinsic unsigned int __iar_isinf64(double x)
-{
-#line 285 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_float_setup.h"
-    signed int ix = __iar_fpgethi64(x);
-    return ((ix << 1) >> (52 - 31)) + 1 
-             ? 0 
-             : ((ix << (64 - 52)) == 0);
-
-}
-
-
-
-
-
- 
-#pragma no_arith_checks
-_Pragma("inline=forced")
-__intrinsic unsigned int __iar_issubnormal32(float x)
-{
-
-    unsigned int ix = __iar_fp2bits32(x) & ~(1 << 31);
-    return (ix != 0) && (ix < (1 << 23));
-
-
-
-}
-
-#pragma no_arith_checks
-_Pragma("inline=forced")
-__intrinsic unsigned int __iar_issubnormal64(double x)
-{
-
-    unsigned long long int ix = __iar_fp2bits64(x) & ~(1ULL << 63);
-    return (ix != 0) && (ix < (1ULL << 52));
-
-
-
-}
-
-
-
-
- 
-#pragma no_arith_checks
-_Pragma("inline=forced")
-__intrinsic unsigned int __iar_isnormal32(float x)
-{
-  signed int exp = ((signed int)
-                          (__iar_fp2bits32(x) << 1) >> (23 + 1));
-  return ((exp + 1) >> 1);
-}
-
-#pragma no_arith_checks
-_Pragma("inline=forced")
-__intrinsic unsigned int __iar_isnormal64(double x)
-{
-
-
-
-
-
-    signed int exp = 
-      ((signed int)(__iar_fpgethi64(x) << 1) >> (52 - 31));
-    return ((exp + 1) >> 1);
-
-}
-
-
-
-
- 
-#pragma no_arith_checks
-_Pragma("inline=forced")
-__intrinsic unsigned int __iar_signbit32(float x)
-{
-  unsigned int ix = __iar_fp2bits32(x);
-  return (ix >> 31);
-}
-
-#pragma no_arith_checks
-_Pragma("inline=forced")
-__intrinsic unsigned int __iar_signbit64(double x)
-{
-  unsigned long long int ix = __iar_fp2bits64(x);
-  return (ix >> 63);
-}
-
-
-#line 14 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\math.h"
-
-
-
-
-
-#line 42 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\math.h"
-
-#line 50 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\math.h"
-
-
-  typedef float float_t;
-  typedef double double_t;
-
-
-
-
-   
-  _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind      double       acos(double);
-  _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind      double       asin(double);
-  _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind      double       atan(double);
-  _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind      double       atan2(double, double);
-  _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind      double       ceil(double);
-  _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind      double       cos(double);
-  _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind      double       cosh(double);
-  _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind      double       exp(double);
-  _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind      double       fabs(double);
-  _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind      double       floor(double);
-  _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind      double       fmod(double, double);
-  _Pragma("function_effects = no_state, no_read(2), always_returns") __intrinsic __nounwind   double       frexp(double, int *);
-  _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind      double       ldexp(double, int);
-  _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind      double       log(double);
-  _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind      double       log10(double);
-  _Pragma("function_effects = no_state, no_read(2), always_returns") __intrinsic __nounwind   double       modf(double, double *);
-  _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind      double       pow(double, double);
-  _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind      double       sin(double);
-  _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind      double       sinh(double);
-  _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind      double       sqrt(double);
-  _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind      double       tan(double);
-  _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind      double       tanh(double);
-
-
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    double       acosh(double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    double       asinh(double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    double       atanh(double);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    double       cbrt(double);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    double       copysign(double, double);
-
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind  double       erf(double);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind  double       erfc(double);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind  double       expm1(double);
-
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    double       exp2(double);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    double       fdim(double, double);
-
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind  double       fma(double, double, double);
-
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    double       fmax(double, double);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    double       fmin(double, double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    double       hypot(double, double);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    int          ilogb(double);
-
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind  double       lgamma(double);
-
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long long    llrint(double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long long    llround(double);
-    _Pragma("function_effects = no_state, write_errno, always_returns")  __intrinsic __nounwind   double       log1p(double);
-    _Pragma("function_effects = no_state, write_errno, always_returns")  __intrinsic __nounwind   double       log2(double);
-    _Pragma("function_effects = no_state, write_errno, always_returns")  __intrinsic __nounwind   double       logb(double);
-    _Pragma("function_effects = no_state, write_errno, always_returns")  __intrinsic __nounwind   long         lrint(double);
-    _Pragma("function_effects = no_state, write_errno, always_returns")  __intrinsic __nounwind   long         lround(double);
-    _Pragma("function_effects = no_state, always_returns")  __intrinsic __nounwind   double       nan(const char *);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    double       nearbyint(double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    double       nextafter(double, double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    double       nexttoward(double, long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    double       remainder(double, double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    double       remquo(double, double, int *);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    double       rint(double);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    double       round(double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    double       scalbn(double, int);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    double       scalbln(double, long);
-
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind  double       tgamma(double);
-
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    double       trunc(double);
-
-     
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        acosf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        acoshf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        asinf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        asinhf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        atanf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        atanhf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        atan2f(float, float);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    float        ceilf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        coshf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        cosf(float);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    float        cbrtf(float);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    float        copysignf(float, float);
-
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind  float        erff(float);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind  float        erfcf(float);
-
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        expf(float);
-
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind  float        expm1f(float);
-
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        exp2f(float);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    float        fabsf(float);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    float        fdimf(float, float);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    float        floorf(float);
-
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind  float        fmaf(float, float, float);
-
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    float        fmaxf(float, float);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    float        fminf(float, float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        fmodf(float, float);
-    _Pragma("function_effects = no_state, no_read(2), always_returns") __intrinsic __nounwind float        frexpf(float, int *);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        hypotf(float, float);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    int          ilogbf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        ldexpf(float, int);
-
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind  float        lgammaf(float);
-
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long long    llrintf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long long    llroundf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        logbf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        logf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        log1pf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        log2f(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        log10f(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long         lrintf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long         lroundf(float);
-    _Pragma("function_effects = no_state, no_read(2), always_returns") __intrinsic __nounwind float        modff(float, float *);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    float        nanf(const char *);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        nearbyintf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        nextafterf(float, float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        nexttowardf(float, long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        powf(float, float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        remainderf(float, float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        remquof(float, float, int *);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        rintf(float);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    float        roundf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        scalbnf(float, int);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        scalblnf(float, long);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        sinf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        sinhf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        sqrtf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        tanf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    float        tanhf(float);
-
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind  float        tgammaf(float);
-
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    float        truncf(float);
-
-     
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  acoshl(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  acosl(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  asinhl(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  asinl(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  atanl(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  atanhl(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  atan2l(long double, long double);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    long double  ceill(long double);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    long double  cbrtl(long double);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    long double  copysignl(long double, long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  coshl(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  cosl(long double);
-
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind  long double  erfl(long double);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind  long double  erfcl(long double);
-
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  expl(long double);
-
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind  long double  expm1l(long double);
-
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  exp2l(long double);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    long double  fabsl(long double);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    long double  fdiml(long double, long double);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    long double  floorl(long double);
-
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind  long double  fmal(long double, long double,
-                                               long double);
-
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    long double  fmaxl(long double, long double);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    long double  fminl(long double, long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  fmodl(long double, long double);
-    _Pragma("function_effects = no_state, no_read(2), always_returns") __intrinsic __nounwind long double  frexpl(long double, int *);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  hypotl(long double, long double);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    int          ilogbl(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  ldexpl(long double, int);
-
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind  long double  lgammal(long double);
-
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long long    llrintl(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long long    llroundl(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  logbl(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  logl(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  log1pl(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  log10l(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  log2l(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long         lrintl(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long         lroundl(long double);
-    _Pragma("function_effects = no_state, no_read(2), always_returns") __intrinsic __nounwind long double  modfl(long double, long double *);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    long double  nanl(const char *);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  nearbyintl(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  nextafterl(long double, long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  nexttowardl(long double, long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  powl(long double, long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  remainderl(long double, long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  remquol(long double, long double,
-                                                  int *);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  rintl(long double);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    long double  roundl(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  scalbnl(long double, int);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  scalblnl(long double, long);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  sinhl(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  sinl(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  sqrtl(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  tanl(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind    long double  tanhl(long double);
-
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind  long double  tgammal(long double);
-
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind    long double  truncl(long double);
-
-
-   
-
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind   double        __iar_cos_medium(double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind   double        __iar_exp_medium(double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind   double        __iar_log_medium(double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind   double        __iar_log10_medium(double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind   double        __iar_log2_medium(double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind   double        __iar_pow_medium(double, double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind   double        __iar_sin_medium(double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind   double        __iar_tan_medium(double);
-
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind   float         __iar_cos_mediumf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind   float         __iar_exp_mediumf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind   float         __iar_log_mediumf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind   float         __iar_log10_mediumf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind   float         __iar_log2_mediumf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind   float         __iar_pow_mediumf(float, float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind   float         __iar_sin_mediumf(float);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind   float         __iar_tan_mediumf(float);
-
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind   long double   __iar_cos_mediuml(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind   long double   __iar_exp_mediuml(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind   long double   __iar_log_mediuml(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind   long double   __iar_log10_mediuml(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind   long double   __iar_log2_mediuml(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind   long double   __iar_pow_mediuml(long double,
-                                                           long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind   long double   __iar_sin_mediuml(long double);
-    _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind   long double   __iar_tan_mediuml(long double);
-
-
-
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind double        __iar_cos_accurate(double);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind double        __iar_pow_accurate(double, double);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind double        __iar_sin_accurate(double);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind double        __iar_tan_accurate(double);
-
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind float         __iar_cos_accuratef(float);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind float         __iar_pow_accuratef(float, float);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind float         __iar_sin_accuratef(float);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind float         __iar_tan_accuratef(float);
-
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind long double   __iar_cos_accuratel(long double);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind long double   __iar_pow_accuratel(long double,
-                                                              long double);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind long double   __iar_sin_accuratel(long double);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind long double   __iar_tan_accuratel(long double);
-
-
-
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind double        __iar_cos_small(double);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind double        __iar_exp_small(double);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind double        __iar_log_small(double);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind double        __iar_log10_small(double);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind double        __iar_log2_small(double);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind double        __iar_pow_small(double, double);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind double        __iar_sin_small(double);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind double        __iar_tan_small(double);
-
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind float         __iar_cos_smallf(float);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind float         __iar_exp_smallf(float);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind float         __iar_log_smallf(float);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind float         __iar_log10_smallf(float);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind float         __iar_log2_smallf(float);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind float         __iar_pow_smallf(float, float);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind float         __iar_sin_smallf(float);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind float         __iar_tan_smallf(float);
-
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind long double   __iar_cos_smalll(long double);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind long double   __iar_exp_smalll(long double);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind long double   __iar_log_smalll(long double);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind long double   __iar_log10_smalll(long double);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind long double   __iar_log2_smalll(long double);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind long double   __iar_pow_smalll(long double,
-                                                         long double);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind long double   __iar_sin_smalll(long double);
-      _Pragma("function_effects = no_state, write_errno, always_returns") __intrinsic __nounwind long double   __iar_tan_smalll(long double);
-
-
-
-
-#line 495 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\math.h"
-
-
-
-   
-  enum __FPclass { __kInfinity, __kNan, __kFinite, __kDenorm, __kZero };
-
-  #pragma inline=forced
-  __intrinsic int __iar_FPclassify32(float x)
-  {
-    if (!__iar_isfinite32(x))
-    {
-      if (__iar_isnan32(x))
-      {
-        return __kNan;
-      }
-      return __kInfinity;
-    }
-    if (__iar_iszero32(x))
-    {
-      return __kZero;
-    }
-    if (__iar_issubnormal32(x))
-    {
-      return __kDenorm;
-    }
-    return __kFinite;
-  }
-
-
-    #pragma inline=forced
-    __intrinsic int __iar_FPclassify64(double x)
-    {
-      if (!__iar_isfinite64(x))
-      {
-        if (__iar_isnan64(x))
-        {
-          return __kNan;
-        }
-        return __kInfinity;
-      }
-      if (__iar_iszero64(x))
-      {
-        return __kZero;
-      }
-      if (__iar_issubnormal64(x))
-      {
-        return __kDenorm;
-      }
-      return __kFinite;
-    }
-
-
-   
-#line 557 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\math.h"
-
-#line 579 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\math.h"
-
-#line 589 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\math.h"
-
-
-#line 1365 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\math.h"
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 1561 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\math.h"
-    #pragma inline
-    __iar_FlagSType __isnormalf(float _Left)
-    {       
-      return !__iar_isnan32(_Left) && __iar_isnormal32(_Left);
-    }
-    #pragma inline
-    __iar_FlagSType __isnormal(double _Left)
-    {       
-      return !__iar_isnan64(_Left) && __iar_isnormal64(_Left);
-    }
-    #pragma inline
-    __iar_FlagSType __isnormall(long double _Left)
-    {       
-      return !__iar_isnan64(_Left) && __iar_isnormal64(_Left);
-    }
-    #pragma inline
-     __iar_FlagSType __isinff(float _Left)
-    {       
-      return !__iar_isnan32(_Left) && __iar_isinf32(_Left);
-    }
-    #pragma inline
-     __iar_FlagSType __isinf(double _Left)
-    {       
-      return !__iar_isnan64(_Left) && __iar_isinf64(_Left);
-    }
-    #pragma inline
-     __iar_FlagSType __isinfl(long double _Left)
-    {       
-      return !__iar_isnan64(_Left) && __iar_isinf64(_Left);
-    }
-
-
-
-
-
-#line 1614 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\math.h"
-
-    #pragma inline
-    __iar_FlagSType __isunorderedf(float _x, float _y)
-    {
-      return __iar_isnan32(_x) || __iar_isnan32(_y);
-    }
-    #pragma inline
-    __iar_FlagSType __isunordered(double _x, double _y)
-    {
-      return __iar_isnan64(_x) || __iar_isnan64(_y);
-    }
-    #pragma inline
-    __iar_FlagSType __isunorderedl(long double _x, long double _y)
-    {
-      return __iar_isnan64(_x) || __iar_isnan64(_y);
-    }
-    #pragma inline
-    __iar_FlagSType __islessgreaterf(float _x, float _y)
-    {
-      if (__isunorderedf(_x, _y))
-        return 0;
-      return _x < _y || _x > _y;
-    }
-    #pragma inline
-    __iar_FlagSType __islessgreater(double _x, double _y)
-    {
-      if (__isunordered(_x, _y))
-        return 0;
-      return _x < _y || _x > _y;
-    }
-    #pragma inline
-    __iar_FlagSType __islessgreaterl(long double _x, long double _y)
-    {
-      if (__isunorderedl(_x, _y))
-        return 0;
-      return _x < _y || _x > _y;
-    }
-
-#line 1662 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\math.h"
-
-
-
-
-
-
-
-
-
- 
-#line 20 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-
-
-
-
-
- 
-#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdint.h"
- 
- 
-
-
-
-
-  #pragma system_include
-
-
-#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ycheck.h"
- 
- 
-
- 
-
-
-  #pragma system_include
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-#line 11 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdint.h"
-
+#line 12 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdint.h"
 
 
 
@@ -2017,12 +1158,11 @@ typedef int __data_intptr_t; typedef unsigned int __data_uintptr_t;
 
 
  
-#line 29 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-
-#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+#line 25 "../../commun/Includes/mpblibs.h"
+#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdlib.h"
  
  
+
 
 
 
@@ -2059,99 +1199,7 @@ typedef int __data_intptr_t; typedef unsigned int __data_uintptr_t;
 
 
 
-#line 11 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
-
-
-#line 24 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
-   
-
-
-
-
- 
-
-
-
-
-
- 
-
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
- 
-#line 33 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-
-#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\time.h"
- 
- 
-
-
-
-
-  #pragma system_include
-
-
-#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ycheck.h"
- 
- 
-
- 
-
-
-  #pragma system_include
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-#line 11 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\time.h"
+#line 12 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdlib.h"
 #line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
  
  
@@ -2209,1097 +1257,7 @@ typedef unsigned int __data_size_t;
 
 
 
-#line 13 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\time.h"
-
- 
-#line 21 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\time.h"
-
- 
-#line 30 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\time.h"
-
- 
-#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\time64.h"
- 
- 
-
-
-
-
-  #pragma system_include
-
-
-#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ycheck.h"
- 
- 
-
- 
-
-
-  #pragma system_include
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-#line 11 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\time64.h"
-
-
-
-#line 26 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\time64.h"
-
-#line 37 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\time64.h"
-    typedef unsigned int  clock_t;
-#line 44 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\time64.h"
-
-typedef __int64_t         __time64_t;
-
-typedef __time64_t        time_t;
-
-
-
-struct tm
-{        
-  int tm_sec;
-  int tm_min;
-  int tm_hour;
-  int tm_mday;
-  int tm_mon;
-  int tm_year;
-  int tm_wday;
-  int tm_yday;
-  int tm_isdst;
-
-    int __BSD_bug_filler1;
-    int __BSD_bug_filler2;
-
-};
-
-struct __timespec64
-{
-  __time64_t tv_sec;
-  long tv_nsec;
-};
-
-struct timespec
-{
-  time_t tv_sec;
-  long tv_nsec;
-};
-
-
-
-
-
-#line 95 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\time64.h"
-
-
-   
-  __intrinsic __nounwind time_t time(time_t *);
-
-   
-   __intrinsic __nounwind char *          asctime(const struct tm *);
-  __intrinsic __nounwind   clock_t         clock(void);
-   __intrinsic __nounwind char *          ctime(const time_t *);
-  _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind double   difftime(time_t, time_t);
-   __intrinsic __nounwind struct tm *     gmtime(const time_t *);
-   __intrinsic __nounwind struct tm *     localtime(const time_t *);
-  __intrinsic __nounwind   time_t          mktime(struct tm *);
-  __intrinsic __nounwind   int             timespec_get(struct timespec *, int);
-
-
-    __intrinsic __nounwind __time64_t      __time64(__time64_t *);
-    __intrinsic __nounwind char *          __ctime64(const __time64_t *);
-    _Pragma("function_effects = no_state, always_returns") __intrinsic __nounwind double __difftime64(__time64_t, __time64_t);
-    __intrinsic __nounwind struct tm *     __gmtime64(const __time64_t *);
-    __intrinsic __nounwind struct tm *     __localtime64(const __time64_t *);
-    __intrinsic __nounwind __time64_t      __mktime64(struct tm *);
-    __intrinsic __nounwind int             __timespec_get64(struct __timespec64 *, int);
-
-  __intrinsic __nounwind size_t              strftime(char *restrict, size_t,
-                                            const char *restrict,
-                                            const struct tm *restrict);
-
-
-#line 138 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\time64.h"
-
-#line 163 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\time64.h"
-
-
-
-
-
-
- 
-#line 34 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\time.h"
-
-
-
-
-
-
-
-
-
- 
-#line 37 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-
-
-
- 
-
-
-
-
- 
-#line 60 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
- 
-#line 75 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
- 
-#line 90 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-
-
- 
-
-
-    typedef unsigned char   UNITY_UINT8;
-    typedef unsigned short  UNITY_UINT16;
-    typedef unsigned int    UNITY_UINT32;
-    typedef signed char     UNITY_INT8;
-    typedef signed short    UNITY_INT16;
-    typedef signed int      UNITY_INT32;
-#line 112 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-
-
- 
-
-
-
-
-
-
-
-
-     
-    typedef UNITY_UINT32 UNITY_UINT;
-    typedef UNITY_INT32 UNITY_INT;
-#line 143 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-
-
- 
-
-#line 160 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-
-
-
-
-
-
-
-
-
-
- 
-
-#line 184 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
- 
-#line 192 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-typedef float UNITY_FLOAT;
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
- 
-
-
-   
-
-
-
-
-
-
-
-
-
-
-  typedef UNITY_FLOAT UNITY_DOUBLE;
-   
-
-
-#line 243 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-
-
- 
-
-   
-#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
- 
- 
-
-
-
-
-  #pragma system_include
-
-
-#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ycheck.h"
- 
- 
-
- 
-
-
-  #pragma system_include
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-#line 11 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-
-
-
- 
-#pragma rtmodel="__dlib_file_descriptor","1"
-
- 
-
-
-
-
-
-  typedef _Filet FILE;
-
-
-
-
-
-
-#pragma language = save
-#pragma language = extended
-
-#line 79 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-      
-         extern FILE __iar_Stdin;
-         extern FILE __iar_Stdout;
-         extern FILE __iar_Stderr;
-      
-
-
-
-
-
-#line 101 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-#pragma language=restore
-
-
-
-
-
-
-
- 
-typedef _Fpost fpos_t;
-
-#line 123 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-
- 
-#line 140 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-
-
-
-
-
-   
-  
-    __intrinsic __nounwind    void   clearerr(FILE *);
-    __intrinsic __nounwind    int    fclose(FILE *);
-    __intrinsic __nounwind    int    feof(FILE *);
-    __intrinsic __nounwind    int    ferror(FILE *);
-    __intrinsic __nounwind    int    fflush(FILE *);
-    __intrinsic __nounwind    int    fgetc(FILE *);
-    __intrinsic __nounwind    int    fgetpos(FILE *restrict, fpos_t *restrict);
-    __intrinsic __nounwind    char * fgets(char *restrict, int, FILE *restrict);
-     __intrinsic __nounwind  FILE * fopen(const char *restrict, const char *restrict);
-     _Pragma("__printf_args") _Pragma("library_default_requirements _Printf = unknown") __intrinsic __nounwind int    fprintf(FILE *restrict,
-                                   const char *restrict, ...);
-    __intrinsic __nounwind    int    fputc(int, FILE *);
-    __intrinsic __nounwind    int    fputs(const char *restrict, FILE *restrict);
-    __intrinsic __nounwind    size_t fread(void *restrict, size_t, size_t,
-                                 FILE *restrict);
-     __intrinsic __nounwind  FILE * freopen(const char *restrict,
-                                   const char *restrict, FILE *restrict);
-     _Pragma("__scanf_args") _Pragma("library_default_requirements _Scanf = unknown") __intrinsic __nounwind  int    fscanf(FILE *restrict, const char *restrict, ...);
-    __intrinsic __nounwind    int    fseek(FILE *, long, int);
-    __intrinsic __nounwind    int    fsetpos(FILE *, const fpos_t *);
-    __intrinsic __nounwind    long   ftell(FILE *);
-    __intrinsic __nounwind    size_t fwrite(const void *restrict, size_t, size_t,
-                                  FILE *restrict);
-    __intrinsic __nounwind    void   rewind(FILE *);
-    __intrinsic __nounwind    void   setbuf(FILE *restrict, char *restrict);
-    __intrinsic __nounwind    int    setvbuf(FILE *restrict, char *restrict,
-                                   int, size_t);
-     __intrinsic __nounwind  char * tmpnam(char *);
-     __intrinsic __nounwind  FILE * tmpfile(void);
-    __intrinsic __nounwind    int    ungetc(int, FILE *);
-     _Pragma("__printf_args") _Pragma("library_default_requirements _Printf = unknown") __intrinsic __nounwind int    vfprintf(FILE *restrict, const char *restrict,
-                                    __Va_list);
-
-       _Pragma("__scanf_args") _Pragma("library_default_requirements _Scanf = unknown") __intrinsic __nounwind int   vfscanf(FILE *restrict, const char *restrict,
-                                   __Va_list);
-
-
-      __intrinsic __nounwind FILE *   fdopen(signed char, const char *);
-      __intrinsic __nounwind signed char fileno(FILE *);
-      __intrinsic __nounwind int      getw(FILE *);
-      __intrinsic __nounwind int      putw(int, FILE *);
-
-    __intrinsic __nounwind int        getc(FILE *);
-    __intrinsic __nounwind int        putc(int, FILE *);
-  
-
-
-
-
-     
-    _Pragma("function_effects = no_read(1), always_returns") __intrinsic __nounwind   char * __gets(char *, int);
-    _Pragma("function_effects = no_read(1), always_returns")  __intrinsic __nounwind char * gets(char *);
-
-  _Pragma("function_effects = no_write(1), always_returns")    __intrinsic __nounwind    void   perror(const char *);
-  _Pragma("function_effects = no_write(1), always_returns")     _Pragma("__printf_args") _Pragma("library_default_requirements _Printf = unknown") __intrinsic __nounwind int    printf(const char *restrict, ...);
-  _Pragma("function_effects = no_write(1), always_returns")    __intrinsic __nounwind    int    puts(const char *);
-  _Pragma("function_effects = no_write(1), always_returns")     _Pragma("__scanf_args") _Pragma("library_default_requirements _Scanf = unknown") __intrinsic __nounwind  int    scanf(const char *restrict, ...);
-  _Pragma("function_effects = no_read(1), no_write(2), always_returns")  _Pragma("__printf_args") _Pragma("library_default_requirements _Printf = unknown") __intrinsic __nounwind int    sprintf(char *restrict,
-                                              const char *restrict, ...);
-  _Pragma("function_effects = no_write(1,2), always_returns")  _Pragma("__scanf_args") _Pragma("library_default_requirements _Scanf = unknown") __intrinsic __nounwind  int    sscanf(const char *restrict,
-                                             const char *restrict, ...);
-                                       
-  __intrinsic __nounwind                 int    __ungetchar(int);
-  _Pragma("function_effects = no_write(1), always_returns")     _Pragma("__printf_args") _Pragma("library_default_requirements _Printf = unknown") __intrinsic __nounwind int    vprintf(const char *restrict,
-                                              __Va_list);
-
-    _Pragma("function_effects = no_write(1), always_returns")     _Pragma("__scanf_args") _Pragma("library_default_requirements _Scanf = unknown") __intrinsic __nounwind int vscanf(const char *restrict, __Va_list);
-    _Pragma("function_effects = no_write(1,2), always_returns")  _Pragma("__scanf_args") _Pragma("library_default_requirements _Scanf = unknown") __intrinsic __nounwind int vsscanf(const char *restrict,
-                                            const char *restrict, __Va_list);
-
-  _Pragma("function_effects = no_read(1), no_write(2), always_returns")   _Pragma("__printf_args") _Pragma("library_default_requirements _Printf = unknown") __intrinsic __nounwind int vsprintf(char *restrict,
-                                             const char *restrict, __Va_list);
-                                 
-  _Pragma("function_effects = no_write(1), always_returns") __intrinsic __nounwind size_t   __write_array(const void *, size_t, size_t);
-
-    _Pragma("function_effects = no_read(1), no_write(3), always_returns")  _Pragma("__printf_args") _Pragma("library_default_requirements _Printf = unknown") __intrinsic __nounwind int snprintf(char *restrict, size_t,
-                                              const char *restrict, ...);
-    _Pragma("function_effects = no_read(1), no_write(3), always_returns")  _Pragma("__printf_args") _Pragma("library_default_requirements _Printf = unknown") __intrinsic __nounwind int vsnprintf(char *restrict, size_t,
-                                               const char *restrict,
-                                               __Va_list);
-
-
-  __intrinsic __nounwind int                getchar(void);
-  __intrinsic __nounwind int                putchar(int);
-  
- 
-  __intrinsic __nounwind int                remove(const char *);
-  __intrinsic __nounwind int                rename(const char *, const char *);
-
-
-#line 287 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-
-
-
-
-
-
- 
-#line 250 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-#line 257 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-#line 264 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-     
-#line 273 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 301 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-#line 309 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-#line 317 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-#line 329 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
- 
-#line 352 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-
-
-
-
-
-
-
-
- 
-
-typedef void (*UnityTestFunction)(void);
-
-
-
-
-
-typedef enum
-{
-UNITY_DISPLAY_STYLE_INT = sizeof(int)+ (0x10),
-    UNITY_DISPLAY_STYLE_INT8     = 1 + (0x10),
-    UNITY_DISPLAY_STYLE_INT16    = 2 + (0x10),
-    UNITY_DISPLAY_STYLE_INT32    = 4 + (0x10),
-
-
-
-
-UNITY_DISPLAY_STYLE_UINT = sizeof(unsigned) + (0x20),
-    UNITY_DISPLAY_STYLE_UINT8    = 1 + (0x20),
-    UNITY_DISPLAY_STYLE_UINT16   = 2 + (0x20),
-    UNITY_DISPLAY_STYLE_UINT32   = 4 + (0x20),
-
-
-
-
-    UNITY_DISPLAY_STYLE_HEX8     = 1 + (0x40),
-    UNITY_DISPLAY_STYLE_HEX16    = 2 + (0x40),
-    UNITY_DISPLAY_STYLE_HEX32    = 4 + (0x40),
-
-
-
-
-    UNITY_DISPLAY_STYLE_UNKNOWN
-} UNITY_DISPLAY_STYLE_T;
-
-typedef enum
-{
-    UNITY_EQUAL_TO         = 1,
-    UNITY_GREATER_THAN     = 2,
-    UNITY_GREATER_OR_EQUAL = 2 + UNITY_EQUAL_TO,
-    UNITY_SMALLER_THAN     = 4,
-    UNITY_SMALLER_OR_EQUAL = 4 + UNITY_EQUAL_TO
-} UNITY_COMPARISON_T;
-
-
-typedef enum UNITY_FLOAT_TRAIT
-{
-    UNITY_FLOAT_IS_NOT_INF       = 0,
-    UNITY_FLOAT_IS_INF,
-    UNITY_FLOAT_IS_NOT_NEG_INF,
-    UNITY_FLOAT_IS_NEG_INF,
-    UNITY_FLOAT_IS_NOT_NAN,
-    UNITY_FLOAT_IS_NAN,
-    UNITY_FLOAT_IS_NOT_DET,
-    UNITY_FLOAT_IS_DET,
-    UNITY_FLOAT_INVALID_TRAIT
-} UNITY_FLOAT_TRAIT_T;
-
-
-typedef enum
-{
-    UNITY_ARRAY_TO_VAL = 0,
-    UNITY_ARRAY_TO_ARRAY
-} UNITY_FLAGS_T;
-
-struct UNITY_STORAGE_T
-{
-    const char* TestFile;
-    const char* CurrentTestName;
-
-    const char* CurrentDetail1;
-    const char* CurrentDetail2;
-
-    UNITY_UINT CurrentTestLineNumber;
-    UNITY_UINT NumberOfTests;
-    UNITY_UINT TestFailures;
-    UNITY_UINT TestIgnores;
-    UNITY_UINT CurrentTestFailed;
-    UNITY_UINT CurrentTestIgnored;
-
-
-
-
-
-    jmp_buf AbortFrame;
-
-};
-
-extern struct UNITY_STORAGE_T Unity;
-
-
-
- 
-
-void UnityBegin(const char* filename);
-int  UnityEnd(void);
-void UnityConcludeTest(void);
-void UnityDefaultTestRun(UnityTestFunction Func, const char* FuncName, const int FuncLineNum);
-
-
-
- 
-
-#line 473 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-void UnityPrint(const char* string);
-void UnityPrintLen(const char* string, const UNITY_UINT32 length);
-void UnityPrintMask(const UNITY_UINT mask, const UNITY_UINT number);
-void UnityPrintNumberByStyle(const UNITY_INT number, const UNITY_DISPLAY_STYLE_T style);
-void UnityPrintNumber(const UNITY_INT number_to_print);
-void UnityPrintNumberUnsigned(const UNITY_UINT number);
-void UnityPrintNumberHex(const UNITY_UINT number, const char nibbles_to_print);
-
-
-void UnityPrintFloat(const UNITY_DOUBLE input_number);
-
-
-
-
-
-
-
-
- 
-
-void UnityAssertEqualNumber(const UNITY_INT expected,
-                            const UNITY_INT actual,
-                            const char* msg,
-                            const UNITY_UINT lineNumber,
-                            const UNITY_DISPLAY_STYLE_T style);
-
-void UnityAssertGreaterOrLessOrEqualNumber(const UNITY_INT threshold,
-                                           const UNITY_INT actual,
-                                           const UNITY_COMPARISON_T compare,
-                                           const char *msg,
-                                           const UNITY_UINT lineNumber,
-                                           const UNITY_DISPLAY_STYLE_T style);
-
-void UnityAssertEqualIntArray( const void* expected,
-                               const void* actual,
-                              const UNITY_UINT32 num_elements,
-                              const char* msg,
-                              const UNITY_UINT lineNumber,
-                              const UNITY_DISPLAY_STYLE_T style,
-                              const UNITY_FLAGS_T flags);
-
-void UnityAssertBits(const UNITY_INT mask,
-                     const UNITY_INT expected,
-                     const UNITY_INT actual,
-                     const char* msg,
-                     const UNITY_UINT lineNumber);
-
-void UnityAssertEqualString(const char* expected,
-                            const char* actual,
-                            const char* msg,
-                            const UNITY_UINT lineNumber);
-
-void UnityAssertEqualStringLen(const char* expected,
-                            const char* actual,
-                            const UNITY_UINT32 length,
-                            const char* msg,
-                            const UNITY_UINT lineNumber);
-
-void UnityAssertEqualStringArray(  const void* expected,
-                                  const char** actual,
-                                  const UNITY_UINT32 num_elements,
-                                  const char* msg,
-                                  const UNITY_UINT lineNumber,
-                                  const UNITY_FLAGS_T flags);
-
-void UnityAssertEqualMemory(  const void* expected,
-                              const void* actual,
-                             const UNITY_UINT32 length,
-                             const UNITY_UINT32 num_elements,
-                             const char* msg,
-                             const UNITY_UINT lineNumber,
-                             const UNITY_FLAGS_T flags);
-
-void UnityAssertNumbersWithin(const UNITY_UINT delta,
-                              const UNITY_INT expected,
-                              const UNITY_INT actual,
-                              const char* msg,
-                              const UNITY_UINT lineNumber,
-                              const UNITY_DISPLAY_STYLE_T style);
-
-void UnityFail(const char* msg, const UNITY_UINT line);
-
-void UnityIgnore(const char* msg, const UNITY_UINT line);
-
-
-void UnityAssertFloatsWithin(const UNITY_FLOAT delta,
-                             const UNITY_FLOAT expected,
-                             const UNITY_FLOAT actual,
-                             const char* msg,
-                             const UNITY_UINT lineNumber);
-
-void UnityAssertEqualFloatArray( const UNITY_FLOAT* expected,
-                                 const UNITY_FLOAT* actual,
-                                const UNITY_UINT32 num_elements,
-                                const char* msg,
-                                const UNITY_UINT lineNumber,
-                                const UNITY_FLAGS_T flags);
-
-void UnityAssertFloatSpecial(const UNITY_FLOAT actual,
-                             const char* msg,
-                             const UNITY_UINT lineNumber,
-                             const UNITY_FLOAT_TRAIT_T style);
-
-
-#line 610 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-
-
- 
-
- const void* UnityNumToPtr(const UNITY_INT num, const UNITY_UINT8 size);
-
- const void* UnityFloatToPtr(const float num);
-
-
-
-
-
-
-
- 
-
-extern const char UnityStrErrFloat[];
-extern const char UnityStrErrDouble[];
-extern const char UnityStrErr64[];
-
-
-
- 
-
-#line 642 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-
-
-
-
-
-
- 
-#line 661 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
- 
-#line 670 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-#line 677 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
- 
-
-
-
-
-
-#line 722 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-#line 734 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-#line 746 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-#line 758 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-#line 770 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-#line 782 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-
-
-
-
-
-#line 802 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-#line 817 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-#line 866 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-#line 894 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
-#line 922 "C:\\mpbComponent\\mpbMath\\UnitTestFramework\\vendor\\ceedling\\vendor\\unity\\src\\unity_internals.h"
-
- 
-#line 17 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
-
-
-
- 
-
- 
-void setUp(void);
-void tearDown(void);
-
-
-
- 
-void suiteSetUp(void);
-int suiteTearDown(int num_failures);
-
-
-
-
-
- 
-#line 54 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
- 
-
-
-
- 
-
-
-
-
- 
-
- 
-#line 126 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
-
- 
-#line 150 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
-
- 
-#line 167 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
-
-#line 183 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
-
-#line 199 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
-
-#line 215 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
-
- 
-#line 232 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
-
- 
-
-
-
-
-
- 
-#line 258 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
-
- 
-#line 278 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
-
- 
-#line 292 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
-
- 
-#line 306 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
-
-
-
- 
-
- 
-#line 318 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
-
- 
-#line 342 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
-
- 
-#line 359 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
-
-#line 375 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
-
-#line 391 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
-
-#line 407 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
-
- 
-#line 424 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
-
- 
-
-
-
-
-
- 
-#line 450 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
-
- 
-#line 470 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
-
- 
-#line 484 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
-
- 
-#line 498 "C:/mpbComponent/mpbMath/UnitTestFramework/vendor/ceedling/vendor/unity/src/unity.h"
-
- 
-#line 19 "../Tests/test_mpbMathDivision.c"
-#line 1 "../Includes/mpbMathDivision.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
- 
-
-
- 
-#line 1 "../../commun/Includes/mpblibs.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
- 
-
-
-
- 
-
- 
-#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdlib.h"
- 
- 
-
-
-
-
-
-  #pragma system_include
-
-
-#line 1 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ycheck.h"
- 
- 
-
- 
-
-
-  #pragma system_include
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-#line 12 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdlib.h"
-
-
+#line 14 "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdlib.h"
 
  
 #pragma rtmodel="__dlib_full_locale_support",   "0"
@@ -4859,8 +2817,8 @@ eMpbError_t eMpbMathDivisionDouble( double fdNumerator, double fdDenominator, do
 
 
 
-
-
+ 
+eMpbError_t eMpbMathDivisionU64( uint64_t ullNumerator, uint64_t ullDenominator, uint64_t *pullResult );
 
 
 
@@ -4870,14 +2828,9 @@ eMpbError_t eMpbMathDivisionDouble( double fdNumerator, double fdDenominator, do
 
 
  
+eMpbError_t eMpbMathDivisionS64( int64_t sllNumerator, int64_t sllDenominator, int64_t *psllResult );
 
-
-#line 20 "../Tests/test_mpbMathDivision.c"
-#line 1 "build/test/mocks/mock_mpbMath.h"
- 
-
-
-
+#line 20 "../Sources/mpbMathDivision.c"
 #line 1 "../Includes/mpbMath.h"
 
 
@@ -5759,71 +3712,7 @@ extern eBool_t eMpbMathDoubleIsNaN( double xValue );
  
 extern eBool_t eMpbMathDoubleIsInfinity( double xValue );
 
-#line 6 "build/test/mocks/mock_mpbMath.h"
-
- 
-#line 18 "build/test/mocks/mock_mpbMath.h"
-
-void mock_mpbMath_Init(void);
-void mock_mpbMath_Destroy(void);
-void mock_mpbMath_Verify(void);
-
-
-
-
-
-void eMpbMathFloatIsNaN_CMockIgnoreAndReturn(UNITY_UINT cmock_line, eBool_t cmock_to_return);
-
-void eMpbMathFloatIsNaN_CMockExpectAnyArgsAndReturn(UNITY_UINT cmock_line, eBool_t cmock_to_return);
-
-void eMpbMathFloatIsNaN_CMockExpectAndReturn(UNITY_UINT cmock_line, float xValue, eBool_t cmock_to_return);
-typedef eBool_t (* CMOCK_eMpbMathFloatIsNaN_CALLBACK)(float xValue, int cmock_num_calls);
-void eMpbMathFloatIsNaN_StubWithCallback(CMOCK_eMpbMathFloatIsNaN_CALLBACK Callback);
-
-void eMpbMathFloatIsNaN_CMockIgnoreArg_xValue(UNITY_UINT cmock_line);
-
-void eMpbMathFloatIsInfinity_CMockIgnoreAndReturn(UNITY_UINT cmock_line, eBool_t cmock_to_return);
-
-void eMpbMathFloatIsInfinity_CMockExpectAnyArgsAndReturn(UNITY_UINT cmock_line, eBool_t cmock_to_return);
-
-void eMpbMathFloatIsInfinity_CMockExpectAndReturn(UNITY_UINT cmock_line, float xValue, eBool_t cmock_to_return);
-typedef eBool_t (* CMOCK_eMpbMathFloatIsInfinity_CALLBACK)(float xValue, int cmock_num_calls);
-void eMpbMathFloatIsInfinity_StubWithCallback(CMOCK_eMpbMathFloatIsInfinity_CALLBACK Callback);
-
-void eMpbMathFloatIsInfinity_CMockIgnoreArg_xValue(UNITY_UINT cmock_line);
-
-void eMpbMathDoubleIsNaN_CMockIgnoreAndReturn(UNITY_UINT cmock_line, eBool_t cmock_to_return);
-
-void eMpbMathDoubleIsNaN_CMockExpectAnyArgsAndReturn(UNITY_UINT cmock_line, eBool_t cmock_to_return);
-
-void eMpbMathDoubleIsNaN_CMockExpectAndReturn(UNITY_UINT cmock_line, double xValue, eBool_t cmock_to_return);
-typedef eBool_t (* CMOCK_eMpbMathDoubleIsNaN_CALLBACK)(double xValue, int cmock_num_calls);
-void eMpbMathDoubleIsNaN_StubWithCallback(CMOCK_eMpbMathDoubleIsNaN_CALLBACK Callback);
-
-void eMpbMathDoubleIsNaN_CMockIgnoreArg_xValue(UNITY_UINT cmock_line);
-
-void eMpbMathDoubleIsInfinity_CMockIgnoreAndReturn(UNITY_UINT cmock_line, eBool_t cmock_to_return);
-
-void eMpbMathDoubleIsInfinity_CMockExpectAnyArgsAndReturn(UNITY_UINT cmock_line, eBool_t cmock_to_return);
-
-void eMpbMathDoubleIsInfinity_CMockExpectAndReturn(UNITY_UINT cmock_line, double xValue, eBool_t cmock_to_return);
-typedef eBool_t (* CMOCK_eMpbMathDoubleIsInfinity_CALLBACK)(double xValue, int cmock_num_calls);
-void eMpbMathDoubleIsInfinity_StubWithCallback(CMOCK_eMpbMathDoubleIsInfinity_CALLBACK Callback);
-
-void eMpbMathDoubleIsInfinity_CMockIgnoreArg_xValue(UNITY_UINT cmock_line);
-
-
-
-
-
-
-
-#line 21 "../Tests/test_mpbMathDivision.c"
-
-
- 
-
-
+#line 21 "../Sources/mpbMathDivision.c"
 
  
  
@@ -5832,209 +3721,131 @@ void eMpbMathDoubleIsInfinity_CMockIgnoreArg_xValue(UNITY_UINT cmock_line);
  
  
  
+float vroundf(float var); 
  
-
-void setUp()
-{
-	
-}
-
-void tearDown()
-{
-	
-}
-
  
-
- 
-void test_eMpbMathDivisionU32_DivideBy0_Fail()
-{
-    eMpbError_t eResult;
-    uint32_t ulResult;
+float vroundf(float var) 
+{ 
     
-	eResult = eMpbMathDivisionU32( 834632, 0, &ulResult );
-	UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(55), UNITY_DISPLAY_STYLE_INT);
+    
+    
+    
+    float value = (float)(var * 100 + .5); 
+    return (float)value / 100; 
+} 
+
+ 
+
+eMpbError_t eMpbMathDivisionU32( uint32_t ulNumerator, uint32_t ulDenominator, uint32_t *pulResult )
+{	
+	if( ( ulDenominator == 0 ) || ( pulResult == 0 ) )
+    {
+        return eInvalidParameter;
+    }
+      
+	 
+	ulNumerator += ( ulDenominator >> 1 );
+    
+	*pulResult = ( ulNumerator / ulDenominator );
+	return eSuccess;
 }
  
 
-void test_eMpbMathDivisionU32_NullPointer_Fail()
+eMpbError_t eMpbMathDivisionFloat( float fNumerator, float fDenominator, float *pfResult )
 {
-    eMpbError_t eResult;
+    float fResultCheck                     = 0;
+    const uint32_t ulSixthDecimalPrecision = 1000000;
+    
+    if( pfResult == 0 )
+    {
+        return eInvalidParameter;
+    }
+    
+		
+    fResultCheck = ( fNumerator / fDenominator );
+    
      
-	eResult = eMpbMathDivisionU32( 834632, 3456, 0 );
-	UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(64), UNITY_DISPLAY_STYLE_INT);
+		fResultCheck = ( vroundf( ulSixthDecimalPrecision * fResultCheck ) / ulSixthDecimalPrecision ); 
+		
+    if( ( eMpbMathFloatIsInfinity( fResultCheck ) == eTrue ) || ( eMpbMathFloatIsNaN( fResultCheck ) == eTrue ) )
+    {
+        return eInvalidParameter;
+    }
+    else
+    {
+        *pfResult = fResultCheck;
+    }
+    
+	return eSuccess;
 }
  
 
-void test_eMpbMathDivisionU32_DivideBy0AndNullPointer_Fail()
+eMpbError_t eMpbMathDivisionDouble( double fdNumerator, double fdDenominator, double *pdfResult )
 {
-    eMpbError_t eResult;
+    double fdResultCheck                   = 0;
+    const uint32_t ulSixthDecimalPrecision = 1000000;
     
-	eResult = eMpbMathDivisionU32( 54734576, 0, 0 );
-	UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(73), UNITY_DISPLAY_STYLE_INT);
-}
- 
-
-void test_eMpbMathDivisionU32_DivisionAndReturn_Success()
-{
-    eMpbError_t eResult;
-    uint32_t ulResult;
+    if( pdfResult == 0 )
+    {
+        return eInvalidParameter;
+    }
     
-	eResult = eMpbMathDivisionU32( 351852, 6, &ulResult );
-	UnityAssertEqualNumber((UNITY_INT)(UNITY_UINT32)((58642)), (UNITY_INT)(UNITY_UINT32)((ulResult)), (0), (UNITY_UINT)(83), UNITY_DISPLAY_STYLE_UINT32);
-	UnityAssertEqualNumber((UNITY_INT)((eSuccess)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(84), UNITY_DISPLAY_STYLE_INT);
-}
- 
- 
-void test_eMpbMathDivisionFloat_InfinityDivision_Fail()
-{
-    eMpbError_t eResult;
-    float fResult;
+    fdResultCheck = ( fdNumerator / fdDenominator );
     
-    eMpbMathFloatIsInfinity_CMockExpectAndReturn(93, ((float) 0.Infinity), eTrue);
+     
+    fdResultCheck = ( vroundf( ulSixthDecimalPrecision * fdResultCheck ) / ulSixthDecimalPrecision ); 
     
-	eResult = eMpbMathDivisionFloat( 456735.23f, 0.0f, &fResult );
-	UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(96), UNITY_DISPLAY_STYLE_INT);
-}
- 
-
-void test_eMpbMathDivisionFloat_NaNDivision_Fail()
-{
-    eMpbError_t eResult;
-    float fResult;
     
-    eMpbMathFloatIsInfinity_CMockExpectAndReturn(105, ((float) 0.NaN), eFalse);
-    eMpbMathFloatIsNaN_CMockExpectAndReturn(106, ((float) 0.NaN), eTrue);
-    
-	eResult = eMpbMathDivisionFloat( 0.0f, 0.0f, &fResult );
-	UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(109), UNITY_DISPLAY_STYLE_INT);
-}
- 
-
-void test_eMpbMathDivisionFloat_NullPointer_Fail()
-{
-    eMpbError_t eResult;
-    
-	eResult = eMpbMathDivisionFloat( 2.0f, 1.0f, 0 );
-	UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(118), UNITY_DISPLAY_STYLE_INT);
-}
- 
-
-void test_eMpbMathDivisionFloat_DivideBy0AndNullPointer_Fail()
-{
-    eMpbError_t eResult;
-    
-	eResult = eMpbMathDivisionFloat( 2.0f, 0.0f, 0 );
-	UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(127), UNITY_DISPLAY_STYLE_INT);
-}
- 
-
-void test_eMpbMathDivisionFloat_DivisionAndReturn_Success()
-{
-    eMpbError_t eResult;
-    float fResult;
-    
-	eMpbMathFloatIsInfinity_CMockExpectAndReturn(136, 6.9f, eFalse);
-	eMpbMathFloatIsNaN_CMockExpectAndReturn(137, 6.9f, eFalse);
-	eResult = eMpbMathDivisionFloat( 30.36f, 4.4f, &fResult );
-	UnityAssertFloatsWithin((UNITY_FLOAT)((UNITY_FLOAT)((6.9f)) * (UNITY_FLOAT)(0.00001f)), (UNITY_FLOAT)((UNITY_FLOAT)((6.9f))), (UNITY_FLOAT)((UNITY_FLOAT)((fResult))), ((0)), (UNITY_UINT)((UNITY_UINT)(139)));
-	UnityAssertEqualNumber((UNITY_INT)((eSuccess)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(140), UNITY_DISPLAY_STYLE_INT);
+    if( ( eMpbMathDoubleIsInfinity( fdResultCheck ) == eTrue ) || ( eMpbMathDoubleIsNaN( fdResultCheck ) == eTrue ) )
+    {
+        return eInvalidParameter;
+    }
+    else
+    {
+        *pdfResult = fdResultCheck;
+    }
 	
-	eMpbMathFloatIsInfinity_CMockExpectAndReturn(142, -6.9f, eFalse);
-	eMpbMathFloatIsNaN_CMockExpectAndReturn(143, -6.9f, eFalse);
-	eResult = eMpbMathDivisionFloat( -30.36f, 4.4f, &fResult );
-	UnityAssertFloatsWithin((UNITY_FLOAT)((UNITY_FLOAT)((-6.9f)) * (UNITY_FLOAT)(0.00001f)), (UNITY_FLOAT)((UNITY_FLOAT)((-6.9f))), (UNITY_FLOAT)((UNITY_FLOAT)((fResult))), ((0)), (UNITY_UINT)((UNITY_UINT)(145)));
-	UnityAssertEqualNumber((UNITY_INT)((eSuccess)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(146), UNITY_DISPLAY_STYLE_INT);
-	
-	eMpbMathFloatIsInfinity_CMockExpectAndReturn(148, -6.9f, eFalse);
-	eMpbMathFloatIsNaN_CMockExpectAndReturn(149, -6.9f, eFalse);
-	eResult = eMpbMathDivisionFloat( 30.36f, -4.4f, &fResult );
-	UnityAssertFloatsWithin((UNITY_FLOAT)((UNITY_FLOAT)((-6.9f)) * (UNITY_FLOAT)(0.00001f)), (UNITY_FLOAT)((UNITY_FLOAT)((-6.9f))), (UNITY_FLOAT)((UNITY_FLOAT)((fResult))), ((0)), (UNITY_UINT)((UNITY_UINT)(151)));
-	UnityAssertEqualNumber((UNITY_INT)((eSuccess)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(152), UNITY_DISPLAY_STYLE_INT);
-	
-	eMpbMathFloatIsInfinity_CMockExpectAndReturn(154, 6.9f, eFalse);
-	eMpbMathFloatIsNaN_CMockExpectAndReturn(155, 6.9f, eFalse);
-	eResult = eMpbMathDivisionFloat( -30.36f, -4.4f, &fResult );
-	UnityAssertFloatsWithin((UNITY_FLOAT)((UNITY_FLOAT)((6.9f)) * (UNITY_FLOAT)(0.00001f)), (UNITY_FLOAT)((UNITY_FLOAT)((6.9f))), (UNITY_FLOAT)((UNITY_FLOAT)((fResult))), ((0)), (UNITY_UINT)((UNITY_UINT)(157)));
-	UnityAssertEqualNumber((UNITY_INT)((eSuccess)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(158), UNITY_DISPLAY_STYLE_INT);
+	return eSuccess;
 }
  
- 
-void test_eMpbMathDivisionDouble_InfinityDivision_Fail()
+
+eMpbError_t eMpbMathDivisionU64( uint64_t ullNumerator, uint64_t ullDenominator, uint64_t *pullResult )
 {
-    eMpbError_t eResult;
-    double fdResult;
+    if( ( ullDenominator == 0 ) || ( pullResult == 0 ) )
+    {
+        return eInvalidParameter;
+    }
     
-    eMpbMathDoubleIsInfinity_CMockExpectAndReturn(167, ((float) 0.Infinity), eTrue);
+	 
+	ullNumerator += ( ullDenominator >> 1 );
     
-	eResult = eMpbMathDivisionDouble( 456735.23, 0.0, &fdResult );
-	UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(170), UNITY_DISPLAY_STYLE_INT);
+	*pullResult = ( ullNumerator / ullDenominator );
+
+	return eSuccess;
 }
  
 
-void test_eMpbMathDivisionDouble_NaNDivision_Fail()
+eMpbError_t eMpbMathDivisionS64( int64_t sllNumerator, int64_t sllDenominator, int64_t *psllResult )
 {
-    eMpbError_t eResult;
-    double fdResult;
+    if( ( sllDenominator == 0 ) || ( psllResult == 0 ) )
+    {
+        return eInvalidParameter;
+    }
+	
+     
+	if( ( ( sllNumerator > 0 ) && ( sllDenominator > 0 ) ) || ( ( sllNumerator < 0 ) && ( sllDenominator < 0 ) ) )
+	{
+		 
+		sllNumerator += ( sllDenominator >> 1 );
+	}
+	else
+	{
+		 
+		sllNumerator -= ( sllDenominator >> 1 );
+	}
     
-    eMpbMathDoubleIsInfinity_CMockExpectAndReturn(179, ((float) 0.NaN), eFalse);
-	eMpbMathDoubleIsNaN_CMockExpectAndReturn(180, ((float) 0.NaN), eTrue);
-    
-	eResult = eMpbMathDivisionDouble( 0.0, 0.0, &fdResult );
-	UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(183), UNITY_DISPLAY_STYLE_INT);
+	*psllResult = ( sllNumerator / sllDenominator );
+	
+	return eSuccess;
 }
  
-
-void test_eMpbMathDivisionDouble_NullPointer_Fail()
-{
-    eMpbError_t eResult;
-    
-	eResult = eMpbMathDivisionDouble( 2.0, 1.0, 0 );
-	UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(192), UNITY_DISPLAY_STYLE_INT);
-}
- 
-
-void test_eMpbMathDivisionDouble_DivideBy0AndNullPointer_Fail()
-{
-    eMpbError_t eResult;
-    
-    eResult = eMpbMathDivisionDouble( 2.0, 0.0, 0 );
-    UnityAssertEqualNumber((UNITY_INT)((eInvalidParameter)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(201), UNITY_DISPLAY_STYLE_INT);
-}
- 
-
-void test_eMpbMathDivisionDouble_DivisionAndReturn_Success()
-{
-    eMpbError_t eResult;
-    double fdResult;
-    
-	eMpbMathDoubleIsInfinity_CMockExpectAndReturn(210, 6.9, eFalse);
-	eMpbMathDoubleIsNaN_CMockExpectAndReturn(211, 6.9, eFalse);
-	eResult = eMpbMathDivisionDouble( 30.36, 4.4, &fdResult );
-	
-	UnityAssertFloatsWithin((UNITY_FLOAT)((UNITY_FLOAT)((6.9)) * (UNITY_FLOAT)(0.00001f)), (UNITY_FLOAT)((UNITY_FLOAT)((6.9))), (UNITY_FLOAT)((UNITY_FLOAT)((fdResult))), ((0)), (UNITY_UINT)((UNITY_UINT)(214)));
-	UnityAssertEqualNumber((UNITY_INT)((eSuccess)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(215), UNITY_DISPLAY_STYLE_INT);
-	
-	eMpbMathDoubleIsInfinity_CMockExpectAndReturn(217, -6.9, eFalse);
-	eMpbMathDoubleIsNaN_CMockExpectAndReturn(218, -6.9, eFalse);
-	eResult = eMpbMathDivisionDouble( -30.36, 4.4, &fdResult );
-	
-	UnityAssertFloatsWithin((UNITY_FLOAT)((UNITY_FLOAT)((-6.9)) * (UNITY_FLOAT)(0.00001f)), (UNITY_FLOAT)((UNITY_FLOAT)((-6.9))), (UNITY_FLOAT)((UNITY_FLOAT)((fdResult))), ((0)), (UNITY_UINT)((UNITY_UINT)(221)));
-	UnityAssertEqualNumber((UNITY_INT)((eSuccess)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(222), UNITY_DISPLAY_STYLE_INT);
-	
-	eMpbMathDoubleIsInfinity_CMockExpectAndReturn(224, -6.9, eFalse);
-	eMpbMathDoubleIsNaN_CMockExpectAndReturn(225, -6.9, eFalse);
-	eResult = eMpbMathDivisionDouble( 30.36, -4.4, &fdResult );
-    
-    UnityAssertFloatsWithin((UNITY_FLOAT)((UNITY_FLOAT)((-6.9)) * (UNITY_FLOAT)(0.00001f)), (UNITY_FLOAT)((UNITY_FLOAT)((-6.9))), (UNITY_FLOAT)((UNITY_FLOAT)((fdResult))), ((0)), (UNITY_UINT)((UNITY_UINT)(228)));
-	UnityAssertEqualNumber((UNITY_INT)((eSuccess)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(229), UNITY_DISPLAY_STYLE_INT);
-	
-	eMpbMathDoubleIsInfinity_CMockExpectAndReturn(231, 6.9, eFalse);
-	eMpbMathDoubleIsNaN_CMockExpectAndReturn(232, 6.9, eFalse);
-	eResult = eMpbMathDivisionDouble( -30.36, -4.4, &fdResult );
-    
-    UnityAssertFloatsWithin((UNITY_FLOAT)((UNITY_FLOAT)((6.9)) * (UNITY_FLOAT)(0.00001f)), (UNITY_FLOAT)((UNITY_FLOAT)((6.9))), (UNITY_FLOAT)((UNITY_FLOAT)((fdResult))), ((0)), (UNITY_UINT)((UNITY_UINT)(235)));
-	UnityAssertEqualNumber((UNITY_INT)((eSuccess)), (UNITY_INT)((eResult)), (0), (UNITY_UINT)(236), UNITY_DISPLAY_STYLE_INT);
-}
-
-

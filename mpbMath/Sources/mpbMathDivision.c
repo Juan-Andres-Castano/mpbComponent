@@ -38,7 +38,29 @@ float vroundf(float var)
     float value = (float)(var * 100 + .5); 
     return (float)value / 100; 
 } 
-
+/*----------------------------------------------------------------------------*/
+eMpbError_t eMpbMathDivisionS32( int32_t slNumerator, int32_t slDenominator, int32_t *pslResult )
+{	
+	if( ( slDenominator == 0 ) || ( pslResult == NULL ) )
+    {
+        return eInvalidParameter;
+    }
+       
+	/* If result is positive */
+	if( ( ( slNumerator > 0 ) && ( slDenominator > 0 ) ) || ( ( slNumerator < 0 ) && ( slDenominator < 0 ) ) )
+	{
+		/* Add half of divider for rounding */
+		slNumerator += ( slDenominator >> 1 );
+	}
+	else
+	{
+		/* Remove half of divider for rounding */
+		slNumerator -= ( slDenominator >> 1 );
+	}
+    
+	*pslResult = ( slNumerator / slDenominator );	
+	return eSuccess;
+}
 /*----------------------------------------------------------------------------*/
 
 eMpbError_t eMpbMathDivisionU32( uint32_t ulNumerator, uint32_t ulDenominator, uint32_t *pulResult )

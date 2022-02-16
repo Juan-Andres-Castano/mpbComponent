@@ -25,15 +25,15 @@
 /* Exported function prototypes --------------------------------------------- */
 
 
-///**
-//  * @brief      Divide two values together, avoiding infinity and NaN results
-//  * @param[in]  slNumerator: Numerator of the division
-//  * @param[in]  slDenominator: Denominator of the division
-//  * @param[out] pslResult: Pointer to store the division result
-//  * @return     Success or library error message
-//  * @note       Signed 32 bits. This function rounds up.
-//  **/
-//eMpbError_t eMpbMathDivisionS32( int32_t slNumerator, int32_t slDenominator, int32_t *pslResult );
+/**
+  * @brief      Divide two values together, avoiding infinity and NaN results
+  * @param[in]  slNumerator: Numerator of the division
+  * @param[in]  slDenominator: Denominator of the division
+  * @param[out] pslResult: Pointer to store the division result
+  * @return     Success or library error message
+  * @note       Signed 32 bits. This function rounds up.
+  **/
+eMpbError_t eMpbMathDivisionS32( int32_t slNumerator, int32_t slDenominator, int32_t *pslResult );
 
 /**
   * @brief      Divide two values together, avoiding infinity and NaN results

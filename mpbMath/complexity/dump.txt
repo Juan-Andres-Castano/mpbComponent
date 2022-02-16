@@ -25,7 +25,7 @@
         <metric_name id="M11" type="average" values="block_depths">Average Block Depth</metric_name>
         <metric_name id="M12" type="average">Average Complexity</metric_name>
       </metric_names>
-      <checkpoint checkpoint_name="Alpha One" checkpoint_date="2022-02-15" ignore_blank_lines="false" modified_complexity="false">
+      <checkpoint checkpoint_name="Alpha One" checkpoint_date="2022-02-16" ignore_blank_lines="false" modified_complexity="false">
         <files file_count="11">
           <file file_name="mpbMathAbsolute.c">
             <metrics metric_count="13">
@@ -287,21 +287,21 @@
           </file>
           <file file_name="mpbMathDivision.c">
             <metrics metric_count="13">
-              <metric id="M0">116</metric>
-              <metric id="M1">36</metric>
-              <metric id="M2">19.4</metric>
-              <metric id="M3">31.0</metric>
-              <metric id="M4">4</metric>
-              <metric id="M5">7.3</metric>
-              <metric id="M6">59</metric>
-              <metric id="M7">eMpbMathDivisionFloat()</metric>
-              <metric id="M8">5</metric>
+              <metric id="M0">156</metric>
+              <metric id="M1">51</metric>
+              <metric id="M2">21.6</metric>
+              <metric id="M3">26.9</metric>
+              <metric id="M4">6</metric>
+              <metric id="M5">7.0</metric>
+              <metric id="M6">133</metric>
+              <metric id="M7">eMpbMathDivisionS64()</metric>
+              <metric id="M8">8</metric>
               <metric id="M9">48</metric>
               <metric id="M10">2</metric>
-              <metric id="M11">1.00</metric>
-              <metric id="M12">3.50</metric>
+              <metric id="M11">1.04</metric>
+              <metric id="M12">4.17</metric>
             </metrics>
-            <function_metrics function_count="4">
+            <function_metrics function_count="6">
               <function name="eMpbMathDivisionDouble()" line="88">
                 <complexity>5</complexity>
                 <statements>11</statements>
@@ -314,7 +314,19 @@
                 <maximum_depth>2</maximum_depth>
                 <calls>1</calls>
               </function>
+              <function name="eMpbMathDivisionS64()" line="133">
+                <complexity>8</complexity>
+                <statements>8</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>0</calls>
+              </function>
               <function name="eMpbMathDivisionU32()" line="44">
+                <complexity>3</complexity>
+                <statements>5</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="eMpbMathDivisionU64()" line="117">
                 <complexity>3</complexity>
                 <statements>5</statements>
                 <maximum_depth>2</maximum_depth>
@@ -328,9 +340,9 @@
               </function>
             </function_metrics>
             <block_depths depth_count="10">
-              <block_depth level="0">7</block_depth>
-              <block_depth level="1">22</block_depth>
-              <block_depth level="2">7</block_depth>
+              <block_depth level="0">9</block_depth>
+              <block_depth level="1">31</block_depth>
+              <block_depth level="2">11</block_depth>
               <block_depth level="3">0</block_depth>
               <block_depth level="4">0</block_depth>
               <block_depth level="5">0</block_depth>
@@ -848,21 +860,21 @@
           </file>
           <file file_name="mpbMathDivision.c">
             <metrics metric_count="13">
-              <metric id="M0">116</metric>
-              <metric id="M1">36</metric>
-              <metric id="M2">19.4</metric>
-              <metric id="M3">17.2</metric>
-              <metric id="M4">4</metric>
-              <metric id="M5">7.3</metric>
-              <metric id="M6">59</metric>
-              <metric id="M7">eMpbMathDivisionFloat()</metric>
-              <metric id="M8">5</metric>
+              <metric id="M0">156</metric>
+              <metric id="M1">51</metric>
+              <metric id="M2">21.6</metric>
+              <metric id="M3">16.7</metric>
+              <metric id="M4">6</metric>
+              <metric id="M5">7.0</metric>
+              <metric id="M6">133</metric>
+              <metric id="M7">eMpbMathDivisionS64()</metric>
+              <metric id="M8">8</metric>
               <metric id="M9">48</metric>
               <metric id="M10">2</metric>
-              <metric id="M11">1.00</metric>
-              <metric id="M12">3.50</metric>
+              <metric id="M11">1.04</metric>
+              <metric id="M12">4.17</metric>
             </metrics>
-            <function_metrics function_count="4">
+            <function_metrics function_count="6">
               <function name="eMpbMathDivisionDouble()" line="88">
                 <complexity>5</complexity>
                 <statements>11</statements>
@@ -875,7 +887,19 @@
                 <maximum_depth>2</maximum_depth>
                 <calls>1</calls>
               </function>
+              <function name="eMpbMathDivisionS64()" line="133">
+                <complexity>8</complexity>
+                <statements>8</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>0</calls>
+              </function>
               <function name="eMpbMathDivisionU32()" line="44">
+                <complexity>3</complexity>
+                <statements>5</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="eMpbMathDivisionU64()" line="117">
                 <complexity>3</complexity>
                 <statements>5</statements>
                 <maximum_depth>2</maximum_depth>
@@ -889,9 +913,9 @@
               </function>
             </function_metrics>
             <block_depths depth_count="10">
-              <block_depth level="0">7</block_depth>
-              <block_depth level="1">22</block_depth>
-              <block_depth level="2">7</block_depth>
+              <block_depth level="0">9</block_depth>
+              <block_depth level="1">31</block_depth>
+              <block_depth level="2">11</block_depth>
               <block_depth level="3">0</block_depth>
               <block_depth level="4">0</block_depth>
               <block_depth level="5">0</block_depth>
