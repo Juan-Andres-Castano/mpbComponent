@@ -287,46 +287,52 @@
           </file>
           <file file_name="mpbMathDivision.c">
             <metrics metric_count="13">
-              <metric id="M0">156</metric>
-              <metric id="M1">51</metric>
-              <metric id="M2">21.6</metric>
-              <metric id="M3">26.9</metric>
-              <metric id="M4">6</metric>
-              <metric id="M5">7.0</metric>
-              <metric id="M6">133</metric>
-              <metric id="M7">eMpbMathDivisionS64()</metric>
+              <metric id="M0">178</metric>
+              <metric id="M1">60</metric>
+              <metric id="M2">23.3</metric>
+              <metric id="M3">25.8</metric>
+              <metric id="M4">7</metric>
+              <metric id="M5">7.1</metric>
+              <metric id="M6">42</metric>
+              <metric id="M7">eMpbMathDivisionS32()</metric>
               <metric id="M8">8</metric>
-              <metric id="M9">48</metric>
+              <metric id="M9">46</metric>
               <metric id="M10">2</metric>
-              <metric id="M11">1.04</metric>
-              <metric id="M12">4.17</metric>
+              <metric id="M11">1.07</metric>
+              <metric id="M12">4.71</metric>
             </metrics>
-            <function_metrics function_count="6">
-              <function name="eMpbMathDivisionDouble()" line="88">
+            <function_metrics function_count="7">
+              <function name="eMpbMathDivisionDouble()" line="110">
                 <complexity>5</complexity>
                 <statements>11</statements>
                 <maximum_depth>2</maximum_depth>
                 <calls>1</calls>
               </function>
-              <function name="eMpbMathDivisionFloat()" line="59">
+              <function name="eMpbMathDivisionFloat()" line="81">
                 <complexity>5</complexity>
                 <statements>11</statements>
                 <maximum_depth>2</maximum_depth>
                 <calls>1</calls>
               </function>
-              <function name="eMpbMathDivisionS64()" line="133">
+              <function name="eMpbMathDivisionS32()" line="42">
                 <complexity>8</complexity>
                 <statements>8</statements>
                 <maximum_depth>2</maximum_depth>
                 <calls>0</calls>
               </function>
-              <function name="eMpbMathDivisionU32()" line="44">
+              <function name="eMpbMathDivisionS64()" line="155">
+                <complexity>8</complexity>
+                <statements>8</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="eMpbMathDivisionU32()" line="66">
                 <complexity>3</complexity>
                 <statements>5</statements>
                 <maximum_depth>2</maximum_depth>
                 <calls>0</calls>
               </function>
-              <function name="eMpbMathDivisionU64()" line="117">
+              <function name="eMpbMathDivisionU64()" line="139">
                 <complexity>3</complexity>
                 <statements>5</statements>
                 <maximum_depth>2</maximum_depth>
@@ -340,9 +346,9 @@
               </function>
             </function_metrics>
             <block_depths depth_count="10">
-              <block_depth level="0">9</block_depth>
-              <block_depth level="1">31</block_depth>
-              <block_depth level="2">11</block_depth>
+              <block_depth level="0">10</block_depth>
+              <block_depth level="1">36</block_depth>
+              <block_depth level="2">14</block_depth>
               <block_depth level="3">0</block_depth>
               <block_depth level="4">0</block_depth>
               <block_depth level="5">0</block_depth>
@@ -860,46 +866,52 @@
           </file>
           <file file_name="mpbMathDivision.c">
             <metrics metric_count="13">
-              <metric id="M0">156</metric>
-              <metric id="M1">51</metric>
-              <metric id="M2">21.6</metric>
-              <metric id="M3">16.7</metric>
-              <metric id="M4">6</metric>
-              <metric id="M5">7.0</metric>
-              <metric id="M6">133</metric>
-              <metric id="M7">eMpbMathDivisionS64()</metric>
+              <metric id="M0">178</metric>
+              <metric id="M1">60</metric>
+              <metric id="M2">23.3</metric>
+              <metric id="M3">16.9</metric>
+              <metric id="M4">7</metric>
+              <metric id="M5">7.1</metric>
+              <metric id="M6">42</metric>
+              <metric id="M7">eMpbMathDivisionS32()</metric>
               <metric id="M8">8</metric>
-              <metric id="M9">48</metric>
+              <metric id="M9">46</metric>
               <metric id="M10">2</metric>
-              <metric id="M11">1.04</metric>
-              <metric id="M12">4.17</metric>
+              <metric id="M11">1.07</metric>
+              <metric id="M12">4.71</metric>
             </metrics>
-            <function_metrics function_count="6">
-              <function name="eMpbMathDivisionDouble()" line="88">
+            <function_metrics function_count="7">
+              <function name="eMpbMathDivisionDouble()" line="110">
                 <complexity>5</complexity>
                 <statements>11</statements>
                 <maximum_depth>2</maximum_depth>
                 <calls>1</calls>
               </function>
-              <function name="eMpbMathDivisionFloat()" line="59">
+              <function name="eMpbMathDivisionFloat()" line="81">
                 <complexity>5</complexity>
                 <statements>11</statements>
                 <maximum_depth>2</maximum_depth>
                 <calls>1</calls>
               </function>
-              <function name="eMpbMathDivisionS64()" line="133">
+              <function name="eMpbMathDivisionS32()" line="42">
                 <complexity>8</complexity>
                 <statements>8</statements>
                 <maximum_depth>2</maximum_depth>
                 <calls>0</calls>
               </function>
-              <function name="eMpbMathDivisionU32()" line="44">
+              <function name="eMpbMathDivisionS64()" line="155">
+                <complexity>8</complexity>
+                <statements>8</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="eMpbMathDivisionU32()" line="66">
                 <complexity>3</complexity>
                 <statements>5</statements>
                 <maximum_depth>2</maximum_depth>
                 <calls>0</calls>
               </function>
-              <function name="eMpbMathDivisionU64()" line="117">
+              <function name="eMpbMathDivisionU64()" line="139">
                 <complexity>3</complexity>
                 <statements>5</statements>
                 <maximum_depth>2</maximum_depth>
@@ -913,9 +925,9 @@
               </function>
             </function_metrics>
             <block_depths depth_count="10">
-              <block_depth level="0">9</block_depth>
-              <block_depth level="1">31</block_depth>
-              <block_depth level="2">11</block_depth>
+              <block_depth level="0">10</block_depth>
+              <block_depth level="1">36</block_depth>
+              <block_depth level="2">14</block_depth>
               <block_depth level="3">0</block_depth>
               <block_depth level="4">0</block_depth>
               <block_depth level="5">0</block_depth>

@@ -1,0 +1,80 @@
+---
+:source:
+  :path: "../Tests"
+  :file: test_mpbDigitalFilteringRclp.c
+:successes:
+- :test: test_eMpbpRclpFilterInit_ulKNotZero_Success
+  :line: 52
+  :message: ''
+- :test: test_eMpbRclpFilterInit_ulKZero_Success
+  :line: 69
+  :message: ''
+- :test: test_eMpbRclpFilterInit_NullPointer_Fail
+  :line: 86
+  :message: ''
+- :test: test_eMpbRclpFilterInit_eMpbMathDivisionU32_Fail
+  :line: 95
+  :message: ''
+- :test: test_eMpbRclpFilterAdd_PositiveValues_Success
+  :line: 111
+  :message: ''
+- :test: test_eMpbRclpFilterAdd_NegativeValues_Success
+  :line: 157
+  :message: ''
+- :test: test_eMpbRclpFilterAdd_eMpbMathDivisionS64_Fail
+  :line: 203
+  :message: ''
+- :test: test_eMpbRclpFilterAdd_NullPointer_Fail
+  :line: 228
+  :message: ''
+- :test: test_eMpbRclpIsFilterReady_IsReadyFalse_Success
+  :line: 251
+  :message: ''
+- :test: test_eMpbRclpIsFilterReady_IsReadyTrue_Success
+  :line: 270
+  :message: ''
+- :test: test_eMpbRclpIsFilterReady_NullPointer_Fail
+  :line: 289
+  :message: ''
+- :test: test_eMpbRclpFloatFilterInit_ulKNotZero_Success
+  :line: 315
+  :message: ''
+- :test: test_eMpbRclpFloatFilterInit_ulKZero_Success
+  :line: 332
+  :message: ''
+- :test: test_eMpbRclpFloatFilterInit_NullPointer_Fail
+  :line: 349
+  :message: ''
+- :test: test_eMpbRclpFloatFilterInit_eMpbMathDivisionU32_Fail
+  :line: 358
+  :message: ''
+- :test: test_eMpbRclpFloatFilterAdd_Positive_Success
+  :line: 376
+  :message: ''
+- :test: test_eMpbRclpFloatFilterAdd_Negative_Success
+  :line: 422
+  :message: ''
+- :test: test_eMpbRclpFloatFilterAdd_BadDivision_Fail
+  :line: 468
+  :message: ''
+- :test: test_eMpbRclpFloatFilterAdd_NullPointer_Fail
+  :line: 493
+  :message: ''
+- :test: test_eMpbRclpIsFloatFilterReady_IsReadyFalse_Success
+  :line: 516
+  :message: ''
+- :test: test_eMpbRclpIsFloatFilterReady_IsReadyTrue_Success
+  :line: 535
+  :message: ''
+- :test: test_eMpbRclpIsFloatFilterReady_NullPointer_Fail
+  :line: 555
+  :message: ''
+:failures: []
+:ignores: []
+:counts:
+  :total: 22
+  :passed: 22
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 0.25813979998929426

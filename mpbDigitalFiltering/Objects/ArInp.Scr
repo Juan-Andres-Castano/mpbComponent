@@ -1,5 +1,4 @@
 --create .\Objects\mpbDigitalFiltering.lib
-.\objects\mpbdigitalfilteringmovingaverage.o
 .\objects\mpbdigitalfilteringnms.o
 .\objects\mpbdigitalfilteringrclp.o
-..\mpbMath\mpbMath.lib
+..\mpbMath\Release\V1_00\mpbMath_11_V_1.01_@_02-16-2022.lib

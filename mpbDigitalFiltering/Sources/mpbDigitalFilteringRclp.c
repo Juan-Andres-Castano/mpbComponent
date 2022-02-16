@@ -59,7 +59,7 @@
 *               acquire.
 *
 * @copyright MPB, Montreal, Qc
-* <h2><center>&copy; COPYRIGHT 2022 MPB, Montreal, Quebec, Canada</center></h2>
+* <h2><center>&copy; COPYRIGHT 2022 NEP, Montreal, Quebec, Canada</center></h2>
 * <h2><center>&copy; All rights reserved.</center></h2><br/><br/>
 * <center>This document contains confidential and proprietary information
 * of MPB (subject to a non-disclosure agreement) and shall</center>
@@ -89,26 +89,23 @@ eMpbError_t eMpbDigitalFilteringRclpInit( xMpbDigitalFilteringRclpFilter_t* pxRc
 {
     eMpbError_t eResult = eInvalidParameter;
     
-    if( pxRclp == NULL )
-    {
-        return eResult;
+    if( pxRclp != NULL )
+    {        
+        eResult = eMpbMathDivisionU32( ulFilterConstant, ulUpdatePeriod, &( pxRclp->ulK ) );
+        if( eResult == eSuccess )
+        {
+            if( pxRclp->ulK == 0 )
+            {
+                pxRclp->ulK = 1;
+            }
+    
+            pxRclp->sllAcc = 0;
+            pxRclp->ulLoad = 0;
+        
+            eResult = eSuccess;
+        }
     }
-    
-    eResult = eMpbMathDivisionU32( ulFilterConstant, ulUpdatePeriod, &( pxRclp->ulK ) );
-    if( eResult != eSuccess )
-    {
-        return eResult;
-    }
-    
-    if( pxRclp->ulK == 0 )
-    {
-        pxRclp->ulK = 1;
-    }
-    
-    pxRclp->sllAcc = 0;
-    pxRclp->ulLoad = 0;
-    
-    return eSuccess;
+    return eResult;
 }
 /*----------------------------------------------------------------------------*/
 

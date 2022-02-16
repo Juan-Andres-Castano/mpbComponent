@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<testsuites tests="46" failures="0" skipped="0" time="0.626991">
+  <testsuite name="test_mpbDigitalFilteringNms" tests="24" failures="0" skipped="0" time="0.368851">
+    <testcase name="test_xMpbDigitalFilteringNmsInit_Success" />
+    <testcase name="test_xMpbDigitalFilteringNmsInit_NullPointer_Fail" />
+    <testcase name="test_eMpbNmsFilterAdd_NullPointerWithNumDeriv_Fail" />
+    <testcase name="test_eMpbNmsFilterAdd_NullPointerWithoutNumDeriv_Fail" />
+    <testcase name="test_eMpbNmsFilterAdd_HighSpikeWithoutNumDeriv_Success" />
+    <testcase name="test_eMpbNmsFilterAdd_HighSpikeWithNumDeriv_Success" />
+    <testcase name="test_eMpbNmsFilterAdd_LowSpikeWithoutNumDeriv_Success" />
+    <testcase name="test_eMpbNmsFilterAdd_LowSpikeWithNumDeriv_Success" />
+    <testcase name="test_eMpbNmsFilterGetAverage_Success" />
+    <testcase name="test_eMpbNmsFilterGetAverage_eMpbMathAverageS32_Fail" />
+    <testcase name="test_eMpbNmsFilterInitFloat_Success" />
+    <testcase name="test_eMpbNmsFilterInitFloat_NullPointer_Fail" />
+    <testcase name="test_eMpbNmsFilterAddFloat_NullPointerWithNumDeriv_Fail" />
+    <testcase name="test_eMpbNmsFilterAddFloat_NullPointerWithoutNumDeriv_Fail" />
+    <testcase name="test_eMpbNmsFilterAddFloat_HighSpikeWithoutNumDeriv_Success" />
+    <testcase name="test_eMpbNmsFilterAddFloat_HighSpikeWithNumDeriv_Success" />
+    <testcase name="test_eMpbNmsFilterAddFloat_LowSpikeWithoutNumDeriv_Success" />
+    <testcase name="test_eMpbNmsFilterAddFloat_LowSpikeWithNumDeriv_Success" />
+    <testcase name="test_eMpbNmsFilterAddFloat_EpsilonHighSpikeWithoutNumDeriv_Success" />
+    <testcase name="test_eMpbNmsFilterAddFloat_EpsilonHighSpikeWithNumDeriv_Success" />
+    <testcase name="test_eMpbNmsFilterAddFloat_EpsilonLowSpikeWithoutNumDeriv_Success" />
+    <testcase name="test_eMpbNmsFilterAddFloat_EpsilonLowSpikeWithNumDeriv_Success" />
+    <testcase name="test_eMpbNmsFilterGetAverageFloat_Success" />
+    <testcase name="test_eMpbNmsFilterGetAverageFloat_eMpbMathAverageFloat_Fail" />
+  </testsuite>
+  <testsuite name="test_mpbDigitalFilteringRclp" tests="22" failures="0" skipped="0" time="0.258140">
+    <testcase name="test_eMpbpRclpFilterInit_ulKNotZero_Success" />
+    <testcase name="test_eMpbRclpFilterInit_ulKZero_Success" />
+    <testcase name="test_eMpbRclpFilterInit_NullPointer_Fail" />
+    <testcase name="test_eMpbRclpFilterInit_eMpbMathDivisionU32_Fail" />
+    <testcase name="test_eMpbRclpFilterAdd_PositiveValues_Success" />
+    <testcase name="test_eMpbRclpFilterAdd_NegativeValues_Success" />
+    <testcase name="test_eMpbRclpFilterAdd_eMpbMathDivisionS64_Fail" />
+    <testcase name="test_eMpbRclpFilterAdd_NullPointer_Fail" />
+    <testcase name="test_eMpbRclpIsFilterReady_IsReadyFalse_Success" />
+    <testcase name="test_eMpbRclpIsFilterReady_IsReadyTrue_Success" />
+    <testcase name="test_eMpbRclpIsFilterReady_NullPointer_Fail" />
+    <testcase name="test_eMpbRclpFloatFilterInit_ulKNotZero_Success" />
+    <testcase name="test_eMpbRclpFloatFilterInit_ulKZero_Success" />
+    <testcase name="test_eMpbRclpFloatFilterInit_NullPointer_Fail" />
+    <testcase name="test_eMpbRclpFloatFilterInit_eMpbMathDivisionU32_Fail" />
+    <testcase name="test_eMpbRclpFloatFilterAdd_Positive_Success" />
+    <testcase name="test_eMpbRclpFloatFilterAdd_Negative_Success" />
+    <testcase name="test_eMpbRclpFloatFilterAdd_BadDivision_Fail" />
+    <testcase name="test_eMpbRclpFloatFilterAdd_NullPointer_Fail" />
+    <testcase name="test_eMpbRclpIsFloatFilterReady_IsReadyFalse_Success" />
+    <testcase name="test_eMpbRclpIsFloatFilterReady_IsReadyTrue_Success" />
+    <testcase name="test_eMpbRclpIsFloatFilterReady_NullPointer_Fail" />
+  </testsuite>
+</testsuites>

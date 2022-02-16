@@ -2,8 +2,8 @@
 * @file         mpbDigitalFilteringNms.c
 * @brief        Non monolithic filter
 * @author       juan
-* @date         Created on 2019-02-22
-* @note         Functions originally written by Francis Savaria
+* @date         Created on 2022-02-22
+* @note         
 * @copyright MPB, Montreal, Qc
 * <h2><center>&copy; COPYRIGHT 2021 MPB, Montreal, Quebec, Canada</center></h2>
 * <h2><center>&copy; All rights reserved.</center></h2><br/><br/>

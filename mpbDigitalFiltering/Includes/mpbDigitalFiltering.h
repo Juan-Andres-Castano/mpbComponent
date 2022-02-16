@@ -19,7 +19,7 @@
 /* Includes ----------------------------------------------------------------- */
 #include "mpbDigitalFilteringNms.h"
 #include "mpbDigitalFilteringRclp.h"
-#include "mpbDigitalFilteringMovingAverage.h"
+
 
 /* Define ------------------------------------------------------------------- */
 /* Exported macro ----------------------------------------------------------- */

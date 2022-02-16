@@ -182,18 +182,6 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\Sources\mpbDigitalFilteringMovingAverage.c</PathWithFileName>
-      <FilenameWithoutPath>mpbDigitalFilteringMovingAverage.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>1</GroupNumber>
-      <FileNumber>2</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
       <PathWithFileName>.\Sources\mpbDigitalFilteringNms.c</PathWithFileName>
       <FilenameWithoutPath>mpbDigitalFilteringNms.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
@@ -201,7 +189,7 @@
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
-      <FileNumber>3</FileNumber>
+      <FileNumber>2</FileNumber>
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -213,13 +201,13 @@
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
-      <FileNumber>4</FileNumber>
+      <FileNumber>3</FileNumber>
       <FileType>4</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\mpbMath\mpbMath.lib</PathWithFileName>
-      <FilenameWithoutPath>mpbMath.lib</FilenameWithoutPath>
+      <PathWithFileName>$TC_ROOT$\..\..\mpbComponent\mpbMath\Release\V1_00\mpbMath_11_V_1.01_@_02-16-2022.lib</PathWithFileName>
+      <FilenameWithoutPath>..\..\mpbComponent\mpbMath\Release\V1_00\mpbMath_11_V_1.01_@_02-16-2022.lib</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

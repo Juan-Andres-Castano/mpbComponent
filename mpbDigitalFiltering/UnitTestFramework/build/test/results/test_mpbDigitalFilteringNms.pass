@@ -1,0 +1,86 @@
+---
+:source:
+  :path: "../Tests"
+  :file: test_mpbDigitalFilteringNms.c
+:successes:
+- :test: test_xMpbDigitalFilteringNmsInit_Success
+  :line: 54
+  :message: ''
+- :test: test_xMpbDigitalFilteringNmsInit_NullPointer_Fail
+  :line: 66
+  :message: ''
+- :test: test_eMpbNmsFilterAdd_NullPointerWithNumDeriv_Fail
+  :line: 76
+  :message: ''
+- :test: test_eMpbNmsFilterAdd_NullPointerWithoutNumDeriv_Fail
+  :line: 95
+  :message: ''
+- :test: test_eMpbNmsFilterAdd_HighSpikeWithoutNumDeriv_Success
+  :line: 114
+  :message: ''
+- :test: test_eMpbNmsFilterAdd_HighSpikeWithNumDeriv_Success
+  :line: 140
+  :message: ''
+- :test: test_eMpbNmsFilterAdd_LowSpikeWithoutNumDeriv_Success
+  :line: 186
+  :message: ''
+- :test: test_eMpbNmsFilterAdd_LowSpikeWithNumDeriv_Success
+  :line: 211
+  :message: ''
+- :test: test_eMpbNmsFilterGetAverage_Success
+  :line: 261
+  :message: ''
+- :test: test_eMpbNmsFilterGetAverage_eMpbMathAverageS32_Fail
+  :line: 279
+  :message: ''
+- :test: test_eMpbNmsFilterInitFloat_Success
+  :line: 303
+  :message: ''
+- :test: test_eMpbNmsFilterInitFloat_NullPointer_Fail
+  :line: 316
+  :message: ''
+- :test: test_eMpbNmsFilterAddFloat_NullPointerWithNumDeriv_Fail
+  :line: 326
+  :message: ''
+- :test: test_eMpbNmsFilterAddFloat_NullPointerWithoutNumDeriv_Fail
+  :line: 345
+  :message: ''
+- :test: test_eMpbNmsFilterAddFloat_HighSpikeWithoutNumDeriv_Success
+  :line: 364
+  :message: ''
+- :test: test_eMpbNmsFilterAddFloat_HighSpikeWithNumDeriv_Success
+  :line: 395
+  :message: ''
+- :test: test_eMpbNmsFilterAddFloat_LowSpikeWithoutNumDeriv_Success
+  :line: 446
+  :message: ''
+- :test: test_eMpbNmsFilterAddFloat_LowSpikeWithNumDeriv_Success
+  :line: 478
+  :message: ''
+- :test: test_eMpbNmsFilterAddFloat_EpsilonHighSpikeWithoutNumDeriv_Success
+  :line: 529
+  :message: ''
+- :test: test_eMpbNmsFilterAddFloat_EpsilonHighSpikeWithNumDeriv_Success
+  :line: 554
+  :message: ''
+- :test: test_eMpbNmsFilterAddFloat_EpsilonLowSpikeWithoutNumDeriv_Success
+  :line: 600
+  :message: ''
+- :test: test_eMpbNmsFilterAddFloat_EpsilonLowSpikeWithNumDeriv_Success
+  :line: 625
+  :message: ''
+- :test: test_eMpbNmsFilterGetAverageFloat_Success
+  :line: 674
+  :message: ''
+- :test: test_eMpbNmsFilterGetAverageFloat_eMpbMathAverageFloat_Fail
+  :line: 692
+  :message: ''
+:failures: []
+:ignores: []
+:counts:
+  :total: 24
+  :passed: 24
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 0.3688511000073049
