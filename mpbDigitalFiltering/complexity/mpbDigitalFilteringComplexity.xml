@@ -42,7 +42,7 @@
 
  
 
-       <project_file>C:\mpbComponent\mpbtime\complexity\mpbTimeComplex.smp</project_file>
+       <project_file>C:\mpbComponent\mpbDigitalFiltering\complexity\mpbDigitalFilteringComplexity.smp</project_file>
 
  
 
@@ -72,7 +72,7 @@
 
        <project_language>C</project_language>
 
-       <source_directory>C:\mpbcomponent\mpbtime\sources</source_directory>
+       <source_directory>C:\mpbcomponent\mpbDigitalFiltering\sources</source_directory>
 
  
 
@@ -220,7 +220,7 @@
 
            <export_insert>xml-stylesheet type='text/xsl' href='SourceMonitor.xslt'</export_insert>
 
-           <export_file>C:\mpbcomponent\mpbtime\complexity\dump.xml</export_file>
+           <export_file>C:\mpbcomponent\mpbDigitalFiltering\complexity\dump.xml</export_file>
 
            <export_type>1 (project summary as XML)</export_type>
 
@@ -259,7 +259,7 @@
 
  
 
-       <project_file>C:\mpbComponent\mpbtime\complexity\mpbTimeComplex.smp</project_file>
+       <project_file>C:\mpbComponent\mpbDigitalFiltering\complexity\mpbDigitalFilteringComplexity.smp</project_file>
 
  
 
@@ -279,7 +279,7 @@
 
        <export>
 
-           <export_file>C:\mpbComponent\mpbtime\complexity\dump.xml</export_file>
+           <export_file>C:\mpbComponent\mpbDigitalFiltering\complexity\dump.xml</export_file>
 
            <export_type>2 (checkpoint details as XML)</export_type>
 
@@ -337,13 +337,13 @@
 
  
 
-       <project_file>C:\mpbComponent\mpbtime\complexity\mpbTimeComplex.smp</project_file>
+       <project_file>C:\mpbComponent\mpbDigitalFiltering\complexity\mpbDigitalFilteringComplexity.smp</project_file>
 
        <checkpoint_name>Alpha One</checkpoint_name>
 
        <export>
 
-           <export_file>C:\mpbComponent\mpbtime\complexity\dump.txt</export_file>
+           <export_file>C:\mpbComponent\mpbDigitalFiltering\complexity\dump.txt</export_file>
 
            <export_type>3 (project details as CSV)</export_type>
 
@@ -369,11 +369,11 @@
 
  
 
-       <project_file>C:\mpbComponent\mpbtime\complexity\mpbTimeComplex.smp</project_file>
+       <project_file>C:\mpbComponent\mpbDigitalFiltering\complexity\mpbDigitalFilteringComplexity.smp</project_file>
 
        <export>
 
-           <export_file>C:\mpbComponent\mpbtime\complexity\dump.txt</export_file>
+           <export_file>C:\mpbComponent\mpbDigitalFiltering\complexity\dump.txt</export_file>
 
            <export_type>2 (project details as XML)</export_type>
 

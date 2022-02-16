@@ -3,7 +3,6 @@ SET CPU_TYPE=VA416xx
 SET CPU_VENDOR=Vorago
 SET UV2_TARGET=mpbDigitalFiltering
 SET CPU_CLOCK=0x00B71B00
-"C:\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\objects\mpbdigitalfilteringmovingaverage.__i"
 "C:\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\objects\mpbdigitalfilteringnms.__i"
 "C:\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\objects\mpbdigitalfilteringrclp.__i"
 "C:\Keil_v5\ARM\ARMCLANG\Bin\ArmAr" --Via ".\Objects\ArInp.Scr"

@@ -26,10 +26,22 @@ Project File Date:  02/16/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.15', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
-Build target 'mpbDigitalFiltering'
+*** Note: Rebuilding project, since 'Options->Output->Create Batch File' is selected.
+Rebuild target 'mpbDigitalFiltering'
 compiling mpbDigitalFilteringNms.c...
+compiling mpbDigitalFilteringRclp.c...
+Sources/mpbDigitalFilteringRclp.c(218): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
+    pxFloatRclp->xAcc += xNewValue;
+                      ~~ ^~~~~~~~~
+Sources/mpbDigitalFilteringRclp.c(226): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
+        pxFloatRclp->xAcc -= xNewValue;
+                          ~~ ^~~~~~~~~
+Sources/mpbDigitalFilteringRclp.c(236): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
+        pxFloatRclp->xAcc -= *pxFilterOutput;
+                          ~~ ^~~~~~~~~~~~~~~
+3 warnings generated.
 creating Library...
-".\Objects\mpbDigitalFiltering.lib" - 0 Error(s), 0 Warning(s).
+".\Objects\mpbDigitalFiltering.lib" - 0 Error(s), 3 Warning(s).
 
 <h2>Software Packages used:</h2>
 
