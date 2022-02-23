@@ -1,29 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<testsuites tests="22" failures="0" skipped="0" time="1.015745">
-  <testsuite name="test_mpbMathDebounce" tests="8" failures="0" skipped="0" time="0.254015">
-    <testcase name="test_vMpbMathDebounceInit_Shall_fail_if_no_valid_pointer_is_allocated_for_Debouncing_fail" />
-    <testcase name="test_vMpbMathDebounceInit_Shall_set_Values_GreaterThan_0_Success" />
-    <testcase name="test_vMpbMathDebounceInit_Shall_run_with_initial_state_EqualTo_0_Success" />
-    <testcase name="test_vMpbMathDebounceUpdate_Shall_fill_the_ADT_with_correct_values_Success" />
-    <testcase name="test_vMpbMathDebounceUpdate_Shall_Debounce_the_OFF_state_At_X_OFF_repetitions_Success" />
-    <testcase name="test_vMpbMathDebounceUpdate_OverCount_Success" />
-    <testcase name="test_vMpbMathDebounceUpdate_ChangeOfConsecutiveValue_Success" />
-    <testcase name="test_vMpbMathDebounceUpdate_ChangeOfStates_Success" />
-  </testsuite>
-  <testsuite name="test_mpbMathDivision" tests="14" failures="0" skipped="0" time="0.761730">
-    <testcase name="test_eMpbMathDivisionU32_DivideBy0_Fail" />
-    <testcase name="test_eMpbMathDivisionU32_NullPointer_Fail" />
-    <testcase name="test_eMpbMathDivisionU32_DivideBy0AndNullPointer_Fail" />
-    <testcase name="test_eMpbMathDivisionU32_DivisionAndReturn_Success" />
-    <testcase name="test_eMpbMathDivisionFloat_InfinityDivision_Fail" />
-    <testcase name="test_eMpbMathDivisionFloat_NaNDivision_Fail" />
-    <testcase name="test_eMpbMathDivisionFloat_NullPointer_Fail" />
-    <testcase name="test_eMpbMathDivisionFloat_DivideBy0AndNullPointer_Fail" />
-    <testcase name="test_eMpbMathDivisionFloat_DivisionAndReturn_Success" />
-    <testcase name="test_eMpbMathDivisionDouble_InfinityDivision_Fail" />
-    <testcase name="test_eMpbMathDivisionDouble_NaNDivision_Fail" />
-    <testcase name="test_eMpbMathDivisionDouble_NullPointer_Fail" />
-    <testcase name="test_eMpbMathDivisionDouble_DivideBy0AndNullPointer_Fail" />
-    <testcase name="test_eMpbMathDivisionDouble_DivisionAndReturn_Success" />
+<testsuites tests="10" failures="1" skipped="0" time="1.580711">
+  <testsuite name="test_mpbMathCrc" tests="10" failures="1" skipped="0" time="1.580711">
+    <testcase name="test_eMpbMathCrcInit_CheckUpFailed_Failed" />
+    <testcase name="test_eMpbMathCrcInit_Success" />
+    <testcase name="test_eMpbMathCrcCalculate_WrongParameters_Failed" />
+    <testcase name="test_eMpbMathCrcCalculate_MallocFailed_Failed" />
+    <testcase name="test_eMpbMathCrcCalculate_CRC16_NoReflection_Success" />
+    <testcase name="test_eMpbMathCrcValidate_WrongParameters_Failed" />
+    <testcase name="test_eMpbMathCrcValidate_MallocFailed_Failed" />
+    <testcase name="test_eMpbMathCrcValidate_CRC32_NoReflexion_Success" />
+    <testcase name="test_eMpbMathCrcValidate_CRC32_NoReflexion_Failed" />
+    <testcase name="test_eMpbMathCrcCalculate_CRC16_Reflection_Success">
+      <failure message="Function vMpbMathCrcUtilReflectBytes.  Called more times than expected." />
+    </testcase>
   </testsuite>
 </testsuites>

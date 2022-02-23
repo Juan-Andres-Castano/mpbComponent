@@ -1,47 +1,45 @@
-[16Feb2022 16:46:39] ****** SourceMonitor (V3.5.16.49): Begin Session
-[16Feb2022 16:46:39] Command Line Option: Process '/C "C:\mpbComponent\mpbDigitalFiltering\complexity\mpbDigitalFilteringComplexity.xml" /L "C:\mpbComponent\mpbDigitalFiltering\complexity\mpbDigitalFilteringComplexity.log"'
-[16Feb2022 16:46:39] Command File: Process Command File 'C:\mpbComponent\mpbDigitalFiltering\complexity\mpbDigitalFilteringComplexity.xml'
-[16Feb2022 16:46:39] Command File: Process Commands [Line 9]
-[16Feb2022 16:46:39] Command File: Execute Command [Line 41]
-[16Feb2022 16:46:39] Command File: Create Project 'C:\mpbComponent\mpbDigitalFiltering\complexity\mpbDigitalFilteringComplexity.smp'
-[16Feb2022 16:46:39] Create Checkpoint: Search for checkpoint files using base directory 'C:\mpbcomponent\mpbDigitalFiltering\sources\'.
-[16Feb2022 16:46:39] Command File: Create Checkpoint 'Baseline' dated '2022-01-31T12:24:56'
-[16Feb2022 16:46:39] Command File: Export Checkpoint Summary to XML
-[16Feb2022 16:46:39] Export Metrics: Begin XML Summary export to file 'C:\mpbcomponent\mpbDigitalFiltering\complexity\dump.xml'.
-[16Feb2022 16:46:39] Export Metrics: Export Checkpoint 'Baseline'
-[16Feb2022 16:46:39] Export Metrics: End Export Checkpoint Summary to XML
-[16Feb2022 16:46:39] Command File: End Export
-[16Feb2022 16:46:39] Command File: End Command Execution
-[16Feb2022 16:46:39] Command File: Execute Command [Line 258]
-[16Feb2022 16:46:39] Command File: Open Project 'C:\mpbComponent\mpbDigitalFiltering\complexity\mpbDigitalFilteringComplexity.smp'
-[16Feb2022 16:46:39] Create Checkpoint: Search for checkpoint files using base directory 'C:\mpbcomponent\mpbDigitalFiltering\sources\'.
-[16Feb2022 16:46:39] Command File: Create Checkpoint 'Checkpoint1' dated '2022-02-16T16:46:39'
-[16Feb2022 16:46:39] Command File: Export Checkpoint Details to XML
-[16Feb2022 16:46:39] Export Metrics: Begin XML Details export to file 'C:\mpbComponent\mpbDigitalFiltering\complexity\dump.xml'.
-[16Feb2022 16:46:39] Export Metrics: Export Checkpoint 'Checkpoint1'
-[16Feb2022 16:46:39] Export Metrics: End Export Checkpoint Details to XML
-[16Feb2022 16:46:39] Command File: End Export
-[16Feb2022 16:46:39] Command File: Checkpoint 'Checkpoint1' deleted
-[16Feb2022 16:46:39] Command File: End Command Execution
-[16Feb2022 16:46:39] Command File: Execute Command [Line 336]
-[16Feb2022 16:46:39] Command File: Open Project 'C:\mpbComponent\mpbDigitalFiltering\complexity\mpbDigitalFilteringComplexity.smp'
-[16Feb2022 16:46:39] Create Checkpoint: Search for checkpoint files using base directory 'C:\mpbcomponent\mpbDigitalFiltering\sources\'.
-[16Feb2022 16:46:39] Command File: Create Checkpoint 'Alpha One' dated '2022-02-16T16:46:39'
-[16Feb2022 16:46:39] Command File: Export Checkpoint Details to CSV
-[16Feb2022 16:46:39] Export Metrics: Begin CSV export to file 'C:\mpbComponent\mpbDigitalFiltering\complexity\dump.txt'.
-[16Feb2022 16:46:39] Export Metrics: Export Checkpoint 'Alpha One'
-[16Feb2022 16:46:39] Export Metrics: End Export Checkpoint Details to CSV
-[16Feb2022 16:46:39] Command File: End Export
-[16Feb2022 16:46:39] Command File: End Command Execution
-[16Feb2022 16:46:39] Command File: Execute Command [Line 368]
-[16Feb2022 16:46:39] Command File: Open Project 'C:\mpbComponent\mpbDigitalFiltering\complexity\mpbDigitalFilteringComplexity.smp'
-[16Feb2022 16:46:39] Command File: Export Checkpoint Details to XML
-[16Feb2022 16:46:39] Export Metrics: Begin XML Details export to file 'C:\mpbComponent\mpbDigitalFiltering\complexity\dump.txt'.
-[16Feb2022 16:46:39] Export Metrics: Export Checkpoint 'Alpha One'
-[16Feb2022 16:46:39] Export Metrics: Export Checkpoint 'Baseline'
-[16Feb2022 16:46:39] Export Metrics: End Export Checkpoint Details to XML
-[16Feb2022 16:46:39] Command File: End Export
-[16Feb2022 16:46:39] Command File: End Command Execution
-[16Feb2022 16:46:39] Command File: End Commands
-[16Feb2022 16:46:39] Command File: End Command File Processing
-[16Feb2022 16:46:39] ****** SourceMonitor (V3.5.16.49): ****** End Session
+[16Feb2022 17:19:07] ****** SourceMonitor (V3.5.16.49): Begin Session
+[16Feb2022 17:19:07] Command Line Option: Process '/C "C:\mpbComponent\mpbDigitalFiltering\complexity\mpbDigitalFilteringComplexity.xml" /L "C:\mpbComponent\mpbDigitalFiltering\complexity\mpbDigitalFilteringComplexity.log"'
+[16Feb2022 17:19:07] Command File: Process Command File 'C:\mpbComponent\mpbDigitalFiltering\complexity\mpbDigitalFilteringComplexity.xml'
+[16Feb2022 17:19:07] Command File: Process Commands [Line 9]
+[16Feb2022 17:19:07] Command File: Execute Command [Line 41]
+[16Feb2022 17:19:07] Command File: Open Project 'C:\mpbComponent\mpbDigitalFiltering\complexity\mpbDigitalFilteringComplexity.smp'
+[16Feb2022 17:19:07] Create Checkpoint: Search for checkpoint files using base directory 'C:\mpbcomponent\mpbDigitalFiltering\sources\'.
+[16Feb2022 17:19:07] Command File: Create Checkpoint 'Baseline' dated '2022-01-31T12:24:56'
+[16Feb2022 17:19:07] Command File: Export Checkpoint Summary to XML
+[16Feb2022 17:19:07] Export Metrics: Begin XML Summary export to file 'C:\mpbcomponent\mpbDigitalFiltering\complexity\dump.xml'.
+[16Feb2022 17:19:07] Export Metrics: Export Checkpoint 'Baseline'
+[16Feb2022 17:19:07] Export Metrics: End Export Checkpoint Summary to XML
+[16Feb2022 17:19:07] Command File: End Export
+[16Feb2022 17:19:07] Command File: End Command Execution
+[16Feb2022 17:19:07] Command File: Execute Command [Line 258]
+[16Feb2022 17:19:08] Command File: Open Project 'C:\mpbComponent\mpbDigitalFiltering\complexity\mpbDigitalFilteringComplexity.smp'
+[16Feb2022 17:19:08] Create Checkpoint: Search for checkpoint files using base directory 'C:\mpbcomponent\mpbDigitalFiltering\sources\'.
+[16Feb2022 17:19:08] Command File: Create Checkpoint 'Checkpoint1' dated '2022-02-16T17:19:08'
+[16Feb2022 17:19:08] Command File: Export Checkpoint Details to XML
+[16Feb2022 17:19:08] Export Metrics: Begin XML Details export to file 'C:\mpbComponent\mpbDigitalFiltering\complexity\dump.xml'.
+[16Feb2022 17:19:08] Export Metrics: Export Checkpoint 'Checkpoint1'
+[16Feb2022 17:19:08] Export Metrics: End Export Checkpoint Details to XML
+[16Feb2022 17:19:08] Command File: End Export
+[16Feb2022 17:19:08] Command File: Checkpoint 'Checkpoint1' deleted
+[16Feb2022 17:19:08] Command File: End Command Execution
+[16Feb2022 17:19:08] Command File: Execute Command [Line 336]
+[16Feb2022 17:19:08] Command File: Open Project 'C:\mpbComponent\mpbDigitalFiltering\complexity\mpbDigitalFilteringComplexity.smp'
+[16Feb2022 17:19:08] Create Checkpoint: Search for checkpoint files using base directory 'C:\mpbcomponent\mpbDigitalFiltering\sources\'.
+[16Feb2022 17:19:08] Command File: Create Checkpoint 'Alpha One' dated '2022-02-16T17:19:08'
+[16Feb2022 17:19:08] Command File: Export Checkpoint Details to CSV
+[16Feb2022 17:19:08] Export Metrics: Begin CSV export to file 'C:\mpbComponent\mpbDigitalFiltering\complexity\dump.txt'.
+[16Feb2022 17:19:08] Export Metrics: Export Checkpoint 'Alpha One'
+[16Feb2022 17:19:08] Export Metrics: End Export Checkpoint Details to CSV
+[16Feb2022 17:19:08] Command File: End Export
+[16Feb2022 17:19:08] Command File: End Command Execution
+[16Feb2022 17:19:08] Command File: Execute Command [Line 368]
+[16Feb2022 17:19:08] Command File: Open Project 'C:\mpbComponent\mpbDigitalFiltering\complexity\mpbDigitalFilteringComplexity.smp'
+[16Feb2022 17:19:08] Command File: Export Checkpoint Details to XML
+[16Feb2022 17:19:08] Export Metrics: Begin XML Details export to file 'C:\mpbComponent\mpbDigitalFiltering\complexity\dump.txt'.
+[16Feb2022 17:19:08] Export Metrics: Export Checkpoint 'Alpha One'
+[16Feb2022 17:19:08] Export Metrics: Export Checkpoint 'Baseline'
+[16Feb2022 17:19:08] Command File: End Command Execution
+[16Feb2022 17:19:08] Command File: End Commands
+[16Feb2022 17:19:08] Command File: End Command File Processing
+[16Feb2022 17:19:08] ****** SourceMonitor (V3.5.16.49): ****** End Session

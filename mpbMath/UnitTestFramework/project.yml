@@ -90,55 +90,55 @@
 # See documentation to configure a given toolchain for use
 # For NAF's need to use IAR, https://stackoverflow.com/questions/41140188/how-can-i-configure-ceedling-for-an-iar-embedded-workbench-project
 # was implemented
-  :test_compiler:
-    :executable: iccarm
-    :name: 'iar test compiler'
-    :arguments:
+#  :test_compiler:
+#    :executable: iccarm
+#    :name: 'iar test compiler'
+#    :arguments:
       # The following IAR compiler directive makes it behave like a proper Ceedling preprocessor. Additional defines
       # can also be added.
-      - -D _DLIB_FILE_DESCRIPTOR=1
-      - --debug
-      - --endian=little
-      - --cpu=Cortex-M3
-      - -e
-      - --fpu=None
-      - -Ol
-      - --preprocess "build/test/list"
-      - --dlib_config "C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\DLib_Config_Normal.h"
-      - -I"$": COLLECTION_PATHS_TEST_TOOLCHAIN_INCLUDE
-      - -I"$": COLLECTION_PATHS_TEST_SUPPORT_SOURCE_INCLUDE_VENDOR
-      - -o "${2}"
-      - --diag_suppress=Pa050
-      - '"${1}"'
+ #     - -D _DLIB_FILE_DESCRIPTOR=1
+ #     - --debug
+ #     - --endian=little
+ #     - --cpu=Cortex-M3
+ #     - -e
+ #     - --fpu=None
+ #     - -Ol
+ #     - --preprocess "build/test/list"
+     # - --dlib_config "C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\DLib_Config_Normal.h"
+ #     - -I"$": COLLECTION_PATHS_TEST_TOOLCHAIN_INCLUDE
+ #     - -I"$": COLLECTION_PATHS_TEST_SUPPORT_SOURCE_INCLUDE_VENDOR
+ #     - -o "${2}"
+ #     - --diag_suppress=Pa050
+ #     - '"${1}"'
 
-  :test_linker:
-    :executable: ilinkarm
-    :name: 'IAR test linker'
-    :arguments:
+ # :test_linker:
+ #   :executable: ilinkarm
+ #   :name: 'IAR test linker'
+ #   :arguments:
       # MODULE LIBRARIES need to be added here
-      - --vfe
-      - --redirect _Printf=_PrintfFull
-      - --redirect _Scanf=_ScanfFull
-      - --semihosting
-      - --config "C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\config\generic_cortex.icf"
-      - --map "build/test/tests.map"
-      - -o "${2}"
-      - '"${1}"'
+#      - --vfe
+#      - --redirect _Printf=_PrintfFull
+#      - --redirect _Scanf=_ScanfFull
+#      - --semihosting
+      #- --config "C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\config\generic_cortex.icf"
+#      - --map "build/test/tests.map"
+#      - -o "${2}"
+#      - '"${1}"'
 
-  :test_fixture:
-    :executable: cspybat
-    :name: 'CSpyBat test runner'
-    :arguments:
-      - '"C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armproc.dll"'
-      - '"C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armsim2.dll"'
-      - '"${1}"'
-      - --plugin "C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armbat.dll"
-      - --silent
-      - --backend -B
-      - --endian=little
-      - --cpu=Cortex-M4
-      - --fpu=None
-      - --semihosting
+#  :test_fixture:
+#    :executable: cspybat
+#    :name: 'CSpyBat test runner'
+#    :arguments:
+      #- '"C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armproc.dll"'
+      #- '"C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armsim2.dll"'
+ #     - '"${1}"'
+      #- --plugin "C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armbat.dll"
+      #- --silent
+      #- --backend -B
+      #- --endian=little
+      #- --cpu=Cortex-M4
+      #- --fpu=None
+      #- --semihosting
 
 
 # LIBRARIES

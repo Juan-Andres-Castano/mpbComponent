@@ -150,7 +150,7 @@ eMpbError_t eMpbMathCrcCalculate( xMpbCrc_t xMpbCrc, uint32_t ulNumberOfBytes, c
     
     /* Crc is XOR with xor value */
     ulPostCrcValue ^= ( xMpbCrc.ulXorOutput );
-	*pulCrcValue = ulPostCrcValue;
+		*pulCrcValue = ulPostCrcValue;
     
     vMpblibsFree( ( void** )&pucResult );
     

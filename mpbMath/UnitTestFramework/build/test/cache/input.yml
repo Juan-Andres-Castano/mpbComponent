@@ -107,58 +107,39 @@
   :file_suffix: _runner
 :tools:
   :test_compiler:
-    :executable: iccarm
-    :name: iar test compiler
+    :executable: gcc.exe
+    :name: default_test_compiler
+    :stderr_redirect: :none
+    :background_exec: :none
+    :optional: false
     :arguments:
-    - "-D _DLIB_FILE_DESCRIPTOR=1"
-    - "--debug"
-    - "--endian=little"
-    - "--cpu=Cortex-M3"
-    - "-e"
-    - "--fpu=None"
-    - "-Ol"
-    - --preprocess "build/test/list"
-    - --dlib_config "C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\DLib_Config_Normal.h"
-    - -I"$": COLLECTION_PATHS_TEST_TOOLCHAIN_INCLUDE
     - -I"$": COLLECTION_PATHS_TEST_SUPPORT_SOURCE_INCLUDE_VENDOR
+    - -I"$": COLLECTION_PATHS_TEST_TOOLCHAIN_INCLUDE
+    - "-D$": COLLECTION_DEFINES_TEST_AND_VENDOR
+    - "-DGNU_COMPILER"
+    - "-g"
+    - -c "${1}"
     - -o "${2}"
-    - "--diag_suppress=Pa050"
-    - '"${1}"'
-    :stderr_redirect: :none
-    :background_exec: :none
-    :optional: false
-  :test_linker:
-    :executable: ilinkarm
-    :name: IAR test linker
-    :arguments:
-    - "--vfe"
-    - "--redirect _Printf=_PrintfFull"
-    - "--redirect _Scanf=_ScanfFull"
-    - "--semihosting"
-    - --config "C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\config\generic_cortex.icf"
-    - --map "build/test/tests.map"
-    - -o "${2}"
-    - '"${1}"'
-    :stderr_redirect: :none
-    :background_exec: :none
-    :optional: false
+    - "-MMD"
+    - -MF "${4}"
   :test_fixture:
-    :executable: cspybat
-    :name: CSpyBat test runner
-    :arguments:
-    - '"C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armproc.dll"'
-    - '"C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armsim2.dll"'
-    - '"${1}"'
-    - --plugin "C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armbat.dll"
-    - "--silent"
-    - "--backend -B"
-    - "--endian=little"
-    - "--cpu=Cortex-M4"
-    - "--fpu=None"
-    - "--semihosting"
+    :executable: "${1}"
+    :name: default_test_fixture
+    :stderr_redirect: :auto
+    :background_exec: :none
+    :optional: false
+    :arguments: []
+  :test_linker:
+    :executable: gcc.exe
+    :name: default_test_linker
     :stderr_redirect: :none
     :background_exec: :none
     :optional: false
+    :arguments:
+    - '"${1}"'
+    - -o "${2}"
+    - ''
+    - "${4}"
   :gcov_compiler:
     :executable: gcc
     :arguments:
