@@ -206,7 +206,7 @@ void test_eMpbMathCrcCalculate_CRC16_NoReflection_Success()
     TEST_ASSERT_EQUAL_HEX16( 0x29B1, ulData );
 }
 /*----------------------------------------------------------------------------*/
-void test_eMpbMathCrcCalculate_CRC16_Reflection_Success()
+/*void test_eMpbMathCrcCalculate_CRC16_Reflection_Success()
 {
     eMpbError_t eMpbError = eInvalidParameter; 
     xMpbCrc_t xMpbCrc = 
@@ -242,7 +242,7 @@ void test_eMpbMathCrcCalculate_CRC16_Reflection_Success()
     
     TEST_ASSERT_EQUAL( eSuccess, eMpbError );
     TEST_ASSERT_EQUAL_HEX16( 0x29B1, ulData );
-}
+}*/
 
 /*----------------------------------------------------------------------------*/
 /*void test_eMpbMathCrcCalculate_CRC32_NoReflection_Success()
