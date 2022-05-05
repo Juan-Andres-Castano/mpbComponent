@@ -1,23 +1,11 @@
 Dependencies for Project 'mpbCurrentOutput', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 6150000::V6.15::ARMCLANG
-F (.\CurrentOutput\Sources\CurrentOutput.c)(0x608C015E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CurrentOutput/Includes -I ../common -I ../mpbMath/Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/currentoutput.o -MD)
-I (CurrentOutput\Includes\CurrentOutput.h)(0x608C0160)
-I (..\common\mpblibs.h)(0x607DDA37)
+F (.\CurrentOutput\Sources\CurrentOutput.c)(0x6273E5C0)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CurrentOutput/Includes -I ../commun/Includes -I ../mpbMath/Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/currentoutput.o -MD)
+I (CurrentOutput\Includes\CurrentOutput.h)(0x6273E4FB)
+I (..\commun\Includes\mpblibs.h)(0x61EB03FA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F378778)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F37877E)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5F378774)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5F378762)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F37877E)
-I (..\mpbMath\Includes\mpbMath.h)(0x607DDA37)
-I (..\mpbMath\Includes\mpbMathAbsolute.h)(0x607DDA37)
-I (..\mpbMath\Includes\mpbMathAverage.h)(0x607DDA37)
-I (..\mpbMath\Includes\mpbMathCoerce.h)(0x607DDA37)
-I (..\mpbMath\Includes\mpbMathCrc.h)(0x607DDA37)
-I (..\mpbMath\Includes\mpbMathCrcUtil.h)(0x607DDA37)
-I (..\mpbMath\Includes\mpbMathDebounce.h)(0x607DDA37)
-I (..\mpbMath\Includes\mpbMathDivision.h)(0x607DDA37)
-I (..\mpbMath\Includes\mpbMathFifo.h)(0x607DDA37)
-I (..\mpbMath\Includes\mpbMathLinearApprox.h)(0x607DDA37)
-I (..\mpbMath\Includes\mpbMathResistor.h)(0x607DDA37)
-I (..\mpbMath\Includes\mpbMathRound.h)(0x607DDA37)
-F (..\mpbMath\V_100\mpbMath.lib)(0x607DDA37)()
+F (..\mpbMath\Release\mpbMath_17_V_1.01_@_03-17-2022.lib)(0x62339907)()

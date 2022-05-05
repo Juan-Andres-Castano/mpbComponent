@@ -194,8 +194,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\mpbMath\V_100\mpbMath.lib</PathWithFileName>
-      <FilenameWithoutPath>mpbMath.lib</FilenameWithoutPath>
+      <PathWithFileName>..\mpbMath\Release\mpbMath_17_V_1.01_@_03-17-2022.lib</PathWithFileName>
+      <FilenameWithoutPath>mpbMath_17_V_1.01_@_03-17-2022.lib</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\CurrentOutput\Includes;..\common;..\mpbMath\Includes</IncludePath>
+              <IncludePath>.\CurrentOutput\Includes;..\commun\Includes;..\mpbMath\Includes</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -389,9 +389,9 @@
               <FilePath>.\CurrentOutput\Sources\CurrentOutput.c</FilePath>
             </File>
             <File>
-              <FileName>mpbMath.lib</FileName>
+              <FileName>mpbMath_17_V_1.01_@_03-17-2022.lib</FileName>
               <FileType>4</FileType>
-              <FilePath>..\mpbMath\V_100\mpbMath.lib</FilePath>
+              <FilePath>..\mpbMath\Release\mpbMath_17_V_1.01_@_03-17-2022.lib</FilePath>
             </File>
           </Files>
         </Group>
