@@ -19,7 +19,7 @@ Rem del c:\mpbComponent\configurationManagement\report.xml
 
 color 0f
 
-xcopy  "C:\mpbComponent\mpbDigitalFiltering\UnitTestFramework\build\artifacts\test\*.*" "C:\mpbComponent\mpbDigitalFiltering\Tests\reports\." /i /e 
+xcopy  "C:\mpbComponent\mpbM2MProtocol\UnitTestFramework\build\artifacts\test\*.*" "C:\mpbComponent\mpbM2MProtocol\Tests\reports\." /i /e 
 
 
 
