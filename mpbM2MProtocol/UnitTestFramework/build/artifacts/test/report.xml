@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<TestRun>
+	<FailedTests/>
+	<SuccessfulTests>
+		<Test id="1">
+			<Name>../Tests/test_mpbBuffer.c::test_Buffer_Put_and_Get_should_WorkTogetherToInsertAndExtractAValue</Name>
+		</Test>
+		<Test id="2">
+			<Name>../Tests/test_mpbBuffer.c::test_Buffer_Get_should_ReturnErrorIfCalledWhenEmpty</Name>
+		</Test>
+		<Test id="3">
+			<Name>../Tests/test_mpbBuffer.c::test_Buffer_Put_should_ReturnErrorIfCalledWhenFull</Name>
+		</Test>
+		<Test id="4">
+			<Name>../Tests/test_mpbBuffer.c::test_Buffer_Get_should_ProperlyGrabEveryItemFromFullToEmpty</Name>
+		</Test>
+		<Test id="5">
+			<Name>../Tests/test_mpbBuffer.c::test_Buffer_IsFull_should_ReturnTrueWhenFullOtherwiseFalse</Name>
+		</Test>
+		<Test id="6">
+			<Name>../Tests/test_mpbBuffer.c::test_Buffer_IsEmpty_should_ReturnTrueWhenEmptyOtherwiseFalse</Name>
+		</Test>
+		<Test id="7">
+			<Name>../Tests/test_mpbBuffer.c::test_Buffer_Clear_should_ClearItIfCleared</Name>
+		</Test>
+		<Test id="8">
+			<Name>../Tests/test_mpbBuffer.c::test_Buffer_Clear_should_ClearItIfSomeElementsInIt</Name>
+		</Test>
+		<Test id="9">
+			<Name>../Tests/test_mpbBuffer.c::test_Buffer_Clear_should_ClearItIfFull</Name>
+		</Test>
+		<Test id="10">
+			<Name>../Tests/test_mpbCommandConductor.c::test_CommandConductor_Init_ShouldInitializeSubmodules</Name>
+		</Test>
+		<Test id="11">
+			<Name>../Tests/test_mpbCommandConductor.c::test_CommandConductor_Exec_Should_CheckForMessages_And_DoNothingIfNone</Name>
+		</Test>
+		<Test id="12">
+			<Name>../Tests/test_mpbCommandConductor.c::test_CommandConductor_Exec_Should_CheckForMessages_And_DoNothingIfUnknown</Name>
+		</Test>
+		<Test id="13">
+			<Name>../Tests/test_mpbCommandConductor.c::test_CommandConductor_Exec_Should_CheckForMessages_And_ProcessIfCommandAccepted</Name>
+		</Test>
+		<Test id="14">
+			<Name>../Tests/test_mpbCommandConductor.c::test_CommandConductor_Exec_Should_CheckForcommandsetup_And_ProcessIfCommandAccepted</Name>
+		</Test>
+		<Test id="15">
+			<Name>../Tests/test_mpbCommandHardware.c::test_mpbCommandHardware_CheckForMsg_Should_ReturnNoneYet_When_NoBytesAvailable</Name>
+		</Test>
+		<Test id="16">
+			<Name>../Tests/test_mpbCommandHardware.c::test_CommandHardware_CheckForMsg_Should_GetCharAndAddToPacker_When_BytesAvailable</Name>
+		</Test>
+		<Test id="17">
+			<Name>../Tests/test_mpbCommandHardware.c::test_CommandHardware_CheckForMsg_Should_GetCharAndfinishToPack_When_BytesAvailable</Name>
+		</Test>
+		<Test id="18">
+			<Name>../Tests/test_mpbCommandHardware.c::test_CommandHardware_CheckForMsg_Should_OnelengthGetCharAndfinishToPack_When_BytesAvailable</Name>
+		</Test>
+		<Test id="19">
+			<Name>../Tests/test_mpbCommandHardware.c::test_CommandHardware_CheckforMsg_Should_GetallMsgFilled_when_all_bytesAreReceived</Name>
+		</Test>
+		<Test id="20">
+			<Name>../Tests/test_mpbCommandHardware.c::test_mpbCommandHardware_SendResponse_Should_DoNothing_When_NothingPacked</Name>
+		</Test>
+		<Test id="21">
+			<Name>../Tests/test_mpbCommandHardware.c::test_mpbCommandHardware_SendResponse_Should_detect_serialdriverProblems</Name>
+		</Test>
+		<Test id="22">
+			<Name>../Tests/test_mpbCommandHardware.c::test_mpbCommandHardware_SendResponse_Should_SendBytes_When_MessagePacked</Name>
+		</Test>
+		<Test id="23">
+			<Name>../Tests/test_mpbCommandHardware.c::test_mpbCommandHardware_SendResponse_Should_SendBytes_When_MessagePackedCallback</Name>
+		</Test>
+		<Test id="24">
+			<Name>../Tests/test_mpbPacker.c::test_mpbPacker_AddMsg_Should_PackSevenLengthMessages</Name>
+		</Test>
+		<Test id="25">
+			<Name>../Tests/test_mpbPacker.c::test_mpbPacker_AddMsg_Should_AcceptOneLengthMessages</Name>
+		</Test>
+		<Test id="26">
+			<Name>../Tests/test_mpbPacker.c::test_mpbPacker_AddMsg_Should_RejectZeroLengthMessages</Name>
+		</Test>
+		<Test id="27">
+			<Name>../Tests/test_mpbPacker.c::test_mpbPacker_AddMsg_Should_NeverOverflow</Name>
+		</Test>
+		<Test id="28">
+			<Name>../Tests/test_mpbPacker.c::test_mpbPacker_AddMsg_Should_ReturnNullForInvalidCommands</Name>
+		</Test>
+		<Test id="29">
+			<Name>../Tests/test_mpbPacker.c::test_mpbPacker_AddMsg_Should_ReturnNullForInvalidLengths</Name>
+		</Test>
+		<Test id="30">
+			<Name>../Tests/test_mpbParser.c::test_mpbParser_AddChar_should_StartLookingForCmdOn_7E_value</Name>
+		</Test>
+		<Test id="31">
+			<Name>../Tests/test_mpbParser.c::test_mpbParser_AddChar_should_StartLookingForCmdOn_71_value</Name>
+		</Test>
+		<Test id="32">
+			<Name>../Tests/test_mpbParser.c::test_mpbParser_AddChar_should_goto_cmd_state</Name>
+		</Test>
+		<Test id="33">
+			<Name>../Tests/test_mpbParser.c::test_mpbParser_AddChar_should_restart_if_goto_cmd_state</Name>
+		</Test>
+		<Test id="34">
+			<Name>../Tests/test_mpbParser.c::test_mpbParser_AddChar_should_goto_CRC1_state</Name>
+		</Test>
+		<Test id="35">
+			<Name>../Tests/test_mpbParser.c::test_mpbParser_AddChar_should_accept_min_packet</Name>
+		</Test>
+		<Test id="36">
+			<Name>../Tests/test_mpbParser.c::test_mpbParser_AddChar_should_RejectNon_FS_CharactersWhileSeekingStart</Name>
+		</Test>
+		<Test id="37">
+			<Name>../Tests/test_mpbParser.c::test_mpbParser_AddChar_should_Reject_ALengthOfZero</Name>
+		</Test>
+		<Test id="38">
+			<Name>../Tests/test_mpbParser.c::test_mpbParser_AddChar_should_RejectInvalidLengths</Name>
+		</Test>
+		<Test id="39">
+			<Name>../Tests/test_mpbParser.c::test_mpbParser_AddChar_should_RejectInvalidCommandCharacter</Name>
+		</Test>
+		<Test id="40">
+			<Name>../Tests/test_mpbParser.c::test_mpbParser_AddChar_should_reject_invalid_CRC</Name>
+		</Test>
+		<Test id="41">
+			<Name>../Tests/test_mpbParser.c::test_mpbParser_AddChar_should_accept_CRC_packet</Name>
+		</Test>
+		<Test id="42">
+			<Name>../Tests/test_mpbParser.c::test_mpbParser_AddChar_should_HandleBackToBackValidPackets</Name>
+		</Test>
+		<Test id="43">
+			<Name>../Tests/test_mpbSerialDriver.c::test_mpbSerialDriver_Init_should_InitTheBuffers_and_ConfigureTheSerialPort</Name>
+		</Test>
+		<Test id="44">
+			<Name>../Tests/test_mpbSerialDriver.c::test_mpbSerialDriver_Exec_should_DoNothing_when_NothingToWrite_and_NothingToRead</Name>
+		</Test>
+		<Test id="45">
+			<Name>../Tests/test_mpbSerialDriver.c::test_mpbSerialDriver_Exec_should_DoNothing_when_TooFullToWrite_and_TooFullToRead</Name>
+		</Test>
+		<Test id="46">
+			<Name>../Tests/test_mpbSerialDriver.c::test_mpbSerialDriver_Exec_should_WriteAByte_when_OneBuffered</Name>
+		</Test>
+		<Test id="47">
+			<Name>../Tests/test_mpbSerialDriver.c::test_mpbSerialDriver_Exec_should_WriteBytes_when_BytesBuffered</Name>
+		</Test>
+		<Test id="48">
+			<Name>../Tests/test_mpbSerialDriver.c::test_mpbSerialDriver_Exec_should_NotWriteAByte_when_CouldNotFetchByte</Name>
+		</Test>
+		<Test id="49">
+			<Name>../Tests/test_mpbSerialDriver.c::test_mpbSerialDriver_Exec_should_ReadAByte_when_FreeBufferedAndReadable</Name>
+		</Test>
+		<Test id="50">
+			<Name>../Tests/test_mpbSerialDriver.c::test_mpbSerialDriver_Exec_should_ReadBytes_when_BytesInBufferedAndReadable</Name>
+		</Test>
+		<Test id="51">
+			<Name>../Tests/test_mpbSerialDriver.c::test_mpbSerialDriver_PutByte_should_ReturnFalse_when_Full</Name>
+		</Test>
+		<Test id="52">
+			<Name>../Tests/test_mpbSerialDriver.c::test_mpbSerialDriver_PutByte_should_PushBytesIntoTheTransmitQueue_when_NotFull</Name>
+		</Test>
+		<Test id="53">
+			<Name>../Tests/test_mpbSerialDriver.c::test_mpbSerialDriver_GetByte_should_GrabBytesFromReceiveQueue_when_NotEmpty</Name>
+		</Test>
+		<Test id="54">
+			<Name>../Tests/test_mpbSerialDriver.c::test_mpbSerialDriver_GetByte_should_ReturnZero_when_Empty</Name>
+		</Test>
+		<Test id="55">
+			<Name>../Tests/test_mpbSerialDriver.c::test_mpbSerialDriver_OkayToRead_should_NegateReceiveEmptyStatus</Name>
+		</Test>
+	</SuccessfulTests>
+	<IgnoredTests/>
+	<Statistics>
+		<Tests>55</Tests>
+		<Ignores>0</Ignores>
+		<FailuresTotal>0</FailuresTotal>
+		<Errors>0</Errors>
+		<Failures>0</Failures>
+	</Statistics>
+</TestRun>

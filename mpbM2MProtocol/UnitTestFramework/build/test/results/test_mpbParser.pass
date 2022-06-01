@@ -1,0 +1,53 @@
+---
+:source:
+  :path: "../Tests"
+  :file: test_mpbParser.c
+:successes:
+- :test: test_mpbParser_AddChar_should_StartLookingForCmdOn_7E_value
+  :line: 57
+  :message: ''
+- :test: test_mpbParser_AddChar_should_StartLookingForCmdOn_71_value
+  :line: 66
+  :message: ''
+- :test: test_mpbParser_AddChar_should_goto_cmd_state
+  :line: 75
+  :message: ''
+- :test: test_mpbParser_AddChar_should_restart_if_goto_cmd_state
+  :line: 89
+  :message: ''
+- :test: test_mpbParser_AddChar_should_goto_CRC1_state
+  :line: 103
+  :message: ''
+- :test: test_mpbParser_AddChar_should_accept_min_packet
+  :line: 143
+  :message: ''
+- :test: test_mpbParser_AddChar_should_RejectNon_FS_CharactersWhileSeekingStart
+  :line: 185
+  :message: ''
+- :test: test_mpbParser_AddChar_should_Reject_ALengthOfZero
+  :line: 199
+  :message: ''
+- :test: test_mpbParser_AddChar_should_RejectInvalidLengths
+  :line: 208
+  :message: ''
+- :test: test_mpbParser_AddChar_should_RejectInvalidCommandCharacter
+  :line: 216
+  :message: ''
+- :test: test_mpbParser_AddChar_should_reject_invalid_CRC
+  :line: 229
+  :message: ''
+- :test: test_mpbParser_AddChar_should_accept_CRC_packet
+  :line: 271
+  :message: ''
+- :test: test_mpbParser_AddChar_should_HandleBackToBackValidPackets
+  :line: 322
+  :message: ''
+:failures: []
+:ignores: []
+:counts:
+  :total: 13
+  :passed: 13
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 1.0697709999985818

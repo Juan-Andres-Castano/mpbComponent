@@ -1,0 +1,41 @@
+---
+:source:
+  :path: "../Tests"
+  :file: test_mpbCommandHardware.c
+:successes:
+- :test: test_mpbCommandHardware_CheckForMsg_Should_ReturnNoneYet_When_NoBytesAvailable
+  :line: 57
+  :message: ''
+- :test: test_CommandHardware_CheckForMsg_Should_GetCharAndAddToPacker_When_BytesAvailable
+  :line: 70
+  :message: ''
+- :test: test_CommandHardware_CheckForMsg_Should_GetCharAndfinishToPack_When_BytesAvailable
+  :line: 84
+  :message: ''
+- :test: test_CommandHardware_CheckForMsg_Should_OnelengthGetCharAndfinishToPack_When_BytesAvailable
+  :line: 96
+  :message: ''
+- :test: test_CommandHardware_CheckforMsg_Should_GetallMsgFilled_when_all_bytesAreReceived
+  :line: 110
+  :message: ''
+- :test: test_mpbCommandHardware_SendResponse_Should_DoNothing_When_NothingPacked
+  :line: 136
+  :message: ''
+- :test: test_mpbCommandHardware_SendResponse_Should_detect_serialdriverProblems
+  :line: 154
+  :message: ''
+- :test: test_mpbCommandHardware_SendResponse_Should_SendBytes_When_MessagePacked
+  :line: 174
+  :message: ''
+- :test: test_mpbCommandHardware_SendResponse_Should_SendBytes_When_MessagePackedCallback
+  :line: 227
+  :message: ''
+:failures: []
+:ignores: []
+:counts:
+  :total: 9
+  :passed: 9
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 0.9463966000002983

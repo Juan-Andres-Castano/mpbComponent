@@ -1,0 +1,41 @@
+---
+:source:
+  :path: "../Tests"
+  :file: test_mpbBuffer.c
+:successes:
+- :test: test_Buffer_Put_and_Get_should_WorkTogetherToInsertAndExtractAValue
+  :line: 23
+  :message: ''
+- :test: test_Buffer_Get_should_ReturnErrorIfCalledWhenEmpty
+  :line: 37
+  :message: ''
+- :test: test_Buffer_Put_should_ReturnErrorIfCalledWhenFull
+  :line: 44
+  :message: ''
+- :test: test_Buffer_Get_should_ProperlyGrabEveryItemFromFullToEmpty
+  :line: 56
+  :message: ''
+- :test: test_Buffer_IsFull_should_ReturnTrueWhenFullOtherwiseFalse
+  :line: 77
+  :message: ''
+- :test: test_Buffer_IsEmpty_should_ReturnTrueWhenEmptyOtherwiseFalse
+  :line: 91
+  :message: ''
+- :test: test_Buffer_Clear_should_ClearItIfCleared
+  :line: 113
+  :message: ''
+- :test: test_Buffer_Clear_should_ClearItIfSomeElementsInIt
+  :line: 120
+  :message: ''
+- :test: test_Buffer_Clear_should_ClearItIfFull
+  :line: 136
+  :message: ''
+:failures: []
+:ignores: []
+:counts:
+  :total: 9
+  :passed: 9
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 0.9587996999980533

@@ -1,0 +1,53 @@
+---
+:source:
+  :path: "../Tests"
+  :file: test_mpbSerialDriver.c
+:successes:
+- :test: test_mpbSerialDriver_Init_should_InitTheBuffers_and_ConfigureTheSerialPort
+  :line: 33
+  :message: ''
+- :test: test_mpbSerialDriver_Exec_should_DoNothing_when_NothingToWrite_and_NothingToRead
+  :line: 49
+  :message: ''
+- :test: test_mpbSerialDriver_Exec_should_DoNothing_when_TooFullToWrite_and_TooFullToRead
+  :line: 58
+  :message: ''
+- :test: test_mpbSerialDriver_Exec_should_WriteAByte_when_OneBuffered
+  :line: 70
+  :message: ''
+- :test: test_mpbSerialDriver_Exec_should_WriteBytes_when_BytesBuffered
+  :line: 89
+  :message: ''
+- :test: test_mpbSerialDriver_Exec_should_NotWriteAByte_when_CouldNotFetchByte
+  :line: 126
+  :message: ''
+- :test: test_mpbSerialDriver_Exec_should_ReadAByte_when_FreeBufferedAndReadable
+  :line: 137
+  :message: ''
+- :test: test_mpbSerialDriver_Exec_should_ReadBytes_when_BytesInBufferedAndReadable
+  :line: 157
+  :message: ''
+- :test: test_mpbSerialDriver_PutByte_should_ReturnFalse_when_Full
+  :line: 179
+  :message: ''
+- :test: test_mpbSerialDriver_PutByte_should_PushBytesIntoTheTransmitQueue_when_NotFull
+  :line: 187
+  :message: ''
+- :test: test_mpbSerialDriver_GetByte_should_GrabBytesFromReceiveQueue_when_NotEmpty
+  :line: 205
+  :message: ''
+- :test: test_mpbSerialDriver_GetByte_should_ReturnZero_when_Empty
+  :line: 219
+  :message: ''
+- :test: test_mpbSerialDriver_OkayToRead_should_NegateReceiveEmptyStatus
+  :line: 227
+  :message: ''
+:failures: []
+:ignores: []
+:counts:
+  :total: 13
+  :passed: 13
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 1.2717335000015737

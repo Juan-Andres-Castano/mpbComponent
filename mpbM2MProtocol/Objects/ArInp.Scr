@@ -1,0 +1,10 @@
+--create .\Objects\mpbM2mProtocol.lib
+.\objects\m2mcommandsetup.o
+.\objects\mpbbuffer.o
+.\objects\mpbcommandconductor.o
+.\objects\mpbcommandhandler.o
+.\objects\mpbcommandhardware.o
+.\objects\mpbpacker.o
+.\objects\mpbparser.o
+.\objects\mpbserialdriver.o
+.\objects\mpbutils.o

@@ -1,0 +1,666 @@
+﻿###############################################################################
+#
+# IAR ELF Linker V9.10.1.308/W64 for ARM                  01/Jun/2022  16:01:36
+# Copyright 2007-2021 IAR Systems AB.
+#
+#    Output file  =  build/test/out/test_mpbSerialDriver.out
+#    Map file     =  build/test/tests.map
+#    Command line =
+#        --vfe --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull
+#        --semihosting --config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.0\arm\config\generic_cortex.icf" --map
+#        build/test/tests.map -o build/test/out/test_mpbSerialDriver.out
+#        build/test/out/c/test_mpbSerialDriver_runner.o
+#        build/test/out/c/test_mpbSerialDriver.o
+#        build/test/out/c/mock_test_mpbSerialDriver.o
+#        build/test/out/c/mock_mpbBuffer.o build/test/out/c/unity.o
+#        build/test/out/c/mpbSerialDriver.o build/test/out/c/mpbUtils.o
+#        build/test/out/c/cmock.o
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor                   = *
+__Heap_Handler              = Basic
+__SystemLibrary             = DLib
+__dlib_jmp_buf_num_elements = 8
+__dlib_version              = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x0 { ro section .intvec };
+"P1":  place in [from 0x0 to 0x7'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block PROC_STACK with size = 0, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'ffff] {
+          rw, block CSTACK, block PROC_STACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                        0x40
+  .intvec            ro code          0x0    0x40  vector_table_M.o [4]
+                                   - 0x40    0x40
+
+"P1":                                      0x391b
+  .text              ro code         0x40   0xeb4  mock_mpbBuffer.o [1]
+  .text              ro code        0xef4   0x66c  unity.o [1]
+  .text              ro code       0x1560   0x108  cmock.o [1]
+  .text              ro code       0x1668    0x66  ABImemset.o [4]
+  .text              ro code       0x16ce    0x76  lz77_init_single.o [4]
+  .text              ro code       0x1744    0x76  ABImemcpy_unaligned.o [4]
+  .text              ro code       0x17ba     0x2  vectortrap_M.o [4]
+  .text              ro code       0x17bc     0xc  putchar.o [2]
+  .text              ro code       0x17c8    0x24  setjmp.o [3]
+  .text              ro code       0x17ec    0x56  fputc.o [2]
+  .text              ro code       0x1842    0xb4  xfwprep.o [2]
+  .text              ro code       0x18f8    0xac  fflush.o [2]
+  .text              ro code       0x19a4   0x13c  heap0.o [2]
+  .text              ro code       0x1ae0    0x24  fseek.o [2]
+  .text              ro code       0x1b04    0x10  write.o [5]
+  .text              ro code       0x1b14    0x2c  xgetmemchunk.o [2]
+  .text              ro code       0x1b40    0xd8  xfspos.o [2]
+  .text              ro code       0x1c18    0x1e  dwrite.o [5]
+  .text              ro code       0x1c36     0xc  xfgpos.o [2]
+  .text              ro code       0x1c42    0x4e  lseek.o [5]
+  .text              ro code       0x1c90    0x20  iarwstd.o [5]
+  .text              ro code       0x1cb0    0x22  iarwrite.o [5]
+  .text              ro code       0x1cd4    0xcc  XShHandles.o [2]
+  .text              ro code       0x1da0    0x7c  iarttio.o [5]
+  .text              ro code       0x1e1c     0x8  XShttio.o [2]
+  .text              ro code       0x1e24   0x70c  mock_test_mpbSerialDriver.o [1]
+  .text              ro code       0x2530   0x43c  test_mpbSerialDriver_runner.o [1]
+  .text              ro code       0x296c   0x3e8  test_mpbSerialDriver.o [1]
+  .text              ro code       0x2d54   0x150  mpbSerialDriver.o [1]
+  .text              ro code       0x2ea4    0x9c  xfofind.o [2]
+  .text              ro code       0x2f40     0x4  heaptramp0.o [2]
+  .text              ro code       0x2f44    0x7e  fclose.o [2]
+  .text              ro code       0x2fc2    0x18  close.o [5]
+  .text              ro code       0x2fda    0x14  remove.o [5]
+  .text              ro code       0x2ff0    0x36  strlen.o [4]
+  .rodata            const         0x3028    0x54  test_mpbSerialDriver_runner.o [1]
+  .rodata            const         0x307c    0x54  test_mpbSerialDriver_runner.o [1]
+  .rodata            const         0x30d0    0x50  test_mpbSerialDriver_runner.o [1]
+  .rodata            const         0x3120    0x4c  test_mpbSerialDriver_runner.o [1]
+  .rodata            const         0x316c    0x4c  test_mpbSerialDriver_runner.o [1]
+  .rodata            const         0x31b8    0x4c  test_mpbSerialDriver_runner.o [1]
+  .rodata            const         0x3204    0x48  test_mpbSerialDriver_runner.o [1]
+  .rodata            const         0x324c    0x48  test_mpbSerialDriver_runner.o [1]
+  .rodata            const         0x3294    0x40  test_mpbSerialDriver_runner.o [1]
+  .rodata            const         0x32d4    0x40  test_mpbSerialDriver_runner.o [1]
+  .rodata            const         0x3314    0x40  test_mpbSerialDriver_runner.o [1]
+  .text              ro code       0x3354    0x40  xcloseall.o [2]
+  .rodata            const         0x3394    0x3c  test_mpbSerialDriver_runner.o [1]
+  .rodata            const         0x33d0    0x3c  test_mpbSerialDriver_runner.o [1]
+  .rodata            const         0x340c    0x38  unity.o [1]
+  .text              ro code       0x3444    0x38  zero_init3.o [4]
+  .rodata            const         0x347c    0x34  cmock.o [1]
+  .rodata            const         0x34b0    0x30  cmock.o [1]
+  .text              ro code       0x34e0    0x28  data_init.o [4]
+  .rodata            const         0x3508    0x24  cmock.o [1]
+  .rodata            const         0x352c    0x24  cmock.o [1]
+  .rodata            const         0x3550    0x24  cmock.o [1]
+  .iar.init_table    const         0x3574    0x20  - Linker created -
+  .rodata            const         0x3594    0x20  unity.o [1]
+  .rodata            const         0x35b4    0x20  cmock.o [1]
+  .text              ro code       0x35d4    0x1e  cmain.o [4]
+  .text              ro code       0x35f2     0x4  low_level_init.o [2]
+  .text              ro code       0x35f6     0x4  exit.o [2]
+  .text              ro code       0x35fc     0xe  cexit.o [4]
+  .text              ro code       0x360c    0x14  exit.o [5]
+  .rodata            const         0x3620    0x1c  test_mpbSerialDriver.o [1]
+  .rodata            const         0x363c    0x1c  test_mpbSerialDriver.o [1]
+  .rodata            const         0x3658    0x1c  unity.o [1]
+  .rodata            const         0x3674    0x1c  cmock.o [1]
+  .text              ro code       0x3690    0x1c  cstartup_M.o [4]
+  .rodata            const         0x36ac    0x18  test_mpbSerialDriver_runner.o [1]
+  .rodata            const         0x36c4    0x18  unity.o [1]
+  .rodata            const         0x36dc    0x14  test_mpbSerialDriver.o [1]
+  .rodata            const         0x36f0    0x14  mock_test_mpbSerialDriver.o [1]
+  .rodata            const         0x3704    0x14  mock_test_mpbSerialDriver.o [1]
+  .rodata            const         0x3718    0x14  mock_mpbBuffer.o [1]
+  .rodata            const         0x372c    0x14  mock_mpbBuffer.o [1]
+  .rodata            const         0x3740    0x14  unity.o [1]
+  .rodata            const         0x3754    0x14  cmock.o [1]
+  .rodata            const         0x3768    0x10  mock_test_mpbSerialDriver.o [1]
+  .rodata            const         0x3778    0x10  mock_test_mpbSerialDriver.o [1]
+  .rodata            const         0x3788    0x10  mock_mpbBuffer.o [1]
+  .rodata            const         0x3798    0x10  mock_mpbBuffer.o [1]
+  .rodata            const         0x37a8    0x10  mock_mpbBuffer.o [1]
+  .rodata            const         0x37b8    0x10  mock_mpbBuffer.o [1]
+  .rodata            const         0x37c8    0x10  mock_mpbBuffer.o [1]
+  .rodata            const         0x37d8    0x10  cmock.o [1]
+  .rodata            const         0x37e8     0xc  unity.o [1]
+  .rodata            const         0x37f4     0xc  unity.o [1]
+  .rodata            const         0x3800     0xc  unity.o [1]
+  .rodata            const         0x380c     0xc  unity.o [1]
+  .rodata            const         0x3818     0xc  unity.o [1]
+  .rodata            const         0x3824     0xc  unity.o [1]
+  .rodata            const         0x3830     0x8  test_mpbSerialDriver.o [1]
+  .rodata            const         0x3838     0x8  test_mpbSerialDriver.o [1]
+  .rodata            const         0x3840     0x8  mock_test_mpbSerialDriver.o [1]
+  .rodata            const         0x3848     0x8  mock_test_mpbSerialDriver.o [1]
+  .rodata            const         0x3850     0x8  mock_mpbBuffer.o [1]
+  .rodata            const         0x3858     0x8  mock_mpbBuffer.o [1]
+  .rodata            const         0x3860     0x8  mock_mpbBuffer.o [1]
+  .rodata            const         0x3868     0x8  mock_mpbBuffer.o [1]
+  .rodata            const         0x3870     0x8  unity.o [1]
+  .rodata            const         0x3878     0x8  unity.o [1]
+  .rodata            const         0x3880     0x8  unity.o [1]
+  .rodata            const         0x3888     0x8  unity.o [1]
+  .rodata            const         0x3890     0x8  unity.o [1]
+  .rodata            const         0x3898     0x4  mock_mpbBuffer.o [1]
+  .rodata            const         0x389c     0x4  unity.o [1]
+  .rodata            const         0x38a0     0x4  unity.o [1]
+  .text              ro code       0x38a4     0x0  cstart_closeall.o [4]
+  .rodata            const         0x38a4     0x0  zero_init3.o [4]
+  .rodata            const         0x38a4     0x0  lz77_init_single.o [4]
+  Initializer bytes  const         0x38a4    0xb7  <for P2-1>
+                                 - 0x395b  0x391b
+
+"P2", part 1 of 3:                          0x170
+  P2-1                        0x2000'0000   0x170  <Init block>
+    .data            inited   0x2000'0000     0x4  mock_test_mpbSerialDriver.o [1]
+    .data            inited   0x2000'0004     0x4  mock_test_mpbSerialDriver.o [1]
+    .data            inited   0x2000'0008     0x4  mock_test_mpbSerialDriver.o [1]
+    .data            inited   0x2000'000c     0x4  mock_test_mpbSerialDriver.o [1]
+    .data            inited   0x2000'0010     0x4  mock_test_mpbSerialDriver.o [1]
+    .data            inited   0x2000'0014     0x4  mock_test_mpbSerialDriver.o [1]
+    .data            inited   0x2000'0018     0x4  mock_mpbBuffer.o [1]
+    .data            inited   0x2000'001c     0x4  mock_mpbBuffer.o [1]
+    .data            inited   0x2000'0020     0x4  mock_mpbBuffer.o [1]
+    .data            inited   0x2000'0024     0x4  mock_mpbBuffer.o [1]
+    .data            inited   0x2000'0028     0x4  mock_mpbBuffer.o [1]
+    .data            inited   0x2000'002c     0x4  mock_mpbBuffer.o [1]
+    .data            inited   0x2000'0030     0x4  mock_mpbBuffer.o [1]
+    .data            inited   0x2000'0034     0x4  mock_mpbBuffer.o [1]
+    .data            inited   0x2000'0038     0x4  mock_mpbBuffer.o [1]
+    .data            inited   0x2000'003c     0x4  mock_mpbBuffer.o [1]
+    .data            inited   0x2000'0040     0x4  mock_mpbBuffer.o [1]
+    .data            inited   0x2000'0044     0x4  mock_mpbBuffer.o [1]
+    .data            inited   0x2000'0048     0x4  cmock.o [1]
+    .data            inited   0x2000'004c     0x4  cmock.o [1]
+    .data            inited   0x2000'0050     0x4  cmock.o [1]
+    .data            inited   0x2000'0054     0x4  cmock.o [1]
+    .data            inited   0x2000'0058     0x4  cmock.o [1]
+    .data            inited   0x2000'005c     0x4  cmock.o [1]
+    .data            inited   0x2000'0060     0x4  cmock.o [1]
+    .data            inited   0x2000'0064     0x4  cmock.o [1]
+    .data            inited   0x2000'0068     0x4  cmock.o [1]
+    .data            inited   0x2000'006c     0x4  cmock.o [1]
+    .data            inited   0x2000'0070    0x48  xfiles.o [2]
+    .data            inited   0x2000'00b8    0x48  xfiles.o [2]
+    .data            inited   0x2000'0100    0x48  xfiles.o [2]
+    .data            inited   0x2000'0148    0x20  xfiles.o [2]
+    .data            inited   0x2000'0168     0x8  XShttio.o [2]
+                            - 0x2000'0170   0x170
+
+"P2", part 2 of 3:                         0x8338
+  .bss               zero     0x2000'0170  0x8000  cmock.o [1]
+  .bss               zero     0x2000'8170    0x88  mock_mpbBuffer.o [1]
+  .bss               zero     0x2000'81f8    0x80  XShHandles.o [2]
+  .bss               zero     0x2000'8278    0x68  unity.o [1]
+  .bss               zero     0x2000'82e0    0x50  mpbSerialDriver.o [1]
+  .bss               zero     0x2000'8330    0x50  mpbSerialDriver.o [1]
+  .bss               zero     0x2000'8380    0x50  xfiles.o [2]
+  .bss               zero     0x2000'83d0    0x50  xfiles.o [2]
+  .bss               zero     0x2000'8420    0x4c  mock_test_mpbSerialDriver.o [1]
+  .bss               zero     0x2000'846c     0xc  mpbSerialDriver.o [1]
+  .bss               zero     0x2000'8478     0xc  mpbSerialDriver.o [1]
+  .bss               zero     0x2000'8484     0x8  heap0.o [2]
+  .bss               zero     0x2000'848c     0x4  test_mpbSerialDriver_runner.o [1]
+  .bss               zero     0x2000'8490     0x4  test_mpbSerialDriver_runner.o [1]
+  .bss               zero     0x2000'8494     0x4  test_mpbSerialDriver_runner.o [1]
+  .bss               zero     0x2000'8498     0x4  mpbSerialDriver.o [1]
+  .bss               zero     0x2000'849c     0x4  cmock.o [1]
+  .bss               zero     0x2000'84a0     0x4  xgetmemchunk.o [2]
+  .bss               zero     0x2000'84a4     0x1  mpbSerialDriver.o [1]
+                            - 0x2000'84a5  0x8335
+
+"P2", part 3 of 3:                          0xc00
+  CSTACK                      0x2000'84a8   0x400  <Block>
+    CSTACK           uninit   0x2000'84a8   0x400  <Block tail>
+  HEAP                        0x2000'88a8   0x800  <Block>
+    HEAP             uninit   0x2000'88a8   0x800  <Block tail>
+                            - 0x2000'90a8   0xc00
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+       0x395b     0x7'ffff  0x7'c6a5
+  0x2000'90a8  0x2000'ffff    0x6f58
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x8335:
+          0x2000'0170  0x8335
+
+Copy/lz77 (__iar_lz77_init_single3)
+    1 source range, total size 0xb7 (49% of destination):
+               0x38a4    0xb7
+    1 destination range, total size 0x170:
+          0x2000'0000   0x170
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                         ro code  ro data  rw data
+    ------                         -------  -------  -------
+command line/config:
+    --------------------------------------------------------
+    Total:
+
+C:\mpbComponent\mpbM2MProtocol\UnitTestFramework\build\test\out\c: [1]
+    cmock.o                            264      324   32'812
+    mock_mpbBuffer.o                 3'764      180      184
+    mock_test_mpbSerialDriver.o      1'804       99      100
+    mpbSerialDriver.o                  336               189
+    test_mpbSerialDriver.o           1'000       92
+    test_mpbSerialDriver_runner.o    1'084      956       12
+    unity.o                          1'644      280      104
+    --------------------------------------------------------
+    Total:                           9'896    1'931   33'401
+
+dl7M_tlf.a: [2]
+    XShHandles.o                       204               128
+    XShttio.o                            8        4        8
+    exit.o                               4
+    fclose.o                           126
+    fflush.o                           172
+    fputc.o                             86
+    fseek.o                             36
+    heap0.o                            316                 8
+    heaptramp0.o                         4
+    low_level_init.o                     4
+    putchar.o                           12
+    xcloseall.o                         64
+    xfgpos.o                            12
+    xfiles.o                                    124      408
+    xfofind.o                          156
+    xfspos.o                           216
+    xfwprep.o                          180
+    xgetmemchunk.o                      44                 4
+    --------------------------------------------------------
+    Total:                           1'644      128      556
+
+m7M_tl.a: [3]
+    setjmp.o                            36
+    --------------------------------------------------------
+    Total:                              36
+
+rt7M_tl.a: [4]
+    ABImemcpy_unaligned.o              118
+    ABImemset.o                        102
+    cexit.o                             14
+    cmain.o                             30
+    cstart_closeall.o
+    cstartup_M.o                        28
+    data_init.o                         40
+    lz77_init_single.o                 118
+    strlen.o                            54
+    vector_table_M.o                    64
+    vectortrap_M.o                       2
+    zero_init3.o                        56
+    --------------------------------------------------------
+    Total:                             626
+
+shb_l.a: [5]
+    close.o                             24
+    dwrite.o                            30
+    exit.o                              20
+    iarttio.o                          124
+    iarwrite.o                          34
+    iarwstd.o                           32
+    lseek.o                             78
+    remove.o                            20
+    write.o                             16
+    --------------------------------------------------------
+    Total:                             378
+
+    Gaps                                10        2
+    Linker created                               32    3'072
+------------------------------------------------------------
+    Grand Total:                    12'590    2'093   37'029
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address    Size  Type      Object
+-----                       -------    ----  ----      ------
+.iar.init_table$$Base        0x3574           --   Gb  - Linker created -
+.iar.init_table$$Limit       0x3594           --   Gb  - Linker created -
+?main                        0x35d5          Code  Gb  cmain.o [4]
+Aldata                  0x2000'8484     0x8  Data  Lc  heap0.o [2]
+BusFault_Handler             0x17bb          Code  Wk  vectortrap_M.o [4]
+CMockExpectParameters_eMpbBuffer_Init
+                              0x421    0x28  Code  Gb  mock_mpbBuffer.o [1]
+CMockExpectParameters_eMpbBuffer_Put
+                              0x667    0x14  Code  Gb  mock_mpbBuffer.o [1]
+CMockExpectParameters_mpbBuffer_IsEmpty
+                              0xd63     0xe  Code  Gb  mock_mpbBuffer.o [1]
+CMockExpectParameters_mpbBuffer_IsFull
+                              0xb29     0xe  Code  Gb  mock_mpbBuffer.o [1]
+CMockExpectParameters_mpbSerial_putc
+                             0x2101     0x8  Code  Gb  mock_test_mpbSerialDriver.o [1]
+CMockStringCalledEarly  0x2000'0054     0x4  Data  Gb  cmock.o [1]
+CMockStringCalledLate   0x2000'0058     0x4  Data  Gb  cmock.o [1]
+CMockStringCalledLess   0x2000'0050     0x4  Data  Gb  cmock.o [1]
+CMockStringCalledMore   0x2000'004c     0x4  Data  Gb  cmock.o [1]
+CMockStringExpNULL      0x2000'0064     0x4  Data  Gb  cmock.o [1]
+CMockStringMismatch     0x2000'0068     0x4  Data  Gb  cmock.o [1]
+CMockStringOutOfMemory  0x2000'0048     0x4  Data  Gb  cmock.o [1]
+CMockStringPtrIsNULL    0x2000'0060     0x4  Data  Gb  cmock.o [1]
+CMockStringPtrPreExp    0x2000'005c     0x4  Data  Gb  cmock.o [1]
+CMockString_Buffer      0x2000'0018     0x4  Data  Lc  mock_mpbBuffer.o [1]
+CMockString_Bytes       0x2000'001c     0x4  Data  Lc  mock_mpbBuffer.o [1]
+CMockString_MaxSize     0x2000'0020     0x4  Data  Lc  mock_mpbBuffer.o [1]
+CMockString_Val         0x2000'0024     0x4  Data  Lc  mock_mpbBuffer.o [1]
+CMockString_eMpbBuffer_Get
+                        0x2000'0028     0x4  Data  Lc  mock_mpbBuffer.o [1]
+CMockString_eMpbBuffer_Init
+                        0x2000'002c     0x4  Data  Lc  mock_mpbBuffer.o [1]
+CMockString_eMpbBuffer_Peek
+                        0x2000'0030     0x4  Data  Lc  mock_mpbBuffer.o [1]
+CMockString_eMpbBuffer_Put
+                        0x2000'0034     0x4  Data  Lc  mock_mpbBuffer.o [1]
+CMockString_mpbBuffer_Clear
+                        0x2000'0038     0x4  Data  Lc  mock_mpbBuffer.o [1]
+CMockString_mpbBuffer_IsEmpty
+                        0x2000'003c     0x4  Data  Lc  mock_mpbBuffer.o [1]
+CMockString_mpbBuffer_IsFull
+                        0x2000'0040     0x4  Data  Lc  mock_mpbBuffer.o [1]
+CMockString_mpbSerial_getc
+                        0x2000'0000     0x4  Data  Lc  mock_test_mpbSerialDriver.o [1]
+CMockString_mpbSerial_putc
+                        0x2000'0004     0x4  Data  Lc  mock_test_mpbSerialDriver.o [1]
+CMockString_mpbSerial_readable
+                        0x2000'0008     0x4  Data  Lc  mock_test_mpbSerialDriver.o [1]
+CMockString_pRxByte     0x2000'000c     0x4  Data  Lc  mock_test_mpbSerialDriver.o [1]
+CMockString_ucValue     0x2000'0010     0x4  Data  Lc  mock_test_mpbSerialDriver.o [1]
+CMockString_vMpbSerial_clear
+                        0x2000'0014     0x4  Data  Lc  mock_test_mpbSerialDriver.o [1]
+CMockString_xBuffer     0x2000'0044     0x4  Data  Lc  mock_mpbBuffer.o [1]
+CMock_Destroy                0x2561     0xc  Code  Lc  test_mpbSerialDriver_runner.o [1]
+CMock_Guts_BufferArray  0x2000'0170  0x8000  Data  Lc  cmock.o [1]
+CMock_Guts_BufferSize   0x2000'006c     0x4  Data  Lc  cmock.o [1]
+CMock_Guts_FreePtr      0x2000'849c     0x4  Data  Lc  cmock.o [1]
+CMock_Guts_GetAddressFor
+                             0x1637    0x16  Code  Gb  cmock.o [1]
+CMock_Guts_MemChain          0x15a3    0x58  Code  Gb  cmock.o [1]
+CMock_Guts_MemEndOfChain
+                             0x1621    0x16  Code  Gb  cmock.o [1]
+CMock_Guts_MemFreeAll        0x164d     0x8  Code  Gb  cmock.o [1]
+CMock_Guts_MemFreeFinal
+                             0x1655     0x8  Code  Gb  cmock.o [1]
+CMock_Guts_MemNew            0x1561    0x42  Code  Gb  cmock.o [1]
+CMock_Guts_MemNext           0x15fb    0x26  Code  Gb  cmock.o [1]
+CMock_Init                   0x2531    0x24  Code  Lc  test_mpbSerialDriver_runner.o [1]
+CMock_Verify                 0x2555     0xc  Code  Lc  test_mpbSerialDriver_runner.o [1]
+CSTACK$$Base            0x2000'84a8           --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'88a8           --   Gb  - Linker created -
+DebugMon_Handler             0x17bb          Code  Wk  vectortrap_M.o [4]
+GlobalExpectCount       0x2000'848c     0x4  Data  Gb  test_mpbSerialDriver_runner.o [1]
+GlobalOrderError        0x2000'8494     0x4  Data  Gb  test_mpbSerialDriver_runner.o [1]
+GlobalVerifyOrder       0x2000'8490     0x4  Data  Gb  test_mpbSerialDriver_runner.o [1]
+HEAP$$Base              0x2000'88a8           --   Gb  - Linker created -
+HEAP$$Limit             0x2000'90a8           --   Gb  - Linker created -
+HardFault_Handler            0x17bb          Code  Wk  vectortrap_M.o [4]
+MemManage_Handler            0x17bb          Code  Wk  vectortrap_M.o [4]
+Mock                    0x2000'8420    0x4c  Data  Lc  mock_test_mpbSerialDriver.o [1]
+Mock                    0x2000'8170    0x88  Data  Lc  mock_mpbBuffer.o [1]
+NMI_Handler                  0x17bb          Code  Wk  vectortrap_M.o [4]
+PendSV_Handler               0x17bb          Code  Wk  vectortrap_M.o [4]
+Region$$Table$$Base          0x3574           --   Gb  - Linker created -
+Region$$Table$$Limit         0x3594           --   Gb  - Linker created -
+SVC_Handler                  0x17bb          Code  Wk  vectortrap_M.o [4]
+SysTick_Handler              0x17bb          Code  Wk  vectortrap_M.o [4]
+Unity                   0x2000'8278    0x68  Data  Gb  unity.o [1]
+UnityAddMsgIfSpecified       0x10b3    0x4c  Code  Lc  unity.o [1]
+UnityAssertEqualIntArray
+                             0x11ab   0x12a  Code  Gb  unity.o [1]
+UnityAssertEqualMemory       0x12f1   0x124  Code  Gb  unity.o [1]
+UnityAssertEqualNumber       0x1147    0x64  Code  Gb  unity.o [1]
+UnityBegin                   0x1499    0x2a  Code  Gb  unity.o [1]
+UnityConcludeTest            0x1071    0x42  Code  Gb  unity.o [1]
+UnityEnd                     0x14c3    0x5e  Code  Gb  unity.o [1]
+UnityFail                    0x141d    0x76  Code  Gb  unity.o [1]
+UnityIsOneArrayNull          0x10ff    0x48  Code  Lc  unity.o [1]
+UnityPrint                    0xef5    0x5e  Code  Gb  unity.o [1]
+UnityPrintNumber              0xf97    0x1a  Code  Gb  unity.o [1]
+UnityPrintNumberByStyle
+                              0xf53    0x44  Code  Gb  unity.o [1]
+UnityPrintNumberHex           0xfe7    0x40  Code  Gb  unity.o [1]
+UnityPrintNumberUnsigned
+                              0xfb1    0x36  Code  Gb  unity.o [1]
+UnityStrBreaker              0x36c4    0x18  Data  Lc  unity.o [1]
+UnityStrByte                 0x3888     0x8  Data  Lc  unity.o [1]
+UnityStrDetail1Name          0x3818     0xc  Data  Lc  unity.o [1]
+UnityStrDetail2Name          0x3824     0xc  Data  Lc  unity.o [1]
+UnityStrElement              0x37f4     0xc  Data  Lc  unity.o [1]
+UnityStrExpected             0x37e8     0xc  Data  Lc  unity.o [1]
+UnityStrFail                 0x3878     0x8  Data  Lc  unity.o [1]
+UnityStrMemory               0x3740    0x14  Data  Lc  unity.o [1]
+UnityStrNullPointerForActual
+                             0x3658    0x1c  Data  Lc  unity.o [1]
+UnityStrNullPointerForExpected
+                             0x3594    0x20  Data  Lc  unity.o [1]
+UnityStrOk                   0x389c     0x4  Data  Lc  unity.o [1]
+UnityStrPass                 0x3870     0x8  Data  Lc  unity.o [1]
+UnityStrPointless            0x340c    0x38  Data  Lc  unity.o [1]
+UnityStrResultsFailures
+                             0x3800     0xc  Data  Lc  unity.o [1]
+UnityStrResultsIgnored       0x380c     0xc  Data  Lc  unity.o [1]
+UnityStrResultsTests         0x3890     0x8  Data  Lc  unity.o [1]
+UnityStrSpacer               0x38a0     0x4  Data  Lc  unity.o [1]
+UnityStrWas                  0x3880     0x8  Data  Lc  unity.o [1]
+UnityTestResultsBegin        0x1027    0x2c  Code  Lc  unity.o [1]
+UnityTestResultsFailBegin
+                             0x1053    0x1e  Code  Lc  unity.o [1]
+UsageFault_Handler           0x17bb          Code  Wk  vectortrap_M.o [4]
+_Close_all                   0x3355    0x40  Code  Gb  xcloseall.o [2]
+_Files                  0x2000'0148    0x20  Data  Gb  xfiles.o [2]
+_Fofree                      0x2ea5    0x94  Code  Gb  xfofind.o [2]
+_Fspos                       0x1b41    0xd8  Code  Gb  xfspos.o [2]
+_Fwprep                      0x1843    0xb4  Code  Gb  xfwprep.o [2]
+_Nnl                         0x1c37     0xc  Code  Gb  xfgpos.o [2]
+__aeabi_JMP_BUF_SIZE {Abs}
+                                0x8           --   Gb  setjmp.o [3]
+__aeabi_memset               0x1669          Code  Gb  ABImemset.o [4]
+__basic_free                 0x1a51    0x16  Code  Gb  heap0.o [2]
+__basic_free_intern          0x1a67    0x74  Code  Lc  heap0.o [2]
+__basic_malloc               0x19a5    0x18  Code  Gb  heap0.o [2]
+__basic_malloc_intern        0x19bd    0x94  Code  Lc  heap0.o [2]
+__cexit_closeall             0x35ff          Code  Gb  cexit.o [4]
+__close                      0x2fc3    0x18  Code  Gb  close.o [5]
+__cmain                      0x35d5          Code  Gb  cmain.o [4]
+__cstart_closeall            0x38a4          Data  Gb  cstart_closeall.o [4]
+__data_GetMemChunk           0x1b15    0x2c  Code  Gb  xgetmemchunk.o [2]
+__data_GetMemChunk::start
+                        0x2000'84a0     0x4  Data  Lc  xgetmemchunk.o [2]
+__dwrite                     0x1c19    0x1e  Code  Gb  dwrite.o [5]
+__exit                       0x360d    0x14  Code  Gb  exit.o [5]
+__iar_Memset                 0x1669          Code  Gb  ABImemset.o [4]
+__iar_Memset_word            0x1671          Code  Gb  ABImemset.o [4]
+__iar_Stderr            0x2000'0100    0x48  Data  Gb  xfiles.o [2]
+__iar_Stdin             0x2000'0070    0x48  Data  Gb  xfiles.o [2]
+__iar_Stdout            0x2000'00b8    0x48  Data  Gb  xfiles.o [2]
+__iar_close_ttio             0x1da1    0x2c  Code  Gb  iarttio.o [5]
+__iar_data_init3             0x34e1    0x28  Code  Gb  data_init.o [4]
+__iar_get_ttio               0x1dcd    0x4c  Code  Gb  iarttio.o [5]
+__iar_lookup_ttioh           0x1e1d     0x8  Code  Gb  XShttio.o [2]
+__iar_lz77_init_single3
+                             0x16cf    0x76  Code  Gb  lz77_init_single.o [4]
+__iar_program_start          0x3691          Code  Gb  cstartup_M.o [4]
+__iar_sh_Discard             0x1cd5    0x42  Code  Gb  XShHandles.o [2]
+__iar_sh_Move                0x1d17    0x46  Code  Gb  XShHandles.o [2]
+__iar_sh_Pos                 0x1d5d    0x40  Code  Gb  XShHandles.o [2]
+__iar_sh_stdout              0x1c91    0x20  Code  Gb  iarwstd.o [5]
+__iar_sh_write               0x1cb1    0x22  Code  Gb  iarwrite.o [5]
+__iar_ttio_handles      0x2000'0168     0x8  Data  Lc  XShttio.o [2]
+__iar_unaligned_memcpy       0x1745          Code  Gb  ABImemcpy_unaligned.o [4]
+__iar_unaligned_memcpy4
+                             0x1765          Code  Gb  ABImemcpy_unaligned.o [4]
+__iar_unaligned_memcpy8
+                             0x1765          Code  Gb  ABImemcpy_unaligned.o [4]
+__iar_zero_init3             0x3445    0x38  Code  Gb  zero_init3.o [4]
+__low_level_init             0x35f3     0x4  Code  Gb  low_level_init.o [2]
+__lseek                      0x1c43    0x4e  Code  Gb  lseek.o [5]
+__vector_table                  0x0          Data  Gb  vector_table_M.o [4]
+__write                      0x1b05    0x10  Code  Gb  write.o [5]
+_call_main                   0x35e1          Code  Gb  cmain.o [4]
+_exit                        0x35fd          Code  Gb  cexit.o [4]
+eMpbBuffer_Get                0x729   0x1ac  Code  Gb  mock_mpbBuffer.o [1]
+eMpbBuffer_Get_CMockExpectAnyArgsAndReturn
+                              0x8e1    0x6a  Code  Gb  mock_mpbBuffer.o [1]
+eMpbBuffer_Get_CMockReturnMemThruPtr_Buffer
+                              0x96d    0x32  Code  Gb  mock_mpbBuffer.o [1]
+eMpbBuffer_Get_CMockReturnMemThruPtr_Val
+                              0x9a5    0x32  Code  Gb  mock_mpbBuffer.o [1]
+eMpbBuffer_Init               0x21d   0x204  Code  Gb  mock_mpbBuffer.o [1]
+eMpbBuffer_Init_CMockExpectAndReturn
+                              0x449    0x98  Code  Gb  mock_mpbBuffer.o [1]
+eMpbBuffer_Put                0x4e1   0x186  Code  Gb  mock_mpbBuffer.o [1]
+eMpbBuffer_Put_CMockExpectAndReturn
+                              0x67b    0x8c  Code  Gb  mock_mpbBuffer.o [1]
+eMpbSerialDriver_PutByte
+                             0x2e1f    0x26  Code  Gb  mpbSerialDriver.o [1]
+ebuf                    0x2000'8380    0x50  Data  Lc  xfiles.o [2]
+exit                         0x35f7     0x4  Code  Gb  exit.o [2]
+fclose                       0x2f45    0x7e  Code  Gb  fclose.o [2]
+fflush                       0x196d    0x34  Code  Gb  fflush.o [2]
+fflushOne                    0x18f9    0x74  Code  Lc  fflush.o [2]
+fputc                        0x17ed    0x56  Code  Gb  fputc.o [2]
+free                         0x2f41     0x4  Code  Gb  heaptramp0.o [2]
+fseek                        0x1ae1    0x24  Code  Gb  fseek.o [2]
+initialized             0x2000'84a4     0x1  Data  Lc  mpbSerialDriver.o [1]
+longjmp                      0x17d9          Code  Gb  setjmp.o [3]
+main                         0x2571   0x3b4  Code  Gb  test_mpbSerialDriver_runner.o [1]
+mock_mpbBuffer_Destroy        0x1bb    0x62  Code  Gb  mock_mpbBuffer.o [1]
+mock_mpbBuffer_Init           0x1b3     0x8  Code  Gb  mock_mpbBuffer.o [1]
+mock_mpbBuffer_Verify          0x41   0x172  Code  Gb  mock_mpbBuffer.o [1]
+mock_test_mpbSerialDriver_Destroy
+                             0x1f03    0x48  Code  Gb  mock_test_mpbSerialDriver.o [1]
+mock_test_mpbSerialDriver_Init
+                             0x1efb     0x8  Code  Gb  mock_test_mpbSerialDriver.o [1]
+mock_test_mpbSerialDriver_Verify
+                             0x1e25    0xd6  Code  Gb  mock_test_mpbSerialDriver.o [1]
+mpbBufferRx             0x2000'8478     0xc  Data  Gb  mpbSerialDriver.o [1]
+mpbBufferTx             0x2000'846c     0xc  Data  Gb  mpbSerialDriver.o [1]
+mpbBuffer_IsEmpty             0xc2f   0x134  Code  Gb  mock_mpbBuffer.o [1]
+mpbBuffer_IsEmpty_CMockExpectAndReturn
+                              0xe3f    0x7e  Code  Gb  mock_mpbBuffer.o [1]
+mpbBuffer_IsEmpty_CMockExpectAnyArgsAndReturn
+                              0xdd5    0x6a  Code  Gb  mock_mpbBuffer.o [1]
+mpbBuffer_IsEmpty_CMockIgnoreAndReturn
+                              0xd71    0x5e  Code  Gb  mock_mpbBuffer.o [1]
+mpbBuffer_IsFull              0x9ed   0x13c  Code  Gb  mock_mpbBuffer.o [1]
+mpbBuffer_IsFull_CMockExpectAndReturn
+                              0xbb1    0x7e  Code  Gb  mock_mpbBuffer.o [1]
+mpbBuffer_IsFull_CMockExpectAnyArgsAndReturn
+                              0xb37    0x6c  Code  Gb  mock_mpbBuffer.o [1]
+mpbSerialDriver_Connected
+                             0x2e5d     0x6  Code  Gb  mpbSerialDriver.o [1]
+mpbSerialDriver_Exec         0x2dbd    0x62  Code  Gb  mpbSerialDriver.o [1]
+mpbSerialDriver_GetByte
+                             0x2e45    0x18  Code  Gb  mpbSerialDriver.o [1]
+mpbSerialDriver_Init         0x2d55    0x68  Code  Gb  mpbSerialDriver.o [1]
+mpbSerialDriver_OkayToRead
+                             0x2e63    0x16  Code  Gb  mpbSerialDriver.o [1]
+mpbSerial_getc               0x218f   0x14c  Code  Gb  mock_test_mpbSerialDriver.o [1]
+mpbSerial_getc_CMockExpectAnyArgsAndReturn
+                             0x22db    0x6a  Code  Gb  mock_test_mpbSerialDriver.o [1]
+mpbSerial_getc_CMockReturnMemThruPtr_pRxByte
+                             0x2345    0x2e  Code  Gb  mock_test_mpbSerialDriver.o [1]
+mpbSerial_putc               0x1fed   0x114  Code  Gb  mock_test_mpbSerialDriver.o [1]
+mpbSerial_putc_CMockExpectAndReturn
+                             0x2109    0x86  Code  Gb  mock_test_mpbSerialDriver.o [1]
+mpbSerial_readable           0x2373    0x9e  Code  Gb  mock_test_mpbSerialDriver.o [1]
+mpbSerial_readable_CMockExpectAndReturn
+                             0x2479    0x6c  Code  Gb  mock_test_mpbSerialDriver.o [1]
+mpbSerial_readable_CMockExpectAnyArgsAndReturn
+                             0x2411    0x68  Code  Gb  mock_test_mpbSerialDriver.o [1]
+obuf                    0x2000'83d0    0x50  Data  Lc  xfiles.o [2]
+putchar                      0x17bd     0xc  Code  Gb  putchar.o [2]
+remove                       0x2fdb    0x14  Code  Gb  remove.o [5]
+sFileInfo               0x2000'81f8    0x80  Data  Lc  XShHandles.o [2]
+setUp                        0x296d     0x2  Code  Gb  test_mpbSerialDriver.o [1]
+setjmp                       0x17c9          Code  Gb  setjmp.o [3]
+strlen                       0x2ff1          Code  Gb  strlen.o [4]
+suite_setup                  0x256d     0x2  Code  Lc  test_mpbSerialDriver_runner.o [1]
+suite_teardown               0x256f     0x2  Code  Lc  test_mpbSerialDriver_runner.o [1]
+tearDown                     0x296f     0x2  Code  Gb  test_mpbSerialDriver.o [1]
+test_mpbSerialDriver_Exec_should_DoNothing_when_NothingToWrite_and_NothingToRead
+                             0x29c3    0x18  Code  Gb  test_mpbSerialDriver.o [1]
+test_mpbSerialDriver_Exec_should_DoNothing_when_TooFullToWrite_and_TooFullToRead
+                             0x29db    0x22  Code  Gb  test_mpbSerialDriver.o [1]
+test_mpbSerialDriver_Exec_should_NotWriteAByte_when_CouldNotFetchByte
+                             0x2b0b    0x22  Code  Gb  test_mpbSerialDriver.o [1]
+test_mpbSerialDriver_Exec_should_ReadAByte_when_FreeBufferedAndReadable
+                             0x2b2d    0x4e  Code  Gb  test_mpbSerialDriver.o [1]
+test_mpbSerialDriver_Exec_should_ReadBytes_when_BytesInBufferedAndReadable
+                             0x2b7b    0x62  Code  Gb  test_mpbSerialDriver.o [1]
+test_mpbSerialDriver_Exec_should_WriteAByte_when_OneBuffered
+                             0x29fd    0x4e  Code  Gb  test_mpbSerialDriver.o [1]
+test_mpbSerialDriver_Exec_should_WriteBytes_when_BytesBuffered
+                             0x2a4b    0xc0  Code  Gb  test_mpbSerialDriver.o [1]
+test_mpbSerialDriver_GetByte_should_GrabBytesFromReceiveQueue_when_NotEmpty
+                             0x2c8d    0x4a  Code  Gb  test_mpbSerialDriver.o [1]
+test_mpbSerialDriver_GetByte_should_ReturnZero_when_Empty
+                             0x2cd7    0x24  Code  Gb  test_mpbSerialDriver.o [1]
+test_mpbSerialDriver_Init_should_InitTheBuffers_and_ConfigureTheSerialPort
+                             0x2971    0x52  Code  Gb  test_mpbSerialDriver.o [1]
+test_mpbSerialDriver_OkayToRead_should_NegateReceiveEmptyStatus
+                             0x2cfb    0x3a  Code  Gb  test_mpbSerialDriver.o [1]
+test_mpbSerialDriver_PutByte_should_PushBytesIntoTheTransmitQueue_when_NotFull
+                             0x2bfd    0x90  Code  Gb  test_mpbSerialDriver.o [1]
+test_mpbSerialDriver_PutByte_should_ReturnFalse_when_Full
+                             0x2bdd    0x20  Code  Gb  test_mpbSerialDriver.o [1]
+ucRawRxData             0x2000'8330    0x50  Data  Gb  mpbSerialDriver.o [1]
+ucRawTxData             0x2000'82e0    0x50  Data  Gb  mpbSerialDriver.o [1]
+vMpbSerial_clear             0x1f4b    0x98  Code  Gb  mock_test_mpbSerialDriver.o [1]
+vMpbSerial_clear_CMockIgnore
+                             0x1fe3     0xa  Code  Gb  mock_test_mpbSerialDriver.o [1]
+vMpbSerial_init              0x2e79    0x14  Code  Gb  mpbSerialDriver.o [1]
+xMpbSerialDriver        0x2000'8498     0x4  Data  Lc  mpbSerialDriver.o [1]
+
+
+[1] = C:\mpbComponent\mpbM2MProtocol\UnitTestFramework\build\test\out\c
+[2] = dl7M_tlf.a
+[3] = m7M_tl.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  12'590 bytes of readonly  code memory
+   2'093 bytes of readonly  data memory
+  37'029 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
