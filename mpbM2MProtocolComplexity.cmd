@@ -33,6 +33,6 @@ echo    `..-.`     ````               `......`       ......            `........
 echo "runing cyclomatic complexity.."
 
 
-sourcemonitor /C "C:\mpbComponent\mpbmpbM2MProtocol\complexity\mpbmpbM2MProtocol.xml" /L "C:\mpbComponent\mpbmpbM2MProtocol\complexity\mpbmpbM2MProtocol.log"
+sourcemonitor /C "C:\mpbComponent\mpbmpbM2MProtocol\complexity\mpbM2MProtocol.xml" /L "C:\mpbComponent\mpbM2MProtocol\complexity\mpbM2MProtocol.log"
 
  
