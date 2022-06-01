@@ -24,7 +24,7 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F37877E)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5F37877C)
 I (Includes\mpbBuffer.h)(0x62965F27)
 I (Includes\Defs.h)(0x6296715E)
-F (.\Sources\mpbCommandConductor.c)(0x6296602D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Includes -I ../mpbMath/Includes -I ../commun/Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/mpbcommandconductor.o -MD)
+F (.\Sources\mpbCommandConductor.c)(0x6297C198)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Includes -I ../mpbMath/Includes -I ../commun/Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/mpbcommandconductor.o -MD)
 I (Includes\mpbCommandConductor.h)(0x628D4689)
 I (Includes\mpblibs.h)(0x6296731F)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F378778)
@@ -37,7 +37,7 @@ I (Includes\Defs.h)(0x6296715E)
 I (..\mpbMath\Includes\mpbMathCrc.h)(0x62965F56)
 I (..\mpbMath\Includes\mpbMathCrcUtil.h)(0x60ACEC17)
 I (Includes\mpbUtils.h)(0x62964CCE)
-I (Includes\mpbCommandHardware.h)(0x6297B733)
+I (Includes\mpbCommandHardware.h)(0x6297BD36)
 I (Includes\mpbParser.h)(0x62963515)
 I (Includes\mpbPacker.h)(0x629634DC)
 I (Includes\mpbCommandHandler.h)(0x628D4411)
@@ -56,7 +56,7 @@ I (..\mpbMath\Includes\mpbMathCrc.h)(0x62965F56)
 I (..\mpbMath\Includes\mpbMathCrcUtil.h)(0x60ACEC17)
 I (Includes\mpbUtils.h)(0x62964CCE)
 F (.\Sources\mpbCommandHardware.c)(0x6297B96D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Includes -I ../mpbMath/Includes -I ../commun/Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/mpbcommandhardware.o -MD)
-I (Includes\mpbCommandHardware.h)(0x6297B733)
+I (Includes\mpbCommandHardware.h)(0x6297BD36)
 I (Includes\mpblibs.h)(0x6296731F)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F378778)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F37877E)
@@ -71,7 +71,7 @@ I (..\mpbMath\Includes\mpbMathCrcUtil.h)(0x60ACEC17)
 I (Includes\mpbUtils.h)(0x62964CCE)
 I (Includes\mpbParser.h)(0x62963515)
 I (Includes\mpbPacker.h)(0x629634DC)
-I (Includes\mpbSerialDriver.h)(0x6297AC73)
+I (Includes\mpbSerialDriver.h)(0x6297BD1D)
 I (Includes\mpbBuffer.h)(0x62965F27)
 F (.\Sources\mpbPacker.c)(0x62961C4A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Includes -I ../mpbMath/Includes -I ../commun/Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/mpbpacker.o -MD)
 I (Includes\mpbPacker.h)(0x629634DC)
@@ -96,7 +96,7 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5F37877C)
 I (..\mpbMath\Includes\mpbMathCrc.h)(0x62965F56)
 I (..\mpbMath\Includes\mpbMathCrcUtil.h)(0x60ACEC17)
 F (.\Sources\mpbSerialDriver.c)(0x6297AA47)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./Includes -I ../mpbMath/Includes -I ../commun/Includes-IC:/Users/j.castano/AppData/Local/Arm/Packs/Vorago/VA416xx/1.0.3/core-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="533" -DVA416xx-o ./objects/mpbserialdriver.o -MD)
-I (Includes\mpbSerialDriver.h)(0x6297AC73)
+I (Includes\mpbSerialDriver.h)(0x6297BD1D)
 I (Includes\mpblibs.h)(0x6296731F)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F378778)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F37877E)

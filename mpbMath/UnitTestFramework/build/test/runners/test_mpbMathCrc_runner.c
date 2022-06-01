@@ -47,7 +47,6 @@ extern void test_eMpbMathCrcInit_Success();
 extern void test_eMpbMathCrcCalculate_WrongParameters_Failed();
 extern void test_eMpbMathCrcCalculate_MallocFailed_Failed();
 extern void test_eMpbMathCrcCalculate_CRC16_NoReflection_Success();
-extern void test_eMpbMathCrcCalculate_CRC16_Reflection_Success();
 extern void test_eMpbMathCrcValidate_WrongParameters_Failed();
 extern void test_eMpbMathCrcValidate_MallocFailed_Failed();
 extern void test_eMpbMathCrcValidate_CRC32_NoReflexion_Success();
@@ -114,7 +113,6 @@ int main(void)
   RUN_TEST(test_eMpbMathCrcCalculate_WrongParameters_Failed, 112);
   RUN_TEST(test_eMpbMathCrcCalculate_MallocFailed_Failed, 144);
   RUN_TEST(test_eMpbMathCrcCalculate_CRC16_NoReflection_Success, 171);
-  RUN_TEST(test_eMpbMathCrcCalculate_CRC16_Reflection_Success, 209);
   RUN_TEST(test_eMpbMathCrcValidate_WrongParameters_Failed, 428);
   RUN_TEST(test_eMpbMathCrcValidate_MallocFailed_Failed, 455);
   RUN_TEST(test_eMpbMathCrcValidate_CRC32_NoReflexion_Success, 482);

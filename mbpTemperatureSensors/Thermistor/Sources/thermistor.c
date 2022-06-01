@@ -98,10 +98,12 @@ eMpbError_t vprvTemperatureInterpolation( const xThermistorTemperature_t *pxTemp
 eMpbError_t eThermistorInitBaseCircuit( xThermistorCircuitConfig_t *pxThermistorCircuitConfig, uint32_t ulSeriesResistor1, uint32_t ulSeriesResistor2, uint16_t usReferenceVoltagemV )
 {
     /* Validate entry parameter  to validate */
-//    if( ( pxThermistorCircuitConfig == NULL ) || ( ( ulSeriesResistor1 == 0 ) && ( ulSeriesResistor2 == 0 ) ) || ( ( ulSeriesResistor1 != 0 ) && ( ulSeriesResistor2 != 0 ) )  )
-//    {
-//        return eInvalidParameter;
-//    }
+    if( ( pxThermistorCircuitConfig == NULL ) || 
+			( ( ulSeriesResistor1 == 0 ) && ( ulSeriesResistor2 == 0 ) ) || 
+			( ( ulSeriesResistor1 != 0 ) && ( ulSeriesResistor2 != 0 ) )  )
+    {
+        return eInvalidParameter;
+    }
     
     /* Init Thermistor */    
     pxThermistorCircuitConfig->ulSeriesResistor1 = ulSeriesResistor1;

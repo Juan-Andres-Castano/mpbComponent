@@ -1,10 +1,10 @@
 /**
 * @file			thermistorCircuit.h
 * @brief		thermistorCircuit header file.
-* @author		juan
-* @date			Created on 2021-03-09
+* @author		juan Andres Castano Ing.
+* @date			Created on 2022-04-09
 * @copyright MPB, Montreal, Qc
-* <h2><center>&copy; COPYRIGHT 2021 MPB, Montreal, Quebec, Canada</center></h2>
+* <h2><center>&copy; COPYRIGHT 2022 MPB, Montreal, Quebec, Canada</center></h2>
 * <h2><center>&copy; All rights reserved.</center></h2><br/><br/>
 * <center>This document contains confidential and proprietary information
 * of MPB (subject to a non-disclosure agreement) and shall</center>

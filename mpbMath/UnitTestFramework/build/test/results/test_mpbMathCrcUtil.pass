@@ -15,24 +15,27 @@
 - :test: test_vMpbMathCrcUtilPreCalculate_CRC16_Success
   :line: 118
   :message: ''
+- :test: test_vMpbMathCrcUtilPreCalculate_CRC16_test2_Success
+  :line: 137
+  :message: ''
 - :test: test_vMpbMathCrcUtilPreCalculate_CRC16_2_Success
-  :line: 138
+  :line: 157
   :message: ''
 - :test: test_vMpbMathCrcUtilPreCalculate_CRC16_3_Success
-  :line: 160
+  :line: 179
   :message: ''
 - :test: test_vMpbMathCrcUtilPreCalculate_CRC16_4_Success
-  :line: 180
+  :line: 199
   :message: ''
 - :test: test_vMpbMathCrcUtilPreCalculate_CRC8_Success
-  :line: 200
+  :line: 219
   :message: ''
 :failures: []
 :ignores: []
 :counts:
-  :total: 8
-  :passed: 8
+  :total: 9
+  :passed: 9
   :failed: 0
   :ignored: 0
 :stdout: []
-:time: 0.017587200010893866
+:time: 0.12838740000734106

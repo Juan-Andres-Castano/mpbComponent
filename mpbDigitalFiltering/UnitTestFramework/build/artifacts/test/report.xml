@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<testsuites tests="46" failures="0" skipped="0" time="2.135769">
-  <testsuite name="test_mpbDigitalFilteringNms" tests="24" failures="0" skipped="0" time="1.240630">
+<testsuites tests="46" failures="0" skipped="0" time="5.340806">
+  <testsuite name="test_mpbDigitalFilteringNms" tests="24" failures="0" skipped="0" time="3.115088">
     <testcase name="test_xMpbDigitalFilteringNmsInit_Success" />
     <testcase name="test_xMpbDigitalFilteringNmsInit_NullPointer_Fail" />
     <testcase name="test_eMpbNmsFilterAdd_NullPointerWithNumDeriv_Fail" />
@@ -26,7 +26,7 @@
     <testcase name="test_eMpbNmsFilterGetAverageFloat_Success" />
     <testcase name="test_eMpbNmsFilterGetAverageFloat_eMpbMathAverageFloat_Fail" />
   </testsuite>
-  <testsuite name="test_mpbDigitalFilteringRclp" tests="22" failures="0" skipped="0" time="0.895139">
+  <testsuite name="test_mpbDigitalFilteringRclp" tests="22" failures="0" skipped="0" time="2.225718">
     <testcase name="test_eMpbpRclpFilterInit_ulKNotZero_Success" />
     <testcase name="test_eMpbRclpFilterInit_ulKZero_Success" />
     <testcase name="test_eMpbRclpFilterInit_NullPointer_Fail" />

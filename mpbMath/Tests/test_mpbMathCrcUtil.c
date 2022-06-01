@@ -134,6 +134,25 @@ void test_vMpbMathCrcUtilPreCalculate_CRC16_Success()
     TEST_ASSERT_EQUAL_HEX16( 0xD374 , ulCrcValue );
 }
 /*----------------------------------------------------------------------------*/
+void test_vMpbMathCrcUtilPreCalculate_CRC16_test2_Success()
+{
+    uint8_t ucWidth          = 16;
+    uint32_t ulInitial       = 0xFFFF;
+    uint32_t ulPolynomial    = 0x1021; //C867;
+    
+    uint32_t ulNumberOfBytes = 4;
+    uint8_t pucBuffer[ 4 ]   = { 0x04, 0xF2, 0x01, 0x83 };  
+    uint32_t ulCrcValue      = 0;
+    
+    
+    vMpbMathCrcUtilCalculate( ucWidth, ulInitial, ulPolynomial, ulNumberOfBytes, pucBuffer, &ulCrcValue );
+    
+    ulCrcValue ^= 0x0000; 
+
+      
+    TEST_ASSERT_EQUAL_HEX16( 0x51D9 , ulCrcValue );
+}
+/*----------------------------------------------------------------------------*/
 
 void test_vMpbMathCrcUtilPreCalculate_CRC16_2_Success()
 {

@@ -273,19 +273,21 @@
   - xml_tests_report
   - stdout_pretty_tests_report
   - module_generator
+  - junit_tests_report
   - gcov
   :display_raw_test_results: false
   :xml_tests_report_path: vendor/ceedling/plugins/xml_tests_report
   :stdout_pretty_tests_report_path: vendor/ceedling/plugins/stdout_pretty_tests_report
   :module_generator_path: vendor/ceedling/plugins/module_generator
+  :junit_tests_report_path: vendor/ceedling/plugins/junit_tests_report
   :gcov_path: vendor/ceedling/plugins/gcov
 :gcov:
   :utilities:
   - gcovr
   - ReportGenerator
+  :html_report_type: detailed
   :reports:
   - Xml
-  :gcovr:
 :module_generator:
   :project_root: "./"
   :source_root: src/

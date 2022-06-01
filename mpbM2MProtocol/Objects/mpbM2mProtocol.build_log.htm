@@ -22,114 +22,21 @@ Dialog DLL:      TCM.DLL V1.48.0.0
  
 <h2>Project:</h2>
 C:\mpbComponent\mpbM2MProtocol\mpbM2mProtocol.uvprojx
-Project File Date:  05/31/2022
+Project File Date:  06/01/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.15', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
-Build target 'Target 1'
-compiling mpbCommandConductor.c...
-Sources/mpbParser.c(50): warning: no previous extern declaration for non-static variable 'state' [-Wmissing-variable-declarations]
-STATIC MPB_PARSER_STATE_T state = PARSER_LOOKING_FOR_START;
-                          ^
-Sources/mpbParser.c(50): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-STATIC MPB_PARSER_STATE_T state = PARSER_LOOKING_FOR_START;
-       ^
-Sources/mpbParser.c(128): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
-                usCrcValueReceived =  usMpbParserCONCAT_BYTES(ucCrc2, ucCrc1);
-                                   ~  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-./Includes\mpbParser.h(37): note: expanded from macro 'usMpbParserCONCAT_BYTES'
-#define usMpbParserCONCAT_BYTES( msb, lsb )                   ( ( ( uint16_t )msb << 8 ) | ( uint16_t )lsb )
-                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
-Sources/mpbParser.c(129): warning: cast from 'uint16_t *' (aka 'unsigned short *') to 'uint32_t *' (aka 'unsigned int *') increases required alignment from 2 to 4 [-Wcast-align]
-                eMpbError = eMpbMathCrcCalculate( *pxMpbCrc, usLengthForCrcCalcultation, &buffer[1], (uint32_t *)&usCrcValueCalculated );           
-                                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Sources/mpbParser.c(144): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
-        default:
-        ^
-Sources/mpbParser.c(30): warning: In file included from...
-./Includes\mpbParser.h(34): warning: In file included from...
-../mpbMath/Includes\mpbMathCrc.h(42): warning: padding struct 'xMpbCrc_t' with 3 bytes to align 'ulPolynomial' [-Wpadded]
-        uint32_t ulPolynomial;
-                 ^
-../mpbMath/Includes\mpbMathCrc.h(39): warning: padding size of 'xMpbCrc_t' with 2 bytes to alignment boundary [-Wpadded]
-typedef struct
-        ^
-Sources/mpbParser.c(51): warning: no previous extern declaration for non-static variable 'buffer' [-Wmissing-variable-declarations]
-uint8_t buffer[PARSER_BUFFER_LENGTH_MAX];
-        ^
-Sources/mpbParser.c(51): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-uint8_t buffer[PARSER_BUFFER_LENGTH_MAX];
-^
-7 warnings generated.
-compiling mpbParser.c...
+*** Note: Rebuilding project, since 'Options->Output->Create Batch File' is selected.
+Rebuild target 'mpbM2MProtocol'
 compiling m2mCommandSetup.c...
+compiling mpbBuffer.c...
 Sources/mpbBuffer.c(19): warning: In file included from...
 ./Includes\mpbBuffer.h(35): warning: padding struct 'struct _xMpbBuffer_t' with 2 bytes to align 'bytes' [-Wpadded]
                 uint8_t* bytes;
                          ^
 1 warning generated.
-compiling mpbBuffer.c...
-Sources/mpbCommandHardware.c(22): warning: In file included from...
-./Includes\mpbCommandHardware.h(21): warning: In file included from...
-./Includes/mpbCommandConductor.h(22): warning: In file included from...
-../mpbMath/Includes\mpbMathCrc.h(42): warning: padding struct 'xMpbCrc_t' with 3 bytes to align 'ulPolynomial' [-Wpadded]
-        uint32_t ulPolynomial;
-                 ^
-../mpbMath/Includes\mpbMathCrc.h(39): warning: padding size of 'xMpbCrc_t' with 2 bytes to alignment boundary [-Wpadded]
-typedef struct
-        ^
-Sources/mpbCommandHardware.c(110): warning: no newline at end of file [-Wnewline-eof]
-/*---------------------------------------------------------------------------------------*/
-                                                                                           ^
-3 warnings generated.
-compiling mpbCommandHardware.c...
-Sources/mpbPacker.c(73): warning: cast from 'uint16_t *' (aka 'unsigned short *') to 'uint32_t *' (aka 'unsigned int *') increases required alignment from 2 to 4 [-Wcast-align]
-    eMpbError = eMpbMathCrcCalculate( *pxMpbCrc, ucBuffer[1], &ucBuffer[1], (uint32_t *)&usCrcValueCalculated );       //( ucLength + SIZE_OF_LENGTH_BYTE )    
-                                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Sources/mpbPacker.c(76): warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned short') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
-        ucCrc8Low   = usCrcValueCalculated;
-                    ~ ^~~~~~~~~~~~~~~~~~~~
-Sources/mpbPacker.c(33): warning: In file included from...
-./Includes\mpbPacker.h(22): warning: In file included from...
-../mpbMath/Includes\mpbMathCrc.h(42): warning: padding struct 'xMpbCrc_t' with 3 bytes to align 'ulPolynomial' [-Wpadded]
-        uint32_t ulPolynomial;
-                 ^
-../mpbMath/Includes\mpbMathCrc.h(39): warning: padding size of 'xMpbCrc_t' with 2 bytes to alignment boundary [-Wpadded]
-typedef struct
-        ^
-4 warnings generated.
-compiling mpbPacker.c...
-Sources/mpbSerialDriver.c(36): warning: no previous extern declaration for non-static variable 'ucRawTxData' [-Wmissing-variable-declarations]
-STATIC uint8_t                                          ucRawTxData[MPB_BUFFER_MAX] = {0};
-                                                        ^
-Sources/mpbSerialDriver.c(36): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-STATIC uint8_t                                          ucRawTxData[MPB_BUFFER_MAX] = {0};
-       ^
-Sources/mpbSerialDriver.c(37): warning: no previous extern declaration for non-static variable 'ucRawRxData' [-Wmissing-variable-declarations]
-STATIC uint8_t                                          ucRawRxData[MPB_BUFFER_MAX] = {0};
-                                                        ^
-Sources/mpbSerialDriver.c(37): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-STATIC uint8_t                                          ucRawRxData[MPB_BUFFER_MAX] = {0};
-       ^
-Sources/mpbSerialDriver.c(18): warning: In file included from...
-./Includes\mpbSerialDriver.h(22): warning: In file included from...
-./Includes/mpbBuffer.h(35): warning: padding struct 'struct _xMpbBuffer_t' with 2 bytes to align 'bytes' [-Wpadded]
-                uint8_t* bytes;
-                         ^
-Sources/mpbSerialDriver.c(38): warning: no previous extern declaration for non-static variable 'mpbBufferTx' [-Wmissing-variable-declarations]
-STATIC xMpbBuffer_t                     mpbBufferTx;
-                                        ^
-Sources/mpbSerialDriver.c(38): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-STATIC xMpbBuffer_t                     mpbBufferTx;
-       ^
-Sources/mpbSerialDriver.c(39): warning: no previous extern declaration for non-static variable 'mpbBufferRx' [-Wmissing-variable-declarations]
-STATIC xMpbBuffer_t                     mpbBufferRx;
-                                        ^
-Sources/mpbSerialDriver.c(39): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-STATIC xMpbBuffer_t                     mpbBufferRx;
-       ^
-5 warnings generated.
-compiling mpbSerialDriver.c...
+compiling mpbCommandConductor.c...
+compiling mpbCommandHandler.c...
 Sources/mpbCommandHandler.c(44): warning: unused parameter 'Msg' [-Wunused-parameter]
 eMpbError_t eMpbCommandHandlerUpdate(xM2mMessage_t* Msg)
                                                     ^
@@ -176,7 +83,101 @@ Sources/mpbCommandHandler.c(112): warning: unused parameter 'ucBeaconId' [-Wunus
 void vMpbCommandHandlerGetTecStatus( uint8_t ucBeaconId, uint8_t *pucTecIsEnabled )
                                              ^
 15 warnings generated.
-compiling mpbCommandHandler.c...
+compiling mpbCommandHardware.c...
+Sources/mpbCommandHardware.c(22): warning: In file included from...
+./Includes\mpbCommandHardware.h(21): warning: In file included from...
+./Includes/mpbCommandConductor.h(22): warning: In file included from...
+../mpbMath/Includes\mpbMathCrc.h(42): warning: padding struct 'xMpbCrc_t' with 3 bytes to align 'ulPolynomial' [-Wpadded]
+        uint32_t ulPolynomial;
+                 ^
+../mpbMath/Includes\mpbMathCrc.h(39): warning: padding size of 'xMpbCrc_t' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+Sources/mpbCommandHardware.c(110): warning: no newline at end of file [-Wnewline-eof]
+/*---------------------------------------------------------------------------------------*/
+                                                                                           ^
+3 warnings generated.
+compiling mpbPacker.c...
+Sources/mpbPacker.c(73): warning: cast from 'uint16_t *' (aka 'unsigned short *') to 'uint32_t *' (aka 'unsigned int *') increases required alignment from 2 to 4 [-Wcast-align]
+    eMpbError = eMpbMathCrcCalculate( *pxMpbCrc, ucBuffer[1], &ucBuffer[1], (uint32_t *)&usCrcValueCalculated );       //( ucLength + SIZE_OF_LENGTH_BYTE )    
+                                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Sources/mpbPacker.c(76): warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned short') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+        ucCrc8Low   = usCrcValueCalculated;
+                    ~ ^~~~~~~~~~~~~~~~~~~~
+Sources/mpbPacker.c(33): warning: In file included from...
+./Includes\mpbPacker.h(22): warning: In file included from...
+../mpbMath/Includes\mpbMathCrc.h(42): warning: padding struct 'xMpbCrc_t' with 3 bytes to align 'ulPolynomial' [-Wpadded]
+        uint32_t ulPolynomial;
+                 ^
+../mpbMath/Includes\mpbMathCrc.h(39): warning: padding size of 'xMpbCrc_t' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+4 warnings generated.
+compiling mpbParser.c...
+Sources/mpbParser.c(50): warning: no previous extern declaration for non-static variable 'state' [-Wmissing-variable-declarations]
+STATIC MPB_PARSER_STATE_T state = PARSER_LOOKING_FOR_START;
+                          ^
+Sources/mpbParser.c(50): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+STATIC MPB_PARSER_STATE_T state = PARSER_LOOKING_FOR_START;
+       ^
+Sources/mpbParser.c(128): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+                usCrcValueReceived =  usMpbParserCONCAT_BYTES(ucCrc2, ucCrc1);
+                                   ~  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Includes\mpbParser.h(37): note: expanded from macro 'usMpbParserCONCAT_BYTES'
+#define usMpbParserCONCAT_BYTES( msb, lsb )                   ( ( ( uint16_t )msb << 8 ) | ( uint16_t )lsb )
+                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+Sources/mpbParser.c(129): warning: cast from 'uint16_t *' (aka 'unsigned short *') to 'uint32_t *' (aka 'unsigned int *') increases required alignment from 2 to 4 [-Wcast-align]
+                eMpbError = eMpbMathCrcCalculate( *pxMpbCrc, usLengthForCrcCalcultation, &buffer[1], (uint32_t *)&usCrcValueCalculated );           
+                                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Sources/mpbParser.c(144): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+        default:
+        ^
+Sources/mpbParser.c(30): warning: In file included from...
+./Includes\mpbParser.h(34): warning: In file included from...
+../mpbMath/Includes\mpbMathCrc.h(42): warning: padding struct 'xMpbCrc_t' with 3 bytes to align 'ulPolynomial' [-Wpadded]
+        uint32_t ulPolynomial;
+                 ^
+../mpbMath/Includes\mpbMathCrc.h(39): warning: padding size of 'xMpbCrc_t' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+Sources/mpbParser.c(51): warning: no previous extern declaration for non-static variable 'buffer' [-Wmissing-variable-declarations]
+uint8_t buffer[PARSER_BUFFER_LENGTH_MAX];
+        ^
+Sources/mpbParser.c(51): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t buffer[PARSER_BUFFER_LENGTH_MAX];
+^
+7 warnings generated.
+compiling mpbSerialDriver.c...
+Sources/mpbSerialDriver.c(36): warning: no previous extern declaration for non-static variable 'ucRawTxData' [-Wmissing-variable-declarations]
+STATIC uint8_t                                          ucRawTxData[MPB_BUFFER_MAX] = {0};
+                                                        ^
+Sources/mpbSerialDriver.c(36): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+STATIC uint8_t                                          ucRawTxData[MPB_BUFFER_MAX] = {0};
+       ^
+Sources/mpbSerialDriver.c(37): warning: no previous extern declaration for non-static variable 'ucRawRxData' [-Wmissing-variable-declarations]
+STATIC uint8_t                                          ucRawRxData[MPB_BUFFER_MAX] = {0};
+                                                        ^
+Sources/mpbSerialDriver.c(37): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+STATIC uint8_t                                          ucRawRxData[MPB_BUFFER_MAX] = {0};
+       ^
+Sources/mpbSerialDriver.c(18): warning: In file included from...
+./Includes\mpbSerialDriver.h(22): warning: In file included from...
+./Includes/mpbBuffer.h(35): warning: padding struct 'struct _xMpbBuffer_t' with 2 bytes to align 'bytes' [-Wpadded]
+                uint8_t* bytes;
+                         ^
+Sources/mpbSerialDriver.c(38): warning: no previous extern declaration for non-static variable 'mpbBufferTx' [-Wmissing-variable-declarations]
+STATIC xMpbBuffer_t                     mpbBufferTx;
+                                        ^
+Sources/mpbSerialDriver.c(38): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+STATIC xMpbBuffer_t                     mpbBufferTx;
+       ^
+Sources/mpbSerialDriver.c(39): warning: no previous extern declaration for non-static variable 'mpbBufferRx' [-Wmissing-variable-declarations]
+STATIC xMpbBuffer_t                     mpbBufferRx;
+                                        ^
+Sources/mpbSerialDriver.c(39): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+STATIC xMpbBuffer_t                     mpbBufferRx;
+       ^
+5 warnings generated.
 compiling mpbUtils.c...
 creating Library...
 ".\Objects\mpbM2mProtocol.lib" - 0 Error(s), 35 Warning(s).
@@ -192,7 +193,7 @@ Package Vendor: Vorago
   C:\Users\j.castano\AppData\Local\Arm\Packs\Vorago\VA416xx\1.0.3\core
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>

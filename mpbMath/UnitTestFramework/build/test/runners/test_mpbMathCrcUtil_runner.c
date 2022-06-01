@@ -39,6 +39,7 @@ extern void test_vMpbMathCrcReflectData_Success();
 extern void test_vMpbMathCrcReflectBytes_Success();
 extern void test_vMpbMathCrcUtilPreCalculate_CRC16_CheckValue_Success();
 extern void test_vMpbMathCrcUtilPreCalculate_CRC16_Success();
+extern void test_vMpbMathCrcUtilPreCalculate_CRC16_test2_Success();
 extern void test_vMpbMathCrcUtilPreCalculate_CRC16_2_Success();
 extern void test_vMpbMathCrcUtilPreCalculate_CRC16_3_Success();
 extern void test_vMpbMathCrcUtilPreCalculate_CRC16_4_Success();
@@ -81,10 +82,11 @@ int main(void)
   RUN_TEST(test_vMpbMathCrcReflectBytes_Success, 63);
   RUN_TEST(test_vMpbMathCrcUtilPreCalculate_CRC16_CheckValue_Success, 99);
   RUN_TEST(test_vMpbMathCrcUtilPreCalculate_CRC16_Success, 118);
-  RUN_TEST(test_vMpbMathCrcUtilPreCalculate_CRC16_2_Success, 138);
-  RUN_TEST(test_vMpbMathCrcUtilPreCalculate_CRC16_3_Success, 160);
-  RUN_TEST(test_vMpbMathCrcUtilPreCalculate_CRC16_4_Success, 180);
-  RUN_TEST(test_vMpbMathCrcUtilPreCalculate_CRC8_Success, 200);
+  RUN_TEST(test_vMpbMathCrcUtilPreCalculate_CRC16_test2_Success, 137);
+  RUN_TEST(test_vMpbMathCrcUtilPreCalculate_CRC16_2_Success, 157);
+  RUN_TEST(test_vMpbMathCrcUtilPreCalculate_CRC16_3_Success, 179);
+  RUN_TEST(test_vMpbMathCrcUtilPreCalculate_CRC16_4_Success, 199);
+  RUN_TEST(test_vMpbMathCrcUtilPreCalculate_CRC8_Success, 219);
 
   return suite_teardown(UnityEnd());
 }

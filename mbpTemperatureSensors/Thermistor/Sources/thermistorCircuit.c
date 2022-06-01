@@ -1,16 +1,16 @@
 /**
 * @file 		thermistorCircuit.c
 * @brief			
-* @author		vincent
-* @date			Created on 2019-10-28
+* @author		juan Andres Castano Ing.
+* @date			Created on 2022-04-28
 * @note
-* @copyright NEP, Montreal, Qc
-* <h2><center>&copy; COPYRIGHT 2015 NEP, Montreal, Quebec, Canada</center></h2>
+* @copyright MPB, Montreal, Qc
+* <h2><center>&copy; COPYRIGHT 2022 MPB, Montreal, Quebec, Canada</center></h2>
 * <h2><center>&copy; All rights reserved.</center></h2><br/><br/>
 * <center>This document contains confidential and proprietary information
-* of NEPTRONIC (subject to a non-disclosure agreement) and shall</center>
+* of MPB (subject to a non-disclosure agreement) and shall</center>
 * <center>not be disclosed, distributed, or reproduced in whole or in
-* part, without the prior written authorization of NEPTRONIC.</center>
+* part, without the prior written authorization of MPB.</center>
 *
 **/
 /* Includes ----------------------------------------------------------------- */

@@ -1,8 +1,8 @@
 /**
 * @file 		thermistorCircuitUtil.c
 * @brief			
-* @author		juan
-* @date			Created on 2021-3-9
+* @author		juan Andres Castano Ing.
+* @date			Created on 2022-3-9
 * @note
 * @copyright MPB, Montreal, Qc
 * <h2><center>&copy; COPYRIGHT 2021 MPB, Montreal, Quebec, Canada</center></h2>

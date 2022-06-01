@@ -22,11 +22,14 @@
 
 /* Define ------------------------------------------------------------------- */
 /* Exported macro ----------------------------------------------------------- */
-
-#define MPBPMATH_CRC_8_INIT( pxMpbCrc )          eMpbMathCrcInit( 8,        0x00,       0x07,       0x00, eFalse, eFalse, pxMpbCrc );  
-#define MPBMATH_CRC_16_INIT( pxMpbCrc )          eMpbMathCrcInit( 16,     0x0000,     0x8005,     0x0000,  eTrue,  eTrue, pxMpbCrc );      
-
+//uint8_t ucWidth, uint32_t ulInitial, 	uint32_t ulPolynomial, uint32_t ulXorOutput, eBool_t bRefInput, eBool_t bRefOutput, xMpbCrc_t *pxMpbCrc
+#define MPBPMATH_CRC_8_INIT( pxMpbCrc )           eMpbMathCrcInit( 8,        0x00,       0x07,       0x00, eFalse, eFalse, pxMpbCrc );  
+#define MPBMATH_CRC_16_INIT( pxMpbCrc )          eMpbMathCrcInit( 16,     0xFFFF,     0x1021,     0x0000,  eFalse, eFalse, pxMpbCrc );      
+#define MPBMATH_CRC_16_MODBUS_INIT( pxMpbCrc )   eMpbMathCrcInit( 16,     0xFFFF,     0x8005,     0x0000,  eTrue,  eTrue, pxMpbCrc );                
+#define MPBMATH_CRC_32_INIT( pxMpbCrc )          eMpbMathCrcInit( 32, 0xFFFFFFFF,  0x4C11DB7, 0xFFFFFFFF,  eTrue,  eTrue, pxMpbCrc );          
+#define MPBMATH_CRC_32D_INIT( pxMpbCrc )         eMpbMathCrcInit( 32, 0xFFFFFFFF, 0xA833982B, 0xFFFFFFFF,  eTrue,  eTrue, pxMpbCrc );
       
+			 
 /* Exported enum ------------------------------------------------------------ */
 /* Exported struct ---------------------------------------------------------- */
 

@@ -1,47 +1,47 @@
-[16Feb2022 14:24:02] ****** SourceMonitor (V3.5.16.49): Begin Session
-[16Feb2022 14:24:02] Command Line Option: Process '/C "C:\mpbComponent\mpbMath\complexity\mpbMathComplexity.xml" /L "C:\mpbComponent\mpbMath\complexity\mpbMathComplexity.log"'
-[16Feb2022 14:24:02] Command File: Process Command File 'C:\mpbComponent\mpbMath\complexity\mpbMathComplexity.xml'
-[16Feb2022 14:24:02] Command File: Process Commands [Line 9]
-[16Feb2022 14:24:02] Command File: Execute Command [Line 41]
-[16Feb2022 14:24:02] Command File: Open Project 'C:\mpbComponent\mpbMath\complexity\mpbMathComplexity.smp'
-[16Feb2022 14:24:02] Create Checkpoint: Search for checkpoint files using base directory 'C:\mpbcomponent\mpbMath\sources\'.
-[16Feb2022 14:24:02] Command File: Create Checkpoint 'Baseline' dated '2022-01-31T12:24:56'
-[16Feb2022 14:24:02] Command File: Export Checkpoint Summary to XML
-[16Feb2022 14:24:02] Export Metrics: Begin XML Summary export to file 'C:\mpbcomponent\mpbMath\complexity\dump.xml'.
-[16Feb2022 14:24:02] Export Metrics: Export Checkpoint 'Baseline'
-[16Feb2022 14:24:02] Export Metrics: End Export Checkpoint Summary to XML
-[16Feb2022 14:24:02] Command File: End Export
-[16Feb2022 14:24:02] Command File: End Command Execution
-[16Feb2022 14:24:02] Command File: Execute Command [Line 258]
-[16Feb2022 14:24:02] Command File: Open Project 'C:\mpbComponent\mpbMath\complexity\mpbMathComplexity.smp'
-[16Feb2022 14:24:02] Create Checkpoint: Search for checkpoint files using base directory 'C:\mpbcomponent\mpbMath\sources\'.
-[16Feb2022 14:24:02] Command File: Create Checkpoint 'Checkpoint1' dated '2022-02-16T14:24:02'
-[16Feb2022 14:24:02] Command File: Export Checkpoint Details to XML
-[16Feb2022 14:24:02] Export Metrics: Begin XML Details export to file 'C:\mpbComponent\mpbMath\complexity\dump.xml'.
-[16Feb2022 14:24:02] Export Metrics: Export Checkpoint 'Checkpoint1'
-[16Feb2022 14:24:02] Export Metrics: End Export Checkpoint Details to XML
-[16Feb2022 14:24:02] Command File: End Export
-[16Feb2022 14:24:02] Command File: Checkpoint 'Checkpoint1' deleted
-[16Feb2022 14:24:02] Command File: End Command Execution
-[16Feb2022 14:24:02] Command File: Execute Command [Line 336]
-[16Feb2022 14:24:02] Command File: Open Project 'C:\mpbComponent\mpbMath\complexity\mpbMathComplexity.smp'
-[16Feb2022 14:24:02] Create Checkpoint: Search for checkpoint files using base directory 'C:\mpbcomponent\mpbMath\sources\'.
-[16Feb2022 14:24:02] Command File: Create Checkpoint 'Alpha One' dated '2022-02-16T14:24:02'
-[16Feb2022 14:24:02] Command File: Export Checkpoint Details to CSV
-[16Feb2022 14:24:02] Export Metrics: Begin CSV export to file 'C:\mpbComponent\mpbMath\complexity\dump.txt'.
-[16Feb2022 14:24:02] Export Metrics: Export Checkpoint 'Alpha One'
-[16Feb2022 14:24:02] Export Metrics: End Export Checkpoint Details to CSV
-[16Feb2022 14:24:02] Command File: End Export
-[16Feb2022 14:24:02] Command File: End Command Execution
-[16Feb2022 14:24:02] Command File: Execute Command [Line 368]
-[16Feb2022 14:24:02] Command File: Open Project 'C:\mpbComponent\mpbMath\complexity\mpbMathComplexity.smp'
-[16Feb2022 14:24:02] Command File: Export Checkpoint Details to XML
-[16Feb2022 14:24:02] Export Metrics: Begin XML Details export to file 'C:\mpbComponent\mpbMath\complexity\dump.txt'.
-[16Feb2022 14:24:02] Export Metrics: Export Checkpoint 'Alpha One'
-[16Feb2022 14:24:02] Export Metrics: Export Checkpoint 'Baseline'
-[16Feb2022 14:24:02] Export Metrics: End Export Checkpoint Details to XML
-[16Feb2022 14:24:02] Command File: End Export
-[16Feb2022 14:24:02] Command File: End Command Execution
-[16Feb2022 14:24:02] Command File: End Commands
-[16Feb2022 14:24:02] Command File: End Command File Processing
-[16Feb2022 14:24:02] ****** SourceMonitor (V3.5.16.49): ****** End Session
+[17Mar2022 16:24:30] ****** SourceMonitor (V3.5.16.49): Begin Session
+[17Mar2022 16:24:30] Command Line Option: Process '/C "C:\mpbComponent\mpbMath\complexity\mpbMathComplexity.xml" /L "C:\mpbComponent\mpbMath\complexity\mpbMathComplexity.log"'
+[17Mar2022 16:24:30] Command File: Process Command File 'C:\mpbComponent\mpbMath\complexity\mpbMathComplexity.xml'
+[17Mar2022 16:24:30] Command File: Process Commands [Line 9]
+[17Mar2022 16:24:30] Command File: Execute Command [Line 41]
+[17Mar2022 16:24:30] Command File: Open Project 'C:\mpbComponent\mpbMath\complexity\mpbMathComplexity.smp'
+[17Mar2022 16:24:30] Create Checkpoint: Search for checkpoint files using base directory 'C:\mpbcomponent\mpbMath\sources\'.
+[17Mar2022 16:24:30] Command File: Create Checkpoint 'Baseline' dated '2022-01-31T12:24:56'
+[17Mar2022 16:24:30] Command File: Export Checkpoint Summary to XML
+[17Mar2022 16:24:30] Export Metrics: Begin XML Summary export to file 'C:\mpbcomponent\mpbMath\complexity\dump.xml'.
+[17Mar2022 16:24:30] Export Metrics: Export Checkpoint 'Baseline'
+[17Mar2022 16:24:30] Export Metrics: End Export Checkpoint Summary to XML
+[17Mar2022 16:24:30] Command File: End Export
+[17Mar2022 16:24:30] Command File: End Command Execution
+[17Mar2022 16:24:30] Command File: Execute Command [Line 258]
+[17Mar2022 16:24:30] Command File: Open Project 'C:\mpbComponent\mpbMath\complexity\mpbMathComplexity.smp'
+[17Mar2022 16:24:30] Create Checkpoint: Search for checkpoint files using base directory 'C:\mpbcomponent\mpbMath\sources\'.
+[17Mar2022 16:24:30] Command File: Create Checkpoint 'Checkpoint1' dated '2022-03-17T16:24:30'
+[17Mar2022 16:24:30] Command File: Export Checkpoint Details to XML
+[17Mar2022 16:24:30] Export Metrics: Begin XML Details export to file 'C:\mpbComponent\mpbMath\complexity\dump.xml'.
+[17Mar2022 16:24:30] Export Metrics: Export Checkpoint 'Checkpoint1'
+[17Mar2022 16:24:30] Export Metrics: End Export Checkpoint Details to XML
+[17Mar2022 16:24:30] Command File: End Export
+[17Mar2022 16:24:30] Command File: Checkpoint 'Checkpoint1' deleted
+[17Mar2022 16:24:30] Command File: End Command Execution
+[17Mar2022 16:24:30] Command File: Execute Command [Line 336]
+[17Mar2022 16:24:30] Command File: Open Project 'C:\mpbComponent\mpbMath\complexity\mpbMathComplexity.smp'
+[17Mar2022 16:24:30] Create Checkpoint: Search for checkpoint files using base directory 'C:\mpbcomponent\mpbMath\sources\'.
+[17Mar2022 16:24:30] Command File: Create Checkpoint 'Alpha One' dated '2022-03-17T16:24:30'
+[17Mar2022 16:24:30] Command File: Export Checkpoint Details to CSV
+[17Mar2022 16:24:30] Export Metrics: Begin CSV export to file 'C:\mpbComponent\mpbMath\complexity\dump.txt'.
+[17Mar2022 16:24:31] Export Metrics: Export Checkpoint 'Alpha One'
+[17Mar2022 16:24:31] Export Metrics: End Export Checkpoint Details to CSV
+[17Mar2022 16:24:31] Command File: End Export
+[17Mar2022 16:24:31] Command File: End Command Execution
+[17Mar2022 16:24:31] Command File: Execute Command [Line 368]
+[17Mar2022 16:24:31] Command File: Open Project 'C:\mpbComponent\mpbMath\complexity\mpbMathComplexity.smp'
+[17Mar2022 16:24:31] Command File: Export Checkpoint Details to XML
+[17Mar2022 16:24:31] Export Metrics: Begin XML Details export to file 'C:\mpbComponent\mpbMath\complexity\dump.txt'.
+[17Mar2022 16:24:31] Export Metrics: Export Checkpoint 'Alpha One'
+[17Mar2022 16:24:31] Export Metrics: Export Checkpoint 'Baseline'
+[17Mar2022 16:24:31] Export Metrics: End Export Checkpoint Details to XML
+[17Mar2022 16:24:31] Command File: End Export
+[17Mar2022 16:24:31] Command File: End Command Execution
+[17Mar2022 16:24:31] Command File: End Commands
+[17Mar2022 16:24:31] Command File: End Command File Processing
+[17Mar2022 16:24:31] ****** SourceMonitor (V3.5.16.49): ****** End Session

@@ -1,6 +1,6 @@
 ./objects/thermistorcircuit.o: Thermistor\Sources\thermistorCircuit.c \
   Thermistor\Includes\thermistorCircuit.h \
-  Thermistor\Includes\thermistor.h ..\common\mpblibs.h \
+  Thermistor\Includes\thermistor.h ..\commun\Includes\mpblibs.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
