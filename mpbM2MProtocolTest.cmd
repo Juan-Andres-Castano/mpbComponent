@@ -13,7 +13,7 @@ Rem cd "C:\ProgramData\Jenkins\.jenkins\workspace\pipelinegitdemo\mpbTime\unitte
 echo "executing unit testing....."
 
 cd  "C:\mpbComponent\mpbM2MProtocol\UnitTestFramework\" 
-ceedling clobber
+
 
 ceedling 
 
