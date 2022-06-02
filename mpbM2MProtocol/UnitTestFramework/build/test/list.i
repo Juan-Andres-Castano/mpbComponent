@@ -2847,8 +2847,7 @@ extern void vMpblibsMallocFailedHook( size_t xSizeRequired );
 
 
 typedef unsigned char BOOL;
-#line 38 "C:\\mpbComponent\\mpbM2MProtocol\\Includes\\Defs.h"
-
+#line 39 "C:\\mpbComponent\\mpbM2MProtocol\\Includes\\Defs.h"
 
 
 
@@ -2934,13 +2933,12 @@ typedef uint8_t PARAM_ID_T;
  
  
 typedef struct _xMpbBuffer_t
-{
-    
+{    
     uint16_t max_size;
     uint16_t read_index;
     uint16_t write_index;
 		uint8_t* bytes;
-} xMpbBuffer_t;
+} __attribute__ ((packed))xMpbBuffer_t;
 
  
  
@@ -2948,18 +2946,46 @@ typedef struct _xMpbBuffer_t
  
  
 
+
+
+
+ 
 eMpbError_t eMpbBuffer_Init(xMpbBuffer_t* xBuffer, uint8_t* Bytes, uint16_t MaxSize);
 
+
+
+
+ 
 eMpbError_t eMpbBuffer_Put(xMpbBuffer_t* Buffer, uint8_t Val);
 
+
+
+
+ 
 eMpbError_t eMpbBuffer_Get(xMpbBuffer_t* Buffer, uint8_t* Val);
 
+
+
+
+ 
 eMpbError_t eMpbBuffer_Peek(xMpbBuffer_t* Buffer, uint8_t* Val);
 
+
+
+
+ 
 int      mpbBuffer_IsFull(xMpbBuffer_t* Buffer);
 
+
+
+
+ 
 int      mpbBuffer_IsEmpty(xMpbBuffer_t* Buffer);
 
+
+
+
+ 
 void     mpbBuffer_Clear(xMpbBuffer_t* Buffer);
 
 
@@ -3043,9 +3069,6 @@ extern eMpbError_t mpbSerial_getc( uint8_t *pRxByte );
 extern _Bool mpbSerial_readable(void);
 
 #line 19 "../Sources/mpbSerialDriver.c"
-
-
-
 
 
 

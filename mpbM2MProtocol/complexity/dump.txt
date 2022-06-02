@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<?C:\mpbComponent\mpbCurrentSensors\CurrentSensing\Sources\?>
+<?C:\mpbComponent\mpbM2MProtocol\Sources\?>
 
 <sourcemonitor_metrics>
   <project version="3.5">
-    <project_name>mpbCurrentSensorsComplex</project_name>
-    <project_directory>C:\mpbComponent\mpbCurrentSensors\CurrentSensing\Sources</project_directory>
+    <project_name>mpbM2MProtocolComplex</project_name>
+    <project_directory>C:\mpbComponent\mpbM2MProtocol\Sources</project_directory>
     <project_language>C</project_language>
     <ignore_headers_footers>false</ignore_headers_footers>
     <export_raw_numbers>false</export_raw_numbers>
@@ -26,42 +26,687 @@
         <metric_name id="M12" type="average">Average Complexity</metric_name>
       </metric_names>
       <checkpoint checkpoint_name="Alpha One" checkpoint_date="2022-06-02" ignore_blank_lines="false" modified_complexity="false">
-        <files file_count="1">
-          <file file_name="CurrentSensing.c">
+        <files file_count="12">
+          <file file_name="m2mCommandSetup.c">
             <metrics metric_count="13">
-              <metric id="M0">69</metric>
-              <metric id="M1">19</metric>
-              <metric id="M2">21.1</metric>
-              <metric id="M3">39.1</metric>
-              <metric id="M4">2</metric>
-              <metric id="M5">8.0</metric>
-              <metric id="M6">30</metric>
-              <metric id="M7">eCurrentSensingGetCurrentmA()</metric>
-              <metric id="M8">4</metric>
-              <metric id="M9">40</metric>
-              <metric id="M10">3</metric>
-              <metric id="M11">1.16</metric>
-              <metric id="M12">3.50</metric>
+              <metric id="M0">74</metric>
+              <metric id="M1">21</metric>
+              <metric id="M2">4.8</metric>
+              <metric id="M3">50.0</metric>
+              <metric id="M4">1</metric>
+              <metric id="M5">15.0</metric>
+              <metric id="M6">39</metric>
+              <metric id="M7">eMpbCommandHandlerSetup()</metric>
+              <metric id="M8">2</metric>
+              <metric id="M9">65</metric>
+              <metric id="M10">2</metric>
+              <metric id="M11">0.81</metric>
+              <metric id="M12">2.00</metric>
             </metrics>
-            <function_metrics function_count="2">
-              <function name="eCurrentSensingGetCurrentmA()" line="30">
+            <function_metrics function_count="1">
+              <function name="eMpbCommandHandlerSetup()" line="39">
+                <complexity>2</complexity>
+                <statements>15</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>2</calls>
+              </function>
+            </function_metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">6</block_depth>
+              <block_depth level="1">13</block_depth>
+              <block_depth level="2">2</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="mpbBuffer.c">
+            <metrics metric_count="13">
+              <metric id="M0">140</metric>
+              <metric id="M1">49</metric>
+              <metric id="M2">18.4</metric>
+              <metric id="M3">23.6</metric>
+              <metric id="M4">7</metric>
+              <metric id="M5">5.7</metric>
+              <metric id="M6">31</metric>
+              <metric id="M7">eMpbBuffer_Init()</metric>
+              <metric id="M8">4</metric>
+              <metric id="M9">37</metric>
+              <metric id="M10">2</metric>
+              <metric id="M11">1.00</metric>
+              <metric id="M12">2.29</metric>
+            </metrics>
+            <function_metrics function_count="7">
+              <function name="eMpbBuffer_Get()" line="81">
+                <complexity>3</complexity>
+                <statements>8</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="eMpbBuffer_Init()" line="31">
                 <complexity>4</complexity>
+                <statements>12</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="eMpbBuffer_Peek()" line="103">
+                <complexity>3</complexity>
                 <statements>7</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="eMpbBuffer_Put()" line="58">
+                <complexity>3</complexity>
+                <statements>9</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="mpbBuffer_Clear()" line="135">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="mpbBuffer_IsEmpty()" line="130">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="mpbBuffer_IsFull()" line="122">
+                <complexity>1</complexity>
+                <statements>2</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+            </function_metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">9</block_depth>
+              <block_depth level="1">31</block_depth>
+              <block_depth level="2">9</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="mpbCommandConductor.c">
+            <metrics metric_count="13">
+              <metric id="M0">87</metric>
+              <metric id="M1">26</metric>
+              <metric id="M2">15.4</metric>
+              <metric id="M3">34.5</metric>
+              <metric id="M4">3</metric>
+              <metric id="M5">4.7</metric>
+              <metric id="M6">60</metric>
+              <metric id="M7">eMpbCommandConductor_Exec()</metric>
+              <metric id="M8">5</metric>
+              <metric id="M9">74</metric>
+              <metric id="M10">4</metric>
+              <metric id="M11">1.12</metric>
+              <metric id="M12">2.33</metric>
+            </metrics>
+            <function_metrics function_count="3">
+              <function name="__attribute__()" line="35">
+                <complexity>1</complexity>
+                <statements>0</statements>
+                <maximum_depth>0</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="eMpbCommandConductor_Exec()" line="60">
+                <complexity>5</complexity>
+                <statements>11</statements>
+                <maximum_depth>4</maximum_depth>
+                <calls>3</calls>
+              </function>
+              <function name="mpbCommandConductor_Init()" line="52">
+                <complexity>1</complexity>
+                <statements>3</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>3</calls>
+              </function>
+            </function_metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">10</block_depth>
+              <block_depth level="1">9</block_depth>
+              <block_depth level="2">3</block_depth>
+              <block_depth level="3">2</block_depth>
+              <block_depth level="4">2</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="mpbCommandHandler.c">
+            <metrics metric_count="13">
+              <metric id="M0">116</metric>
+              <metric id="M1">40</metric>
+              <metric id="M2">0.0</metric>
+              <metric id="M3">25.9</metric>
+              <metric id="M4">16</metric>
+              <metric id="M5">1.2</metric>
+              <metric id="M6">39</metric>
+              <metric id="M7">vMpbCommandHandlerGetFrequency()</metric>
+              <metric id="M8">1</metric>
+              <metric id="M9">47</metric>
+              <metric id="M10">1</metric>
+              <metric id="M11">0.47</metric>
+              <metric id="M12">1.00</metric>
+            </metrics>
+            <function_metrics function_count="16">
+              <function name="eMpbCommandHandlerBeaconOff()" line="50">
+                <complexity>1</complexity>
+                <statements>2</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="eMpbCommandHandlerGetLedEnable()" line="57">
+                <complexity>1</complexity>
+                <statements>2</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="eMpbCommandHandlerSetLedEnable()" line="65">
+                <complexity>1</complexity>
+                <statements>2</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="eMpbCommandHandlerUpdate()" line="44">
+                <complexity>1</complexity>
+                <statements>2</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="mpbCommandHandler_Init()" line="39">
+                <complexity>1</complexity>
+                <statements>0</statements>
+                <maximum_depth>0</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="vMpbCommandHandlerGetAlarmsInfo()" line="76">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="vMpbCommandHandlerGetCaseTemperature()" line="104">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="vMpbCommandHandlerGetCurrent()" line="88">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="vMpbCommandHandlerGetDutyCycle()" line="108">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="vMpbCommandHandlerGetFrequency()" line="96">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="vMpbCommandHandlerGetLaserTemperature()" line="100">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="vMpbCommandHandlerGetOperationmode()" line="80">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="vMpbCommandHandlerGetPower()" line="92">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="vMpbCommandHandlerGetSetpoint()" line="84">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="vMpbCommandHandlerGetStatusInfo()" line="72">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="vMpbCommandHandlerGetTecStatus()" line="112">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+            </function_metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">21</block_depth>
+              <block_depth level="1">19</block_depth>
+              <block_depth level="2">0</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="mpbCommandHardware.c">
+            <metrics metric_count="13">
+              <metric id="M0">110</metric>
+              <metric id="M1">33</metric>
+              <metric id="M2">18.2</metric>
+              <metric id="M3">30.9</metric>
+              <metric id="M4">4</metric>
+              <metric id="M5">6.5</metric>
+              <metric id="M6">59</metric>
+              <metric id="M7">eMpbCommandHardware_SendResponse()</metric>
+              <metric id="M8">4</metric>
+              <metric id="M9">76</metric>
+              <metric id="M10">4</metric>
+              <metric id="M11">1.33</metric>
+              <metric id="M12">2.50</metric>
+            </metrics>
+            <function_metrics function_count="4">
+              <function name="eMpbCommandHardware_CheckForMsg()" line="59">
+                <complexity>4</complexity>
+                <statements>11</statements>
+                <maximum_depth>4</maximum_depth>
+                <calls>2</calls>
+              </function>
+              <function name="eMpbCommandHardware_Exec()" line="49">
+                <complexity>1</complexity>
+                <statements>3</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>1</calls>
+              </function>
+              <function name="eMpbCommandHardware_SendResponse()" line="85">
+                <complexity>4</complexity>
+                <statements>11</statements>
                 <maximum_depth>3</maximum_depth>
                 <calls>1</calls>
               </function>
-              <function name="eCurrentSensingGetPowermW()" line="47">
-                <complexity>3</complexity>
-                <statements>9</statements>
+              <function name="mpbCommandHardware_Init()" line="44">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>1</calls>
+              </function>
+            </function_metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">7</block_depth>
+              <block_depth level="1">15</block_depth>
+              <block_depth level="2">5</block_depth>
+              <block_depth level="3">5</block_depth>
+              <block_depth level="4">1</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="mpbPacker.c">
+            <metrics metric_count="13">
+              <metric id="M0">89</metric>
+              <metric id="M1">29</metric>
+              <metric id="M2">17.2</metric>
+              <metric id="M3">39.3</metric>
+              <metric id="M4">1</metric>
+              <metric id="M5">26.0</metric>
+              <metric id="M6">41</metric>
+              <metric id="M7">mpbPacker_AddMsg()</metric>
+              <metric id="M8">7</metric>
+              <metric id="M9">53</metric>
+              <metric id="M10">2</metric>
+              <metric id="M11">1.17</metric>
+              <metric id="M12">7.00</metric>
+            </metrics>
+            <function_metrics function_count="1">
+              <function name="mpbPacker_AddMsg()" line="41">
+                <complexity>7</complexity>
+                <statements>26</statements>
                 <maximum_depth>2</maximum_depth>
                 <calls>1</calls>
               </function>
             </function_metrics>
             <block_depths depth_count="10">
               <block_depth level="0">3</block_depth>
-              <block_depth level="1">11</block_depth>
-              <block_depth level="2">4</block_depth>
+              <block_depth level="1">18</block_depth>
+              <block_depth level="2">8</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="mpbParser.c">
+            <metrics metric_count="13">
+              <metric id="M0">149</metric>
+              <metric id="M1">68</metric>
+              <metric id="M2">27.9</metric>
+              <metric id="M3">24.8</metric>
+              <metric id="M4">1</metric>
+              <metric id="M5">57.0</metric>
+              <metric id="M6">56</metric>
+              <metric id="M7">mpbParser_AddChar()</metric>
+              <metric id="M8">22</metric>
+              <metric id="M9">96</metric>
+              <metric id="M10">5</metric>
+              <metric id="M11">2.41</metric>
+              <metric id="M12">22.00</metric>
+            </metrics>
+            <function_metrics function_count="1">
+              <function name="mpbParser_AddChar()" line="56">
+                <complexity>22</complexity>
+                <statements>57</statements>
+                <maximum_depth>5</maximum_depth>
+                <calls>2</calls>
+              </function>
+            </function_metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">11</block_depth>
+              <block_depth level="1">8</block_depth>
+              <block_depth level="2">13</block_depth>
+              <block_depth level="3">18</block_depth>
+              <block_depth level="4">14</block_depth>
+              <block_depth level="5">4</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="mpbSerialDriver.c">
+            <metrics metric_count="13">
+              <metric id="M0">251</metric>
+              <metric id="M1">58</metric>
+              <metric id="M2">13.8</metric>
+              <metric id="M3">55.0</metric>
+              <metric id="M4">7</metric>
+              <metric id="M5">5.7</metric>
+              <metric id="M6">73</metric>
+              <metric id="M7">mpbSerialDriver_Exec()</metric>
+              <metric id="M8">6</metric>
+              <metric id="M9">94</metric>
+              <metric id="M10">3</metric>
+              <metric id="M11">0.90</metric>
+              <metric id="M12">2.43</metric>
+            </metrics>
+            <function_metrics function_count="7">
+              <function name="eMpbSerialDriver_PutByte()" line="103">
+                <complexity>2</complexity>
+                <statements>5</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>1</calls>
+              </function>
+              <function name="mpbSerialDriver_Connected()" line="131">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="mpbSerialDriver_Exec()" line="73">
+                <complexity>6</complexity>
+                <statements>10</statements>
+                <maximum_depth>3</maximum_depth>
+                <calls>3</calls>
+              </function>
+              <function name="mpbSerialDriver_GetByte()" line="117">
+                <complexity>3</complexity>
+                <statements>5</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="mpbSerialDriver_Init()" line="47">
+                <complexity>3</complexity>
+                <statements>14</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>6</calls>
+              </function>
+              <function name="mpbSerialDriver_OkayToRead()" line="137">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>1</calls>
+              </function>
+              <function name="vMpbSerial_init()" line="143">
+                <complexity>1</complexity>
+                <statements>4</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+            </function_metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">18</block_depth>
+              <block_depth level="1">29</block_depth>
+              <block_depth level="2">10</block_depth>
               <block_depth level="3">1</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="mpbUtils.c">
+            <metrics metric_count="13">
+              <metric id="M0">45</metric>
+              <metric id="M1">2</metric>
+              <metric id="M2">0.0</metric>
+              <metric id="M3">95.6</metric>
+              <metric id="M4">0</metric>
+              <metric id="M5">0.0</metric>
+              <metric id="M6"></metric>
+              <metric id="M7"></metric>
+              <metric id="M8">0</metric>
+              <metric id="M9">0</metric>
+              <metric id="M10">0</metric>
+              <metric id="M11">0.00</metric>
+              <metric id="M12">0.00</metric>
+            </metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">2</block_depth>
+              <block_depth level="1">0</block_depth>
+              <block_depth level="2">0</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="USBDriver.c">
+            <metrics metric_count="13">
+              <metric id="M0">73</metric>
+              <metric id="M1">39</metric>
+              <metric id="M2">12.8</metric>
+              <metric id="M3">2.7</metric>
+              <metric id="M4">6</metric>
+              <metric id="M5">3.7</metric>
+              <metric id="M6">27</metric>
+              <metric id="M7">USBDriver_Exec()</metric>
+              <metric id="M8">6</metric>
+              <metric id="M9">34</metric>
+              <metric id="M10">2</metric>
+              <metric id="M11">0.72</metric>
+              <metric id="M12">2.33</metric>
+            </metrics>
+            <function_metrics function_count="6">
+              <function name="USBDriver_Connected()" line="64">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="USBDriver_Exec()" line="27">
+                <complexity>6</complexity>
+                <statements>6</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>3</calls>
+              </function>
+              <function name="USBDriver_GetChar()" line="55">
+                <complexity>3</complexity>
+                <statements>5</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="USBDriver_Init()" line="16">
+                <complexity>1</complexity>
+                <statements>5</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>4</calls>
+              </function>
+              <function name="USBDriver_OkayToRead()" line="69">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>1</calls>
+              </function>
+              <function name="USBDriver_PutChar()" line="45">
+                <complexity>2</complexity>
+                <statements>4</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>1</calls>
+              </function>
+            </function_metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">17</block_depth>
+              <block_depth level="1">16</block_depth>
+              <block_depth level="2">6</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="__mpbGetStatusCommandHandler.c">
+            <metrics metric_count="13">
+              <metric id="M0">151</metric>
+              <metric id="M1">72</metric>
+              <metric id="M2">2.8</metric>
+              <metric id="M3">24.5</metric>
+              <metric id="M4">1</metric>
+              <metric id="M5">70.0</metric>
+              <metric id="M6">42</metric>
+              <metric id="M7">mpbCommandHandlerGetStatus()</metric>
+              <metric id="M8">3</metric>
+              <metric id="M9">105</metric>
+              <metric id="M10">2</metric>
+              <metric id="M11">1.03</metric>
+              <metric id="M12">3.00</metric>
+            </metrics>
+            <function_metrics function_count="1">
+              <function name="mpbCommandHandlerGetStatus()" line="42">
+                <complexity>3</complexity>
+                <statements>70</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>11</calls>
+              </function>
+            </function_metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">2</block_depth>
+              <block_depth level="1">66</block_depth>
+              <block_depth level="2">4</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="__mpbSetupCommandHandler.c">
+            <metrics metric_count="13">
+              <metric id="M0">171</metric>
+              <metric id="M1">77</metric>
+              <metric id="M2">2.6</metric>
+              <metric id="M3">21.6</metric>
+              <metric id="M4">6</metric>
+              <metric id="M5">11.7</metric>
+              <metric id="M6">42</metric>
+              <metric id="M7">mpbCommandHandlerSetup()</metric>
+              <metric id="M8">3</metric>
+              <metric id="M9">105</metric>
+              <metric id="M10">2</metric>
+              <metric id="M11">0.96</metric>
+              <metric id="M12">1.33</metric>
+            </metrics>
+            <function_metrics function_count="6">
+              <function name="mpbCommandHandlerBeaconOff()" line="160">
+                <complexity>1</complexity>
+                <statements>0</statements>
+                <maximum_depth>0</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="mpbCommandHandlerGetLedEnable()" line="164">
+                <complexity>1</complexity>
+                <statements>0</statements>
+                <maximum_depth>0</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="mpbCommandHandlerSetLedEnable()" line="168">
+                <complexity>1</complexity>
+                <statements>0</statements>
+                <maximum_depth>0</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="mpbCommandHandlerSetup()" line="42">
+                <complexity>3</complexity>
+                <statements>70</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>11</calls>
+              </function>
+              <function name="mpbCommandHandlerStandby()" line="151">
+                <complexity>1</complexity>
+                <statements>0</statements>
+                <maximum_depth>0</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="mpbCommandHandlerUpdate()" line="156">
+                <complexity>1</complexity>
+                <statements>0</statements>
+                <maximum_depth>0</maximum_depth>
+                <calls>0</calls>
+              </function>
+            </function_metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">7</block_depth>
+              <block_depth level="1">66</block_depth>
+              <block_depth level="2">4</block_depth>
+              <block_depth level="3">0</block_depth>
               <block_depth level="4">0</block_depth>
               <block_depth level="5">0</block_depth>
               <block_depth level="6">0</block_depth>
@@ -73,42 +718,687 @@
         </files>
       </checkpoint>
       <checkpoint checkpoint_name="Baseline" checkpoint_date="2022-01-31" ignore_blank_lines="false" modified_complexity="false">
-        <files file_count="1">
-          <file file_name="CurrentSensing.c">
+        <files file_count="12">
+          <file file_name="m2mCommandSetup.c">
             <metrics metric_count="13">
-              <metric id="M0">69</metric>
-              <metric id="M1">19</metric>
-              <metric id="M2">21.1</metric>
-              <metric id="M3">14.5</metric>
-              <metric id="M4">2</metric>
-              <metric id="M5">8.0</metric>
-              <metric id="M6">30</metric>
-              <metric id="M7">eCurrentSensingGetCurrentmA()</metric>
-              <metric id="M8">4</metric>
-              <metric id="M9">40</metric>
-              <metric id="M10">3</metric>
-              <metric id="M11">1.16</metric>
-              <metric id="M12">3.50</metric>
+              <metric id="M0">74</metric>
+              <metric id="M1">21</metric>
+              <metric id="M2">4.8</metric>
+              <metric id="M3">25.7</metric>
+              <metric id="M4">1</metric>
+              <metric id="M5">15.0</metric>
+              <metric id="M6">39</metric>
+              <metric id="M7">eMpbCommandHandlerSetup()</metric>
+              <metric id="M8">2</metric>
+              <metric id="M9">65</metric>
+              <metric id="M10">2</metric>
+              <metric id="M11">0.81</metric>
+              <metric id="M12">2.00</metric>
             </metrics>
-            <function_metrics function_count="2">
-              <function name="eCurrentSensingGetCurrentmA()" line="30">
+            <function_metrics function_count="1">
+              <function name="eMpbCommandHandlerSetup()" line="39">
+                <complexity>2</complexity>
+                <statements>15</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>2</calls>
+              </function>
+            </function_metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">6</block_depth>
+              <block_depth level="1">13</block_depth>
+              <block_depth level="2">2</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="mpbBuffer.c">
+            <metrics metric_count="13">
+              <metric id="M0">140</metric>
+              <metric id="M1">49</metric>
+              <metric id="M2">18.4</metric>
+              <metric id="M3">10.7</metric>
+              <metric id="M4">7</metric>
+              <metric id="M5">5.7</metric>
+              <metric id="M6">31</metric>
+              <metric id="M7">eMpbBuffer_Init()</metric>
+              <metric id="M8">4</metric>
+              <metric id="M9">37</metric>
+              <metric id="M10">2</metric>
+              <metric id="M11">1.00</metric>
+              <metric id="M12">2.29</metric>
+            </metrics>
+            <function_metrics function_count="7">
+              <function name="eMpbBuffer_Get()" line="81">
+                <complexity>3</complexity>
+                <statements>8</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="eMpbBuffer_Init()" line="31">
                 <complexity>4</complexity>
+                <statements>12</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="eMpbBuffer_Peek()" line="103">
+                <complexity>3</complexity>
                 <statements>7</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="eMpbBuffer_Put()" line="58">
+                <complexity>3</complexity>
+                <statements>9</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="mpbBuffer_Clear()" line="135">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="mpbBuffer_IsEmpty()" line="130">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="mpbBuffer_IsFull()" line="122">
+                <complexity>1</complexity>
+                <statements>2</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+            </function_metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">9</block_depth>
+              <block_depth level="1">31</block_depth>
+              <block_depth level="2">9</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="mpbCommandConductor.c">
+            <metrics metric_count="13">
+              <metric id="M0">87</metric>
+              <metric id="M1">26</metric>
+              <metric id="M2">15.4</metric>
+              <metric id="M3">11.5</metric>
+              <metric id="M4">3</metric>
+              <metric id="M5">4.7</metric>
+              <metric id="M6">60</metric>
+              <metric id="M7">eMpbCommandConductor_Exec()</metric>
+              <metric id="M8">5</metric>
+              <metric id="M9">74</metric>
+              <metric id="M10">4</metric>
+              <metric id="M11">1.12</metric>
+              <metric id="M12">2.33</metric>
+            </metrics>
+            <function_metrics function_count="3">
+              <function name="__attribute__()" line="35">
+                <complexity>1</complexity>
+                <statements>0</statements>
+                <maximum_depth>0</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="eMpbCommandConductor_Exec()" line="60">
+                <complexity>5</complexity>
+                <statements>11</statements>
+                <maximum_depth>4</maximum_depth>
+                <calls>3</calls>
+              </function>
+              <function name="mpbCommandConductor_Init()" line="52">
+                <complexity>1</complexity>
+                <statements>3</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>3</calls>
+              </function>
+            </function_metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">10</block_depth>
+              <block_depth level="1">9</block_depth>
+              <block_depth level="2">3</block_depth>
+              <block_depth level="3">2</block_depth>
+              <block_depth level="4">2</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="mpbCommandHandler.c">
+            <metrics metric_count="13">
+              <metric id="M0">116</metric>
+              <metric id="M1">40</metric>
+              <metric id="M2">0.0</metric>
+              <metric id="M3">10.3</metric>
+              <metric id="M4">16</metric>
+              <metric id="M5">1.2</metric>
+              <metric id="M6">39</metric>
+              <metric id="M7">vMpbCommandHandlerGetFrequency()</metric>
+              <metric id="M8">1</metric>
+              <metric id="M9">47</metric>
+              <metric id="M10">1</metric>
+              <metric id="M11">0.47</metric>
+              <metric id="M12">1.00</metric>
+            </metrics>
+            <function_metrics function_count="16">
+              <function name="eMpbCommandHandlerBeaconOff()" line="50">
+                <complexity>1</complexity>
+                <statements>2</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="eMpbCommandHandlerGetLedEnable()" line="57">
+                <complexity>1</complexity>
+                <statements>2</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="eMpbCommandHandlerSetLedEnable()" line="65">
+                <complexity>1</complexity>
+                <statements>2</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="eMpbCommandHandlerUpdate()" line="44">
+                <complexity>1</complexity>
+                <statements>2</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="mpbCommandHandler_Init()" line="39">
+                <complexity>1</complexity>
+                <statements>0</statements>
+                <maximum_depth>0</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="vMpbCommandHandlerGetAlarmsInfo()" line="76">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="vMpbCommandHandlerGetCaseTemperature()" line="104">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="vMpbCommandHandlerGetCurrent()" line="88">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="vMpbCommandHandlerGetDutyCycle()" line="108">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="vMpbCommandHandlerGetFrequency()" line="96">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="vMpbCommandHandlerGetLaserTemperature()" line="100">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="vMpbCommandHandlerGetOperationmode()" line="80">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="vMpbCommandHandlerGetPower()" line="92">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="vMpbCommandHandlerGetSetpoint()" line="84">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="vMpbCommandHandlerGetStatusInfo()" line="72">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="vMpbCommandHandlerGetTecStatus()" line="112">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+            </function_metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">21</block_depth>
+              <block_depth level="1">19</block_depth>
+              <block_depth level="2">0</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="mpbCommandHardware.c">
+            <metrics metric_count="13">
+              <metric id="M0">110</metric>
+              <metric id="M1">33</metric>
+              <metric id="M2">18.2</metric>
+              <metric id="M3">12.7</metric>
+              <metric id="M4">4</metric>
+              <metric id="M5">6.5</metric>
+              <metric id="M6">59</metric>
+              <metric id="M7">eMpbCommandHardware_SendResponse()</metric>
+              <metric id="M8">4</metric>
+              <metric id="M9">76</metric>
+              <metric id="M10">4</metric>
+              <metric id="M11">1.33</metric>
+              <metric id="M12">2.50</metric>
+            </metrics>
+            <function_metrics function_count="4">
+              <function name="eMpbCommandHardware_CheckForMsg()" line="59">
+                <complexity>4</complexity>
+                <statements>11</statements>
+                <maximum_depth>4</maximum_depth>
+                <calls>2</calls>
+              </function>
+              <function name="eMpbCommandHardware_Exec()" line="49">
+                <complexity>1</complexity>
+                <statements>3</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>1</calls>
+              </function>
+              <function name="eMpbCommandHardware_SendResponse()" line="85">
+                <complexity>4</complexity>
+                <statements>11</statements>
                 <maximum_depth>3</maximum_depth>
                 <calls>1</calls>
               </function>
-              <function name="eCurrentSensingGetPowermW()" line="47">
-                <complexity>3</complexity>
-                <statements>9</statements>
+              <function name="mpbCommandHardware_Init()" line="44">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>1</calls>
+              </function>
+            </function_metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">7</block_depth>
+              <block_depth level="1">15</block_depth>
+              <block_depth level="2">5</block_depth>
+              <block_depth level="3">5</block_depth>
+              <block_depth level="4">1</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="mpbPacker.c">
+            <metrics metric_count="13">
+              <metric id="M0">89</metric>
+              <metric id="M1">29</metric>
+              <metric id="M2">17.2</metric>
+              <metric id="M3">22.5</metric>
+              <metric id="M4">1</metric>
+              <metric id="M5">26.0</metric>
+              <metric id="M6">41</metric>
+              <metric id="M7">mpbPacker_AddMsg()</metric>
+              <metric id="M8">7</metric>
+              <metric id="M9">53</metric>
+              <metric id="M10">2</metric>
+              <metric id="M11">1.17</metric>
+              <metric id="M12">7.00</metric>
+            </metrics>
+            <function_metrics function_count="1">
+              <function name="mpbPacker_AddMsg()" line="41">
+                <complexity>7</complexity>
+                <statements>26</statements>
                 <maximum_depth>2</maximum_depth>
                 <calls>1</calls>
               </function>
             </function_metrics>
             <block_depths depth_count="10">
               <block_depth level="0">3</block_depth>
-              <block_depth level="1">11</block_depth>
-              <block_depth level="2">4</block_depth>
+              <block_depth level="1">18</block_depth>
+              <block_depth level="2">8</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="mpbParser.c">
+            <metrics metric_count="13">
+              <metric id="M0">149</metric>
+              <metric id="M1">68</metric>
+              <metric id="M2">27.9</metric>
+              <metric id="M3">6.7</metric>
+              <metric id="M4">1</metric>
+              <metric id="M5">57.0</metric>
+              <metric id="M6">56</metric>
+              <metric id="M7">mpbParser_AddChar()</metric>
+              <metric id="M8">22</metric>
+              <metric id="M9">96</metric>
+              <metric id="M10">5</metric>
+              <metric id="M11">2.41</metric>
+              <metric id="M12">22.00</metric>
+            </metrics>
+            <function_metrics function_count="1">
+              <function name="mpbParser_AddChar()" line="56">
+                <complexity>22</complexity>
+                <statements>57</statements>
+                <maximum_depth>5</maximum_depth>
+                <calls>2</calls>
+              </function>
+            </function_metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">11</block_depth>
+              <block_depth level="1">8</block_depth>
+              <block_depth level="2">13</block_depth>
+              <block_depth level="3">18</block_depth>
+              <block_depth level="4">14</block_depth>
+              <block_depth level="5">4</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="mpbSerialDriver.c">
+            <metrics metric_count="13">
+              <metric id="M0">251</metric>
+              <metric id="M1">58</metric>
+              <metric id="M2">13.8</metric>
+              <metric id="M3">7.6</metric>
+              <metric id="M4">7</metric>
+              <metric id="M5">5.7</metric>
+              <metric id="M6">73</metric>
+              <metric id="M7">mpbSerialDriver_Exec()</metric>
+              <metric id="M8">6</metric>
+              <metric id="M9">94</metric>
+              <metric id="M10">3</metric>
+              <metric id="M11">0.90</metric>
+              <metric id="M12">2.43</metric>
+            </metrics>
+            <function_metrics function_count="7">
+              <function name="eMpbSerialDriver_PutByte()" line="103">
+                <complexity>2</complexity>
+                <statements>5</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>1</calls>
+              </function>
+              <function name="mpbSerialDriver_Connected()" line="131">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="mpbSerialDriver_Exec()" line="73">
+                <complexity>6</complexity>
+                <statements>10</statements>
+                <maximum_depth>3</maximum_depth>
+                <calls>3</calls>
+              </function>
+              <function name="mpbSerialDriver_GetByte()" line="117">
+                <complexity>3</complexity>
+                <statements>5</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="mpbSerialDriver_Init()" line="47">
+                <complexity>3</complexity>
+                <statements>14</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>6</calls>
+              </function>
+              <function name="mpbSerialDriver_OkayToRead()" line="137">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>1</calls>
+              </function>
+              <function name="vMpbSerial_init()" line="143">
+                <complexity>1</complexity>
+                <statements>4</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+            </function_metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">18</block_depth>
+              <block_depth level="1">29</block_depth>
+              <block_depth level="2">10</block_depth>
               <block_depth level="3">1</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="mpbUtils.c">
+            <metrics metric_count="13">
+              <metric id="M0">45</metric>
+              <metric id="M1">2</metric>
+              <metric id="M2">0.0</metric>
+              <metric id="M3">0.0</metric>
+              <metric id="M4">0</metric>
+              <metric id="M5">0.0</metric>
+              <metric id="M6"></metric>
+              <metric id="M7"></metric>
+              <metric id="M8">0</metric>
+              <metric id="M9">0</metric>
+              <metric id="M10">0</metric>
+              <metric id="M11">0.00</metric>
+              <metric id="M12">0.00</metric>
+            </metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">2</block_depth>
+              <block_depth level="1">0</block_depth>
+              <block_depth level="2">0</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="USBDriver.c">
+            <metrics metric_count="13">
+              <metric id="M0">73</metric>
+              <metric id="M1">39</metric>
+              <metric id="M2">12.8</metric>
+              <metric id="M3">2.7</metric>
+              <metric id="M4">6</metric>
+              <metric id="M5">3.7</metric>
+              <metric id="M6">27</metric>
+              <metric id="M7">USBDriver_Exec()</metric>
+              <metric id="M8">6</metric>
+              <metric id="M9">34</metric>
+              <metric id="M10">2</metric>
+              <metric id="M11">0.72</metric>
+              <metric id="M12">2.33</metric>
+            </metrics>
+            <function_metrics function_count="6">
+              <function name="USBDriver_Connected()" line="64">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="USBDriver_Exec()" line="27">
+                <complexity>6</complexity>
+                <statements>6</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>3</calls>
+              </function>
+              <function name="USBDriver_GetChar()" line="55">
+                <complexity>3</complexity>
+                <statements>5</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="USBDriver_Init()" line="16">
+                <complexity>1</complexity>
+                <statements>5</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>4</calls>
+              </function>
+              <function name="USBDriver_OkayToRead()" line="69">
+                <complexity>1</complexity>
+                <statements>1</statements>
+                <maximum_depth>1</maximum_depth>
+                <calls>1</calls>
+              </function>
+              <function name="USBDriver_PutChar()" line="45">
+                <complexity>2</complexity>
+                <statements>4</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>1</calls>
+              </function>
+            </function_metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">17</block_depth>
+              <block_depth level="1">16</block_depth>
+              <block_depth level="2">6</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="__mpbGetStatusCommandHandler.c">
+            <metrics metric_count="13">
+              <metric id="M0">151</metric>
+              <metric id="M1">72</metric>
+              <metric id="M2">2.8</metric>
+              <metric id="M3">11.3</metric>
+              <metric id="M4">1</metric>
+              <metric id="M5">70.0</metric>
+              <metric id="M6">42</metric>
+              <metric id="M7">mpbCommandHandlerGetStatus()</metric>
+              <metric id="M8">3</metric>
+              <metric id="M9">105</metric>
+              <metric id="M10">2</metric>
+              <metric id="M11">1.03</metric>
+              <metric id="M12">3.00</metric>
+            </metrics>
+            <function_metrics function_count="1">
+              <function name="mpbCommandHandlerGetStatus()" line="42">
+                <complexity>3</complexity>
+                <statements>70</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>11</calls>
+              </function>
+            </function_metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">2</block_depth>
+              <block_depth level="1">66</block_depth>
+              <block_depth level="2">4</block_depth>
+              <block_depth level="3">0</block_depth>
+              <block_depth level="4">0</block_depth>
+              <block_depth level="5">0</block_depth>
+              <block_depth level="6">0</block_depth>
+              <block_depth level="7">0</block_depth>
+              <block_depth level="8">0</block_depth>
+              <block_depth level="9+">0</block_depth>
+            </block_depths>
+          </file>
+          <file file_name="__mpbSetupCommandHandler.c">
+            <metrics metric_count="13">
+              <metric id="M0">171</metric>
+              <metric id="M1">77</metric>
+              <metric id="M2">2.6</metric>
+              <metric id="M3">11.1</metric>
+              <metric id="M4">6</metric>
+              <metric id="M5">11.7</metric>
+              <metric id="M6">42</metric>
+              <metric id="M7">mpbCommandHandlerSetup()</metric>
+              <metric id="M8">3</metric>
+              <metric id="M9">105</metric>
+              <metric id="M10">2</metric>
+              <metric id="M11">0.96</metric>
+              <metric id="M12">1.33</metric>
+            </metrics>
+            <function_metrics function_count="6">
+              <function name="mpbCommandHandlerBeaconOff()" line="160">
+                <complexity>1</complexity>
+                <statements>0</statements>
+                <maximum_depth>0</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="mpbCommandHandlerGetLedEnable()" line="164">
+                <complexity>1</complexity>
+                <statements>0</statements>
+                <maximum_depth>0</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="mpbCommandHandlerSetLedEnable()" line="168">
+                <complexity>1</complexity>
+                <statements>0</statements>
+                <maximum_depth>0</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="mpbCommandHandlerSetup()" line="42">
+                <complexity>3</complexity>
+                <statements>70</statements>
+                <maximum_depth>2</maximum_depth>
+                <calls>11</calls>
+              </function>
+              <function name="mpbCommandHandlerStandby()" line="151">
+                <complexity>1</complexity>
+                <statements>0</statements>
+                <maximum_depth>0</maximum_depth>
+                <calls>0</calls>
+              </function>
+              <function name="mpbCommandHandlerUpdate()" line="156">
+                <complexity>1</complexity>
+                <statements>0</statements>
+                <maximum_depth>0</maximum_depth>
+                <calls>0</calls>
+              </function>
+            </function_metrics>
+            <block_depths depth_count="10">
+              <block_depth level="0">7</block_depth>
+              <block_depth level="1">66</block_depth>
+              <block_depth level="2">4</block_depth>
+              <block_depth level="3">0</block_depth>
               <block_depth level="4">0</block_depth>
               <block_depth level="5">0</block_depth>
               <block_depth level="6">0</block_depth>

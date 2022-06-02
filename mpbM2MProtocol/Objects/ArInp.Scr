@@ -8,3 +8,4 @@
 .\objects\mpbparser.o
 .\objects\mpbserialdriver.o
 .\objects\mpbutils.o
+.\objects\m2mcommandupdate.o

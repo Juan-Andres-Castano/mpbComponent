@@ -12,4 +12,5 @@ SET CPU_CLOCK=0x00B71B00
 "C:\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\objects\mpbparser.__i"
 "C:\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\objects\mpbserialdriver.__i"
 "C:\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\objects\mpbutils.__i"
+"C:\Keil_v5\ARM\ARMCLANG\Bin\ArmClang.exe" @".\objects\m2mcommandupdate.__i"
 "C:\Keil_v5\ARM\ARMCLANG\Bin\ArmAr" --Via ".\Objects\ArInp.Scr"

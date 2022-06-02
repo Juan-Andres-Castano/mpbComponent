@@ -428,6 +428,11 @@
               <FileType>1</FileType>
               <FilePath>.\Sources\mpbUtils.c</FilePath>
             </File>
+            <File>
+              <FileName>m2mCommandUpdate.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\m2mCommandUpdate.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

@@ -6,4 +6,4 @@
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h \
   ..\mpbMath\Includes\mpbMathCrc.h ..\mpbMath\Includes\mpbMathCrcUtil.h \
-  Includes\mpblibs.h
+  Includes\mpblibs.h Includes\Defs.h

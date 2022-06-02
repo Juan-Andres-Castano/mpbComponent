@@ -33,8 +33,9 @@
 #include "mpblibs.h"
 #include "mpbMathCrc.h" 
 
+
 /* Define ------------------------------------------------------------------- */
-#define usMpbParserCONCAT_BYTES( msb, lsb )                   ( ( ( uint16_t )msb << 8 ) | ( uint16_t )lsb )
+//#define usMpbParserCONCAT_BYTES( msb, lsb )                   ( ( ( uint16_t )msb << 8 ) | ( uint16_t )lsb )
 #define M2M_MIN_COMMAND_VALUE       ( 0x10 )
 #define M2M_MAX_COMMAND_VALUE       ( 0xFA )
 

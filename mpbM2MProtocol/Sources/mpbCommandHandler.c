@@ -41,7 +41,7 @@ void mpbCommandHandler_Init(void)
 
 }
 /*-------------------------------------------------------------*/
-eMpbError_t eMpbCommandHandlerUpdate(xM2mMessage_t* Msg)
+/*eMpbError_t eMpbCommandHandlerUpdate(xM2mMessage_t* Msg)
 {
 
 eMpbError_t eMpbError = eSuccess;
@@ -67,8 +67,8 @@ eMpbError_t eMpbCommandHandlerSetLedEnable(xM2mMessage_t* Msg)
 
 eMpbError_t eMpbError = eSuccess;
 return eMpbError;
-}
-/*-------------------------------------------------*/
+}*/
+/*-------------------------------------------------
 void vMpbCommandHandlerGetStatusInfo( uint8_t ucBeaconId, uint32_t *pucStatusRegister )
 {
  *pucStatusRegister = 0x1234;
@@ -112,5 +112,5 @@ void vMpbCommandHandlerGetDutyCycle( uint8_t ucBeaconId, uint8_t *pucDutyCycle )
 void vMpbCommandHandlerGetTecStatus( uint8_t ucBeaconId, uint8_t *pucTecIsEnabled )
 {
 *pucTecIsEnabled = 1;
-}
+}*/
 

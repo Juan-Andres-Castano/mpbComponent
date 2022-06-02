@@ -41,7 +41,8 @@ static uint8_t ucBuffer[ MAX_TX_LENGTH_BUFFER + SIZE_OF_FS_BYTE ];
 uint8_t* mpbPacker_AddMsg(eErrorCodes_t eErrorCode, uint8_t ucCommand, uint8_t ucLength, uint8_t* pData,  xMpbCrc_t *pxMpbCrc  )
 {
     uint8_t         i                       = 0;
-    uint16_t        usCrcValueCalculated    = 0;
+    uint32_t        ulCrcValueCalculated    = 0;
+		uint16_t        usCrcValueCalculated    = 0;
     uint8_t         ucCrc8Low               = 0;
     uint8_t         ucCrc8High              = 0;
 	uint8_t			ucCopyLength			= 0;
@@ -70,10 +71,11 @@ uint8_t* mpbPacker_AddMsg(eErrorCodes_t eErrorCode, uint8_t ucCommand, uint8_t u
     }
 
 
-    eMpbError = eMpbMathCrcCalculate( *pxMpbCrc, ucBuffer[1], &ucBuffer[1], (uint32_t *)&usCrcValueCalculated );       //( ucLength + SIZE_OF_LENGTH_BYTE )    
+    eMpbError = eMpbMathCrcCalculate( *pxMpbCrc, ucBuffer[1], &ucBuffer[1], (uint32_t *)&ulCrcValueCalculated );       //( ucLength + SIZE_OF_LENGTH_BYTE )    
     if(eMpbError == eSuccess )
     {
-        ucCrc8Low   = usCrcValueCalculated;
+				usCrcValueCalculated = (uint16_t)ulCrcValueCalculated;
+        ucCrc8Low   = (uint8_t)usCrcValueCalculated;
         ucCrc8High  = usCrcValueCalculated >> 8 ;        
         ucBuffer[i++] = ucCrc8Low;
         ucBuffer[i++] = ucCrc8High;

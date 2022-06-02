@@ -35,7 +35,7 @@ typedef unsigned char BOOL;
 #ifndef NULL
 #define NULL 0
 #endif
-
+//#define TEST
 //--------------------------------------------
 //Add a helpful status type and codes
 //--------------------------------------------

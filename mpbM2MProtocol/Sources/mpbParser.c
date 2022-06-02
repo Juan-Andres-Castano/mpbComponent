@@ -28,13 +28,14 @@
 
 /* Includes ----------------------------------------------------------------- */
 #include "mpbParser.h"
+#include "Defs.h" 
 /* Private define ----------------------------------------------------------- */
 #define PARSER_BUFFER_LENGTH_MAX    ( 200 )
 #define M2M_MIN_SIZE_OF_DATA        ( 1 )
 #define M2M_SIZE_OF_LENGTH_DATA     ( 1 )
 #define M2M_HEADER_CHAR             ( 0x7E )
 /* Private macro ------------------------------------------------------------ */
-#define TEST
+
 
 
 #ifndef TEST 
@@ -48,9 +49,26 @@
 /* Private struct ----------------------------------------------------------- */
 /* Private variables -------------------------------------------------------- */
 STATIC MPB_PARSER_STATE_T state = PARSER_LOOKING_FOR_START;
-uint8_t buffer[PARSER_BUFFER_LENGTH_MAX];
+static uint8_t buffer[PARSER_BUFFER_LENGTH_MAX];
 /* External variables ------------------------------------------------------- */
 /* Private function prototypes ---------------------------------------------- */
+static uint16_t usMpbParserCONCAT_BYTES( uint8_t msb, uint8_t lsb )   ;                
+
+
+static uint16_t usMpbParserCONCAT_BYTES( uint8_t msb, uint8_t lsb ) 
+{
+	uint16_t usValue_1 = 0;
+	uint16_t usValue_2 = 0;
+	uint16_t usValue = 0;
+	
+	usValue_1 = ( uint16_t )lsb;
+	usValue_2 = ( uint16_t )(msb << 8) ;
+	usValue = usValue_2 | usValue_1;
+	
+	//usValue = ( ( ( uint16_t )msb << 8 ) | ( uint16_t )lsb );
+	return usValue;
+}
+
 /* Exported functions ------------------------------------------------------- */
 
 uint8_t* mpbParser_AddChar(uint8_t NewByte,  xMpbCrc_t *pxMpbCrc)
@@ -58,6 +76,7 @@ uint8_t* mpbParser_AddChar(uint8_t NewByte,  xMpbCrc_t *pxMpbCrc)
     eMpbError_t     eMpbError;
     uint16_t        usCrcValueCalculated  ;
     uint16_t        usCrcValueReceived    ;
+		uint32_t 				ulCrcValueCalculated ;
     static uint8_t  ucCrc1, ucCrc2;
     static uint8_t  usDataBytesNeeded, usLengthForCrcCalcultation;
     static int      length = 0;
@@ -65,6 +84,7 @@ uint8_t* mpbParser_AddChar(uint8_t NewByte,  xMpbCrc_t *pxMpbCrc)
     switch(state)
     {
         case PARSER_LOOKING_FOR_START:
+				
             length = 0;
             if (NewByte == M2M_HEADER_CHAR ) 
             { 
@@ -120,15 +140,17 @@ uint8_t* mpbParser_AddChar(uint8_t NewByte,  xMpbCrc_t *pxMpbCrc)
                 state = PARSER_LOOKING_FOR_CRC_2;
             break;
 
-        case PARSER_LOOKING_FOR_CRC_2:                       
+        case PARSER_LOOKING_FOR_CRC_2: 
+				{					
                 buffer[++length] = NewByte;
                 ucCrc2 = NewByte;
                 state = PARSER_LOOKING_FOR_START;
 
                 usCrcValueReceived =  usMpbParserCONCAT_BYTES(ucCrc2, ucCrc1);
-                eMpbError = eMpbMathCrcCalculate( *pxMpbCrc, usLengthForCrcCalcultation, &buffer[1], (uint32_t *)&usCrcValueCalculated );           
+                eMpbError = eMpbMathCrcCalculate( *pxMpbCrc, usLengthForCrcCalcultation, &buffer[1], (uint32_t *)&ulCrcValueCalculated );           
                 if(eMpbError == eSuccess )
                 {
+										usCrcValueCalculated = (uint16_t)ulCrcValueCalculated;
                     if(  usCrcValueReceived == usCrcValueCalculated )
                     {
                         return (uint8_t *)buffer; 
@@ -140,9 +162,10 @@ uint8_t* mpbParser_AddChar(uint8_t NewByte,  xMpbCrc_t *pxMpbCrc)
                 }
                 
             break;
+				}
 
-        default:
-            state = PARSER_LOOKING_FOR_START;
+       // default:
+         //   state = PARSER_LOOKING_FOR_START;
     }
 
     return NULL;

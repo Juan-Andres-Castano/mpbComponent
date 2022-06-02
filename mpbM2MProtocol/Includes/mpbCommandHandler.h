@@ -61,13 +61,13 @@
 void mpbCommandHandler_Init(void);
 
 
-eMpbError_t eMpbCommandHandlerGetStatus(xM2mMessage_t* Msg);
-eMpbError_t eMpbCommandHandlerStandby(xM2mMessage_t* Msg);
+extern eMpbError_t eMpbCommandHandlerGetStatus(xM2mMessage_t* Msg);
+extern eMpbError_t eMpbCommandHandlerStandby(xM2mMessage_t* Msg);
 eMpbError_t eMpbCommandHandlerSetup(xM2mMessage_t* Msg);
 eMpbError_t eMpbCommandHandlerUpdate(xM2mMessage_t* Msg);
-eMpbError_t eMpbCommandHandlerBeaconOff(xM2mMessage_t* Msg);
-eMpbError_t eMpbCommandHandlerGetLedEnable(xM2mMessage_t* Msg);
-eMpbError_t eMpbCommandHandlerSetLedEnable(xM2mMessage_t* Msg);
+extern eMpbError_t eMpbCommandHandlerBeaconOff(xM2mMessage_t* Msg);
+extern eMpbError_t eMpbCommandHandlerGetLedEnable(xM2mMessage_t* Msg);
+extern eMpbError_t eMpbCommandHandlerSetLedEnable(xM2mMessage_t* Msg);
 /* extern*/
 extern void vMpbCommandHandlerGetStatusInfo( uint8_t ucBeaconId, uint32_t *pucStatusRegister );
 extern void vMpbCommandHandlerGetAlarmsInfo( uint8_t ucBeaconId, uint64_t *pucAlarmRegister ); 

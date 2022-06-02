@@ -17,9 +17,6 @@
 /* Includes ----------------------------------------------------------------- */
 #include "mpbSerialDriver.h"
 
-
-#define TEST
-
 #ifndef TEST 
 #define STATIC static
 #else
