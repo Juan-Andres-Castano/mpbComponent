@@ -2,13 +2,157 @@
 <results version="2">
     <cppcheck version="2.6"/>
     <errors>
-        <error id="unusedFunction" severity="style" msg="The function &apos;eCurrentSensingGetCurrentmA&apos; is never used." verbose="The function &apos;eCurrentSensingGetCurrentmA&apos; is never used." cwe="561">
-            <location file="C:\mpbComponent\mpbCurrentSensors\CurrentSensing\Sources\CurrentSensing.c" line="31" column="0"/>
-            <symbol>eCurrentSensingGetCurrentmA</symbol>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;mpbStatusRegister.ulValue&apos; is assigned a value that is never used." verbose="Variable &apos;mpbStatusRegister.ulValue&apos; is assigned a value that is never used." cwe="563" file0="C:/mpbComponent/mpbM2MProtocol/Sources/__mpbGetStatusCommandHandler.c">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\__mpbGetStatusCommandHandler.c" line="71" column="31"/>
+            <symbol>mpbStatusRegister.ulValue</symbol>
         </error>
-        <error id="unusedFunction" severity="style" msg="The function &apos;eCurrentSensingGetPowermW&apos; is never used." verbose="The function &apos;eCurrentSensingGetPowermW&apos; is never used." cwe="561">
-            <location file="C:\mpbComponent\mpbCurrentSensors\CurrentSensing\Sources\CurrentSensing.c" line="52" column="0"/>
-            <symbol>eCurrentSensingGetPowermW</symbol>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;mpbAlarmRegister.ullValue&apos; is assigned a value that is never used." verbose="Variable &apos;mpbAlarmRegister.ullValue&apos; is assigned a value that is never used." cwe="563" file0="C:/mpbComponent/mpbM2MProtocol/Sources/__mpbGetStatusCommandHandler.c">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\__mpbGetStatusCommandHandler.c" line="73" column="31"/>
+            <symbol>mpbAlarmRegister.ullValue</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;usMpbGetSetpoint.sValue&apos; is assigned a value that is never used." verbose="Variable &apos;usMpbGetSetpoint.sValue&apos; is assigned a value that is never used." cwe="563" file0="C:/mpbComponent/mpbM2MProtocol/Sources/__mpbGetStatusCommandHandler.c">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\__mpbGetStatusCommandHandler.c" line="77" column="29"/>
+            <symbol>usMpbGetSetpoint.sValue</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;usMpbGetCurrent.sValue&apos; is assigned a value that is never used." verbose="Variable &apos;usMpbGetCurrent.sValue&apos; is assigned a value that is never used." cwe="563" file0="C:/mpbComponent/mpbM2MProtocol/Sources/__mpbGetStatusCommandHandler.c">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\__mpbGetStatusCommandHandler.c" line="80" column="28"/>
+            <symbol>usMpbGetCurrent.sValue</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;usMpbGetPower.sValue&apos; is assigned a value that is never used." verbose="Variable &apos;usMpbGetPower.sValue&apos; is assigned a value that is never used." cwe="563" file0="C:/mpbComponent/mpbM2MProtocol/Sources/__mpbGetStatusCommandHandler.c">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\__mpbGetStatusCommandHandler.c" line="83" column="26"/>
+            <symbol>usMpbGetPower.sValue</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;usMpbFrequency.sValue&apos; is assigned a value that is never used." verbose="Variable &apos;usMpbFrequency.sValue&apos; is assigned a value that is never used." cwe="563" file0="C:/mpbComponent/mpbM2MProtocol/Sources/__mpbGetStatusCommandHandler.c">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\__mpbGetStatusCommandHandler.c" line="86" column="27"/>
+            <symbol>usMpbFrequency.sValue</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;mpbfLaserTemperature.fValue&apos; is assigned a value that is never used." verbose="Variable &apos;mpbfLaserTemperature.fValue&apos; is assigned a value that is never used." cwe="563" file0="C:/mpbComponent/mpbM2MProtocol/Sources/__mpbGetStatusCommandHandler.c">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\__mpbGetStatusCommandHandler.c" line="89" column="33"/>
+            <symbol>mpbfLaserTemperature.fValue</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;mpbfCaseTemperature.fValue&apos; is assigned a value that is never used." verbose="Variable &apos;mpbfCaseTemperature.fValue&apos; is assigned a value that is never used." cwe="563" file0="C:/mpbComponent/mpbM2MProtocol/Sources/__mpbGetStatusCommandHandler.c">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\__mpbGetStatusCommandHandler.c" line="92" column="32"/>
+            <symbol>mpbfCaseTemperature.fValue</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;mpbStatusRegister.ulValue&apos; is assigned a value that is never used." verbose="Variable &apos;mpbStatusRegister.ulValue&apos; is assigned a value that is never used." cwe="563" file0="C:/mpbComponent/mpbM2MProtocol/Sources/__mpbSetupCommandHandler.c">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\__mpbSetupCommandHandler.c" line="71" column="31"/>
+            <symbol>mpbStatusRegister.ulValue</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;mpbAlarmRegister.ullValue&apos; is assigned a value that is never used." verbose="Variable &apos;mpbAlarmRegister.ullValue&apos; is assigned a value that is never used." cwe="563" file0="C:/mpbComponent/mpbM2MProtocol/Sources/__mpbSetupCommandHandler.c">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\__mpbSetupCommandHandler.c" line="73" column="31"/>
+            <symbol>mpbAlarmRegister.ullValue</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;usMpbGetSetpoint.sValue&apos; is assigned a value that is never used." verbose="Variable &apos;usMpbGetSetpoint.sValue&apos; is assigned a value that is never used." cwe="563" file0="C:/mpbComponent/mpbM2MProtocol/Sources/__mpbSetupCommandHandler.c">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\__mpbSetupCommandHandler.c" line="77" column="29"/>
+            <symbol>usMpbGetSetpoint.sValue</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;usMpbGetCurrent.sValue&apos; is assigned a value that is never used." verbose="Variable &apos;usMpbGetCurrent.sValue&apos; is assigned a value that is never used." cwe="563" file0="C:/mpbComponent/mpbM2MProtocol/Sources/__mpbSetupCommandHandler.c">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\__mpbSetupCommandHandler.c" line="80" column="28"/>
+            <symbol>usMpbGetCurrent.sValue</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;usMpbGetPower.sValue&apos; is assigned a value that is never used." verbose="Variable &apos;usMpbGetPower.sValue&apos; is assigned a value that is never used." cwe="563" file0="C:/mpbComponent/mpbM2MProtocol/Sources/__mpbSetupCommandHandler.c">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\__mpbSetupCommandHandler.c" line="83" column="26"/>
+            <symbol>usMpbGetPower.sValue</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;usMpbFrequency.sValue&apos; is assigned a value that is never used." verbose="Variable &apos;usMpbFrequency.sValue&apos; is assigned a value that is never used." cwe="563" file0="C:/mpbComponent/mpbM2MProtocol/Sources/__mpbSetupCommandHandler.c">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\__mpbSetupCommandHandler.c" line="86" column="27"/>
+            <symbol>usMpbFrequency.sValue</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;mpbfLaserTemperature.fValue&apos; is assigned a value that is never used." verbose="Variable &apos;mpbfLaserTemperature.fValue&apos; is assigned a value that is never used." cwe="563" file0="C:/mpbComponent/mpbM2MProtocol/Sources/__mpbSetupCommandHandler.c">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\__mpbSetupCommandHandler.c" line="89" column="33"/>
+            <symbol>mpbfLaserTemperature.fValue</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;mpbfCaseTemperature.fValue&apos; is assigned a value that is never used." verbose="Variable &apos;mpbfCaseTemperature.fValue&apos; is assigned a value that is never used." cwe="563" file0="C:/mpbComponent/mpbM2MProtocol/Sources/__mpbSetupCommandHandler.c">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\__mpbSetupCommandHandler.c" line="92" column="32"/>
+            <symbol>mpbfCaseTemperature.fValue</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;ucCrc8Low&apos; can be reduced." verbose="The scope of the variable &apos;ucCrc8Low&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="C:/mpbComponent/mpbM2MProtocol/Sources/mpbPacker.c">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\mpbPacker.c" line="45" column="21"/>
+            <symbol>ucCrc8Low</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;ucCrc8High&apos; can be reduced." verbose="The scope of the variable &apos;ucCrc8High&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="C:/mpbComponent/mpbM2MProtocol/Sources/mpbPacker.c">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\mpbPacker.c" line="46" column="21"/>
+            <symbol>ucCrc8High</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;ucCrc8Low&apos; is assigned a value that is never used." verbose="Variable &apos;ucCrc8Low&apos; is assigned a value that is never used." cwe="563" file0="C:/mpbComponent/mpbM2MProtocol/Sources/mpbPacker.c">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\mpbPacker.c" line="45" column="45"/>
+            <symbol>ucCrc8Low</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;ucCrc8High&apos; is assigned a value that is never used." verbose="Variable &apos;ucCrc8High&apos; is assigned a value that is never used." cwe="563" file0="C:/mpbComponent/mpbM2MProtocol/Sources/mpbPacker.c">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\mpbPacker.c" line="46" column="45"/>
+            <symbol>ucCrc8High</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;USBDriver_Connected&apos; is never used." verbose="The function &apos;USBDriver_Connected&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\USBDriver.c" line="64" column="0"/>
+            <symbol>USBDriver_Connected</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;USBDriver_Exec&apos; is never used." verbose="The function &apos;USBDriver_Exec&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\USBDriver.c" line="27" column="0"/>
+            <symbol>USBDriver_Exec</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;USBDriver_GetChar&apos; is never used." verbose="The function &apos;USBDriver_GetChar&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\USBDriver.c" line="55" column="0"/>
+            <symbol>USBDriver_GetChar</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;USBDriver_Init&apos; is never used." verbose="The function &apos;USBDriver_Init&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\USBDriver.c" line="16" column="0"/>
+            <symbol>USBDriver_Init</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;USBDriver_OkayToRead&apos; is never used." verbose="The function &apos;USBDriver_OkayToRead&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\USBDriver.c" line="69" column="0"/>
+            <symbol>USBDriver_OkayToRead</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;USBDriver_PutChar&apos; is never used." verbose="The function &apos;USBDriver_PutChar&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\USBDriver.c" line="45" column="0"/>
+            <symbol>USBDriver_PutChar</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eMpbBuffer_Peek&apos; is never used." verbose="The function &apos;eMpbBuffer_Peek&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\mpbBuffer.c" line="103" column="0"/>
+            <symbol>eMpbBuffer_Peek</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eMpbCommandConductor_Exec&apos; is never used." verbose="The function &apos;eMpbCommandConductor_Exec&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\mpbCommandConductor.c" line="60" column="0"/>
+            <symbol>eMpbCommandConductor_Exec</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;mpbBuffer_Clear&apos; is never used." verbose="The function &apos;mpbBuffer_Clear&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\mpbBuffer.c" line="135" column="0"/>
+            <symbol>mpbBuffer_Clear</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;mpbCommandConductor_Init&apos; is never used." verbose="The function &apos;mpbCommandConductor_Init&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\mpbCommandConductor.c" line="52" column="0"/>
+            <symbol>mpbCommandConductor_Init</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;mpbCommandHandlerBeaconOff&apos; is never used." verbose="The function &apos;mpbCommandHandlerBeaconOff&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\__mpbSetupCommandHandler.c" line="160" column="0"/>
+            <symbol>mpbCommandHandlerBeaconOff</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;mpbCommandHandlerGetLedEnable&apos; is never used." verbose="The function &apos;mpbCommandHandlerGetLedEnable&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\__mpbSetupCommandHandler.c" line="164" column="0"/>
+            <symbol>mpbCommandHandlerGetLedEnable</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;mpbCommandHandlerGetStatus&apos; is never used." verbose="The function &apos;mpbCommandHandlerGetStatus&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\__mpbGetStatusCommandHandler.c" line="42" column="0"/>
+            <symbol>mpbCommandHandlerGetStatus</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;mpbCommandHandlerSetLedEnable&apos; is never used." verbose="The function &apos;mpbCommandHandlerSetLedEnable&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\__mpbSetupCommandHandler.c" line="168" column="0"/>
+            <symbol>mpbCommandHandlerSetLedEnable</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;mpbCommandHandlerSetup&apos; is never used." verbose="The function &apos;mpbCommandHandlerSetup&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\__mpbSetupCommandHandler.c" line="42" column="0"/>
+            <symbol>mpbCommandHandlerSetup</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;mpbCommandHandlerStandby&apos; is never used." verbose="The function &apos;mpbCommandHandlerStandby&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\__mpbSetupCommandHandler.c" line="151" column="0"/>
+            <symbol>mpbCommandHandlerStandby</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;mpbCommandHandlerUpdate&apos; is never used." verbose="The function &apos;mpbCommandHandlerUpdate&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\__mpbSetupCommandHandler.c" line="156" column="0"/>
+            <symbol>mpbCommandHandlerUpdate</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;mpbSerialDriver_Connected&apos; is never used." verbose="The function &apos;mpbSerialDriver_Connected&apos; is never used." cwe="561">
+            <location file="C:\mpbComponent\mpbM2MProtocol\Sources\mpbSerialDriver.c" line="131" column="0"/>
+            <symbol>mpbSerialDriver_Connected</symbol>
         </error>
         <error id="missingInclude" severity="information" msg="Cppcheck cannot find all the include files (use --check-config for details)" verbose="Cppcheck cannot find all the include files. Cppcheck can check the code without the include files found. But the results will probably be more accurate if all the include files are found. Please check your project&apos;s include directories and add all of them as include directories for Cppcheck. To see what files Cppcheck cannot find use --check-config."/>
     </errors>

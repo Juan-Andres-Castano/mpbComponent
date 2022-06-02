@@ -25,7 +25,7 @@
         <metric_name id="M11" type="average" values="block_depths">Average Block Depth</metric_name>
         <metric_name id="M12" type="average">Average Complexity</metric_name>
       </metric_names>
-      <checkpoint checkpoint_name="Alpha One" checkpoint_date="2022-05-04" ignore_blank_lines="false" modified_complexity="false">
+      <checkpoint checkpoint_name="Alpha One" checkpoint_date="2022-06-02" ignore_blank_lines="false" modified_complexity="false">
         <files file_count="1">
           <file file_name="CurrentSensing.c">
             <metrics metric_count="13">

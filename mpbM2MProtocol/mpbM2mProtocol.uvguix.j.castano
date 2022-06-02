@@ -1973,9 +1973,9 @@
       </Doc>
       <Doc>
         <Name>.\Sources\mpbParser.c</Name>
-        <ColumnNumber>23</ColumnNumber>
+        <ColumnNumber>41</ColumnNumber>
         <TopLine>33</TopLine>
-        <CurrentLine>46</CurrentLine>
+        <CurrentLine>51</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
         <PaneID>0</PaneID>

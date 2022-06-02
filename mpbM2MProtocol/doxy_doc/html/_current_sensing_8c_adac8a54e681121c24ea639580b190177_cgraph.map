@@ -1,4 +1,0 @@
-<map id="eCurrentSensingGetCurrentmA" name="eCurrentSensingGetCurrentmA">
-<area shape="rect" id="node1" title="Get the current of the current sensing input in mA." alt="" coords="5,5,207,32"/>
-<area shape="rect" id="node2" href="$_current_sensing_8h.html#a2d17281c154462ea3fd2dad7c56e3134" title="Get the voltage of the current sensing input in mV." alt="" coords="255,5,463,32"/>
-</map>
