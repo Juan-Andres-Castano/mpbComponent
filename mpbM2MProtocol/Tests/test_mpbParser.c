@@ -16,6 +16,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "unity.h"
 #include "mpblibs.h"
+#include "TestDefs.h"
 #include "mpbParser.h"
 #include "mock_mpbMathCrc.h"
 

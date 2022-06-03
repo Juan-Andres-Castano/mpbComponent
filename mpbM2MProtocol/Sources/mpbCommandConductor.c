@@ -34,13 +34,13 @@ static const struct _COMMAND_HANDLERS
     COMMAND_HANDLER_T Func;
 } __attribute__ ((packed))CommandHandlers[] =
 {
-    { GET_STATUS_COMMAND, 			eMpbCommandHandlerGetStatus       	},	
-    { STANDBY_COMMAND, 					eMpbCommandHandlerStandby      		},
+  //  { GET_STATUS_COMMAND, 			eMpbCommandHandlerGetStatus       	},	
+  //  { STANDBY_COMMAND, 					eMpbCommandHandlerStandby      		},
     { SETUP_COMMAND, 						eMpbCommandHandlerSetup    				},
     { UPDATE_COMMAND, 					eMpbCommandHandlerUpdate						},
-    { BEACON_OFF_COMMAND, 			eMpbCommandHandlerBeaconOff		    },
-    { GET_LED_ENABLE_COMMAND,		eMpbCommandHandlerGetLedEnable     },
-    { SET_LED_ENABLE_COMMAND, 	eMpbCommandHandlerSetLedEnable	    },
+  //  { BEACON_OFF_COMMAND, 			eMpbCommandHandlerBeaconOff		    },
+  //  { GET_LED_ENABLE_COMMAND,		eMpbCommandHandlerGetLedEnable     },
+ //   { SET_LED_ENABLE_COMMAND, 	eMpbCommandHandlerSetLedEnable	    },
 };
 static  xM2mMessage_t xM2mMessage;
 /* Private variables -------------------------------------------------------- */

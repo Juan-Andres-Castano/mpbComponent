@@ -431,7 +431,7 @@
             <File>
               <FileName>m2mCommandUpdate.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\m2mCommandUpdate.c</FilePath>
+              <FilePath>.\Sources\m2mCommandUpdate.c</FilePath>
             </File>
           </Files>
         </Group>

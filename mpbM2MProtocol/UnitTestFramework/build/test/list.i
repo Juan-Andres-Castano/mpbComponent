@@ -1,4 +1,45 @@
-#line 1 "../Sources/mpbSerialDriver.c"
+#line 1 "../Sources/mpbParser.c"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+#line 1 "../Includes/mpbParser.h"
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -16,23 +57,7 @@
 
  
  
-#line 1 "../Includes/mpbSerialDriver.h"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
 
 
  
@@ -2822,8 +2847,183 @@ extern void vMpblibsMallocFailedHook( size_t xSizeRequired );
  
 
  
-#line 21 "../Includes/mpbSerialDriver.h"
-#line 1 "C:\\mpbComponent\\mpbM2MProtocol\\Includes\\Defs.h"
+#line 34 "../Includes/mpbParser.h"
+#line 1 "../Includes/doubles/mpbMathCrc.h"
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+ 
+
+#line 1 "C:\\mpbComponent\\mpbM2MProtocol\\Includes\\doubles\\mpbMathCrcUtil.h"
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+ 
+void vMpbMathCrcUtilReflectData( uint8_t ucNumberOfBits, uint32_t ulData, uint32_t *pulResult );
+
+
+
+
+
+
+ 
+void vMpbMathCrcUtilReflectBytes( uint32_t ulNumberOfBytes, const uint8_t* pucBuffer, uint8_t* pucResult );
+
+
+
+
+
+
+
+
+
+
+ 
+void vMpbMathCrcUtilCalculate( uint8_t ucWidth, uint32_t ulInitial, uint32_t ulPolynomial, uint32_t ulNumberOfBytes, const uint8_t* pucBuffer, uint32_t *pulCrcValue );
+
+#line 22 "../Includes/doubles/mpbMathCrc.h"
+
+ 
+ 
+
+
+
+
+
+
+      
+			 
+ 
+ 
+
+
+
+ 
+typedef struct
+{
+    uint8_t  ucWidth;
+  	uint32_t ulPolynomial;
+		uint32_t ulInitial;
+    uint32_t ulXorOutput;
+    uint32_t ulResidue;
+    eBool_t bRefInput;
+		eBool_t bRefOutput;
+}
+xMpbCrc_t;
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+eMpbError_t eMpbMathCrcInit( uint8_t ucWidth, uint32_t ulInitial, uint32_t ulPolynomial, uint32_t ulXorOutput, eBool_t bRefInput, eBool_t bRefOutput, xMpbCrc_t *pxMpbCrc );
+
+
+
+
+
+
+
+
+ 
+eMpbError_t eMpbMathCrcValidate( xMpbCrc_t xMpbCrc, uint32_t ulCrcRead, uint32_t ulNumberOfBytes, const uint8_t *pucBuffer );
+
+
+
+
+
+
+
+
+ 
+eMpbError_t eMpbMathCrcCalculate( xMpbCrc_t xMpbCrc, uint32_t ulNumberOfBytes, const uint8_t* pucBuffer, uint32_t *pulCrcValue );
+
+
+#line 35 "../Includes/mpbParser.h"
+
+
+ 
+
+
+
+
+
+ 
+ 
+typedef enum _MPB_PARSER_STATE_T {
+    PARSER_LOOKING_FOR_START = 0,
+    PARSER_LOOKING_FOR_LEN,
+    PARSER_LOOKING_FOR_CMD,
+    PARSER_LOOKING_FOR_DAT,
+    PARSER_LOOKING_FOR_CRC_1,
+    PARSER_LOOKING_FOR_CRC_2,
+} MPB_PARSER_STATE_T;
+ 
+ 
+ 
+
+
+
+ 
+uint8_t* mpbParser_AddChar(uint8_t NewByte,  xMpbCrc_t *pxMpbCrc);
+
+#line 31 "../Sources/mpbParser.c"
+#line 1 "../Includes/Defs.h"
 
 
 
@@ -2838,7 +3038,7 @@ extern void vMpblibsMallocFailedHook( size_t xSizeRequired );
 
 
 
-#line 21 "C:\\mpbComponent\\mpbM2MProtocol\\Includes\\Defs.h"
+#line 21 "../Includes/Defs.h"
 
 
 
@@ -2847,18 +3047,17 @@ extern void vMpblibsMallocFailedHook( size_t xSizeRequired );
 
 
 typedef unsigned char BOOL;
-#line 39 "C:\\mpbComponent\\mpbM2MProtocol\\Includes\\Defs.h"
+#line 38 "../Includes/Defs.h"
+
 
 
 
 typedef int     STATUS_T;
 typedef uint8_t PARAM_ID_T;
 
-#line 53 "C:\\mpbComponent\\mpbM2MProtocol\\Includes\\Defs.h"
+#line 53 "../Includes/Defs.h"
 
-#line 62 "C:\\mpbComponent\\mpbM2MProtocol\\Includes\\Defs.h"
-
-
+#line 62 "../Includes/Defs.h"
 
 
 
@@ -2886,24 +3085,6 @@ typedef uint8_t PARAM_ID_T;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-#line 22 "../Includes/mpbSerialDriver.h"
-#line 1 "C:\\mpbComponent\\mpbM2MProtocol\\Includes\\mpbBuffer.h"
 
 
 
@@ -2922,380 +3103,145 @@ typedef uint8_t PARAM_ID_T;
  
 
 
-
-
-
- 
-
-
- 
- 
- 
- 
-typedef struct _xMpbBuffer_t
-{    
-    uint16_t max_size;
-    uint16_t read_index;
-    uint16_t write_index;
-		uint8_t* bytes;
-} __attribute__ ((packed))xMpbBuffer_t;
-
- 
- 
- 
- 
+#line 32 "../Sources/mpbParser.c"
  
 
 
 
 
  
-eMpbError_t eMpbBuffer_Init(xMpbBuffer_t* xBuffer, uint8_t* Bytes, uint16_t MaxSize);
 
 
 
 
- 
-eMpbError_t eMpbBuffer_Put(xMpbBuffer_t* Buffer, uint8_t Val);
 
 
-
-
- 
-eMpbError_t eMpbBuffer_Get(xMpbBuffer_t* Buffer, uint8_t* Val);
 
 
 
 
  
-eMpbError_t eMpbBuffer_Peek(xMpbBuffer_t* Buffer, uint8_t* Val);
-
-
-
-
- 
-int      mpbBuffer_IsFull(xMpbBuffer_t* Buffer);
-
-
-
-
- 
-int      mpbBuffer_IsEmpty(xMpbBuffer_t* Buffer);
-
-
-
-
- 
-void     mpbBuffer_Clear(xMpbBuffer_t* Buffer);
-
-
-#line 23 "../Includes/mpbSerialDriver.h"
- 
-
  
  
+ MPB_PARSER_STATE_T state = PARSER_LOOKING_FOR_START;
+static uint8_t buffer[( 200 )];
  
-typedef struct
+ 
+static uint16_t usMpbParserCONCAT_BYTES( uint8_t msb, uint8_t lsb )   ;                
+
+
+static uint16_t usMpbParserCONCAT_BYTES( uint8_t msb, uint8_t lsb ) 
 {
-	eBool_t bSerialPort_0_readable;
-	eBool_t bSerialPort_1_readable;
-	uint8_t ucDataLength;
-	uint8_t ucActualPortUsed;
+	uint16_t usValue_1 = 0;
+	uint16_t usValue_2 = 0;
+	uint16_t usValue = 0;
 	
-}xMpbSerialDriver_t ;
-
- 
- 
- 
- 
- 
-
-
- 
-void vMpbSerial_init( void );
-
-
-
- 
-eMpbError_t mpbSerialDriver_Init(void);
-
-
-
- 
-eMpbError_t mpbSerialDriver_Exec(void);
-
-
-
-
-
- 
-eMpbError_t eMpbSerialDriver_PutByte( uint8_t ucVal );
-
-
-
- 
-uint8_t mpbSerialDriver_GetByte(void);
-
-
-
- 
-BOOL mpbSerialDriver_Connected(void);
-
-
-
- 
-BOOL mpbSerialDriver_OkayToRead(void);
-
-
-
- 
-extern void vMpbSerial_clear( void );
-
-
-
-
- 
-extern eMpbError_t mpbSerial_putc( uint8_t ucValue );
-
-
-
-
- 
-extern eMpbError_t mpbSerial_getc( uint8_t *pRxByte );
-
-
-
- 
-extern _Bool mpbSerial_readable(void);
-
-#line 19 "../Sources/mpbSerialDriver.c"
-
-
-
-
-
-
-
-
- 
-
- 
- 
- 
-static BOOL     					initialized = 0;
- uint8_t  					ucRawTxData[( 80 )] = {0};
- uint8_t  					ucRawRxData[( 80 )] = {0};
- xMpbBuffer_t 			mpbBufferTx;
- xMpbBuffer_t 			mpbBufferRx;
-static xMpbSerialDriver_t xMpbSerialDriver;
-
- 
- 
- 
- 
- 
-eMpbError_t mpbSerialDriver_Init( void ) 
-{
-    eMpbError_t eMpbError = eSuccess;
-    vMpbSerial_init();
-    vMpbSerial_clear();
-
-		for(int i=0 ; i< ( 80 ); i++)
-		{
-			ucRawTxData[i] = 0;
-			ucRawRxData[i] = 0;
-		}
-		
-	  memset( ucRawTxData, 0, sizeof(( 80 )));
-	  memset( ucRawRxData, 0, sizeof(( 80 )));
-	 
-    eMpbError = eMpbBuffer_Init(&mpbBufferTx, ucRawTxData, ( 80 ));
-		if(eMpbError != eSuccess)
-		{
-			return eOutOfMemory;
-		}
-    eMpbError = eMpbBuffer_Init(&mpbBufferRx, ucRawRxData, ( 80 ));
-		initialized = 1 ;
-		
-		return eMpbError;
-}
- 
-eMpbError_t mpbSerialDriver_Exec(void)
-{
-    uint8_t ucValue;
-		eMpbError_t eMpbError = eSuccess;
+	usValue_1 = ( uint16_t )lsb;
+	usValue_2 = ( uint16_t )(msb << 8) ;
+	usValue = usValue_2 | usValue_1;
 	
 	
-    
+	return usValue;
+}
+
  
-    while ( (!mpbBuffer_IsEmpty( &mpbBufferTx ) ) && 
-          (  eMpbBuffer_Get( &mpbBufferTx, &ucValue ) == eSuccess ) )
+
+uint8_t* mpbParser_AddChar(uint8_t NewByte,  xMpbCrc_t *pxMpbCrc)
+{
+    eMpbError_t     eMpbError;
+    uint16_t        usCrcValueCalculated  ;
+    uint16_t        usCrcValueReceived    ;
+		uint32_t 				ulCrcValueCalculated ;
+    static uint8_t  ucCrc1, ucCrc2;
+    static uint8_t  usDataBytesNeeded, usLengthForCrcCalcultation;
+    static int      length = 0;
+
+    switch(state)
     {
-      eMpbError =  mpbSerial_putc( ucValue );			 
+        case PARSER_LOOKING_FOR_START:
+				
+            length = 0;
+            if (NewByte == ( 0x7E ) ) 
+            { 
+                buffer[length] = NewByte;
+                state = PARSER_LOOKING_FOR_LEN; 
+            }
+           break;
+           
+        case PARSER_LOOKING_FOR_LEN:
+            if ((NewByte > 0) && (NewByte <= ( 200 )) && (NewByte >= ( 1 ) ) )  
+            {
+                buffer[++length] = NewByte;
+                usDataBytesNeeded = NewByte - ( 1 ) ;
+                usLengthForCrcCalcultation = NewByte + ( 1 ) ;
+                state = PARSER_LOOKING_FOR_CMD;              
+            }
+            else
+            {
+                state = PARSER_LOOKING_FOR_START;
+            }
+            break;
+
+        case PARSER_LOOKING_FOR_CMD:
+            if ((NewByte >= ( 0x10 ) ) && (NewByte <= ( 0xFA ) ))  
+            { 
+                buffer[ ++length ] = NewByte;
+                if(usDataBytesNeeded >= 1 )
+                {
+                    state =  PARSER_LOOKING_FOR_DAT; 
+                }
+                else
+                {
+                    state =  PARSER_LOOKING_FOR_CRC_1; 
+                }
+            }
+            else
+            {
+                state = PARSER_LOOKING_FOR_START;
+            }
+            break;
+
+        case PARSER_LOOKING_FOR_DAT:            
+                buffer[++length] = NewByte;
+                if ( --usDataBytesNeeded == 0) 
+                {
+                    state = PARSER_LOOKING_FOR_CRC_1;    
+                }                        
+            break;
+
+        case PARSER_LOOKING_FOR_CRC_1:                       
+                buffer[ ++length ] = NewByte; 
+                ucCrc1 = NewByte;               
+                state = PARSER_LOOKING_FOR_CRC_2;
+            break;
+
+        case PARSER_LOOKING_FOR_CRC_2: 
+				{					
+                buffer[++length] = NewByte;
+                ucCrc2 = NewByte;
+                state = PARSER_LOOKING_FOR_START;
+
+                usCrcValueReceived =  usMpbParserCONCAT_BYTES(ucCrc2, ucCrc1);
+                eMpbError = eMpbMathCrcCalculate( *pxMpbCrc, usLengthForCrcCalcultation, &buffer[1], (uint32_t *)&ulCrcValueCalculated );           
+                if(eMpbError == eSuccess )
+                {
+										usCrcValueCalculated = (uint16_t)ulCrcValueCalculated;
+                    if(  usCrcValueReceived == usCrcValueCalculated )
+                    {
+                        return (uint8_t *)buffer; 
+                    }
+                    else
+                    {
+                        return 0;    
+                    }
+                }
+                
+            break;
+				}
+
+       
+         
     }
 
-     
-    while ( !mpbBuffer_IsFull(&mpbBufferRx)  && mpbSerial_readable() )
-    {
-		
-			eMpbError = mpbSerial_getc( &ucValue );
-			if(		eMpbError != eSuccess)
-			{
-				return eDriverError;
-			}				
-			eMpbError = eMpbBuffer_Put(&mpbBufferRx, ucValue);  
-    }
-		
-		
-		return eMpbError;
+    return 0;
 }
- 
-eMpbError_t eMpbSerialDriver_PutByte( uint8_t ucVal )
-{
-		eMpbError_t eMpbError = eSuccess;
-	
-    if ( mpbBuffer_IsFull(&mpbBufferTx) )
-    {
-        return eOutOfRange;
-    }
-
-    eMpbError = eMpbBuffer_Put(&mpbBufferTx, ucVal);
-
-    return eMpbError;
-}
- 
-uint8_t mpbSerialDriver_GetByte(void)
-{
-    uint8_t ucVal;
-
-    if ( eMpbBuffer_Get( &mpbBufferRx, &ucVal ) == eSuccess)
-    {
-        return ucVal;
-    }
-    else
-    {
-        return 0x00;
-    }
-}
- 
-BOOL mpbSerialDriver_Connected(void)
-{
-
-    return initialized;
-}
- 
-BOOL mpbSerialDriver_OkayToRead(void)
-{
-    return ( !mpbBuffer_IsEmpty(&mpbBufferRx) );
-}
- 
-
-void vMpbSerial_init( void )
-{
-	xMpbSerialDriver.bSerialPort_0_readable = eFalse;
-	xMpbSerialDriver.bSerialPort_1_readable = eFalse;
-	xMpbSerialDriver.ucDataLength = 0;
-	xMpbSerialDriver.ucActualPortUsed = 0;
-}
- 
-
-
-
- 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
- 

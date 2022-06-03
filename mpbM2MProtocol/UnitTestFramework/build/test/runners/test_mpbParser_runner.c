@@ -108,19 +108,19 @@ int main(void)
 {
   suite_setup();
   UnityBegin("test_mpbParser.c");
-  RUN_TEST(test_mpbParser_AddChar_should_StartLookingForCmdOn_7E_value, 57);
-  RUN_TEST(test_mpbParser_AddChar_should_StartLookingForCmdOn_71_value, 66);
-  RUN_TEST(test_mpbParser_AddChar_should_goto_cmd_state, 75);
-  RUN_TEST(test_mpbParser_AddChar_should_restart_if_goto_cmd_state, 89);
-  RUN_TEST(test_mpbParser_AddChar_should_goto_CRC1_state, 103);
-  RUN_TEST(test_mpbParser_AddChar_should_accept_min_packet, 143);
-  RUN_TEST(test_mpbParser_AddChar_should_RejectNon_FS_CharactersWhileSeekingStart, 185);
-  RUN_TEST(test_mpbParser_AddChar_should_Reject_ALengthOfZero, 199);
-  RUN_TEST(test_mpbParser_AddChar_should_RejectInvalidLengths, 208);
-  RUN_TEST(test_mpbParser_AddChar_should_RejectInvalidCommandCharacter, 216);
-  RUN_TEST(test_mpbParser_AddChar_should_reject_invalid_CRC, 229);
-  RUN_TEST(test_mpbParser_AddChar_should_accept_CRC_packet, 271);
-  RUN_TEST(test_mpbParser_AddChar_should_HandleBackToBackValidPackets, 322);
+  RUN_TEST(test_mpbParser_AddChar_should_StartLookingForCmdOn_7E_value, 58);
+  RUN_TEST(test_mpbParser_AddChar_should_StartLookingForCmdOn_71_value, 67);
+  RUN_TEST(test_mpbParser_AddChar_should_goto_cmd_state, 76);
+  RUN_TEST(test_mpbParser_AddChar_should_restart_if_goto_cmd_state, 90);
+  RUN_TEST(test_mpbParser_AddChar_should_goto_CRC1_state, 104);
+  RUN_TEST(test_mpbParser_AddChar_should_accept_min_packet, 144);
+  RUN_TEST(test_mpbParser_AddChar_should_RejectNon_FS_CharactersWhileSeekingStart, 186);
+  RUN_TEST(test_mpbParser_AddChar_should_Reject_ALengthOfZero, 200);
+  RUN_TEST(test_mpbParser_AddChar_should_RejectInvalidLengths, 209);
+  RUN_TEST(test_mpbParser_AddChar_should_RejectInvalidCommandCharacter, 217);
+  RUN_TEST(test_mpbParser_AddChar_should_reject_invalid_CRC, 230);
+  RUN_TEST(test_mpbParser_AddChar_should_accept_CRC_packet, 272);
+  RUN_TEST(test_mpbParser_AddChar_should_HandleBackToBackValidPackets, 323);
 
   CMock_Guts_MemFreeFinal();
   return suite_teardown(UnityEnd());
